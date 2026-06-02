@@ -7,6 +7,7 @@ export default {
         './storage/framework/views/*.php',
         './resources/**/*.blade.php',
         './resources/**/*.js',
+        "./app/Livewire/**/*.php",
         './resources/**/*.vue',
     ],
     theme: {

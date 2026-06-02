@@ -1,7 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\LandingPage;
+use App\Livewire\GameEngine;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// Halaman awal adalah Landing Page
+Route::get('/', LandingPage::class);
+
+// Halaman permainan
+Route::get('/play', GameEngine::class);
+
+// Route::get('/', function () {
+//     return view('landing-page');
+// });

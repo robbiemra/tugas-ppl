@@ -1,0 +1,591 @@
+<?php
+
+namespace App\Services;
+
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
+
+class StoryGenerator
+{
+    protected $apiKey;
+
+    public function __construct()
+    {
+        $this->apiKey = config('services.huggingface.key');
+    }
+
+    private function getInitialPlot($genre, $location)
+    {
+        if ($genre === 'Horror' && $location === 'Pendakian') {
+            return [
+                'content' => "Malam mulai turun ketika kamu, Raka, dan Sari tiba di pos pertama Gunung Panggung. Tenda sudah berdiri. Api unggun menyala. Semuanya terasa normal — sampai Raka tiba-tiba berhenti bicara dan berbisik, \"Ssst. Dengar itu...\"\n\nSunyi total. Lalu bisikan itu datang. Sangat pelan. Seperti angin yang tahu namamu. Namamu saja. Bukan Raka. Bukan Sari.\n\n\"Itu cuma angin,\" kata Sari, menarik selimutnya erat. Tapi matanya tak setenang suaranya.\n\nBisikan itu datang lagi — lebih dekat, lebih dalam, dari balik pohon besar tepat di belakang tendamu. Raka menatapmu tajam. \"Jangan ke mana-mana.\" Namun bisikan itu terus memanggil, memanggil, dan memanggil namamu tanpa henti.\n\nApa yang akan kamu lakukan?",
+                'choices' => [
+                    ['choice_text' => 'Ikuti bisikan'],
+                    ['choice_text' => 'Abaikan bisikan']
+                ],
+                'image' => 'Horror/Pendakian/intro awal.png'
+            ];
+        }
+
+        if ($genre === 'Horror' && $location === 'Rumah Sakit') {
+            return [
+                'content' => "Kamu berdiri sendirian di depan gerbang berkarat sebuah rumah sakit tua yang sudah ditutup puluhan tahun lalu. Gedung besar itu tampak gelap dan sangat suram. Jantungmu berdebar kencang, tapi rasa penasaran mengalahkan rasa takutmu.",
+                'choices' => [
+                    ['choice_text' => 'Masuk ke dalam gedung']
+                ]
+            ];
+        }
+
+        if ($genre === 'Adventure' && $location === 'Pulau Terpencil') {
+            return [
+                'content' => "Kamu sedang santai berlayar menggunakan perahu kecil untuk liburan. Tiba-tiba, langit berubah hitam pekat dan badai besar datang! Ombak raksasa mulai menghantam perahumu dengan sangat keras dari berbagai arah.",
+                'choices' => [
+                    ['choice_text' => 'Berpegangan sekuat tenaga']
+                ]
+            ];
+        }
+
+        if ($genre === 'Adventure' && $location === 'Gua Misterius') {
+            return [
+                'content' => "Kamu sedang asyik berkemah di hutan bersama teman-teman. Saat sedang mencari kayu bakar sendirian, tanpa sengaja kamu menemukan sebuah lubang sangat besar di tanah yang tertutup oleh semak-semak lebat.",
+                'choices' => [
+                    ['choice_text' => 'Dekati lubang itu']
+                ]
+            ];
+        }
+
+        // Fallback default
+        return [
+            'content' => "Kamu berdiri di awal sebuah petualangan seru yang baru dan belum diketahui.",
+            'choices' => [
+                ['choice_text' => 'Mulai perjalanan']
+            ]
+        ];
+    }
+
+    private function getStoryNodes($genre, $location)
+    {
+        if ($genre === 'Horror' && $location === 'Pendakian') {
+            return [
+                'Mulai mendaki' => [
+                    'content' => "Langkah kakimu makin berat saat mendaki Gunung Panggung.\nCabang pohon berderak. Angin berhembus dingin.\n\nTiba-tiba... kamu terpisah dari Raka dan Sari!\n\"Raka! Sari! Kalian di mana?\" teriakmu. Tidak ada jawaban.\n\nHanya keheningan. Dan bisikan itu... mulai terdengar lagi.",
+                    'choices' => [
+                        ['choice_text' => 'Ikuti bisikan'],
+                        ['choice_text' => 'Abaikan bisikan']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/intro awal.png'
+                ],
+                'Ikuti bisikan' => [
+                    'content' => "Kamu melangkah mengikuti suara itu. Pelan-pelan. Makin dalam ke hutan.\n\"Ke sini... ke sini...\" bisik suara itu.\n\nBRAAK! Tanah di depanmu tiba-tiba longsor!\nKamu jatuh ke jurang yang dalam. Aduh, sakit sekali!\n\nSaat kamu bangun, kamu melihat sebuah ransel tua di dekatmu.",
+                    'choices' => [
+                        ['choice_text' => 'Menggunakan persediaan'],
+                        ['choice_text' => 'Terus mencari jalan']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 1 ikuti bisikan.png'
+                ],
+                'Menggunakan persediaan' => [
+                    'content' => "Perutmu sangat lapar. Kamu membuka ransel itu dan menemukan makanan di dalamnya.\n\"Hmm, lumayan,\" pikirmu sambil langsung memakannya.\n\nTapi... rasanya aneh. Pahit dan bau.\nMakanan itu sudah basi dan beracun!\n\nTubuhmu mulai terasa berat. Matamu mengantuk...\nPetualanganmu berakhir di dasar jurang yang gelap.",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 1.1 mati memakan persediaan.png'
+                ],
+                'Terus mencari jalan' => [
+                    'content' => "\"Tidak! Aku tidak mau menyerah!\" katamu dalam hati.\nKamu menahan lapar dan merangkak pelan-pelan.\n\nBatu demi batu. Pohon demi pohon.\nAkhirnya, kamu melihat cahaya redup di kejauhan.\n\nSebuah gua kecil! Hangat dan aman terlihat dari luar.",
+                    'choices' => [
+                        ['choice_text' => 'Masuk gua'],
+                        ['choice_text' => 'Melewati gua']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 1.2 menemukan goa.png'
+                ],
+                'Masuk gua' => [
+                    'content' => "Kamu memberanikan diri masuk ke dalam gua.\nDi sudut gua, duduk seorang kakek tua berjanggut panjang.\n\n\"Sudah kutunggu kamu, anak muda,\" kata kakek itu sambil tersenyum.\nDia merawat lukamu dan mengajarimu ilmu-ilmu ajaib.\n\nKamu pun menjadi murid sang kakek sakti!\nHidup barumu dimulai di dalam hutan yang misterius itu.",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 1.2 murid petapa.png'
+                ],
+                'Melewati gua' => [
+                    'content' => "\"Aku tidak mau masuk gua yang gelap itu!\" katamu.\nKamu terus berjalan mencari jalan lain.\n\nTapi malam makin gelap. Angin makin dingin.\nTubuhmu mulai menggigil. Kakimu makin berat.\n\nKamu duduk sebentar untuk istirahat...\nDan tidak pernah bangun lagi.",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 1.2 meninggal akibat kelelahan.png'
+                ],
+                'Abaikan bisikan' => [
+                    'content' => "\"Aku tidak mau dengarkan bisikan aneh itu!\" katamu.\nKamu lari menjauhi suara itu sekuat tenaga.\n\nTiba-tiba kamu berhenti. Di depanmu ada pohon beringin besar sekali!\nAkar-akarnya seperti jari raksasa yang mencengkeram tanah.\n\nDan di antara akar-akar itu... ada sebuah peti kayu berdebu.",
+                    'choices' => [
+                        ['choice_text' => 'Tidak membuka peti'],
+                        ['choice_text' => 'Buka peti']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2 kotak peti.png'
+                ],
+                'Tidak membuka peti' => [
+                    'content' => "\"Siapa tahu ada hal buruk di dalamnya,\" pikirmu.\nKamu memilih untuk tidak menyentuh peti itu dan terus berjalan.\n\nSetelah beberapa saat, kamu tiba di sebuah persimpangan.\nAda dua jalan di depanmu. Kanan dan kiri.\n\nKeduanya sama gelapnya. Mana yang harus dipilih?",
+                    'choices' => [
+                        ['choice_text' => 'Jalur 1'],
+                        ['choice_text' => 'Jalur 2']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2.1 tidak membuka peti dan bertemu percabangan jalan.png'
+                ],
+                'Buka peti' => [
+                    'content' => "Rasa penasaranmu terlalu besar!\nKamu perlahan membuka tutup peti itu. Kreeek...\n\nDi dalamnya ada sebuah keris! Gagang ukirannya sangat indah.\nKeris itu berkilau memancarkan cahaya keemasan yang aneh.\n\n\"Ambil atau tinggalkan?\" gumammu sambil memandanginya.",
+                    'choices' => [
+                        ['choice_text' => 'Tinggalkan keris'],
+                        ['choice_text' => 'Ambil keris']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2.2 membuka kotak peti.png'
+                ],
+                'Tinggalkan keris' => [
+                    'content' => "\"Lebih baik tidak usah diambil,\" katamu sambil menutup peti.\nKamu melanjutkan perjalanan. Tapi langkahmu terasa berat.\n\nPikiranmu terus melayang ke keris itu.\n\"Bagaimana kalau keris itu bisa membantuku?\" tanyamu dalam hati.\n\nApakah kamu mau kembali mengambilnya?",
+                    'choices' => [
+                        ['choice_text' => 'Kembali ambil keris'],
+                        ['choice_text' => 'Lanjutkan perjalanan']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2.2.1 kebingungan mengambil keris atau tidak.png'
+                ],
+                'Lanjutkan perjalanan' => [
+                    'content' => "\"Tidak! Aku harus fokus pulang,\" katamu sambil menggelengkan kepala.\nKamu terus melangkah maju menembus hutan yang gelap.\n\nSetelah berjalan cukup lama, kamu menemukan persimpangan jalan.\nDua arah tersedia di hadapanmu.\n\nMana yang menuju ke jalan keluar?",
+                    'choices' => [
+                        ['choice_text' => 'Jalur 1'],
+                        ['choice_text' => 'Jalur 2']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2.1 tidak membuka peti dan bertemu percabangan jalan.png'
+                ],
+                'Kembali ambil keris' => [
+                    'content' => "Kamu berlari kembali ke pohon beringin itu.\nTanganmu meraih keris dan... DER!\n\nMata kamu tiba-tiba bisa melihat hal-hal yang tidak kelihatan!\nDi depanmu, berdiri sosok hitam besar dengan mata merah menyala.\n\n\"GRRR!\" sosok itu menggeram keras sekali.",
+                    'choices' => [
+                        ['choice_text' => 'Lawan hantu'],
+                        ['choice_text' => 'Kabur']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2.2.1.2 dihadang oleh hantu dan memegang keris.png'
+                ],
+                'Ambil keris' => [
+                    'content' => "Kamu menggenggam keris itu erat-erat.\nSeketika matamu pedih dan mulai berkunang-kunang.\n\nSaat pandanganmu jernih kembali, kamu melihat sesuatu yang mengejutkan!\nSosok hantu raksasa berdiri tepat di depanmu!\n\n\"Berani sekali kamu mengambil milikku!\" hantu itu berteriak.",
+                    'choices' => [
+                        ['choice_text' => 'Lawan hantu'],
+                        ['choice_text' => 'Kabur']
+                    ],
+                    'is_ending' => false,
+                    'image' => 'Horror/Pendakian/alur 2.2.1.2 dihadang oleh hantu dan memegang keris.png'
+                ],
+                'Jalur 1' => [
+                    'content' => "Kamu memilih jalan di sebelah kiri.\nMakin jauh berjalan, makin banyak kamu mendengar suara gamelan.\n\nTiba-tiba, jalan itu berubah menjadi pasar yang ramai!\nTapi semua penjualnya... adalah siluman dengan wajah menyeramkan.\n\nKamu tidak bisa pergi. Kamu terjebak menjadi pelayan Ratu Ular selamanya.",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 2.1 ending badarawuhi.png'
+                ],
+                'Jalur 2' => [
+                    'content' => "Kamu memilih jalan di sebelah kanan.\nLampu-lampu kunang-kunang bermunculan menuntun langkahmu.\n\nTiba-tiba kamu tiba di depan istana megah yang bersinar keperakan!\n\"Selamat datang, Raja baru kami!\" teriak para hantu di dalam.\n\nKamu tidak bisa menolak. Kamu menjadi raja kerajaan hantu selamanya.",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 2.1 ending permaisuri.png'
+                ],
+                'Lawan hantu' => [
+                    'content' => "\"Aku tidak takut padamu!\" teriakmu sambil mengacungkan keris.\nKeris itu tiba-tiba bersinar terang menyilaukan!\n\nHAP! Kamu menghujamkan keris ke arah hantu itu.\nHantu itu menjerit keras lalu menghilang menjadi asap!\n\n\"Horeee!\" Semua makhluk hutan bertepuk tangan.\nKamu pun dihormati sebagai sang pemberani hutan!",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 2.2.1.2.4 ending disegani.png'
+                ],
+                'Kabur' => [
+                    'content' => "\"TOLOOONG!\" teriakmu sambil berlari sekencang-kencangnya.\nKamu terus berlari tanpa menoleh ke belakang.\n\nAkhirnya kamu keluar dari hutan dan selamat!\nRaka dan Sari menunggu di bawah dengan wajah khawatir.\n\nKamu memang selamat. Tapi setiap malam, kamu selalu bermimpi buruk\ntentang mata merah yang terus menatapmu dalam gelap.",
+                    'choices' => [],
+                    'is_ending' => true,
+                    'image' => 'Horror/Pendakian/alur 2.2.1.2.3 ending ketakutan seumur hidup.png'
+                ]
+            ];
+        }
+
+        if ($genre === 'Horror' && $location === 'Rumah Sakit') {
+            return [
+                'Masuk ke dalam gedung' => [
+                    'content' => "Begitu masuk, pintu di belakangmu terbanting keras dan terkunci sendiri! Kamu kini berada di lorong berdebu. Lampu neon di atap berkedip redup. Dari kejauhan, terdengar suara tangisan pelan.",
+                    'choices' => [
+                        ['choice_text' => 'Cari sumber suara'],
+                        ['choice_text' => 'Sembunyi di ruang perawat']
+                    ],
+                    'is_ending' => false
+                ],
+                'Cari sumber suara' => [
+                    'content' => "Kamu pelan-pelan mengikuti suara tangisan itu. Ternyata suaranya dari dalam ruangan kamar mayat. Pintunya sedikit terbuka dan hawanya sangat dingin.",
+                    'choices' => [
+                        ['choice_text' => 'Masuk kamar mayat'],
+                        ['choice_text' => 'Lari ke tangga']
+                    ],
+                    'is_ending' => false
+                ],
+                'Sembunyi di ruang perawat' => [
+                    'content' => "Kamu masuk ke ruangan dokter dan langsung mengunci pintunya. Di meja kerja ada lampu senter yang masih menyala dan kotak P3K.",
+                    'choices' => [
+                        ['choice_text' => 'Nyalakan senter'],
+                        ['choice_text' => 'Buka kotak obat']
+                    ],
+                    'is_ending' => false
+                ],
+                'Masuk kamar mayat' => [
+                    'content' => "Kamu nekat masuk. Ada seorang suster berbaju kotor sedang membelakangimu. Waktu dia menoleh, ternyata wajahnya rata tanpa mata dan mulut!",
+                    'choices' => [
+                        ['choice_text' => 'Pura-pura mati'],
+                        ['choice_text' => 'Lawan suster itu']
+                    ],
+                    'is_ending' => false
+                ],
+                'Lari ke tangga' => [
+                    'content' => "Kamu ketakutan dan lari mencari tangga darurat. Sayangnya tangganya sangat panjang dan seperti tidak berujung.",
+                    'choices' => [
+                        ['choice_text' => 'Terus lari ke bawah'],
+                        ['choice_text' => 'Istirahat di anak tangga']
+                    ],
+                    'is_ending' => false
+                ],
+                'Nyalakan senter' => [
+                    'content' => "Kamu menyalakan senter ke arah sudut ruangan. Tiba-tiba hantu perawat melompat ke arahmu. Layar menjadi gelap dan kamu menghilang selamanya.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Buka kotak obat' => [
+                    'content' => "Kamu meminum pil penenang dari kotak itu. Pandanganmu memudar, lalu kamu terbangun di kasur rumahmu sendiri. Puji Tuhan, semua cuma mimpi buruk!",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Pura-pura mati' => [
+                    'content' => "Kamu menahan napas sambil tiduran. Hantu itu kira kamu sudah meninggal, lalu dia menutup tubuhmu pakai kain putih untuk selamanya.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Lawan suster itu' => [
+                    'content' => "Kamu melempar botol sirup ke muka hantu itu lalu lari kencang keluar pintu depan. Hore! Kamu selamat dari rumah sakit seram itu.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Terus lari ke bawah' => [
+                    'content' => "Kamu lari sangat lama sampai kakimu sakit sekali, tapi tak kunjung keluar gedung. Kamu terjebak masuk ke dimensi gaib tak berujung.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Istirahat di anak tangga' => [
+                    'content' => "Waktu kamu duduk istirahat, ada kakek satpam baik hati yang menunjukkan pintu jalan keluar rahasia. Akhirnya kamu selamat bisa pulang ke rumah.",
+                    'choices' => [],
+                    'is_ending' => true
+                ]
+            ];
+        }
+
+        if ($genre === 'Adventure' && $location === 'Pulau Terpencil') {
+            return [
+                'Berpegangan sekuat tenaga' => [
+                    'content' => "BRUK! Perahumu terbalik dihantam ombak. Setelah sempat pingsan, kamu terbangun dan mendapati dirimu terdampar di pasir putih sebuah pulau yang tidak ada di peta. Di depanmu ada hutan yang sangat lebat.",
+                    'choices' => [
+                        ['choice_text' => 'Masuk ke dalam hutan'],
+                        ['choice_text' => 'Susuri pinggiran pantai']
+                    ],
+                    'is_ending' => false
+                ],
+                'Masuk ke dalam hutan' => [
+                    'content' => "Hutannya dipenuhi pohon-pohon besar. Di sana kamu menemukan buah beri berwarna biru bercahaya yang kelihatannya enak sekali. Kebetulan perutmu sangat lapar.",
+                    'choices' => [
+                        ['choice_text' => 'Makan buah itu'],
+                        ['choice_text' => 'Lanjut cari air minum']
+                    ],
+                    'is_ending' => false
+                ],
+                'Susuri pinggiran pantai' => [
+                    'content' => "Kamu jalan pelan-pelan di pinggir pantai berbatu. Matamu tertuju pada sebuah kotak harta karun yang terkubur separuh di dalam pasir.",
+                    'choices' => [
+                        ['choice_text' => 'Paksa buka kotak'],
+                        ['choice_text' => 'Biarkan saja kotak itu']
+                    ],
+                    'is_ending' => false
+                ],
+                'Makan buah itu' => [
+                    'content' => "Rasanya sangat manis! Hebatnya lagi, buah biru itu memberimu kekuatan sihir super. Badanmu jadi enteng dan kamu bisa melompat setinggi pohon.",
+                    'choices' => [
+                        ['choice_text' => 'Lompat ke seberang laut'],
+                        ['choice_text' => 'Buat istana kayu']
+                    ],
+                    'is_ending' => false
+                ],
+                'Lanjut cari air minum' => [
+                    'content' => "Kamu mendengar suara gemercik air terjun. Sayangnya, ada buaya raksasa yang sedang tidur pulas menutupi jalan ke arah air tersebut.",
+                    'choices' => [
+                        ['choice_text' => 'Ambil air diam-diam'],
+                        ['choice_text' => 'Lawan buaya pakai kayu']
+                    ],
+                    'is_ending' => false
+                ],
+                'Paksa buka kotak' => [
+                    'content' => "Kunci kotak itu berhasil kamu hancurkan pakai batu karang. Wow! Isinya ada pistol kembang api penyelamat dan sebuah peta harta bajak laut.",
+                    'choices' => [
+                        ['choice_text' => 'Tembakkan suar ke udara'],
+                        ['choice_text' => 'Ikuti peta harta karun']
+                    ],
+                    'is_ending' => false
+                ],
+                'Biarkan saja kotak itu' => [
+                    'content' => "Kamu membiarkan kotak itu dan jalan terus seharian penuh. Sayangnya kamu kelelahan dan pingsan dehidrasi di pasir pantai. Petualangan usai.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Lompat ke seberang laut' => [
+                    'content' => "Dengan tenaga ajaib itu, kamu berhasil melompat-lompat menyeberangi lautan menuju kota terdekat dan diangkat menjadi superhero baru!",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Buat istana kayu' => [
+                    'content' => "Karena betah, kamu membangun rumah pohon raksasa. Kamu hidup damai dan sehat menjadi penjaga hutan di pulau indah tersebut.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Ambil air diam-diam' => [
+                    'content' => "Kamu mengendap-endap dan sukses minum air segar tanpa ketahuan buaya. Waktu sedang minum, kapal tim penyelamat tak sengaja melihatmu. Kamu diselamatkan!",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Lawan buaya pakai kayu' => [
+                    'content' => "Buaya itu malah terbangun marah! Karena hanya bermodal sebatang kayu, kamu tak bisa menang dan terpaksa jadi makan siangnya.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Tembakkan suar ke udara' => [
+                    'content' => "DOR! Cahaya merah meluncur ke langit. Pasukan Angkatan Laut yang sedang patroli melihatnya dan segera menjemputmu dengan kapal besar.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Ikuti peta harta karun' => [
+                    'content' => "Peta itu membawamu masuk ke gua yang penuh dengan emas berlian. Kamu bukan hanya selamat, tapi pulang sebagai orang paling kaya di kotamu!",
+                    'choices' => [],
+                    'is_ending' => true
+                ]
+            ];
+        }
+
+        if ($genre === 'Adventure' && $location === 'Gua Misterius') {
+            return [
+                'Dekati lubang itu' => [
+                    'content' => "Kamu mengintip ke bawah lubang gelap itu, tapi tiba-tiba tanah yang kamu injak longsor! Kamu terjatuh ke dasar gua bawah tanah. Di hadapanmu, ada dinding batu yang memancarkan cahaya biru terang.",
+                    'choices' => [
+                        ['choice_text' => 'Masuk mencari tahu'],
+                        ['choice_text' => 'Cari kayu bakar dulu']
+                    ],
+                    'is_ending' => false
+                ],
+                'Masuk mencari tahu' => [
+                    'content' => "Gua bawah tanah ini sangat megah seperti kuil kuno. Kamu berjalan ke ujung ruangan dan menemukan dua gerbang raksasa: Gerbang Emas dan Gerbang Batu.",
+                    'choices' => [
+                        ['choice_text' => 'Pilih Gerbang Emas'],
+                        ['choice_text' => 'Pilih Gerbang Batu']
+                    ],
+                    'is_ending' => false
+                ],
+                'Cari kayu bakar dulu' => [
+                    'content' => "Di luar gua, langit jadi gelap dan hujan badai turun sangat lebat. Angin kencang membuatmu harus cepat cari tempat sembunyi.",
+                    'choices' => [
+                        ['choice_text' => 'Lari ke dalam gua'],
+                        ['choice_text' => 'Naik ke atas pohon']
+                    ],
+                    'is_ending' => false
+                ],
+                'Pilih Gerbang Emas' => [
+                    'content' => "Ternyata Gerbang Emas penuh dengan jebakan lubang! Lantai batu jebol dan kamu jatuh ke kolam air bawah tanah yang sangat dalam.",
+                    'choices' => [
+                        ['choice_text' => 'Berenang ke tepi'],
+                        ['choice_text' => 'Menyelam lebih dalam']
+                    ],
+                    'is_ending' => false
+                ],
+                'Pilih Gerbang Batu' => [
+                    'content' => "Di balik pintu Gerbang Batu terdapat naga ajaib yang tersenyum ramah. Naga ini sedang menjaga tumpukan berlian dan koin emas yang tak terhitung jumlahnya.",
+                    'choices' => [
+                        ['choice_text' => 'Sapa naga itu'],
+                        ['choice_text' => 'Curi berlian dan lari']
+                    ],
+                    'is_ending' => false
+                ],
+                'Lari ke dalam gua' => [
+                    'content' => "Kamu kembali ke gua supaya tidak kehujanan. Waktu sedang duduk, kamu menyadari dinding gua sebelah kiri retak dan seperti bisa didorong.",
+                    'choices' => [
+                        ['choice_text' => 'Masuk ke jalan rahasia'],
+                        ['choice_text' => 'Tidur menunggu hujan']
+                    ],
+                    'is_ending' => false
+                ],
+                'Naik ke atas pohon' => [
+                    'content' => "Badai sangat kencang dan tiba-tiba petir menyambar dahan pohon tempatmu duduk. Kamu terjatuh pingsan dan petualanganmu terhenti.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Berenang ke tepi' => [
+                    'content' => "Dengan gigih kamu berenang ke tepi tebing batu. Di sana ada tangga rahasia yang mengantarmu kembali ke desa. Petualangan usai dengan selamat.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Menyelam lebih dalam' => [
+                    'content' => "Makin dalam kamu menyelam, kamu melihat kota bawah air ajaib. Putri duyung menyambutmu untuk ikut tinggal selamanya di istana air.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Sapa naga itu' => [
+                    'content' => "Kamu berkata 'Halo!' kepada si naga. Naga itu sangat senang karena punya teman, lalu menghadiahimu kalung emas paling indah. Kamu pulang membawa kejayaan.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Curi berlian dan lari' => [
+                    'content' => "Karena serakah, kamu mengambil berlian raksasa dan kabur. Naga itu marah besar dan langsung menyemburkan api ke arahmu. Tamat.",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Masuk ke jalan rahasia' => [
+                    'content' => "Dinding batu kamu dorong kuat-kuat. Wah, jalan rahasia ini tembus langsung ke harta karun milik raja purba. Petualangan yang sangat sukses!",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Tidur menunggu hujan' => [
+                    'content' => "Karena kedinginan, kamu ketiduran sangat pulas. Sayangnya saat bangun pintu gua tertutup karena longsor, membuatmu terjebak di dalam tanpa jalan keluar.",
+                    'choices' => [],
+                    'is_ending' => true
+                ]
+            ];
+        }
+
+        return [];
+    }
+
+    public function generateInitialStory($userName, $gender, $genre, $location)
+    {
+        $initialData = $this->getInitialPlot($genre, $location);
+        
+        $aiContent = $this->expandWithAI($initialData['content'], [
+            'userName' => $userName,
+            'gender' => $gender,
+            'genre' => $genre,
+            'location' => $location
+        ]);
+
+        return [
+            'content' => $aiContent,
+            'choices' => $initialData['choices'],
+            'is_ending' => false,
+            'image' => $initialData['image'] ?? 'wallpaperhorror.jpeg'
+        ];
+    }
+
+    public function generateNextSegment($previousStory, $choiceText, $currentStep, $maxSteps = 5, $genre = 'Horror', $location = 'Pendakian')
+    {
+        $nodes = $this->getStoryNodes($genre, $location);
+        $normalizedChoice = trim($choiceText);
+
+        if (isset($nodes[$normalizedChoice])) {
+            $plotPoint = $nodes[$normalizedChoice]['content'];
+            $aiContent = $this->expandWithAI($plotPoint, [
+                'previousStory' => $previousStory,
+                'choice' => $normalizedChoice,
+                'genre' => $genre,
+                'location' => $location
+            ]);
+
+            return [
+                'content' => $aiContent,
+                'choices' => $nodes[$normalizedChoice]['choices'],
+                'is_ending' => $nodes[$normalizedChoice]['is_ending'],
+                'image' => $nodes[$normalizedChoice]['image'] ?? 'wallpaperhorror.jpeg'
+            ];
+        }
+
+        return [
+            'content' => "Kisahmu telah mencapai garis akhir secara misterius. Petualangan telah selesai.",
+            'choices' => [],
+            'is_ending' => true,
+            'image' => 'wallpaperhorror.jpeg'
+        ];
+    }
+
+    protected function expandWithAI($plotPoint, $contextData = [])
+    {
+        $context = "";
+        if (!empty($contextData['userName'])) {
+            $context .= "Tokoh utama adalah {$contextData['userName']} ({$contextData['gender']}). ";
+        }
+        if (!empty($contextData['previousStory'])) {
+            $shortPrev = mb_substr(trim($contextData['previousStory']), -800);
+            $context .= "Cerita sebelumnya: \"{$shortPrev}\". Tokoh memilih opsi: \"{$contextData['choice']}\". ";
+        }
+
+        $prompt = "Kamu adalah penulis buku cerita anak-anak bergaya horor ringan dalam bahasa Indonesia. {$context} Tulis ulang plot berikut dengan gaya BUKU CERITA ANAK: kalimat pendek dan sederhana, ada dialog antar tokoh dengan tanda kutip, pisahkan setiap adegan menjadi paragraf baru, gunakan kata-kata yang mudah dipahami anak SD. Panjang: 3-4 paragraf pendek. Plot dasar: \"{$plotPoint}\". HANYA outputkan teks ceritanya saja, tanpa judul, tanpa opsi pilihan, tanpa salam pembuka.";
+
+        try {
+            // Coba Hugging Face dengan model Zephyr yang lebih stabil untuk Free API
+            $response = Http::withToken($this->apiKey)
+                ->timeout(15)
+                ->post("https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta", [
+                    'inputs' => "<|system|>\nKamu adalah penulis cerita petualangan anak dan horor ringan yang memakai bahasa gaul sehari-hari yang mudah dimengerti.<|end|>\n<|user|>\n{$prompt}<|end|>\n<|assistant|>\n",
+                    'parameters' => [
+                        'max_new_tokens' => 200,
+                        'return_full_text' => false,
+                        'temperature' => 0.8,
+                        'top_p' => 0.9,
+                        'do_sample' => true
+                    ]
+                ]);
+
+            if ($response->successful()) {
+                $result = $response->json();
+                $text = $result[0]['generated_text'] ?? '';
+                $text = trim(preg_replace('/^"|"$/', '', $text));
+                if (!empty($text)) {
+                    return $text;
+                }
+            }
+
+            Log::warning("HF failed: " . substr($response->body(), 0, 200));
+        } catch (\Exception $e) {
+            Log::warning("HF exception: " . $e->getMessage());
+        }
+
+        // Fallback ke Pollinations dengan Retry Mechanism (untuk mengatasi Queue Full 429)
+        $maxRetries = 4;
+        for ($i = 0; $i < $maxRetries; $i++) {
+            try {
+                $seed = rand(1, 999999);
+                $response = Http::timeout(30)
+                    ->withHeaders(['Content-Type' => 'application/json'])
+                    ->post("https://text.pollinations.ai/openai", [
+                        'messages' => [
+                            ['role' => 'system', 'content' => 'Anda adalah pendongeng dengan gaya bahasa yang sangat sederhana, gampang dimengerti semua umur, dan tidak memakai kata-kata kiasan yang susah.'],
+                            ['role' => 'user', 'content' => $prompt]
+                        ],
+                        'model' => 'openai',
+                        'seed' => $seed,
+                        'jsonMode' => false
+                    ]);
+                
+                if ($response->successful()) {
+                    $result = $response->json();
+                    $text = $result['choices'][0]['message']['content'] ?? '';
+                    $text = trim(preg_replace('/^"|"$/', '', $text));
+                    if (!empty($text)) {
+                        return $text;
+                    }
+                } elseif ($response->status() === 429) {
+                    // Jika queue penuh, tunggu 2-3 detik lalu coba lagi
+                    sleep(rand(2, 3));
+                    continue;
+                } else {
+                    Log::warning("Pollinations failed (Status {$response->status()}): " . substr($response->body(), 0, 200));
+                    break;
+                }
+            } catch (\Exception $e) {
+                Log::warning("Pollinations exception (Retry {$i}): " . $e->getMessage());
+                sleep(2);
+            }
+        }
+
+        // Jika semua AI gagal, gunakan plot dasar sebagai fallback
+        return $plotPoint;
+    }
+}
