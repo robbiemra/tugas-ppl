@@ -13,7 +13,7 @@ class StoryGenerator
     {
         if ($genre === 'Horror' && $location === 'Pendakian') {
             return [
-                'content' => "Malam mulai turun ketika kamu, Nana, dan Beni tiba di pos pertama Gunung Panggung. Tenda sudah berdiri. Api unggun menyala hangat menembus kabut dingin. Semuanya terasa normal — sampai Nana tiba-tiba berhenti bicara dan berbisik ketakutan, \"Ssst. Dengar itu...\" Sunyi total. Lalu bisikan itu datang. Sangat pelan, bagaikan angin yang tahu namamu, memanggil tanpa henti dari kegelapan hutan. Apa yang akan kalian lakukan?",
+                'content' => "Malam turun saat kamu, Nana, dan Beni tiba di jalur pendakian Gunung Panggung. Kabut menelan pepohonan, api unggun mulai redup, lalu terdengar bisikan tipis dari balik semak, memanggil namamu seolah sudah lama menunggu. Nana menggenggam lenganmu, wajahnya pucat. Beni menyorotkan senter, tapi cahaya hanya memantul pada batang-batang basah. Bisikan itu makin dekat, lembut sekaligus memaksa, seperti janji keselamatan dari tempat yang salah. Di antara napas kalian yang tertahan, gunung terasa ikut mendengar. Apa yang akan kamu lakukan?",
                 'choices' => [
                     ['choice_text' => 'Ikuti bisikan'],
                     ['choice_text' => 'Abaikan bisikan']
@@ -42,9 +42,10 @@ class StoryGenerator
 
         if ($genre === 'Adventure' && $location === 'Gua Misterius') {
             return [
-                'content' => "Kamu sedang asyik berkemah di hutan bersama teman-teman. Saat sedang mencari kayu bakar sendirian, tanpa sengaja kamu menemukan sebuah lubang sangat besar di tanah yang tertutup oleh semak-semak lebat.",
+                'content' => "Kamu, Nana, dan Beni menyusuri Gua Misterius ketika cahaya senter menangkap pintu bunker berkarat di balik stalaktit basah. Engselnya menjerit saat Beni mendorongnya, lalu udara dingin dan lembap menyembur dari dalam. Nana berbisik agar kalian hati-hati, tapi rasa penasaran membuatmu melangkah masuk. Lorong bunker gelap membelah ke dua arah, dindingnya penuh bekas goresan dan pipa tua yang menetes pelan. Dari kejauhan terdengar bunyi logam dipukul, sekali, lalu hilang. Kalian berdiri di persimpangan pertama. Jalur mana yang kamu pilih?",
                 'choices' => [
-                    ['choice_text' => 'Dekati lubang itu']
+                    ['choice_text' => 'Pilih jalur kiri'],
+                    ['choice_text' => 'Pilih jalur kanan']
                 ]
             ];
         }
@@ -161,7 +162,7 @@ class StoryGenerator
                     'image' => 'Horror/Pendakian/alur 2.2.1.2 dihadang oleh hantu dan memegang keris.png'
                 ],
                 'Lawan Hantu' => [
-                    'content' => "Dengan keberanian yang membara, kamu mencabut keris pusaka itu dari sarungnya dan mengayunkannya ke arah hantu raksasa yang menyerang. Bilah keris mengeluarkan pendaran cahaya keemasan yang sangat terang, membakar kabut hitam di sekelilingnya. Hantu raksasa itu menjerit kesakitan saat tergores oleh energi pusaka, lalu hancur lebur menjadi abu hitam yang tertiup angin gunung. Jalan setapak kembali tenang dan terang. Dengan pusaka sakti di tanganmu, kamu memimpin Nana dan Beni turun dari gunung dengan selamat, dihormati oleh entitas gaib sebagai penyelamat mereka. (ENDING 7)",
+                    'content' => "Dengan sisa keberanian, kamu mengangkat keris pusaka saat hantu itu menerjang. Nana menahan tangis di belakangmu, sementara Beni menyorotkan senter tepat ke wajah makhluk itu. Bilah keris memancarkan cahaya pucat, membelah kabut hitam yang mengurung jalan. Hantu itu menjerit, mundur, lalu lenyap menjadi abu dingin di antara pepohonan. Untuk pertama kalinya, gunung kembali sunyi tanpa bisikan. Kamu membawa Nana dan Beni turun dengan selamat. Meski tubuh gemetar, hatimu akhirnya tenang. (ENDING 7)",
                     'choices' => [],
                     'is_ending' => true,
                     'image' => 'Horror/Pendakian/alur 2.2.1.2.4 ending disegani.png'
@@ -367,86 +368,78 @@ class StoryGenerator
 
         if ($genre === 'Adventure' && $location === 'Gua Misterius') {
             return [
-                'Dekati lubang itu' => [
-                    'content' => "Kamu mengintip ke bawah lubang gelap itu, tapi tiba-tiba tanah yang kamu injak longsor! Kamu terjatuh ke dasar gua bawah tanah. Di hadapanmu, ada dinding batu yang memancarkan cahaya biru terang.",
+                'Pilih jalur kiri' => [
+                    'content' => "Kamu memilih jalur kiri. Nana mengikuti dari belakang, sementara Beni menjaga senter tetap mengarah ke depan. Lorong itu berakhir di ruang kontrol berdebu, penuh tombol mati dan layar retak. Di atas meja, sebuah radio tua tiba-tiba menyala sendiri. Suaranya pecah, berat, dan seperti datang dari dasar bunker. \"Tolong... jangan biarkan kami di bawah.\" Nana menatapmu tegang. Beni menggeleng, yakin itu jebakan. Radio kembali berderak, kali ini menyebut namamu. Apa yang akan kamu lakukan?",
                     'choices' => [
-                        ['choice_text' => 'Masuk mencari tahu'],
-                        ['choice_text' => 'Cari kayu bakar dulu']
+                        ['choice_text' => 'Jawab radio'],
+                        ['choice_text' => 'Matikan radio']
                     ],
                     'is_ending' => false
                 ],
-                'Masuk mencari tahu' => [
-                    'content' => "Gua bawah tanah ini sangat megah seperti kuil kuno. Kamu berjalan ke ujung ruangan dan menemukan dua gerbang raksasa: Gerbang Emas dan Gerbang Batu.",
+                'Jawab radio' => [
+                    'content' => "Kamu menekan tombol bicara. Suara di radio langsung memandu kalian menuju tangga besi yang turun ke ruang bawah. Nana membaca angka-angka di dinding, Beni memastikan pintu di belakang masih terbuka. Dari bawah, terdengar rintihan minta tolong, lemah tapi nyata. Instruksi radio meminta kalian turun sekarang sebelum sistem bunker terkunci. Udara makin dingin, dan lampu darurat berkedip merah. Nana ingin menolong. Beni takut kalian sedang dipancing masuk lebih dalam. Keputusan ada padamu.",
                     'choices' => [
-                        ['choice_text' => 'Pilih Gerbang Emas'],
-                        ['choice_text' => 'Pilih Gerbang Batu']
+                        ['choice_text' => 'Turun menolong'],
+                        ['choice_text' => 'Kabur']
                     ],
                     'is_ending' => false
                 ],
-                'Cari kayu bakar dulu' => [
-                    'content' => "Di luar gua, langit jadi gelap dan hujan badai turun sangat lebat. Angin kencang membuatmu harus cepat cari tempat sembunyi.",
+                'Turun menolong' => [
+                    'content' => "Kamu turun bersama Nana dan Beni melewati anak tangga licin. Di ruang bawah, kalian menemukan penjaga tua terluka, terjepit rak besi yang roboh. Beni mengangkat rak itu sekuat tenaga, Nana membalut lukanya, dan kamu menuntunnya menuju pintu darurat. Radio tua kembali berbunyi, kali ini hanya berisi ucapan terima kasih. Penjaga itu membuka panel rahasia menuju mulut gua. Kalian semua keluar saat fajar menyentuh batu basah. Petualangan berakhir dengan semua selamat. (ENDING 1)",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Kabur' => [
+                    'content' => "Kamu memilih kabur. Nana dan Beni berlari mengikutimu melewati ruang kontrol, tapi bunker seperti berubah bentuk. Pintu berkarat yang tadi terbuka kini menutup otomatis dengan dentuman keras. Beni mencoba mencongkelnya, Nana memanggil bantuan, namun radio hanya memutar tawa statis. Lampu mati satu per satu, menyisakan gelap yang makin rapat. Dari bawah, suara langkah naik perlahan. Kalian terjebak di dalam bunker, dan tidak ada yang tahu pintu itu pernah ditemukan. (ENDING 2)",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Matikan radio' => [
+                    'content' => "Kamu memutar tombol radio sampai suaranya mati. Sesaat bunker hening, lalu seluruh lampu padam mendadak. Nana menarik napas panik. Beni menyorotkan senter ke ujung ruangan, tepat saat deretan robot penjaga tua aktif, mata sensornya menyala merah. Roda besi mereka bergerak, pelan tapi pasti, mengepung kalian dari tiga sisi. Tanpa radio, tidak ada instruksi, tidak ada pintu darurat yang terbuka. Jerit kalian tenggelam di ruang kontrol berdebu. Petualangan berakhir di tangan mesin penjaga. (ENDING 3)",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Pilih jalur kanan' => [
+                    'content' => "Kamu memilih jalur kanan. Lorongnya lebih sempit dan berbau besi tua. Nana menunjuk rak-rak runtuh berisi senjata berkarat, sementara Beni menemukan peti rahasia di sudut gudang. Ukiran di tutupnya tertutup debu, tetapi kuncinya sudah retak. Sebelum kalian sempat memutuskan, terdengar suara langkah berat mendekat dari lorong belakang. Gudang terasa makin sesak. Peti itu mungkin menyimpan alat untuk bertahan, atau bahaya yang lebih buruk. Apa yang akan kamu lakukan?",
                     'choices' => [
-                        ['choice_text' => 'Lari ke dalam gua'],
-                        ['choice_text' => 'Naik ke atas pohon']
+                        ['choice_text' => 'Buka peti'],
+                        ['choice_text' => 'Lanjutkan perjalanan']
                     ],
                     'is_ending' => false
                 ],
-                'Pilih Gerbang Emas' => [
-                    'content' => "Ternyata Gerbang Emas penuh dengan jebakan lubang! Lantai batu jebol dan kamu jatuh ke kolam air bawah tanah yang sangat dalam.",
+                'Buka peti' => [
+                    'content' => "Kamu membuka peti rahasia itu. Engselnya berderit, lalu gas beracun hijau pucat menyembur keluar. Nana menutup hidungnya dengan syal, Beni menarikmu mundur, tapi di dalam peti terlihat gulungan logam dan map tua. Langkah dari lorong semakin dekat. Matamu perih, napasmu mulai berat, dan waktu untuk berpikir hampir habis. Peti itu bisa ditutup agar kalian selamat, atau kamu bisa nekat mengambil isinya sebelum gas memenuhi gudang.",
                     'choices' => [
-                        ['choice_text' => 'Berenang ke tepi'],
-                        ['choice_text' => 'Menyelam lebih dalam']
+                        ['choice_text' => 'Tutup peti'],
+                        ['choice_text' => 'Ambil isi']
                     ],
                     'is_ending' => false
                 ],
-                'Pilih Gerbang Batu' => [
-                    'content' => "Di balik pintu Gerbang Batu terdapat naga ajaib yang tersenyum ramah. Naga ini sedang menjaga tumpukan berlian dan koin emas yang tak terhitung jumlahnya.",
+                'Tutup peti' => [
+                    'content' => "Kamu membanting tutup peti sebelum gas memenuhi paru-paru kalian. Beni menyeret Nana keluar gudang, lalu kalian kabur melewati lorong sempit sampai udara gua kembali terasa segar. Dari jauh, suara langkah berhenti tepat di depan peti itu. Kalian selamat, tetapi rasa penasaran menggantung seperti kabut. Apa isi peti itu? Siapa yang menjaganya? Pertanyaan itu terus mengikuti kalian sampai keluar dari Gua Misterius. (ENDING 4)",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Ambil isi' => [
+                    'content' => "Kamu menahan napas dan meraih isi peti. Nana membuka jalan, Beni menarikmu keluar sebelum gas menelan gudang. Di tanganmu ada dokumen rahasia berstempel pemerintah lama, berisi peta bunker, catatan eksperimen, dan lokasi ruang tersembunyi. Saat kalian menyerahkannya ke pihak berwenang, penemuan itu menggemparkan banyak orang. Nama kamu, Nana, dan Beni dikenal sebagai penjelajah yang membongkar misteri besar di balik gua itu. (ENDING 5)",
+                    'choices' => [],
+                    'is_ending' => true
+                ],
+                'Lanjutkan perjalanan' => [
+                    'content' => "Kamu memilih meninggalkan peti dan melanjutkan perjalanan. Nana menyapu dinding dengan senter, menemukan peta kuno yang digores langsung pada batu. Beni mengikuti garisnya hingga menemukan terowongan rahasia tersembunyi di balik rak besi. Dari dalamnya mengalir udara hangat dan aroma tanah basah. Peta itu menunjukkan simbol harta, tetapi juga tanda bahaya di ujung jalur. Kalian bisa masuk ke terowongan itu, atau kembali untuk melapor sebelum semuanya makin berisiko.",
                     'choices' => [
-                        ['choice_text' => 'Sapa naga itu'],
-                        ['choice_text' => 'Curi berlian dan lari']
+                        ['choice_text' => 'Masuk terowongan'],
+                        ['choice_text' => 'Kembali']
                     ],
                     'is_ending' => false
                 ],
-                'Lari ke dalam gua' => [
-                    'content' => "Kamu kembali ke gua supaya tidak kehujanan. Waktu sedang duduk, kamu menyadari dinding gua sebelah kiri retak dan seperti bisa didorong.",
-                    'choices' => [
-                        ['choice_text' => 'Masuk ke jalan rahasia'],
-                        ['choice_text' => 'Tidur menunggu hujan']
-                    ],
-                    'is_ending' => false
-                ],
-                'Naik ke atas pohon' => [
-                    'content' => "Badai sangat kencang dan tiba-tiba petir menyambar dahan pohon tempatmu duduk. Kamu terjatuh pingsan dan petualanganmu terhenti.",
+                'Masuk terowongan' => [
+                    'content' => "Kamu masuk ke terowongan rahasia bersama Nana dan Beni. Jalurnya panjang, sempit, dan dipenuhi akar yang menembus langit-langit batu. Di ujungnya, kalian menemukan ruangan bundar berisi peti harta karun tua: emas, batu mulia, dan artefak yang belum pernah tercatat. Beni tertawa tidak percaya, Nana memotret semuanya sebagai bukti. Setelah dilaporkan resmi, kalian mendapat penghargaan dan bagian penemuan. Hidupmu berubah menjadi kaya dari misteri gua itu. (ENDING 6)",
                     'choices' => [],
                     'is_ending' => true
                 ],
-                'Berenang ke tepi' => [
-                    'content' => "Dengan gigih kamu berenang ke tepi tebing batu. Di sana ada tangga rahasia yang mengantarmu kembali ke desa. Petualangan usai dengan selamat.",
-                    'choices' => [],
-                    'is_ending' => true
-                ],
-                'Menyelam lebih dalam' => [
-                    'content' => "Makin dalam kamu menyelam, kamu melihat kota bawah air ajaib. Putri duyung menyambutmu untuk ikut tinggal selamanya di istana air.",
-                    'choices' => [],
-                    'is_ending' => true
-                ],
-                'Sapa naga itu' => [
-                    'content' => "Kamu berkata 'Halo!' kepada si naga. Naga itu sangat senang karena punya teman, lalu menghadiahimu kalung emas paling indah. Kamu pulang membawa kejayaan.",
-                    'choices' => [],
-                    'is_ending' => true
-                ],
-                'Curi berlian dan lari' => [
-                    'content' => "Karena serakah, kamu mengambil berlian raksasa dan kabur. Naga itu marah besar dan langsung menyemburkan api ke arahmu. Tamat.",
-                    'choices' => [],
-                    'is_ending' => true
-                ],
-                'Masuk ke jalan rahasia' => [
-                    'content' => "Dinding batu kamu dorong kuat-kuat. Wah, jalan rahasia ini tembus langsung ke harta karun milik raja purba. Petualangan yang sangat sukses!",
-                    'choices' => [],
-                    'is_ending' => true
-                ],
-                'Tidur menunggu hujan' => [
-                    'content' => "Karena kedinginan, kamu ketiduran sangat pulas. Sayangnya saat bangun pintu gua tertutup karena longsor, membuatmu terjebak di dalam tanpa jalan keluar.",
+                'Kembali' => [
+                    'content' => "Kamu memilih kembali. Nana setuju karena peta kuno itu terlalu berbahaya untuk dijelajahi tanpa persiapan, dan Beni menandai jalur keluar agar tidak tersesat. Setelah keluar dari gua, kalian melapor ke pemerintah tentang bunker, gudang, dan terowongan rahasia. Penyelidikan besar pun dimulai. Karena kamu, Nana, dan Beni paling memahami jalurnya, kalian diminta menjadi pemandu resmi ekspedisi Gua Misterius. (ENDING 7)",
                     'choices' => [],
                     'is_ending' => true
                 ]
