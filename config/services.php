@@ -39,4 +39,10 @@ return [
         'key' => env('HUGGINGFACE_API_KEY'),
     ],
 
+    'openai' => [
+        'key' => env('OPENAI_API_KEY'),
+        'url' => env('OPENAI_API_URL', 'https://api.openai.com/v1/chat/completions'),
+        'model' => env('OPENAI_API_MODEL', 'gpt-4o-mini'),
+    ],
+
 ];
