@@ -183,13 +183,9 @@ class GameEngine extends Component
         $this->storyStep++;
 
         // Generate next segment via AI
-        $nextSegment = $generator->generateNextSegment(
+        $nextSegment = $generator->generateNextNode(
             $history->accumulated_story, 
-            $choiceText, 
-            $isEndingChoice ? $this->maxSteps : $this->storyStep, // Paksa ke maxSteps jika pilihan ending
-            $this->maxSteps,
-            $this->selectedGenre,
-            $this->selectedLocation
+            $choiceText
         );
 
         if (!$nextSegment || !isset($nextSegment['content'])) {
@@ -213,8 +209,8 @@ class GameEngine extends Component
         if ($history) {
             $storyPages = $history->full_story_json ?: [];
             
-            $rawImagePath = $nextSegment['image'] ?? 'wallpaperhorror.jpeg';
-            $imageUrl = asset($rawImagePath);
+            $rawImagePath = $nextSegment['image'] ?? null;
+            $imageUrl = $rawImagePath ? asset($rawImagePath) : $this->aiImageUrl;
 
             $storyPages[] = [
                 'content' => $this->currentNode['content'],
@@ -228,9 +224,11 @@ class GameEngine extends Component
             $history->save();
         }
 
-        $rawImagePath = $nextSegment['image'] ?? 'wallpaperhorror.jpeg';
-        $this->aiImageUrl = asset($rawImagePath);
-        $this->bgImageUrl = $this->aiImageUrl;
+        $rawImagePath = $nextSegment['image'] ?? null;
+        if ($rawImagePath) {
+            $this->aiImageUrl = asset($rawImagePath);
+            $this->bgImageUrl = $this->aiImageUrl;
+        }
 
         if ($this->currentNode['is_ending']) {
             $this->step = 'ending';
