@@ -14,8 +14,9 @@
         <div class="relative z-10">
             {{-- Top Navbar for Auth --}}
             <div class="flex justify-between items-center mb-8 bg-black/40 p-4 rounded-xl border border-amber-900/30 backdrop-blur-sm">
-                <div class="text-amber-500 font-bold tracking-widest uppercase text-sm flex items-center gap-2">
-                    <span class="text-xl">🕯️</span> Horror Engine
+                <div class="text-amber-500 font-bold tracking-widest uppercase text-sm flex items-center gap-3">
+                    <img src="{{ asset('images/Gemini_Generated_Image_p9lajmp9lajmp9la.png') }}" alt="NarraTech" class="h-9 w-auto" />
+                    <span class="hidden sm:inline">NarraTech Engine</span>
                 </div>
                 <div>
                     @auth
@@ -57,27 +58,27 @@
 
                     {{-- Title --}}
                     <div class="mb-12">
-                        <h1 class="horror-title text-4xl md:text-6xl mb-4">Pendakian Misteri</h1>
-                        <p class="horror-subtitle text-lg md:text-xl text-amber-400/60 uppercase">Mulai Petualanganmu, Pendaki</p>
+                        <h1 class="horror-title text-4xl md:text-6xl mb-4">NarraTech v1.0</h1>
+                        <p class="horror-subtitle text-lg md:text-xl text-amber-400/60 uppercase">Memulai petualangan cerita secara otomatis</p>
                         <div class="w-32 h-[2px] mx-auto mt-4 bg-gradient-to-r from-transparent via-amber-900 to-transparent"></div>
                     </div>
 
                     {{-- Form --}}
                     <div class="horror-card rounded-xl p-8 md:p-10 w-full max-w-md space-y-5">
                         <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">🩸 Nama Pendaki</label>
+                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Nama Pemain</label>
                             <input type="text" wire:model="userName" placeholder="Siapa namamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
                         </div>
 
                         <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">💀 Usia</label>
+                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Usia</label>
                             <input type="number" wire:model="userAge" placeholder="Berapa usiamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
                         </div>
 
                         <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">👤 Gender</label>
+                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Gender</label>
                             <select wire:model="gender" class="horror-input w-full p-4 rounded-lg text-lg">
                                 <option value="">Pilih Gender...</option>
                                 <option value="Laki-laki">Laki-laki</option>
@@ -90,7 +91,7 @@
                                        bg-gradient-to-r from-amber-900 to-amber-800 text-amber-100
                                        hover:from-amber-800 hover:to-amber-700 transition-all duration-300
                                        border border-amber-700/50">
-                            ⛰️ Mulai Petualangan Baru
+                            Mulai Petualangan Baru
                         </button>
 
                         @auth
