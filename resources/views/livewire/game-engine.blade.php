@@ -373,7 +373,7 @@
                 <button wire:click="closeAuthModal" class="absolute top-4 right-4 text-amber-500/50 hover:text-amber-400 text-xl">&times;</button>
                 
                 <h3 class="horror-subtitle text-2xl text-amber-500 mb-6 text-center">
-                    {{ $authMode === 'login' ? 'Masuk ke Dunia Gelap' : 'Daftar Ritual Baru' }}
+                    {{ $authMode === 'login' ? 'Masuk ke Akun Anda' : 'Daftar Ritual Baru' }}
                 </h3>
 
                 @if($authMode === 'login')
