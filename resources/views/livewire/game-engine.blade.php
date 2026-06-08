@@ -14,8 +14,9 @@
         <div class="relative z-10">
             {{-- Top Navbar for Auth --}}
             <div class="flex justify-between items-center mb-8 bg-black/40 p-4 rounded-xl border border-amber-900/30 backdrop-blur-sm">
-                <div class="text-amber-500 font-bold tracking-widest uppercase text-sm flex items-center gap-2">
-                    <span class="text-xl">🕯️</span> Horror Engine
+                <div class="text-amber-500 font-bold tracking-widest uppercase text-sm flex items-center gap-3">
+                    <img src="{{ asset('images/Gemini_Generated_Image_p9lajmp9lajmp9la.png') }}" alt="NarraTech" class="h-9 w-auto" />
+                    <span class="hidden sm:inline">NarraTech Engine</span>
                 </div>
                 <div>
                     @auth
@@ -33,6 +34,16 @@
                 </div>
             </div>
 
+            <div wire:ignore class="fixed top-4 right-4 z-50">
+                <button id="musicToggleBtn" type="button"
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full text-xl bg-amber-900/80 text-amber-100 hover:bg-amber-800/90 border border-amber-700 shadow-lg backdrop-blur-sm transition"
+                        aria-label="Toggle music"
+                        title="Toggle music">
+                    🔇
+                </button>
+                <audio id="backgroundMusic" src="{{ asset('audio/horror-pendakian.mp3') }}" preload="auto" loop></audio>
+            </div>
+
             @if (session()->has('error'))
                 <div class="bg-amber-900/30 border border-amber-800/60 p-4 rounded-lg mb-6 text-amber-300 font-bold text-center story-text backdrop-blur-sm">
                     ⚠ {{ session('error') }}
@@ -47,27 +58,27 @@
 
                     {{-- Title --}}
                     <div class="mb-12">
-                        <h1 class="horror-title text-4xl md:text-6xl mb-4">Pendakian Misteri</h1>
-                        <p class="horror-subtitle text-lg md:text-xl text-amber-400/60 uppercase">Mulai Petualanganmu, Pendaki</p>
+                        <h1 class="horror-title text-4xl md:text-6xl mb-4">NarraTech v1.0</h1>
+                        <p class="horror-subtitle text-lg md:text-xl text-amber-400/60 uppercase">Memulai petualangan cerita secara otomatis</p>
                         <div class="w-32 h-[2px] mx-auto mt-4 bg-gradient-to-r from-transparent via-amber-900 to-transparent"></div>
                     </div>
 
                     {{-- Form --}}
                     <div class="horror-card rounded-xl p-8 md:p-10 w-full max-w-md space-y-5">
                         <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">🩸 Nama Pendaki</label>
+                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Nama Pemain</label>
                             <input type="text" wire:model="userName" placeholder="Siapa namamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
                         </div>
 
                         <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">💀 Usia</label>
+                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Usia</label>
                             <input type="number" wire:model="userAge" placeholder="Berapa usiamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
                         </div>
 
                         <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">👤 Gender</label>
+                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Gender</label>
                             <select wire:model="gender" class="horror-input w-full p-4 rounded-lg text-lg">
                                 <option value="">Pilih Gender...</option>
                                 <option value="Laki-laki">Laki-laki</option>
@@ -80,7 +91,7 @@
                                        bg-gradient-to-r from-amber-900 to-amber-800 text-amber-100
                                        hover:from-amber-800 hover:to-amber-700 transition-all duration-300
                                        border border-amber-700/50">
-                            ⛰️ Mulai Petualangan Baru
+                            Mulai Petualangan Baru
                         </button>
 
                         @auth
@@ -141,7 +152,7 @@
 
                     <div class="w-full max-w-lg space-y-4">
                         @if($selectedGenre === 'Horror')
-                            <button type="button" wire:click="startStory('Pendakian')"
+                            <button type="button" wire:click="startStory('Pendakian')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
                                            flex justify-between items-center transition-all duration-300">
@@ -155,7 +166,7 @@
                                 <span class="text-2xl text-amber-700 group-hover:text-amber-500 group-hover:translate-x-2 transition-all">→</span>
                             </button>
 
-                            <button type="button" wire:click="startStory('Rumah Sakit')"
+                            <button type="button" wire:click="startStory('Rumah Sakit')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
                                            flex justify-between items-center transition-all duration-300">
@@ -169,7 +180,7 @@
                                 <span class="text-2xl text-amber-700 group-hover:text-amber-500 group-hover:translate-x-2 transition-all">→</span>
                             </button>
                         @elseif($selectedGenre === 'Adventure')
-                            <button type="button" wire:click="startStory('Pulau Terpencil')"
+                            <button type="button" wire:click="startStory('Pulau Terpencil')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
                                            flex justify-between items-center transition-all duration-300">
@@ -183,7 +194,7 @@
                                 <span class="text-2xl text-amber-700 group-hover:text-amber-500 group-hover:translate-x-2 transition-all">→</span>
                             </button>
 
-                            <button type="button" wire:click="startStory('Gua Misterius')"
+                            <button type="button" wire:click="startStory('Gua Misterius')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
                                            flex justify-between items-center transition-all duration-300">
@@ -252,8 +263,8 @@
                         </div>
                     </div>
 
-                    {{-- Pilihan Cerita (Fixed di Kanan Bawah Layar) --}}
-                    <div class="fixed bottom-4 right-4 md:bottom-8 md:right-8 w-full max-w-sm lg:max-w-md z-40">
+                    {{-- Pilihan Cerita (Fixed di Kiri Bawah Layar) --}}
+                    <div class="fixed bottom-4 left-4 md:bottom-8 md:left-8 w-full max-w-sm lg:max-w-md z-40">
                         <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]">
                             <div class="mb-4">
                                 <p class="text-xs text-amber-400/20 story-text italic mb-2">Setiap pilihan menentukan nasibmu...</p>
@@ -308,6 +319,8 @@
                     </div>
                 </div>
 
+                    {{-- Backsound Musik Pendakian Horor --}}
+                    
             {{-- ═══════════════════════════════════════════════════ --}}
             {{-- 5. ENDING --}}
             {{-- ═══════════════════════════════════════════════════ --}}
@@ -360,7 +373,7 @@
                 <button wire:click="closeAuthModal" class="absolute top-4 right-4 text-amber-500/50 hover:text-amber-400 text-xl">&times;</button>
                 
                 <h3 class="horror-subtitle text-2xl text-amber-500 mb-6 text-center">
-                    {{ $authMode === 'login' ? 'Masuk ke Dunia Gelap' : 'Daftar Ritual Baru' }}
+                    {{ $authMode === 'login' ? 'Masuk ke Akun Anda' : 'Daftar Ritual Baru' }}
                 </h3>
 
                 @if($authMode === 'login')
