@@ -321,6 +321,6 @@ class GameEngine extends Component
 
     public function render()
     {
-        return view('livewire.game-engine')->layout('components.layouts.app');
+        return view('livewire.game-engine')->layout('livewire.components.layouts.app');
     }
 }
