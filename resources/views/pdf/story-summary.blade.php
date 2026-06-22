@@ -7,20 +7,20 @@
         @page {
             size: A4;
             margin: 20mm 20mm 20mm 20mm;
-            background-color: #0a0a0f;
+            background-color: #fbfaf5;
         }
         body { 
             font-family: 'Courier', monospace; 
-            color: #d4c5a9; /* Warna tulang */
+            color: #2c2520; /* Warna tulisan gelap vintage */
             line-height: 1.8; 
-            background-color: #0a0a0f;
+            background-color: #fbfaf5;
         }
         .book-frame {
             border: 4px solid #8b0000;
             padding: 30px;
             min-height: 100vh;
             box-sizing: border-box;
-            background-color: #12121c;
+            background-color: #fdfcf7;
             border-radius: 5px;
         }
         .header {
@@ -37,11 +37,11 @@
             text-transform: uppercase;
             letter-spacing: 5px;
             margin: 0;
-            text-shadow: 2px 2px 4px #000;
+            text-shadow: 1px 1px 2px #ccc;
         }
         .subtitle {
             font-size: 14px;
-            color: #d4c5a9;
+            color: #5c524b;
             font-style: italic;
             margin-top: 10px;
             letter-spacing: 2px;
@@ -49,11 +49,11 @@
         .meta-box {
             font-family: 'Helvetica', sans-serif;
             font-size: 11px;
-            background-color: #1a1a2e;
+            background-color: #f3efe6;
             padding: 15px;
             margin-bottom: 30px;
             border-left: 5px solid #8b0000;
-            color: #d4c5a9;
+            color: #2c2520;
         }
         .story-text {
             font-size: 14pt;
@@ -92,7 +92,7 @@
             width: 100%;
             max-width: 400px;
             border: 3px solid #8b0000;
-            box-shadow: 5px 5px 15px #000;
+            box-shadow: 3px 3px 10px #bbb;
         }
         
         .chapter-label {
@@ -109,7 +109,7 @@
             text-align: center; 
             margin-top: 30px; 
             font-size: 11px; 
-            color: #d4c5a9;
+            color: #5c524b;
             border-top: 1px solid #8b0000;
             padding-top: 5px;
         }
@@ -135,7 +135,12 @@
         @foreach($storyPages as $index => $page)
             <div class="story-page">
                 <div class="page-layout">
-                    @if(isset($page['image']) && $page['image'])
+                    @if(isset($page['image_base64']) && $page['image_base64'])
+                    <div class="image-container">
+                        <img src="{{ $page['image_base64'] }}" class="story-image" alt="Scene {{ $index + 1 }}">
+                        <div class="chapter-label">Bagian {{ $index + 1 }}</div>
+                    </div>
+                    @elseif(isset($page['image']) && $page['image'])
                     <div class="image-container">
                         <img src="{{ $page['image'] }}" class="story-image" alt="Scene {{ $index + 1 }}">
                         <div class="chapter-label">Bagian {{ $index + 1 }}</div>

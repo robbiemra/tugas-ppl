@@ -15,7 +15,7 @@
             {{-- Top Navbar for Auth --}}
             <div class="flex justify-between items-center mb-8 bg-black/40 p-4 rounded-xl border border-amber-900/30 backdrop-blur-sm">
                 <div class="text-amber-500 font-bold tracking-widest uppercase text-sm flex items-center gap-3">
-                    <img src="{{ asset('images/Gemini_Generated_Image_p9lajmp9lajmp9la.png') }}" alt="NarraTech" class="h-9 w-auto" />
+                    <img src="{{ asset('images/Gemini_Generated_Image_p9lajmp9lajmp9la.png') }}" alt="NarraTech" class="h-6 md:h-7 w-auto transition-all duration-300" />
                     <span class="hidden sm:inline">NarraTech Engine</span>
                 </div>
                 <div>
@@ -220,11 +220,11 @@
             {{-- 4. GAMEPLAY --}}
             {{-- ═══════════════════════════════════════════════════ --}}
             @elseif($step === 'gameplay')
-                <div class="relative py-4 pb-48"> {{-- Added padding bottom to prevent overlap with choices --}}
+                <div class="max-w-4xl mr-auto space-y-6 pb-20">
 
-                    {{-- Sisi Kiri: Konten Cerita (Fixed di Kiri Atas Layar) --}}
-                    <div class="fixed top-32 left-4 md:left-8 w-full max-w-lg lg:max-w-2xl z-30">
-                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col relative overflow-y-auto custom-scrollbar bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]" style="max-height: 65vh;">
+                    {{-- Konten Cerita --}}
+                    <div class="z-30">
+                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col relative overflow-y-auto custom-scrollbar bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]" style="max-height: 70vh;">
                             {{-- Loading Overlay for AI Generation --}}
                             <div wire:loading wire:target="startStory, selectChoice"
                                  class="absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-20 rounded-xl">
@@ -263,8 +263,8 @@
                         </div>
                     </div>
 
-                    {{-- Pilihan Cerita (Fixed di Kiri Bawah Layar) --}}
-                    <div class="fixed bottom-4 left-4 md:bottom-8 md:left-8 w-full max-w-sm lg:max-w-md z-40">
+                    {{-- Pilihan Cerita --}}
+                    <div class="z-40">
                         <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]">
                             <div class="mb-4">
                                 <p class="text-xs text-amber-400/20 story-text italic mb-2">Setiap pilihan menentukan nasibmu...</p>
@@ -372,9 +372,12 @@
             <div class="horror-card rounded-xl p-8 max-w-md w-full relative border border-amber-900/50 bg-[#140f0a]">
                 <button wire:click="closeAuthModal" class="absolute top-4 right-4 text-amber-500/50 hover:text-amber-400 text-xl">&times;</button>
                 
-                <h3 class="horror-subtitle text-2xl text-amber-500 mb-6 text-center">
-                    {{ $authMode === 'login' ? 'Masuk ke Akun Anda' : 'Daftar Ritual Baru' }}
-                </h3>
+                <div class="flex flex-col items-center justify-center mb-6">
+                    <img src="{{ asset('images/Gemini_Generated_Image_p9lajmp9lajmp9la.png') }}" alt="NarraTech" class="h-8 md:h-10 w-auto mb-3" />
+                    <h3 class="horror-subtitle text-2xl text-amber-500 text-center">
+                        {{ $authMode === 'login' ? 'Masuk ke Akun Anda' : 'Daftar Ritual Baru' }}
+                    </h3>
+                </div>
 
                 @if($authMode === 'login')
                     <form wire:submit.prevent="loginUser" class="space-y-4">
