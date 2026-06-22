@@ -218,8 +218,19 @@
 
             {{-- ═══════════════════════════════════════════════════ --}}
             {{-- 4. GAMEPLAY --}}
-            {{-- ═══════════════════════════════════════════════════ --}}
+            {{-- ═══════════════════════════════════════════════════════════ --}}
             @elseif($step === 'gameplay')
+                @php
+                    $storyText = trim($this->currentNode['content'] ?? '');
+                    $storyWords = preg_split('/\s+/', strip_tags($storyText), -1, PREG_SPLIT_NO_EMPTY);
+                    $wordCount = count($storyWords);
+                    if ($wordCount > 250) {
+                        $storyWords = array_slice($storyWords, 0, 250);
+                        $wordCount = 250;
+                    }
+                    $displayStory = implode(' ', $storyWords);
+                @endphp
+
                 <div class="max-w-4xl mr-auto space-y-6 pb-20">
 
                     {{-- Konten Cerita --}}
@@ -238,23 +249,31 @@
                                     Membisikkan cerita...
                                 </p>
                             </div>
-                            
-                            <div class="flex justify-between items-center mb-5">
-                                <h3 class="text-xs uppercase text-amber-500/50 tracking-[0.2em] font-sans flex items-center gap-2">
-                                    <span class="text-amber-700">📜</span> Narasi
-                                </h3>
-                                <div class="flex items-center gap-2">
-                                    @for($i = 1; $i <= $maxSteps; $i++)
-                                        <div class="w-2.5 h-2.5 rounded-full {{ $i <= $storyStep ? 'bg-amber-600 shadow-[0_0_6px_rgba(217,119,6,0.5)]' : 'bg-amber-900/30' }} transition-all"></div>
-                                    @endfor
-                                    <span class="text-xs font-mono text-amber-500/40 ml-1">{{ $storyStep }}/{{ $maxSteps }}</span>
+
+                            <div class="flex flex-col gap-4 mb-4">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                                    <div>
+                                        <h3 class="text-xs uppercase text-amber-500/50 tracking-[0.2em] font-sans flex items-center gap-2">
+                                            <span class="text-amber-700">📜</span> Narasi
+                                        </h3>
+                                        <p class="text-sm text-amber-400/40 story-text mt-1">Narasi ditampilkan di sini; pilih jalan setelah selesai membaca.</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-mono text-amber-500/40">{{ $wordCount }} kata</span>
+                                    </div>
                                 </div>
+
+                                @if($wordCount < 200)
+                                    <div class="rounded-xl border border-amber-700/50 bg-amber-900/15 p-3 text-amber-200 text-sm">
+                                        Cerita saat ini kurang dari 200 kata, AI sedang membuat narasi yang lebih lengkap.
+                                    </div>
+                                @endif
                             </div>
-                            <div class="flex-1 space-y-4">
-                                @foreach(explode("\n", $this->currentNode['content'] ?? '') as $paragraph)
+
+                            <div class="space-y-4 max-h-[65vh] overflow-y-auto custom-scrollbar">
+                                @foreach(explode("\n", $displayStory) as $paragraph)
                                     @if(trim($paragraph))
-                                        <p class="story-text text-base md:text-lg leading-loose text-[#d4c5a9]"
-                                           style="text-indent: 1.5em; line-height: 1.9;">
+                                        <p class="story-text text-base md:text-lg leading-relaxed text-[#d4c5a9]" style="text-indent: 1.5em; line-height: 1.9;">
                                             {{ trim($paragraph) }}
                                         </p>
                                     @endif
@@ -273,54 +292,54 @@
                                 </h4>
                             </div>
 
-                            @foreach($this->currentNode['choices'] ?? [] as $choice)
-                                <button wire:click="selectChoice('{{ addslashes($choice['choice_text']) }}')"
-                                        class="horror-btn w-full p-4 rounded-lg text-left flex justify-between items-center
-                                               bg-gradient-to-r from-[#1a0a0a] to-[#0d0a15]
-                                               border border-amber-900/30 hover:border-amber-600/60
-                                               text-amber-200/80 hover:text-amber-100
-                                               transition-all duration-300 group relative overflow-hidden">
-                                    <div wire:loading wire:target="selectChoice" class="absolute inset-0 bg-black/50 z-10"></div>
-                                    <span class="story-text text-base flex items-center gap-3 relative z-20">
-                                        <span class="text-amber-700 group-hover:text-amber-500 transition text-lg">✦</span>
-                                        {{ $choice['choice_text'] }}
-                                    </span>
-                                    <span class="text-amber-800 group-hover:text-amber-500 group-hover:translate-x-1 transition-all relative z-20">→</span>
-                                </button>
-                            @endforeach
+                            <div class="space-y-3">
+                                @foreach($this->currentNode['choices'] ?? [] as $choice)
+                                    <button wire:click="selectChoice('{{ addslashes($choice['choice_text']) }}')"
+                                            class="horror-btn w-full p-4 rounded-lg text-left flex justify-between items-center
+                                                   bg-gradient-to-r from-[#1a0a0a] to-[#0d0a15]
+                                                   border border-amber-900/30 hover:border-amber-600/60
+                                                   text-amber-200/80 hover:text-amber-100
+                                                   transition-all duration-300 group relative overflow-hidden">
+                                        <div wire:loading wire:target="selectChoice" class="absolute inset-0 bg-black/50 z-10"></div>
+                                        <span class="story-text text-base flex items-center gap-3 relative z-20">
+                                            <span class="text-amber-700 group-hover:text-amber-500 transition text-lg">✦</span>
+                                            {{ $choice['choice_text'] }}
+                                        </span>
+                                        <span class="text-amber-800 group-hover:text-amber-500 group-hover:translate-x-1 transition-all relative z-20">→</span>
+                                    </button>
+                                @endforeach
+                            </div>
 
                             @if(count($this->currentNode['choices'] ?? []) > 0 && empty($this->currentNode['is_ending']))
-                            <div class="mt-6 pt-4 border-t border-amber-900/30 flex flex-row gap-4">
-                                @auth
-                                    <button type="button" wire:click="saveAndExit"
+                                <div class="mt-6 pt-4 border-t border-amber-900/30 flex flex-col gap-3 lg:flex-row">
+                                    @auth
+                                        <button type="button" wire:click="saveAndExit"
+                                                class="w-full p-3 rounded-lg text-center
+                                                       bg-amber-900/20 hover:bg-amber-900/40
+                                                       border border-amber-900/50 hover:border-amber-600
+                                                       text-amber-400 hover:text-amber-300
+                                                       transition-all duration-300 story-text text-sm flex items-center justify-center gap-2 relative overflow-hidden">
+                                            <div wire:loading wire:target="saveAndExit" class="absolute inset-0 bg-black/50 z-10 rounded-lg"></div>
+                                            <span class="relative z-20">💾</span>
+                                            <span class="relative z-20">Simpan</span>
+                                        </button>
+                                    @endauth
+                                    <button type="button" wire:click="exitGame"
                                             class="w-full p-3 rounded-lg text-center
-                                                   bg-amber-900/20 hover:bg-amber-900/40
-                                                   border border-amber-900/50 hover:border-amber-600
-                                                   text-amber-400 hover:text-amber-300
-                                                   transition-all duration-300 story-text text-sm flex items-center justify-center gap-2">
-                                        <div wire:loading wire:target="saveAndExit" class="absolute inset-0 bg-black/50 z-10 rounded-lg"></div>
-                                        <span class="relative z-20">💾</span> 
-                                        <span class="relative z-20">Simpan</span>
+                                                   bg-red-900/20 hover:bg-red-900/40
+                                                   border border-red-900/50 hover:border-red-600
+                                                   text-red-400 hover:text-red-300
+                                                   transition-all duration-300 story-text text-sm flex items-center justify-center gap-2 relative overflow-hidden">
+                                        <div wire:loading wire:target="exitGame" class="absolute inset-0 bg-black/50 z-10 rounded-lg"></div>
+                                        <span class="relative z-20">⏏️</span>
+                                        <span class="relative z-20">Akhiri</span>
                                     </button>
-                                @endauth
-                                <button type="button" wire:click="exitGame"
-                                        class="w-full p-3 rounded-lg text-center
-                                               bg-red-900/20 hover:bg-red-900/40
-                                               border border-red-900/50 hover:border-red-600
-                                               text-red-400 hover:text-red-300
-                                               transition-all duration-300 story-text text-sm flex items-center justify-center gap-2">
-                                    <div wire:loading wire:target="exitGame" class="absolute inset-0 bg-black/50 z-10 rounded-lg"></div>
-                                    <span class="relative z-20">⏏️</span> 
-                                    <span class="relative z-20">Akhiri</span>
-                                </button>
-                            </div>
+                                </div>
                             @endif
                         </div>
                     </div>
                 </div>
 
-                    {{-- Backsound Musik Pendakian Horor --}}
-                    
             {{-- ═══════════════════════════════════════════════════ --}}
             {{-- 5. ENDING --}}
             {{-- ═══════════════════════════════════════════════════ --}}
