@@ -20,6 +20,7 @@ class GameEngine extends Component
     public $currentNode = [], $historyId, $aiImageUrl, $bgImageUrl;
     public $storyStep = 0;
     public $maxSteps = 6;
+    public $isLoading = false;
 
     // Authentication States
     public $showAuthModal = false;
@@ -135,6 +136,9 @@ class GameEngine extends Component
             'selected_location' => $this->selectedLocation,
             'current_node_json' => $this->currentNode,
             'story_step' => 1,
+            'generation_mode' => $aiStory['generation_mode'] ?? 'realtime',
+            'api_response_time' => $aiStory['api_response_time'] ?? null,
+            'fallback_reason' => $aiStory['fallback_reason'] ?? null,
         ]);
 
         $this->historyId = $history->id;
@@ -143,9 +147,23 @@ class GameEngine extends Component
         $history->full_story_json = [[
             'content' => $this->currentNode['content'],
             'image' => $this->aiImageUrl,
-            'timestamp' => now()->toDateTimeString()
+            'timestamp' => now()->toDateTimeString(),
+            'generation_mode' => $aiStory['generation_mode'] ?? 'realtime',
+            'fallback_reason' => $aiStory['fallback_reason'] ?? null,
         ]];
         $history->save();
+
+        // Save to archive if successful realtime generation
+        if (($aiStory['generation_mode'] ?? 'realtime') === 'realtime') {
+            $generator->saveToArchive(
+                $this->selectedGenre,
+                $this->selectedLocation,
+                $this->currentNode['content'],
+                $this->currentNode['choices'],
+                $this->aiImageUrl
+            );
+        }
+
         $this->step = 'gameplay';
     }
 
@@ -182,10 +200,12 @@ class GameEngine extends Component
         // Incremen step
         $this->storyStep++;
 
-        // Generate next segment via AI
+        // Generate next segment via AI (pass genre & location for fallback)
         $nextSegment = $generator->generateNextNode(
             $history->accumulated_story, 
-            $choiceText
+            $choiceText,
+            $this->selectedGenre,
+            $this->selectedLocation
         );
 
         if (!$nextSegment || !isset($nextSegment['content'])) {
@@ -215,13 +235,32 @@ class GameEngine extends Component
             $storyPages[] = [
                 'content' => $this->currentNode['content'],
                 'image' => $imageUrl,
-                'timestamp' => now()->toDateTimeString()
+                'timestamp' => now()->toDateTimeString(),
+                'generation_mode' => $nextSegment['generation_mode'] ?? 'realtime',
+                'fallback_reason' => $nextSegment['fallback_reason'] ?? null,
             ];
             $history->full_story_json = $storyPages;
             $history->accumulated_story = $history->accumulated_story . "\n\n> " . $choiceText . "\n\n" . $this->currentNode['content'];
             $history->current_node_json = $this->currentNode;
             $history->story_step = $this->storyStep;
+            
+            // Track generation mode & response time for this step
+            $history->generation_mode = $nextSegment['generation_mode'] ?? 'realtime';
+            $history->api_response_time = $nextSegment['api_response_time'] ?? null;
+            $history->fallback_reason = $nextSegment['fallback_reason'] ?? null;
+            
             $history->save();
+
+            // Save to archive if successful realtime generation
+            if (($nextSegment['generation_mode'] ?? 'realtime') === 'realtime') {
+                $generator->saveToArchive(
+                    $this->selectedGenre,
+                    $this->selectedLocation,
+                    $this->currentNode['content'],
+                    $this->currentNode['choices'],
+                    $imageUrl
+                );
+            }
         }
 
         $rawImagePath = $nextSegment['image'] ?? null;

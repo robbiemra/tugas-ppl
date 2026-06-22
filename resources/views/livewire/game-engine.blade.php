@@ -146,7 +146,21 @@
             {{-- 3. PILIH LOKASI --}}
             {{-- ═══════════════════════════════════════════════════ --}}
             @elseif($step === 'select_location')
-                <div class="flex flex-col items-center justify-center min-h-[80vh] px-4">
+                <div class="flex flex-col items-center justify-center min-h-[80vh] px-4 relative">
+                    {{-- Loading Overlay --}}
+                    <div wire:loading wire:target="startStory"
+                         class="fixed inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center z-50 transition-opacity duration-300">
+                        <div class="relative">
+                            <div class="w-20 h-20 border-4 border-amber-900 border-t-amber-500 rounded-full animate-spin"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-3xl animate-pulse">🏔️</span>
+                            </div>
+                        </div>
+                        <p class="mt-6 text-amber-400 font-mono text-sm uppercase tracking-[0.3em] animate-pulse">
+                            Menyiapkan ekspedisi...
+                        </p>
+                    </div>
+
                     <h2 class="horror-subtitle text-3xl text-amber-400 mb-2 text-center">Area Ekspedisi</h2>
                     <p class="text-sm text-amber-400/40 mb-10 story-text text-center">Genre: {{ $selectedGenre }}</p>
 
@@ -155,9 +169,10 @@
                             <button type="button" wire:click="startStory('Pendakian')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
-                                           flex justify-between items-center transition-all duration-300">
+                                           flex justify-between items-center transition-all duration-300
+                                           hover:bg-amber-900/10 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">
                                 <div class="flex items-center gap-4">
-                                    <span class="text-4xl">🏔️</span>
+                                    <span class="text-4xl group-hover:scale-110 transition-transform">🏔️</span>
                                     <div class="text-left">
                                         <span class="horror-subtitle text-lg text-amber-400 group-hover:text-amber-300 block">Gunung Misterius</span>
                                         <span class="text-xs text-amber-400/30 story-text">Pendakian ke puncak yang terkutuk</span>
@@ -169,9 +184,10 @@
                             <button type="button" wire:click="startStory('Rumah Sakit')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
-                                           flex justify-between items-center transition-all duration-300">
+                                           flex justify-between items-center transition-all duration-300
+                                           hover:bg-amber-900/10 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">
                                 <div class="flex items-center gap-4">
-                                    <span class="text-4xl">🏥</span>
+                                    <span class="text-4xl group-hover:scale-110 transition-transform">🏥</span>
                                     <div class="text-left">
                                         <span class="horror-subtitle text-lg text-amber-400 group-hover:text-amber-300 block">Rumah Sakit Kosong</span>
                                         <span class="text-xs text-amber-400/30 story-text">Gema tangisan di lorong gelap</span>
@@ -183,9 +199,10 @@
                             <button type="button" wire:click="startStory('Pulau Terpencil')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
-                                           flex justify-between items-center transition-all duration-300">
+                                           flex justify-between items-center transition-all duration-300
+                                           hover:bg-amber-900/10 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">
                                 <div class="flex items-center gap-4">
-                                    <span class="text-4xl">🏝️</span>
+                                    <span class="text-4xl group-hover:scale-110 transition-transform">🏝️</span>
                                     <div class="text-left">
                                         <span class="horror-subtitle text-lg text-amber-400 group-hover:text-amber-300 block">Pulau Tanpa Penghuni</span>
                                         <span class="text-xs text-amber-400/30 story-text">Bertahan hidup di alam liar yang buas</span>
@@ -197,9 +214,10 @@
                             <button type="button" wire:click="startStory('Gua Misterius')" onclick="window.playBackgroundMusicGesture?.()"
                                     class="horror-btn horror-card group w-full p-6 rounded-xl
                                            border border-amber-900/30 hover:border-amber-600/60
-                                           flex justify-between items-center transition-all duration-300">
+                                           flex justify-between items-center transition-all duration-300
+                                           hover:bg-amber-900/10 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">
                                 <div class="flex items-center gap-4">
-                                    <span class="text-4xl">🕳️</span>
+                                    <span class="text-4xl group-hover:scale-110 transition-transform">🕳️</span>
                                     <div class="text-left">
                                         <span class="horror-subtitle text-lg text-amber-400 group-hover:text-amber-300 block">Gua Bawah Tanah</span>
                                         <span class="text-xs text-amber-400/30 story-text">Menjelajahi kedalaman yang belum terjamah</span>
@@ -220,23 +238,40 @@
             {{-- 4. GAMEPLAY --}}
             {{-- ═══════════════════════════════════════════════════ --}}
             @elseif($step === 'gameplay')
-                <div class="relative py-4 pb-48"> {{-- Added padding bottom to prevent overlap with choices --}}
+                <div class="relative py-4 pb-80 md:pb-96"> {{-- Added padding bottom to prevent overlap with choices --}}
 
                     {{-- Sisi Kiri: Konten Cerita (Fixed di Kiri Atas Layar) --}}
-                    <div class="fixed top-32 left-4 md:left-8 w-full max-w-lg lg:max-w-2xl z-30">
-                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col relative overflow-y-auto custom-scrollbar bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]" style="max-height: 65vh;">
+                    <div class="fixed top-20 left-3 md:left-6 right-auto bottom-[22rem] w-full max-w-[420px] z-30">
+                        <div class="horror-card rounded-xl p-5 md:p-6 flex flex-col relative overflow-y-auto custom-scrollbar bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]" style="max-height: calc(100vh - 14rem);">
                             {{-- Loading Overlay for AI Generation --}}
                             <div wire:loading wire:target="startStory, selectChoice"
-                                 class="absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-20 rounded-xl">
-                                <div class="relative">
-                                    <div class="w-14 h-14 border-4 border-amber-900 border-t-amber-500 rounded-full animate-spin"></div>
+                                 class="absolute inset-0 bg-black/85 backdrop-blur-sm flex flex-col items-center justify-center z-20 rounded-xl opacity-0 animate-fade-in transition-all duration-500">
+                                
+                                {{-- Animated Spinner --}}
+                                <div class="relative mb-6">
+                                    {{-- Outer rotating ring --}}
+                                    <div class="w-20 h-20 border-4 border-transparent border-t-amber-500 border-r-amber-600 rounded-full animate-spin"></div>
+                                    
+                                    {{-- Inner pulsing ring --}}
+                                    <div class="absolute inset-2 border-3 border-amber-900/30 rounded-full animate-pulse"></div>
+                                    
+                                    {{-- Center icon --}}
                                     <div class="absolute inset-0 flex items-center justify-center">
-                                        <span class="text-xl">👁️</span>
+                                        <span class="text-3xl animate-bounce" style="animation-duration: 1.5s;">👁️</span>
                                     </div>
                                 </div>
-                                <p class="mt-4 text-amber-400/60 font-mono text-xs uppercase tracking-[0.3em] animate-pulse">
+                                
+                                {{-- Loading Text --}}
+                                <p class="text-amber-400/80 font-mono text-xs uppercase tracking-[0.35em] animate-pulse mb-2">
                                     Membisikkan cerita...
                                 </p>
+                                
+                                {{-- Progress dots --}}
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-2 h-2 bg-amber-500 rounded-full animate-pulse" style="animation-delay: 0s;"></div>
+                                    <div class="w-2 h-2 bg-amber-500 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+                                    <div class="w-2 h-2 bg-amber-500 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+                                </div>
                             </div>
                             
                             <div class="flex justify-between items-center mb-5">
@@ -264,8 +299,8 @@
                     </div>
 
                     {{-- Pilihan Cerita (Fixed di Kiri Bawah Layar) --}}
-                    <div class="fixed bottom-4 left-4 md:bottom-8 md:left-8 w-full max-w-sm lg:max-w-md z-40">
-                        <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]">
+                    <div class="fixed bottom-5 left-3 md:bottom-8 md:left-6 w-full max-w-xs lg:max-w-sm z-40">
+                        <div class="space-y-3 horror-card rounded-xl p-4 md:p-5 bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]">
                             <div class="mb-4">
                                 <p class="text-xs text-amber-400/20 story-text italic mb-2">Setiap pilihan menentukan nasibmu...</p>
                                 <h4 class="horror-subtitle text-lg text-amber-500/80 flex items-center gap-2">

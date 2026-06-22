@@ -4,6 +4,7 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use App\Models\StoryArchive;
 
 class StoryGenerator
 {
@@ -25,6 +26,16 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
         // Using temperature 0.8 for creative storytelling
         $result = $this->callAI($messages, 0.8);
 
+        // Check if API call failed, try to get archive fallback
+        if ($result['generation_mode'] === 'archive' && isset($result['fallback_reason'])) {
+            $archiveStory = $this->getArchiveFallback($genre, $location);
+            if ($archiveStory) {
+                $result['content'] = $archiveStory['node_content'];
+                $result['choices'] = $archiveStory['choices_json'];
+                $archiveStory->incrementUsageCount();
+            }
+        }
+
         // Include the initial background image based on location
         $result['image'] = $this->getInitialImage($genre, $location);
 
@@ -34,7 +45,7 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
     /**
      * Generate the next story segment based on history and chosen action.
      */
-    public function generateNextNode($accumulatedStory, $chosenAction): array
+    public function generateNextNode($accumulatedStory, $chosenAction, $genre = null, $location = null): array
     {
         $systemPrompt = $this->getSystemPrompt();
 
@@ -45,16 +56,31 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
             ['role' => 'user', 'content' => $userPrompt],
         ];
 
-        return $this->callAI($messages, 0.8);
+        $result = $this->callAI($messages, 0.8);
+
+        // Check if API call failed, try to get archive fallback
+        if ($result['generation_mode'] === 'archive' && isset($result['fallback_reason']) && $genre && $location) {
+            $archiveStory = $this->getArchiveFallback($genre, $location);
+            if ($archiveStory) {
+                $result['content'] = $archiveStory['node_content'];
+                $result['choices'] = $archiveStory['choices_json'];
+                $archiveStory->incrementUsageCount();
+            }
+        }
+
+        return $result;
     }
 
     /**
-     * Send HTTP POST request to OpenAI API.
+     * Send HTTP POST request to OpenAI API with timeout & error tracking.
      */
     private function callAI(array $messages, float $temperature): array
     {
         $apiKey = config('services.openai.key');
         $apiUrl = config('services.openai.url', 'https://api.openai.com/v1/chat/completions');
+        $startTime = microtime(true);
+        $responseTime = 0;
+        $fallbackReason = null;
 
         if (empty($apiKey)) {
             Log::error('OpenAI API Key is missing in services config.');
@@ -62,6 +88,9 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
                 'content' => 'Error: API Key OpenAI belum diatur di server.',
                 'choices' => [],
                 'is_ending' => true,
+                'generation_mode' => 'error',
+                'api_response_time' => 0,
+                'fallback_reason' => 'api_key_missing',
             ];
         }
 
@@ -70,7 +99,7 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
                 'Authorization' => 'Bearer ' . $apiKey,
                 'Content-Type' => 'application/json',
             ])
-            ->timeout(45)
+            ->timeout(10) // 10 second timeout
             ->post($apiUrl, [
                 'model' => config('services.openai.model', 'gpt-4o-mini'),
                 'messages' => $messages,
@@ -78,13 +107,25 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
                 'response_format' => ['type' => 'json_object']
             ]);
 
+            $responseTime = (int) ((microtime(true) - $startTime) * 1000);
+
+            // Check for token error (429 or 401)
+            if ($response->status() === 429) {
+                Log::warning('OpenAI API Rate Limited (Token Exhausted).');
+                $fallbackReason = 'token_error';
+                return $this->createErrorResponse('Token API Gemini telah habis. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
+            }
+
+            if ($response->status() === 401) {
+                Log::warning('OpenAI API Unauthorized (Invalid Token).');
+                $fallbackReason = 'token_error';
+                return $this->createErrorResponse('Token tidak valid. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
+            }
+
             if ($response->failed()) {
                 Log::error('OpenAI API Call Failed. Status: ' . $response->status() . ' Body: ' . $response->body());
-                return [
-                    'content' => 'Gagal menghubungi server AI untuk membuat cerita. Silakan coba sesaat lagi.',
-                    'choices' => [],
-                    'is_ending' => true,
-                ];
+                $fallbackReason = 'api_error';
+                return $this->createErrorResponse('Gagal menghubungi server AI untuk membuat cerita. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
             }
 
             $responseData = $response->json();
@@ -96,28 +137,91 @@ Gunakan panduan NARASI AWAL dari peta alur cerita. Jangan lupa sebutkan Nana dan
 
             if (json_last_error() !== JSON_ERROR_NONE) {
                 Log::error('Failed to decode OpenAI JSON response. Raw: ' . $rawJsonText . ' Error: ' . json_last_error_msg());
-                return [
-                    'content' => 'Gagal memproses format cerita dari AI. Silakan coba kembali.',
-                    'choices' => [],
-                    'is_ending' => true,
-                ];
+                $fallbackReason = 'api_error';
+                return $this->createErrorResponse('Gagal memproses format cerita dari AI. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
             }
 
-            return [
+            // Success - save to archive for future fallback
+            $result = [
                 'content' => $decoded['content'] ?? 'Cerita tidak dapat dimuat.',
                 'choices' => $decoded['choices'] ?? [],
                 'is_ending' => (bool) ($decoded['is_ending'] ?? false),
+                'generation_mode' => 'realtime',
+                'api_response_time' => $responseTime,
+                'fallback_reason' => null,
             ];
 
+            return $result;
+
+        } catch (\Illuminate\Http\Client\ConnectionException $e) {
+            $responseTime = (int) ((microtime(true) - $startTime) * 1000);
+            Log::warning('Connection error during OpenAI API request: ' . $e->getMessage());
+            $fallbackReason = 'network_error';
+            return $this->createErrorResponse('Koneksi internet lemot. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
+
+        } catch (\Illuminate\Http\Client\RequestException $e) {
+            $responseTime = (int) ((microtime(true) - $startTime) * 1000);
+            if (strpos($e->getMessage(), 'timeout') !== false) {
+                Log::warning('Timeout during OpenAI API request: ' . $e->getMessage());
+                $fallbackReason = 'timeout';
+                return $this->createErrorResponse('API timeout. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
+            }
+            Log::warning('Request error during OpenAI API: ' . $e->getMessage());
+            $fallbackReason = 'api_error';
+            return $this->createErrorResponse('Terjadi kesalahan saat menghubungi AI. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
+
         } catch (\Exception $e) {
+            $responseTime = (int) ((microtime(true) - $startTime) * 1000);
             Log::error('Exception occurred during OpenAI API request: ' . $e->getMessage(), [
                 'trace' => $e->getTraceAsString()
             ]);
-            return [
-                'content' => 'Terjadi kesalahan sistem saat memproses cerita.',
-                'choices' => [],
-                'is_ending' => true,
-            ];
+            $fallbackReason = 'api_error';
+            return $this->createErrorResponse('Terjadi kesalahan sistem saat memproses cerita. Menggunakan cerita dari arsip.', $responseTime, $fallbackReason);
+        }
+    }
+
+    /**
+     * Create a structured error response for fallback handling
+     */
+    private function createErrorResponse(string $message, int $responseTime, string $fallbackReason): array
+    {
+        return [
+            'content' => $message,
+            'choices' => [],
+            'is_ending' => false,
+            'generation_mode' => 'archive',
+            'api_response_time' => $responseTime,
+            'fallback_reason' => $fallbackReason,
+        ];
+    }
+
+    /**
+     * Get a random archived story for fallback
+     */
+    private function getArchiveFallback($genre, $location)
+    {
+        return StoryArchive::getRandomByGenreAndLocation($genre, $location);
+    }
+
+    /**
+     * Save successful AI generation to archive for future fallback
+     */
+    public function saveToArchive($genre, $location, $content, $choices, $imageUrl = null): void
+    {
+        // Only save if not already exists (avoid duplicates)
+        $existing = StoryArchive::where('genre', $genre)
+            ->where('location', $location)
+            ->where('node_content', $content)
+            ->first();
+
+        if (!$existing) {
+            StoryArchive::create([
+                'genre' => $genre,
+                'location' => $location,
+                'node_content' => $content,
+                'choices_json' => $choices,
+                'image_url' => $imageUrl,
+            ]);
         }
     }
 
