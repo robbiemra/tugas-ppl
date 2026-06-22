@@ -18,6 +18,9 @@ class GameEngine extends Component
     public $userName, $userAge, $gender; 
     public $selectedGenre, $selectedLocation;
     public $currentNode = [], $historyId, $aiImageUrl, $bgImageUrl;
+    public $currentNodeId = 'NARASI_AWAL';
+    public $mountain;
+    public $mountains = ['Argopuro', 'Lawu', 'Slamet', 'Merapi', 'Ciremai'];
     public $storyStep = 0;
     public $maxSteps = 6;
 
@@ -101,12 +104,18 @@ class GameEngine extends Component
     public function startStory($location, StoryGenerator $generator)
     {
         $this->selectedLocation = $location;
+        $this->currentNodeId = 'NARASI_AWAL';
+
+        if (empty($this->mountain)) {
+            $this->mountain = $this->mountains[array_rand($this->mountains)];
+        }
 
         $aiStory = $generator->generateInitialStory(
             $this->userName, 
             $this->gender, 
             $this->selectedGenre, 
-            $this->selectedLocation
+            $this->selectedLocation,
+            $this->mountain
         );
 
         if (!$aiStory || !isset($aiStory['content'])) {
@@ -117,7 +126,9 @@ class GameEngine extends Component
         $this->currentNode = [
             'content' => $aiStory['content'],
             'choices' => $aiStory['choices'],
-            'is_ending' => false
+            'is_ending' => false,
+            'mountain' => $this->mountain,
+            'node_id' => $this->currentNodeId
         ];
 
         $rawImagePath = $aiStory['image'] ?? 'wallpaperhorror.jpeg';
@@ -158,12 +169,15 @@ class GameEngine extends Component
 
         // Cari index pilihan dan cek apakah itu ending
         $isEndingChoice = false;
-        $choiceIndex = 0;
+        $nextNodeId = null;
         foreach ($this->currentNode['choices'] ?? [] as $idx => $choice) {
             if ($choice['choice_text'] === $choiceText) {
                 $choiceIndex = $idx;
                 if (isset($choice['is_ending']) && $choice['is_ending']) {
                     $isEndingChoice = true;
+                }
+                if (isset($choice['next'])) {
+                    $nextNodeId = $choice['next'];
                 }
                 break;
             }
@@ -185,7 +199,12 @@ class GameEngine extends Component
         // Generate next segment via AI
         $nextSegment = $generator->generateNextNode(
             $history->accumulated_story, 
-            $choiceText
+            $choiceText,
+            $this->selectedGenre,
+            $this->selectedLocation,
+            $this->userName,
+            $this->mountain,
+            $nextNodeId
         );
 
         if (!$nextSegment || !isset($nextSegment['content'])) {
@@ -196,8 +215,14 @@ class GameEngine extends Component
         $this->currentNode = [
             'content' => $nextSegment['content'],
             'choices' => $nextSegment['choices'] ?? [],
-            'is_ending' => $nextSegment['is_ending'] ?? (empty($nextSegment['choices']) ? true : false)
+            'is_ending' => $nextSegment['is_ending'] ?? (empty($nextSegment['choices']) ? true : false),
+            'mountain' => $this->mountain,
+            'node_id' => $this->currentNodeId
         ];
+        
+        if (isset($nextSegment['node_id'])) {
+            $this->currentNodeId = $nextSegment['node_id'];
+        }
 
         // Hard Cap: Jika sudah melebihi batas, paksa ending
         if ($this->storyStep > $this->maxSteps) {
@@ -205,12 +230,13 @@ class GameEngine extends Component
             $this->currentNode['choices'] = [];
         }
 
+        // Get the mapped image for the new scene
+        $sceneImage = $this->getNextSceneImage($choiceText, $this->currentNode['content']);
+        $imageUrl = asset($sceneImage);
+
         // Append the newly generated content to the history
         if ($history) {
             $storyPages = $history->full_story_json ?: [];
-            
-            $rawImagePath = $nextSegment['image'] ?? null;
-            $imageUrl = $rawImagePath ? asset($rawImagePath) : $this->aiImageUrl;
 
             $storyPages[] = [
                 'content' => $this->currentNode['content'],
@@ -219,16 +245,14 @@ class GameEngine extends Component
             ];
             $history->full_story_json = $storyPages;
             $history->accumulated_story = $history->accumulated_story . "\n\n> " . $choiceText . "\n\n" . $this->currentNode['content'];
+            $history->character_visual = $imageUrl;
             $history->current_node_json = $this->currentNode;
             $history->story_step = $this->storyStep;
             $history->save();
         }
 
-        $rawImagePath = $nextSegment['image'] ?? null;
-        if ($rawImagePath) {
-            $this->aiImageUrl = asset($rawImagePath);
-            $this->bgImageUrl = $this->aiImageUrl;
-        }
+        $this->aiImageUrl = $imageUrl;
+        $this->bgImageUrl = $imageUrl;
 
         if ($this->currentNode['is_ending']) {
             $this->step = 'ending';
@@ -281,6 +305,8 @@ class GameEngine extends Component
             $this->selectedGenre = $history->selected_genre;
             $this->selectedLocation = $history->selected_location;
             $this->currentNode = $history->current_node_json;
+            $this->mountain = $this->currentNode['mountain'] ?? 'Argopuro';
+            $this->currentNodeId = $this->currentNode['node_id'] ?? 'NARASI_AWAL';
             $this->storyStep = $history->story_step;
             $this->aiImageUrl = $history->character_visual;
             $this->bgImageUrl = $history->character_visual;
@@ -290,34 +316,107 @@ class GameEngine extends Component
 
     // Fungsi untuk Export ke PDF
     public function exportToPdf()
-{
-    $history = UserHistory::find($this->historyId);
-    if (!$history) {
-        session()->flash('error', 'Riwayat perjalanan tidak ditemukan.');
-        return;
+    {
+        $history = UserHistory::find($this->historyId);
+        if (!$history) {
+            session()->flash('error', 'Riwayat perjalanan tidak ditemukan.');
+            return;
+        }
+        
+        $storyPages = $history->full_story_json ?: [];
+        
+        if (empty($storyPages)) {
+            $storyPages = [[
+                'content' => $history->accumulated_story,
+                'image' => $history->character_visual,
+            ]];
+        }
+
+        // Convert image URLs to base64 so DomPDF can render them locally without networking issues
+        foreach ($storyPages as &$page) {
+            if (isset($page['image']) && $page['image']) {
+                $urlPath = parse_url($page['image'], PHP_URL_PATH);
+                $relativeFilePath = ltrim($urlPath, '/');
+                
+                if (preg_match('/public\/(.*)$/', $relativeFilePath, $matches)) {
+                    $relativeFilePath = $matches[1];
+                }
+                
+                $localPath = public_path($relativeFilePath);
+                
+                if (file_exists($localPath)) {
+                    $type = pathinfo($localPath, PATHINFO_EXTENSION);
+                    $data = @file_get_contents($localPath);
+                    if ($data !== false) {
+                        $page['image_base64'] = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                    } else {
+                        $page['image_base64'] = null;
+                    }
+                } else {
+                    $page['image_base64'] = null;
+                }
+            }
+        }
+
+        $pdf = PDF::loadView('pdf.story-summary', [
+            'history' => $history,
+            'storyPages' => $storyPages
+        ]);
+        
+        return response()->streamDownload(
+            fn () => print($pdf->output()),
+            'ringkasan-cerita-' . strtolower(str_replace(' ', '-', $history->user_name)) . '.pdf'
+        );
     }
-    
-    // Ambil semua halaman cerita (sudah ter-cast ke array oleh model)
-    $storyPages = $history->full_story_json;
-    
-    // Jika tidak ada, gunakan accumulated story
-    if (!$storyPages) {
-        $storyPages = [[
-            'content' => $history->accumulated_story,
-            'image' => $history->character_visual,
-        ]];
+
+    private function getNextSceneImage($choiceText, $currentNodeContent = '')
+    {
+        if ($this->selectedGenre === 'Horror' && $this->selectedLocation === 'Pendakian') {
+            $choiceTextLower = strtolower($choiceText);
+            
+            if (str_contains($choiceTextLower, 'ikuti bisikan') || 
+                str_contains($choiceTextLower, 'ikuti suara') || 
+                str_contains($choiceTextLower, 'ikuti rintihan')) {
+                return 'Horror/Pendakian/alur 1 ikuti bisikan.png';
+            }
+            if (str_contains($choiceTextLower, 'abaikan') || 
+                str_contains($choiceTextLower, 'jangan sentuh') || 
+                str_contains($choiceTextLower, 'tinggalkan ransel')) {
+                return 'Horror/Pendakian/alur 1.2 menemukan goa.png';
+            }
+            if (str_contains($choiceTextLower, 'gunakan persediaan') || 
+                str_contains($choiceTextLower, 'gunakan biskuit') || 
+                str_contains($choiceTextLower, 'gunakan kaleng')) {
+                return 'Horror/Pendakian/alur 1.1 mati memakan persediaan.png';
+            }
+            if (str_contains($choiceTextLower, 'lanjut perjalanan') || 
+                str_contains($choiceTextLower, 'kekuatan gaib') || 
+                str_contains($choiceTextLower, 'memanfaatkan energi')) {
+                return 'Horror/Pendakian/alur 2.2.1.2.1 melawan hantu dan menang.png';
+            }
+            if (str_contains($choiceTextLower, 'tetap diam') || 
+                str_contains($choiceTextLower, 'bertahan di posisi') || 
+                str_contains($choiceTextLower, 'berdiam diri')) {
+                return 'Horror/Pendakian/alur 1.2 meninggal akibat kelelahan.png';
+            }
+
+            $contentLower = strtolower($currentNodeContent);
+            if (str_contains($contentLower, 'sar') || str_contains($contentLower, 'selamat') || str_contains($contentLower, 'lolos')) {
+                return 'Horror/Pendakian/intro awal.png';
+            }
+            if (str_contains($contentLower, 'meninggal') || str_contains($contentLower, 'mati') || str_contains($contentLower, 'membusuk') || str_contains($contentLower, 'pasar setan')) {
+                return 'Horror/Pendakian/alur 1.2 meninggal akibat kelelahan.png';
+            }
+        }
+        
+        if ($this->selectedGenre === 'Horror' && $this->selectedLocation === 'Rumah Sakit') {
+            return 'wpkakek.jpeg';
+        }
+        if ($this->selectedGenre === 'Adventure' && $this->selectedLocation === 'Pulau Terpencil') {
+            return 'japan.jpg';
+        }
+        return 'wallpaperhorror.jpeg';
     }
-    
-    $pdf = PDF::loadView('pdf.story-summary', [
-        'history' => $history,
-        'storyPages' => $storyPages
-    ]);
-    
-    return response()->streamDownload(
-        fn () => print($pdf->output()),
-        'ringkasan-cerita-' . strtolower(str_replace(' ', '-', $history->user_name)) . '.pdf'
-    );
-}
 
     public function render()
     {
