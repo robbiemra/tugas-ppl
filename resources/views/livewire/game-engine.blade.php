@@ -231,7 +231,7 @@
                     $displayStory = implode(' ', $storyWords);
                 @endphp
 
-                <div class="max-w-4xl mr-auto space-y-6 pb-20">
+                <div class="max-w-2xl mr-auto space-y-6 pb-20">
 
                     {{-- Konten Cerita --}}
                     <div class="z-30">
