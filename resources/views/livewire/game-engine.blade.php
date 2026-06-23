@@ -262,12 +262,6 @@
                                         <span class="text-xs font-mono text-amber-500/40">{{ $wordCount }} kata</span>
                                     </div>
                                 </div>
-
-                                @if($wordCount < 200)
-                                    <div class="rounded-xl border border-amber-700/50 bg-amber-900/15 p-3 text-amber-200 text-sm">
-                                        Cerita saat ini kurang dari 200 kata, AI sedang membuat narasi yang lebih lengkap.
-                                    </div>
-                                @endif
                             </div>
 
                             <div class="space-y-4 max-h-[65vh] overflow-y-auto custom-scrollbar">
