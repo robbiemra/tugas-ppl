@@ -5,7 +5,6 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\UserHistory;
 use App\Services\StoryGenerator;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Auth;
@@ -19,10 +18,9 @@ class GameEngine extends Component
     public $selectedGenre, $selectedLocation;
     public $currentNode = [], $historyId, $aiImageUrl, $bgImageUrl;
     public $currentNodeId = 'NARASI_AWAL';
-    public $mountain;
-    public $mountains = ['Argopuro', 'Lawu', 'Slamet', 'Merapi', 'Ciremai'];
+    public $locationName = 'Lokasi Misterius'; // Nama spesifik lokasi dari input user
     public $storyStep = 0;
-    public $maxSteps = 6;
+    public $maxSteps = 8;
 
     // Authentication States
     public $showAuthModal = false;
@@ -106,54 +104,59 @@ class GameEngine extends Component
         $this->selectedLocation = $location;
         $this->currentNodeId = 'NARASI_AWAL';
 
-        if (empty($this->mountain)) {
-            $this->mountain = $this->mountains[array_rand($this->mountains)];
-        }
+        // Tentukan locationName berdasarkan genre dan lokasi yang dipilih
+        $this->locationName = $this->resolveLocationName($this->selectedGenre, $location);
 
-        $aiStory = $generator->generateInitialStory(
-            $this->userName, 
-            $this->gender, 
-            $this->selectedGenre, 
+        // Pilih variasi secara acak untuk setiap sesi baru
+        $variationIndex = rand(0, 4);
+
+        $story = $generator->generateInitialStory(
+            $this->userName,
+            $this->gender,
+            $this->selectedGenre,
             $this->selectedLocation,
-            $this->mountain
+            $this->locationName,
+            $variationIndex
         );
 
-        if (!$aiStory || !isset($aiStory['content'])) {
-            session()->flash('error', "Gagal menghasilkan cerita AI. Silakan coba lagi.");
+        if (!$story || !isset($story['content'])) {
+            session()->flash('error', "Gagal memuat cerita. Pastikan file database JSON tersedia.");
             return;
         }
 
+        $this->currentNodeId = $story['node_id'] ?? 'NARASI_AWAL';
+
         $this->currentNode = [
-            'content' => $aiStory['content'],
-            'choices' => $aiStory['choices'],
-            'is_ending' => false,
-            'mountain' => $this->mountain,
-            'node_id' => $this->currentNodeId
+            'content'     => $story['content'],
+            'choices'     => $story['choices'],
+            'is_ending'   => false,
+            'location_name' => $this->locationName,
+            'node_id'     => $this->currentNodeId,
         ];
 
-        $rawImagePath = $aiStory['image'] ?? 'wallpaperhorror.jpeg';
-        $this->aiImageUrl = asset($rawImagePath); 
+        $rawImagePath = $story['image'] ?? 'wallpaperhorror.jpeg';
+        $this->aiImageUrl = asset($rawImagePath);
         $this->bgImageUrl = $this->aiImageUrl;
 
         $history = UserHistory::create([
-            'user_name' => $this->userName,
-            'selected_genre' => $this->selectedGenre,
-            'accumulated_story' => $this->currentNode['content'],
+            'user_name'        => $this->userName,
+            'selected_genre'   => $this->selectedGenre,
+            'accumulated_story'=> $this->currentNode['content'],
             'character_visual' => $this->aiImageUrl,
-            'gender' => $this->gender,
-            'user_id' => Auth::check() ? Auth::id() : null,
-            'is_finished' => false,
-            'selected_location' => $this->selectedLocation,
-            'current_node_json' => $this->currentNode,
-            'story_step' => 1,
+            'gender'           => $this->gender,
+            'user_id'          => Auth::check() ? Auth::id() : null,
+            'is_finished'      => false,
+            'selected_location'=> $this->selectedLocation,
+            'current_node_json'=> $this->currentNode,
+            'story_step'       => 1,
         ]);
 
         $this->historyId = $history->id;
         $this->storyStep = 1;
-        
+
         $history->full_story_json = [[
-            'content' => $this->currentNode['content'],
-            'image' => $this->aiImageUrl,
+            'content'   => $this->currentNode['content'],
+            'image'     => $this->aiImageUrl,
             'timestamp' => now()->toDateTimeString()
         ]];
         $history->save();
@@ -167,23 +170,16 @@ class GameEngine extends Component
         session()->forget('error');
         $history = UserHistory::find($this->historyId);
 
-        // Cari index pilihan dan cek apakah itu ending
-        $isEndingChoice = false;
+        // Ambil next_node ID dari pilihan yang dipilih pemain
         $nextNodeId = null;
-        foreach ($this->currentNode['choices'] ?? [] as $idx => $choice) {
+        foreach ($this->currentNode['choices'] ?? [] as $choice) {
             if ($choice['choice_text'] === $choiceText) {
-                $choiceIndex = $idx;
-                if (isset($choice['is_ending']) && $choice['is_ending']) {
-                    $isEndingChoice = true;
-                }
-                if (isset($choice['next'])) {
-                    $nextNodeId = $choice['next'];
-                }
+                $nextNodeId = $choice['next_node'] ?? null;
                 break;
             }
         }
-        
-        // Update the existing last page with the chosen option
+
+        // Tandai pilihan di halaman cerita terakhir
         if ($history) {
             $storyPages = $history->full_story_json ?: [];
             if (count($storyPages) > 0) {
@@ -193,61 +189,66 @@ class GameEngine extends Component
             $history->save();
         }
 
-        // Incremen step
         $this->storyStep++;
 
-        // Generate next segment via AI
-        $nextSegment = $generator->generateNextNode(
-            $history->accumulated_story, 
-            $choiceText,
-            $this->selectedGenre,
-            $this->selectedLocation,
-            $this->userName,
-            $this->mountain,
-            $nextNodeId
-        );
-
-        if (!$nextSegment || !isset($nextSegment['content'])) {
-            session()->flash('error', "Gagal melanjutkan cerita. Silakan coba lagi.");
+        // Jika tidak ada next_node, paksa ending dengan pesan darurat
+        if (!$nextNodeId) {
+            $this->currentNode['is_ending'] = true;
+            $this->currentNode['choices'] = [];
+            $this->step = 'ending';
             return;
         }
 
-        $this->currentNode = [
-            'content' => $nextSegment['content'],
-            'choices' => $nextSegment['choices'] ?? [],
-            'is_ending' => $nextSegment['is_ending'] ?? (empty($nextSegment['choices']) ? true : false),
-            'mountain' => $this->mountain,
-            'node_id' => $this->currentNodeId
-        ];
-        
-        if (isset($nextSegment['node_id'])) {
-            $this->currentNodeId = $nextSegment['node_id'];
+        // Pilih variasi secara acak untuk setiap scene
+        $variationIndex = rand(0, 4);
+
+        // Muat scene berikutnya langsung dari file JSON berdasarkan next_node
+        $nextSegment = $generator->generateNextNode(
+            $this->selectedGenre,
+            $this->selectedLocation,
+            $this->userName,
+            $this->locationName,
+            $nextNodeId,
+            $variationIndex
+        );
+
+        if (!$nextSegment || !isset($nextSegment['content'])) {
+            session()->flash('error', "Gagal memuat scene [{$nextNodeId}]. Periksa file JSON di storage/app/.");
+            return;
         }
 
-        // Hard Cap: Jika sudah melebihi batas, paksa ending
+        $this->currentNodeId = $nextSegment['node_id'] ?? $nextNodeId;
+
+        $this->currentNode = [
+            'content'       => $nextSegment['content'],
+            'choices'       => $nextSegment['choices'] ?? [],
+            'is_ending'     => $nextSegment['is_ending'] ?? (empty($nextSegment['choices']) ? true : false),
+            'location_name' => $this->locationName,
+            'node_id'       => $this->currentNodeId,
+            'image'         => $nextSegment['image'] ?? null,
+        ];
+
+        // Hard Cap: paksa ending jika step melampaui batas maksimal
         if ($this->storyStep > $this->maxSteps) {
             $this->currentNode['is_ending'] = true;
             $this->currentNode['choices'] = [];
         }
 
-        // Get the mapped image for the new scene
-        $sceneImage = $this->getNextSceneImage($choiceText, $this->currentNode['content']);
+        $sceneImage = $nextSegment['image'] ?? $this->getNextSceneImage($this->selectedGenre, $this->selectedLocation, $this->currentNodeId);
         $imageUrl = asset($sceneImage);
 
-        // Append the newly generated content to the history
         if ($history) {
             $storyPages = $history->full_story_json ?: [];
-
             $storyPages[] = [
-                'content' => $this->currentNode['content'],
-                'image' => $imageUrl,
+                'content'   => $this->currentNode['content'],
+                'image'     => $imageUrl,
                 'timestamp' => now()->toDateTimeString()
             ];
-            $history->full_story_json = $storyPages;
+            $history->full_story_json   = $storyPages;
             $history->accumulated_story = $history->accumulated_story . "\n\n> " . $choiceText . "\n\n" . $this->currentNode['content'];
-            $history->character_visual = $imageUrl;
+            $history->character_visual  = $imageUrl;
             $history->current_node_json = $this->currentNode;
-            $history->story_step = $this->storyStep;
+            $history->story_step        = $this->storyStep;
             $history->save();
         }
 
@@ -299,18 +300,18 @@ class GameEngine extends Component
                     ->first();
 
         if ($history) {
-            $this->historyId = $history->id;
-            $this->userName = $history->user_name;
-            $this->gender = $history->gender;
+            $this->historyId     = $history->id;
+            $this->userName      = $history->user_name;
+            $this->gender        = $history->gender;
             $this->selectedGenre = $history->selected_genre;
             $this->selectedLocation = $history->selected_location;
-            $this->currentNode = $history->current_node_json;
-            $this->mountain = $this->currentNode['mountain'] ?? 'Argopuro';
+            $this->currentNode   = $history->current_node_json;
+            $this->locationName  = $this->currentNode['location_name'] ?? $this->resolveLocationName($this->selectedGenre, $this->selectedLocation);
             $this->currentNodeId = $this->currentNode['node_id'] ?? 'NARASI_AWAL';
-            $this->storyStep = $history->story_step;
-            $this->aiImageUrl = $history->character_visual;
-            $this->bgImageUrl = $history->character_visual;
-            $this->step = 'gameplay';
+            $this->storyStep     = $history->story_step;
+            $this->aiImageUrl    = $history->character_visual;
+            $this->bgImageUrl    = $history->character_visual;
+            $this->step          = 'gameplay';
         }
     }
 
@@ -369,53 +370,74 @@ class GameEngine extends Component
         );
     }
 
-    private function getNextSceneImage($choiceText, $currentNodeContent = '')
+    /**
+     * Memetakan gambar scene berdasarkan genre, lokasi, dan node_id yang aktif.
+     */
+    private function getNextSceneImage(string $genre, string $location, string $nodeId = ''): string
     {
-        if ($this->selectedGenre === 'Horror' && $this->selectedLocation === 'Pendakian') {
-            $choiceTextLower = strtolower($choiceText);
-            
-            if (str_contains($choiceTextLower, 'ikuti bisikan') || 
-                str_contains($choiceTextLower, 'ikuti suara') || 
-                str_contains($choiceTextLower, 'ikuti rintihan')) {
-                return 'Horror/Pendakian/alur 1 ikuti bisikan.png';
-            }
-            if (str_contains($choiceTextLower, 'abaikan') || 
-                str_contains($choiceTextLower, 'jangan sentuh') || 
-                str_contains($choiceTextLower, 'tinggalkan ransel')) {
-                return 'Horror/Pendakian/alur 1.2 menemukan goa.png';
-            }
-            if (str_contains($choiceTextLower, 'gunakan persediaan') || 
-                str_contains($choiceTextLower, 'gunakan biskuit') || 
-                str_contains($choiceTextLower, 'gunakan kaleng')) {
-                return 'Horror/Pendakian/alur 1.1 mati memakan persediaan.png';
-            }
-            if (str_contains($choiceTextLower, 'lanjut perjalanan') || 
-                str_contains($choiceTextLower, 'kekuatan gaib') || 
-                str_contains($choiceTextLower, 'memanfaatkan energi')) {
-                return 'Horror/Pendakian/alur 2.2.1.2.1 melawan hantu dan menang.png';
-            }
-            if (str_contains($choiceTextLower, 'tetap diam') || 
-                str_contains($choiceTextLower, 'bertahan di posisi') || 
-                str_contains($choiceTextLower, 'berdiam diri')) {
-                return 'Horror/Pendakian/alur 1.2 meninggal akibat kelelahan.png';
-            }
+        $genreLower = strtolower($genre);
+        $locClean   = strtolower(str_replace(' ', '', $location));
+        $nodeUpper  = strtoupper($nodeId);
 
-            $contentLower = strtolower($currentNodeContent);
-            if (str_contains($contentLower, 'sar') || str_contains($contentLower, 'selamat') || str_contains($contentLower, 'lolos')) {
+        if ($genreLower === 'horror') {
+            if (str_contains($locClean, 'pendakian') || str_contains($locClean, 'gunung')) {
+                // Pemetaan gambar berdasarkan node aktif untuk skenario Horror Pendakian
+                if (str_contains($nodeUpper, 'ENDING') && str_contains($nodeUpper, 'SELAMAT')) {
+                    return 'Horror/Pendakian/alur 2.2.1.2.1 melawan hantu dan menang.png';
+                }
+                if (str_contains($nodeUpper, 'ENDING') && (str_contains($nodeUpper, 'MATI') || str_contains($nodeUpper, 'TRAUMA'))) {
+                    return 'Horror/Pendakian/alur 1.2 meninggal akibat kelelahan.png';
+                }
+                if (str_contains($nodeUpper, 'BISIKAN') || str_contains($nodeUpper, 'ALUR_1')) {
+                    return 'Horror/Pendakian/alur 1 ikuti bisikan.png';
+                }
+                if (str_contains($nodeUpper, 'PETI') || str_contains($nodeUpper, 'ALUR_2')) {
+                    return 'Horror/Pendakian/alur 1.2 menemukan goa.png';
+                }
                 return 'Horror/Pendakian/intro awal.png';
             }
-            if (str_contains($contentLower, 'meninggal') || str_contains($contentLower, 'mati') || str_contains($contentLower, 'membusuk') || str_contains($contentLower, 'pasar setan')) {
-                return 'Horror/Pendakian/alur 1.2 meninggal akibat kelelahan.png';
+            if (str_contains($locClean, 'rumahsakit') || str_contains($locClean, 'rs')) {
+                return 'wpkakek.jpeg';
             }
         }
-        
-        if ($this->selectedGenre === 'Horror' && $this->selectedLocation === 'Rumah Sakit') {
-            return 'wpkakek.jpeg';
+
+        if ($genreLower === 'adventure') {
+            if (str_contains($locClean, 'pulau')) {
+                return 'Adventure/Pulau/pulau terpencil ( awal ).png';
+            }
         }
-        if ($this->selectedGenre === 'Adventure' && $this->selectedLocation === 'Pulau Terpencil') {
-            return 'japan.jpg';
-        }
+
         return 'wallpaperhorror.jpeg';
+    }
+
+    /**
+     * Menentukan nama lokasi spesifik berdasarkan genre dan kategori lokasi.
+     */
+    private function resolveLocationName(string $genre, string $location): string
+    {
+        $genreLower = strtolower($genre);
+        $locClean   = strtolower(str_replace(' ', '', $location));
+
+        $horrorHikeNames    = ['Gunung Slamet', 'Gunung Lawu', 'Gunung Argopuro', 'Gunung Merapi', 'Gunung Ciremai'];
+        $horrorHospitalNames = ['RS Kariadi', 'RS Parikesit', 'RS Sitanala', 'RS Sumber Waras', 'RS Cipto'];
+        $adventureIslandNames = ['Pulau Kumala', 'Pulau Bintan', 'Pulau Morotai', 'Pulau Weh', 'Pulau Nias'];
+        $adventureCaveNames  = ['Gua Jatijajar', 'Gua Pindul', 'Gua Lawa', 'Gua Petruk', 'Gua Surupan'];
+
+        if ($genreLower === 'horror') {
+            if (str_contains($locClean, 'pendakian') || str_contains($locClean, 'gunung')) {
+                return $horrorHikeNames[array_rand($horrorHikeNames)];
+            }
+            return $horrorHospitalNames[array_rand($horrorHospitalNames)];
+        }
+
+        if ($genreLower === 'adventure') {
+            if (str_contains($locClean, 'gua') || str_contains($locClean, 'cave')) {
+                return $adventureCaveNames[array_rand($adventureCaveNames)];
+            }
+            return $adventureIslandNames[array_rand($adventureIslandNames)];
+        }
+
+        return 'Lokasi Misterius';
     }
 
     public function render()
