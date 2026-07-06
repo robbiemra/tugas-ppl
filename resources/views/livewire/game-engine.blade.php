@@ -1,5 +1,92 @@
 <div class="min-h-screen p-4 md:p-8"
-     style="background-image: linear-gradient(180deg, rgba(30,30,25,0.6) 0%, rgba(40,35,30,0.65) 40%, rgba(20,15,10,0.8) 100%), url('{{ $bgImageUrl ?? asset('wallpaperhorror.jpeg') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #d4c5a9;">
+     style="background-image: linear-gradient(180deg, rgba(30,30,25,0.6) 0%, rgba(40,35,30,0.65) 40%, rgba(20,15,10,0.8) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #d4c5a9;">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&family=Inter:wght@300;400;500;700&display=swap');
+
+        /* Scoped overrides to align with landing page styling */
+        .horror-title {
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 800 !important;
+            letter-spacing: 0.15em !important;
+            background: linear-gradient(135deg, #ffffff 0%, #d4c5a9 55%, #a6906f 100%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+            animation: none !important;
+        }
+
+        .horror-subtitle {
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.2em !important;
+            text-transform: uppercase;
+        }
+
+        .story-text {
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 400 !important;
+            line-height: 1.75 !important;
+        }
+
+        .horror-card {
+            background: linear-gradient(135deg, rgba(15, 12, 10, 0.45) 0%, rgba(5, 2, 2, 0.65) 100%) !important;
+            backdrop-filter: blur(12px) saturate(120%);
+            -webkit-backdrop-filter: blur(12px) saturate(120%);
+            border: 1px solid rgba(217, 119, 6, 0.15) !important;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(217, 119, 6, 0.02) !important;
+        }
+
+        .horror-btn {
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 600 !important;
+            background: rgba(20, 16, 12, 0.25) !important;
+            border: 1px solid rgba(217, 119, 6, 0.12) !important;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45), inset 0 0 15px rgba(217, 119, 6, 0.02) !important;
+            color: rgba(235, 220, 185, 0.8) !important;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            transform: none !important;
+        }
+        .horror-btn:hover {
+            background: rgba(217, 119, 6, 0.12) !important;
+            border-color: rgba(217, 119, 6, 0.4) !important;
+            color: #ffffff !important;
+            box-shadow: 0 12px 30px rgba(217, 119, 6, 0.15), inset 0 0 15px rgba(217, 119, 6, 0.05) !important;
+            transform: translateY(-2px) scale(1.01) !important;
+        }
+
+        .horror-input {
+            font-family: 'Inter', sans-serif !important;
+            background: rgba(10, 8, 6, 0.85) !important;
+            border: 1px solid rgba(217, 119, 6, 0.25) !important;
+            color: #ebdcb9 !important;
+            transition: all 0.3s ease;
+        }
+        .horror-input:focus {
+            border-color: #8f6e4a !important;
+            box-shadow: 0 0 12px rgba(217, 119, 6, 0.25) !important;
+        }
+
+        /* Scrollbar override */
+        ::-webkit-scrollbar-thumb {
+            background: #8f6e4a !important;
+        }
+
+        .landing-btn {
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 600 !important;
+            background: linear-gradient(90deg, #5c3a21 0%, #8f6e4a 50%, #5c3a21 100%) !important;
+            border: 1px solid rgba(217, 119, 6, 0.4) !important;
+            box-shadow: 0 10px 30px rgba(143, 110, 74, 0.25), inset 0 0 15px rgba(217, 119, 6, 0.15) !important;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+        .landing-btn:hover {
+            background: linear-gradient(90deg, #6d4b2e 0%, #a3825d 50%, #6d4b2e 100%) !important;
+            box-shadow: 0 15px 40px rgba(143, 110, 74, 0.45), 0 0 15px rgba(217, 119, 6, 0.35), inset 0 0 15px rgba(217, 119, 6, 0.2) !important;
+            transform: translateY(-2px) scale(1.02) !important;
+        }
+    </style>
 
     <div class="max-w-6xl mx-auto">
 
@@ -87,10 +174,7 @@
                         </div>
 
                         <button wire:click="saveBiodata"
-                                class="horror-btn w-full py-4 rounded-lg font-bold uppercase tracking-widest text-lg mt-4
-                                       bg-gradient-to-r from-amber-900 to-amber-800 text-amber-100
-                                       hover:from-amber-800 hover:to-amber-700 transition-all duration-300
-                                       border border-amber-700/50">
+                                class="landing-btn w-full py-4 rounded-lg font-bold uppercase tracking-widest text-lg mt-4 transition-all duration-300">
                             Mulai Petualangan Baru
                         </button>
 

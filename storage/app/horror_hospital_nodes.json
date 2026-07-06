@@ -1,396 +1,601 @@
 {
-  "NARASI_AWAL": {
-    "variations": [
-      {
-        "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita dengan bau anyir yang menyengat dan hawa magis yang pekat. “Guys, perasaanku gak enak banget. Pulang aja yuk?” bisik Nana ketakutan sambil menggenggam erat lenganmu. “Tanggung, Na. Kita udah di dalam,” sahut Beni mencoba tenang, meski senter di tangannya mulai bergetar. $NAME pun mengangguk setuju, berusaha menguatkan mental. Kita terus melangkah menyusuri koridor yang runtuh hingga tiba di bangsal utama. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang berantakan itu. Kamu fokus membidik sebuah ranjang pasien tua di sudut ruangan. Tiba-tiba, suasana menjadi sunyi senyap. Detik berikutnya, bulu kudukmu berdiri sempurna saat melihat tirai tempat tidur bergerak sendiri secara perlahan. “Eh... lu lihat gak? Tirainya gerak sendiri...” gumam Beni dengan wajah pucat pasi. “Ssst! Jangan berisik, kamera gua lagi rekam,” bisikmu tegang. “Gua mau keluar! Ada sesuatu di balik tirai itu!” tangis Nana pecah sambil membekap mulutnya. Melalui lensa kameramu, sebuah siluet hitam samar mulai terbentuk di balik kain lusuh tersebut, seolah bersiap menerkam.",
-        "choices": [
-          {"choice_text": "Abaikan dan Cabut", "next_node": "ALUR_1"},
-          {"choice_text": "Mengecek Tempat Tidur", "next_node": "ALUR_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita dengan embusan angin malam yang menusuk tulang dan bau busuk yang menyengat, membuat nyali seketika menciut. “Guys, beneran deh, hawa di sini beda banget. Kita balik aja yuk?” bisik Nana dengan suara bergetar, meremas ujung jaketmu. “Jangan cemen, Na. Udah kepalang tanggung, kita harus dapet footage bagus,” potong Beni ketus, walau sorot senternya tampak bergetar tidak tenang. $NAME pun mengisyaratkan mereka untuk tetap melangkah masuk. Kita menyusuri lorong pengap yang gelap gulita hingga tiba di sebuah ruangan ujung. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang dipenuhi sisa alat medis karatan tersebut. Kamera kamu arahkan ke sebuah ranjang bersalin berkarat. Tiba-tiba, suhu ruangan anjlok drastis dan keheningan mencekam menyelimuti kita. Detik berikutnya, jantungmu serasa berhenti berdetak saat melihat tirai tempat tidur bergerak sendiri dengan sentakan kasar. “Eh... lu lihat gak? Itu tirainya gerak sendiri, makin kenceng!” gumam Beni, mendadak mundur selangkah dengan wajah pucat pasi. “Ssst! Diem dulu, kamera gua lagi dapet momen pas nih,” bisikmu tegang, menahan gemetar. “Gua gak tahan! Gua mau keluar! Ada yang berdiri di situ!” jerit Nana tertahan sambil menangis. Melalui layar kamera, kamu melihat bayangan kepala manusia perlahan menyembul dari balik tirai lusuh itu, bersiap menatap kalian.",
-        "choices": [
-          {"choice_text": "Abaikan dan Cabut", "next_node": "ALUR_1"},
-          {"choice_text": "Mengecek Tempat Tidur", "next_node": "ALUR_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita; terdengar suara rintihan samar dari langit-langit koridor bercampur bau obat-obatan kedaluwarsa yang membuat mual. “Guys, telinga gua sakit banget denger suara tadi. Pulang aja yuk, plis?” bisik Nana sambil menangis, menyembunyikan wajahnya di balik punggungmu. “Tahan, Na. Nanggung banget, bentar lagi kita kelar,” sahut Beni, berusaha menutupi rasa takutnya padahal keringat dingin mulai membahasi dahinya. $NAME pun memberi tanda untuk tetap bertahan. Kita terus berjalan meraba kegelapan hingga masuk ke dalam bangsal isolasi. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang penuh bercak hitam mirip darah kering. Fokus kameramu terkunci pada sebuah ranjang besi berkarat di pojok ruangan. Tiba-tiba, udara di sekitar kita menjadi sangat berat. Detik berikutnya, bulu kudukmu berdiri sempurna saat melihat tirai tempat tidur bergerak sendiri seperti ada seseorang yang sedang merangkak di baliknya. “Eh... lu lihat gak? Tirainya gerak-gerak kayak ada yang ngegeret dari bawah!” gumam Beni dengan suara gemetar hebat. “Ssst! Lu berdua diem dulu, kamera gua lagi rekam fokus ke sana,” bisikmu, mencoba menahan napas. “Gua mau keluar! Itu... itu ada tangan hitam keluar dari balik tirai!” jerit Nana histeris. Melalui lensa kameramu, sepasang punggung tangan kurus kering dengan kuku-kuku panjang perlahan mulai menyibak tirai lusuh tersebut.",
-        "choices": [
-          {"choice_text": "Abaikan dan Cabut", "next_node": "ALUR_1"},
-          {"choice_text": "Mengecek Tempat Tidur", "next_node": "ALUR_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita; pintu utama mendadak terbanting keras di belakang kita, diiringi kepulan debu tebal dan aroma tanah kuburan yang menusuk hidung. “Guys, ini udah gak beres, pintunya kekunci dari luar! Pulang aja yuk, gua takut!” bisik Nana histeris, mencengkeram erat kedua pundakmu dari belakang. “Tenang, Na, ada jalan keluar lain di belakang. Nanggung, kita terusin dulu,” sahut Beni dengan suara bergetar, mencoba menyembunyikan kepanikannya. $NAME pun mengangguk, memaksa langkah kaki untuk terus maju. Kita berjalan pelan menyusuri lorong IGD yang pengap hingga tiba di sebuah ruangan bersalin tua. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang dipenuhi pecahan kaca dan sisa botol infus. Sorot kameramu tertuju pada satu-satunya ranjang yang masih utuh. Tiba-tiba, keheningan mutlak melanda, bahkan suara jangkrik di luar pun lenyap. Detik berikutnya, jantungmu mencelos saat melihat tirai tempat tidur bergerak sendiri terangkat ke atas, seolah ditarik oleh sesuatu yang melayang di baliknya. “Eh... lu lihat gak? Tirainya keangkat sendiri, gak ada angin padahal!” gumam Beni, langkah kakinya spontan mundur ke dekat pintu. “Ssst! Jangan berisik, kamera gua lagi dapet footage yang paling jelas nih,” bisikmu tegang, menahan gemetar di tangan. “Gua gak mau mati di sini! Itu... ada kaki pucat ngegantung di balik tirai!” tangis Nana pecah terisak-isak. Melalui lensa kameramu, sepasang kaki anak kecil yang biru pucat perlahan turun dari atas langit-langit, menjuntai tepat di balik tirai lusuh tersebut.",
-        "choices": [
-          {"choice_text": "Abaikan dan Cabut", "next_node": "ALUR_1"},
-          {"choice_text": "Mengecek Tempat Tidur", "next_node": "ALUR_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita; sekilas bayangan hitam besar berkelebat cepat di ujung koridor, disusul suara ketukan ritmis dari dalam tembok yang membuat jantung berdegup kencang. “Guys, getaran di sini negatif banget, dada gua sesak. Pulang aja yuk, plis?” bisik Nana dengan napas memburu, wajahnya pucat pasi sambil memeluk lenganmu. “Tanggung, Na. Kamera udah on, bentar lagi kita sampai di bangsal paling angker,” sahut Beni tegang, sambil menyapu ruangan dengan senter yang mulai berkedip-kedip. $NAME pun memberi isyarat agar mereka tetap merapat dan tidak terpisah. Kita melangkah masuk ke bekas ruang rawat anak yang penuh dengan mainan usang berdebu. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang hawanya sedingin es tersebut. Fokus kameramu terkunci pada sebuah ranjang bayi besi di sudut ruangan. Tiba-tiba, sebuah mainan kotak musik tua berbunyi sendiri secara instan. Detik berikutnya, bulu kudukmu berdiri sempurna saat melihat tirai tempat tidur bergerak sendiri meliuk-liuk kasar, seolah ada sesuatu yang sedang mengamuk di dalamnya. “Eh... lu lihat gak? Tirainya gerak sendiri kek ada yang nendang dari dalam!” gumam Beni, suaranya naik satu oktav karena panik. “Ssst! Tetap tenang, kamera gua lagi rekam fenomena ini. Jangan ada yang lari,” bisikmu, mencoba menstabilkan pegangan kamera. “Gua mau keluar! Itu... tirainya basah sama darah!” jerit Nana histeris sambil menunjuk ke depan. Melalui lensa kameramu, cairan merah kental mulai merembes cepat, menembus kain tirai lusuh tersebut disertai suara cakaran kuku yang memekakkan telinga.",
-        "choices": [
-          {"choice_text": "Abaikan dan Cabut", "next_node": "ALUR_1"},
-          {"choice_text": "Mengecek Tempat Tidur", "next_node": "ALUR_2"}
-        ],
-        "is_ending": false
-      }
-    ]
-  },
-  "ALUR_1": {
-    "variations": [
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan isi tirai tersebut. Namun, saat kalian berbalik, braaakkk! Pintu tertutup dan terkunci dengan keras dari luar secara misterius. Senter Beni langsung menyorot ke ujung lorong bangsal, dan seketika jantung kalian serasa berhenti: sosok suster ngesot mendekat dengan cepat, menyeret tubuhnya yang hancur di atas lantai sambil menyeringai busuk. “Lari, guys! Lewat pintu belakang!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menyelamatkan diri. Anehnya, lorong memanjang seolah tanpa ujung, membuat $NAME dan rekan-rekan terjebak dalam labirin tak berujung. Teror semakin mencekam saat suara roda tempat tidur pasien yang berkarat mendadak bergaung nyaring dari arah belakang, berputar kencang mengejar langkah kaki kalian yang mulai kelelahan. “Gua gak kuat lagi! Kita harus sembunyi!” jerit Nana sambil menangis tersedu-sedu, napasnya sudah putus-putus karena syok. Di ujung lorong yang remang-remang, kamu melihat dua jalur penyelamatan yang bisa menjadi tempat berlindung sementara dari kejaran makhluk mengerikan itu. Nyawa kalian kini bertumpu pada keputusan cepatmu selanjutnya.",
-        "choices": [
-          {"choice_text": "Tangga Darurat", "next_node": "ALUR_1_1"},
-          {"choice_text": "Ruang Administrasi", "next_node": "ALUR_1_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan bayangan di balik kain tersebut. Namun, belum sempat kalian melangkah keluar, braaakkk! Pintu tertutup mendadak dan terkunci dari luar dengan sangat keras. Bersamaan dengan itu, senter Beni berkedip menyorot lantai, memperlihatkan sosok suster ngesot mendekat patah-patah dengan kecepatan tidak wajar, meninggalkan jejak darah hitam yang anyir. “Lari, guys! Jangan sampai ketangkep!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kegelapan. Sialnya, lorong memanjang seolah ditarik secara gaib, membuat pintu keluar terasa kian menjauh. Teror semakin menjadi-jadi saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring di belakang, berputar kencang mengejar langkah kaki kalian layaknya mesin pembunuh. “Gua gak kuat, kaki gua lemes!” jerit Nana histeris sambil memeluk pundak $NAME dalam kepanikan total. Suara geseran tubuh suster dan derit roda brankar itu terdengar makin mendekat, siap merenggut nyawa kalian. Di ujung lorong yang buntu, perhatianmu terpecah pada dua akses darurat yang tersisa.",
-        "choices": [
-          {"choice_text": "Tangga Darurat", "next_node": "ALUR_1_1"},
-          {"choice_text": "Ruang Administrasi", "next_node": "ALUR_1_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan cakar mengerikan itu. Namun, baru dua langkah kalian berbalik, braaakkk! Pintu tertutup membentur kosen dengan keras hingga terkunci secara gaib. Dari sudut tergelap dekat pintu, sesosok suster ngesot mendekat dengan gerakan patah-patah yang mengerikan, mengeluarkan suara rintihan pilu bercampur tawa cekikikan yang menggema di seluruh ruangan. “Lari, guys! Jangan lewat depan!” teriak Beni panik. Kalian langsung lari tunggang-langgang menembus pintu penghubung darurat. Sialnya, begitu kalian keluar, lorong memanjang secara aneh menjadi berkali-kali lipat lebih jauh, seolah mempermainkan kewarasan $NAME dan tim. Suasana makin mencekam saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring dari arah belakang, menggelinding cepat mengejar kalian seakan didorong oleh kemarahan makhluk halus. “Gua gak kuat lagi, sesek banget dadaku!” jerit Nana terengah-engah dengan air mata yang terus mengalir deras. Derit roda brankar dan suara seretan tubuh suster itu terdengar makin mendekat tepat di belakang tengkukmu. Di tengah kepanikan mutlak, pandanganmu menangkap dua jalan alternatif di ujung lorong yang bisa kalian masuki.",
-        "choices": [
-          {"choice_text": "Tangga Darurat", "next_node": "ALUR_1_1"},
-          {"choice_text": "Ruang Administrasi", "next_node": "ALUR_1_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan sepasang kaki pucat yang menggelantung tersebut. Namun, saat kalian berbalik menuju ambang pintu, braaakkk! Pintu tertutup secara bertenaga dan terkunci rapat dari luar. Senter Beni langsung menyorot ke bawah, memperlihatkan sosok suster ngesot mendekat secara agresif, menyeret tubuhnya yang hancur dengan kuku-kuku jari yang mencakar lantai hingga menimbulkan suara ngilu. “Lari, guys! Jangan sampai kena!” teriak Beni dengan suara pecah. Kalian langsung lari tunggang-langgang menerobos kegelapan koridor. Entah trik gaib apa yang terjadi, lorong memanjang seolah tanpa ujung, membuat $NAME dan tim berputar-putar di tempat yang sama. Keadaan kian parah saat suara roda tempat tidur pasien yang berkarat mendadak berdengung nyaring dari kegelapan di belakang, melaju sangat kencang mengejar langkah kaki kalian. “Gua gak kuat lagi, kaki gua gemeteran!” jerit Nana histeris, napasnya sudah putus-putus menahan rasa takut yang luar biasa. Derit roda brankar misterius itu terdengar semakin mendekat, siap meremukkan apa saja di depannya. Tepat di persimpangan buntu, kamu melihat dua jalan keluar yang bisa menyelamatkan nyawa kalian.",
-        "choices": [
-          {"choice_text": "Tangga Darurat", "next_node": "ALUR_1_1"},
-          {"choice_text": "Ruang Administrasi", "next_node": "ALUR_1_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan rembesan darah misterius itu. Namun, baru saja kalian membalikkan badan, braaakkk! Pintu tertutup dengan hantaman keras dan langsung terkunci rapat dari luar. Dari kegelapan di bawah kolong meja medis, sesosok suster ngesot mendekat dengan sangat cepat, mendongakkan kepalanya yang hancur sambil mengeluarkan suara tawa melengking yang memekakkan telinga. “Lari, guys! Jangan sampai kedorong ke arah dia!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kepulan debu koridor. Sialnya, secara gaib lorong memanjang menjadi tak terbatas, membuat pintu-pintu di kanan-kiri kalian seolah bergerak mundur. Teror kian memuncak saat suara roda tempat tidur besi mendadak berderit nyaring dari arah belakang, meluncur sangat kencang mengejar langkah kaki kalian layaknya mesin pemburu yang haus darah. “Gua gak kuat lagi, dada gua sesek banget!” jerit Nana tersedu-sedu sambil terus berlari pincang karena panik. Derit roda brankar berdarah itu terdengar semakin mendekat, hanya berjarak beberapa meter di belakang tengkuk kalian. Di ujung persimpangan koridor yang remang-remang, $NAME harus segera menentukan arah pelarian selanjutnya.",
-        "choices": [
-          {"choice_text": "Tangga Darurat", "next_node": "ALUR_1_1"},
-          {"choice_text": "Ruang Administrasi", "next_node": "ALUR_1_2"}
-        ],
-        "is_ending": false
-      }
-    ]
-  },
-  "ALUR_1_1": {
-    "variations": [
-      {
-        "content": "“Lewat sini! Kita turun ke lantai bawah!” teriakmu sambil menarik pintu besi hijau itu. Kalian bertiga langsung menghambur masuk dan mulai turun tangga dengan tergesa-gesa. Langkah kaki kalian bergema keras di dalam lorong tangga yang sempit dan berdebu. Namun, setelah berlari turun selama beberapa menit yang melelahkan, kamu menyadari ada yang tidak beres. Langkahmu terhenti seketika saat melihat plang di dinding; nomer lantai tidak berubah sama sekali, tetap menunjukkan angka lantai empat secara tidak masuk akal. “Kok... kok kita gak nyampe-nyampe bawah? Ini masih lantai empat!” bisik Beni dengan suara gemetar, menyenter plang semen tersebut. Keheningan yang dingin tiba-tiba mencekik udara di sekitar kalian, membuat bulu kuduk berdiri sempurna. Di tengah kebingungan dan rasa lelah yang mendera, Nana mendadak mematung dengan mata melotot penuh teror. Wajahnya pucat pasi seolah darah telah tersedot habis dari tubuhnya. “G-guys... lu berdua denger gak?” rintih Nana dengan bibir bergetar hebat. Dia mencengkeram lengan jaket $NAME dengan sangat kencang. “Ada suara di dekat kuping gua... teman dengar bisikan dingin banget: ‘Tunggu giliran’.” Seketika itu juga, terdengar suara tawa melengking seorang wanita yang menggema dari arah bawah tangga, disusul suara langkah kaki yang berat mulai menaiki anak tangga menuju posisi kalian.",
-        "choices": [
-          {"choice_text": "Terus Turun", "next_node": "ENDING_1"},
-          {"choice_text": "Berhenti Cari Suara", "next_node": "ENDING_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Lewat tangga, cepat turun!” teriakmu sambil mendobrak pintu besi darurat yang berdebu. Kalian bertiga langsung menghambur masuk dan mulai turun tangga secepat mungkin, berharap bisa segera keluar dari tempat terkutuk ini. Napas kalian memburu, berkejaran dengan gema langkah kaki sendiri yang memantul di dinding semen yang lembap. Tapi, keanehan segera terjadi. Meski kaki kalian sudah melangkah turun puluhan anak tangga, nomer lantai tidak berubah sama sekali; plang di dinding tetap menunjukkan angka yang sama secara mustahil. “Tunggu, ini gak masuk akal! Kita dari tadi muter-muter di lantai yang sama!” seru Beni panik, mengarahkan senternya ke arah plang angka lantai yang seolah mengejek kewarasan $NAME dan tim. Suhu di dalam lorong tangga mendadak anjlok drastis hingga napas kalian mengembun. Di tengah keheningan mencekam itu, Nana tiba-tiba berhenti melangkah. Tubuhnya gemetar hebat dan kedua tangannya spontan membekap telinga. “G-guys... ada yang ngomong di sebelah gua,” bisik Nana dengan suara nyaris habis karena ketakutan. Air matanya kembali tumpah. Teman dengar bisikan gaib yang sangat dingin dan serak tepat di telinganya: ‘Tunggu giliran’. Belum sempat kamu mencerna ucapan Nana, gema suara tangisan bayi yang menyayat hati mendadak terdengar dari kegelapan anak tangga di bawah kalian, perlahan berubah menjadi suara tawa cekikikan yang semakin mendekat.",
-        "choices": [
-          {"choice_text": "Terus Turun", "next_node": "ENDING_1"},
-          {"choice_text": "Berhenti Cari Suara", "next_node": "ENDING_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Lewat tangga darurat, cepat turun!” teriakmu sambil menarik pintu besi hijau di ujung kiri. Kalian langsung menghambur masuk dan turun tangga setengah melompat demi menghindari kejaran hantu suster tersebut. Langkah kaki kalian berdentum keras di lorong semen yang sempit. Namun, setelah berlari turun cukup jauh hingga lutut terasa lemas, kamu menyadari keanehan yang mengerikan: nomer lantai tidak berubah sama sekali, plang di dinding tetap menunjukkan angka lantai yang sama seolah kalian terjebak dalam lingkaran waktu. “Gua gak salah lihat, kan? Kita gak turun-turun dari tadi!” seru Beni panik, menyenter plang semen itu dengan tangan yang gemetar hebat. Udara di sekitar kalian mendadak terasa sangat pekat dan berbau busuk. Di tengah kepanikan itu, Nana tiba-tiba membeku di anak tangga. Wajahnya pucat pasi seperti mayat, dan tatapannya kosong menatap dinding kosong di sampingnya. “Guys... ada yang nempel di belakang gua,” rintih Nana dengan suara bergetar menahan tangis. Teman dengar bisikan gaib yang sangat dingin dan serak tepat di lubang telinganya: ‘Tunggu giliran’. Seketika itu juga, terdengar suara gesekan kuku yang sangat nyaring mencakar dinding dari arah bawah tangga, perlahan mendaki ke arah posisi $NAME berdiri.",
-        "choices": [
-          {"choice_text": "Terus Turun", "next_node": "ENDING_1"},
-          {"choice_text": "Berhenti Cari Suara", "next_node": "ENDING_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Lewat sini, kita turun ke bawah!” teriakmu sambil menarik pintu darurat abu-abu yang berdebu. Kalian bertiga langsung menghambur masuk dan mulai turun tangga dengan tergesa-gesa, melompati anak tangga dalam kegelapan yang pekat. Jantungmu berdegup kencang, berkejaran dengan gema langkah kaki yang memantul di dinding semen dingin. Namun, setelah berlari turun cukup jauh hingga napas terasa sesak, kamu menyadari keanehan yang membuat darahmu berdesir; nomer lantai tidak berubah sama sekali pada plang dinding, seolah kalian hanya berlari di tempat yang sama secara tidak masuk akal. “Kemana tangganya? Ini masih lantai empat!” seru Beni panik, sorot senternya bergetar hebat menunjuk plang usang tersebut. Suhu udara mendadak anjlok drastis hingga sedingin es. Di tengah kepanikan mutlak itu, Nana tiba-tiba menghentikan langkahnya dan mematung dengan mata melotot penuh teror. Wajahnya pucat pasi tanpa darah. “Guys... ada yang napas di leher gua,” bisik Nana dengan suara nyaris habis karena syok. Teman dengar bisikan gaib yang sangat berat, dingin, dan berbau busuk tepat di telinganya: ‘Tunggu giliran’. Seketika itu juga, terdengar suara tawa cekikikan anak kecil yang melengking tinggi dari arah kegelapan bawah tangga, disusul suara benturan keras yang mulai menaiki anak tangga menuju posisi $NAME.",
-        "choices": [
-          {"choice_text": "Terus Turun", "next_node": "ENDING_1"},
-          {"choice_text": "Berhenti Cari Suara", "next_node": "ENDING_2"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Lewat tangga darurat, cepat turun ke bawah!” teriakmu sambil menarik pintu besi hijau di ujung lorong. Kalian bertiga langsung menghambur masuk dan mulai turun tangga setengah melompat dalam kegelapan yang pekat. Napas kalian memburu berkejaran dengan gema langkah kaki yang memantul di dinding semen. Namun, setelah berlari turun dengan lutut yang mulai lemas, kamu menyadari keanehan yang membuat darahmu berdesir; nomer lantai tidak berubah sama sekali, plang usang di dinding tetap menunjukkan angka yang sama secara tidak masuk akal. “Kok kita gak nyampe-nyampe bawah? Ini masih lantai yang sama!” seru Beni panik, sorot senternya bergetar hebat menunjuk plang tersebut. Suhu udara mendadak anjlok drastis hingga sedingin es, bersamaan dengan bau anyir darah yang semakin menyengat. Di tengah kepanikan mutlak itu, Nana tiba-tiba menghentikan langkahnya dan mematung dengan mata melotot penuh teror. “G-guys... ada yang tiup-tiup leher gua,” bisik Nana dengan suara nyaris habis karena syok. Teman dengar bisikan gaib yang sangat berat, dingin, dan parau tepat di telinganya: ‘Tunggu giliran’. Seketika itu juga, terdengar suara ketukan ritmis yang sangat keras dari balik dinding semen di bawah tangga, diiringi suara cakaran kuku yang mulai mendaki naik menuju ke arah posisi $NAME berdiri.",
-        "choices": [
-          {"choice_text": "Terus Turun", "next_node": "ENDING_1"},
-          {"choice_text": "Berhenti Cari Suara", "next_node": "ENDING_2"}
-        ],
-        "is_ending": false
-      }
-    ]
-  },
-  "ENDING_1": {
-    "variations": [
-      {
-        "content": "“Gak usah peduliin, ayo terus turun aja, pasti ada jalan keluar!” teriakmu, memutus kepanikan. Kamu menarik paksa Nana dan Beni untuk mengabaikan bisikan gaib itu dan kembali berlari menuruni anak tangga secepat mungkin. Jantungmu berdegup kencang, memompa adrenalin di tengah kegelapan yang kian pekat. Setelah perjuangan yang menguras tenaga hingga kaki terasa mati rasa, secercah harapan muncul saat kalian melihat papan penunjuk bertuliskan lantai paling bawah. Kalian akhirnya sampai lantai dasar, namun kegembiraan itu langsung sirna seketika saat kamu mencoba mendobrak pintu keluar. Sial, pintu terkunci rapat dari luar dengan rantai besi yang tebal! Kamu menggedornya dengan frustrasi, namun pintu itu sama sekali tidak bergeming. “Gak bisa dibuka! Kunci mati!” serumu panik. “G-guys... di atas kita...” cicit Nana dengan wajah yang sudah seputih kapas, menunjuk ke arah koridor tangga yang baru saja kalian lewati. Seketika itu juga, keheningan mencekam pecah oleh sebuah teror yang nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas semen dingin, bergema sangat dekat di ujung tangga. Gema putaran besi berkarat itu bergerak turun dengan kecepatan tinggi, bersiap menggilas apa saja. Kalian berbalik, mencoba mencari celah untuk meloloskan diri, namun terlambat. TAMAT: Kalian menyadari bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar, terkunci di sudut sempit bersama kegelapan yang perlahan mulai menelan kalian hidup-hidup.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Jangan dihiraukan, ayo terus turun! Kita harus cari jalan keluar!” teriakmu lantang, mencoba mengalahkan rasa takut yang mulai melumpuhkan akal sehat. Kamu menarik paksa lengan Nana dan Beni, memaksa langkah kaki kalian untuk kembali berderap menuruni anak tangga menembus kegelapan pekat yang terasa semakin dingin mencekik. Setelah beberapa menit berlari dalam kepanikan total hingga paru-paru terasa terbakar, secercah harapan muncul saat sorot senter Beni menangkap plang bertuliskan lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, embusan napas lega itu langsung berubah menjadi jeritan frustrasi ketika kamu mencoba mendobrak pintu besi di depanmu. Sial, pintu terkunci rapat dari luar dengan belitan rantai berkarat yang sangat tebal. Kamu menghantamkan tubuhmu ke pintu, namun benda padat itu sama sekali tidak bergeming. “Gak bisa! Kunci mati, guys! Kita gak bisa keluar!” seru Beni panik, menyenter rantai besi tersebut dengan tangan yang gemetar hebat. Belum sempat kalian berbalik mencari jalan lain, keheningan lorong tangga itu mendadak pecah oleh teror yang paling nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas lantai semen, menggelinding turun dari arah kegelapan anak tangga atas dengan kecepatan tinggi. Gema putaran roda besi brankar yang berkarat itu terdengar sangat dekat, siap meremukkan tubuh kalian. TAMAT: Kalian terdesak, meraba-raba dinding dengan panik, hingga akhirnya tersadar bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar, menunggu ajal di ujung lorong yang buntu.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Gak usah dipikirin, ayo terus turun aja!” teriakmu, berusaha memotong kepanikan yang kian merayap. Kamu menarik paksa Nana yang membeku dan memberi isyarat pada Beni untuk kembali berlari menuruni anak tangga menembus kegelapan. Deru napas kalian berkejaran dengan ketakutan yang kian mencekik. Setelah beberapa menit yang terasa seperti keabadian, secercah harapan muncul saat sorot senter Beni menangkap plang penunjuk lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, kebahagiaan itu langsung sirna dan berganti menjadi keputusasaan total ketika kamu mencoba mendobrak pintu besi di depanmu. Sial, pintu terkunci rapat oleh gembok besar dan belitan rantai berkarat yang mustahil dihancurkan dengan tangan kosong. Kamu menggedornya dengan frustrasi hingga telapak tanganmu memar. “Gak bisa dibuka! Kita terkunci, guys!” serumu panik. “Udah lambat... dia udah di sini,” bisik Nana pasrah, menatap ke arah tangga dengan pandangan kosong. Seketika itu juga, bulu kudukmu berdiri sempurna. Suara roda tepat di belakang kalian, berderit nyaring menuruni anak tangga terakhir. Gema putaran roda besi brankar yang berkarat itu meluncur cepat di atas semen dingin, memotong semua jalur yang tersisa. Kalian berbalik memunggungi pintu, meraba dinding mencari celah pelarian, namun terlambat. TAMAT: Kalian menyadari bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar, terkunci bersama sosok mengerikan yang perlahan muncul dari balik kegelapan.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Gak usah peduliin, ayo terus turun aja!” teriakmu lantang, berusaha mengalahkan rasa takut yang melumpuhkan. Kamu menarik paksa lengan Nana yang lemas dan memberi isyarat pada Beni untuk kembali berlari menuruni anak tangga menembus kegelapan pekat. Napas kalian memburu berkejaran dengan gema langkah kaki sendiri yang memantul di dinding semen dingin. Setelah beberapa menit berlari dalam kepanikan total, secercah harapan muncul saat sorot senter menangkap plang penunjuk lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, embusan napas lega itu langsung berubah menjadi jeritan frustrasi ketika kamu mencoba mendobrak pintu darurat di depanmu. Sial, pintu terkunci rapat dari luar oleh belitan rantai besi berkarat yang sangat tebal. Kamu menghantamkan seluruh berat tubuhmu ke pintu, namun besi tua itu tetap tidak bergeming. “Gak bisa! Pintunya dikunci mati!” seru Beni panik, sorot senternya bergetar hebat. Belum sempat kalian berbalik mencari jalan lain, keheningan di dalam lorong tangga itu mendadak pecah oleh teror yang paling nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas lantai semen, meluncur turun dari kegelapan anak tangga atas dengan kecepatan tinggi. Gema putaran roda besi brankar itu terdengar sangat dekat, seolah ujungnya sudah menyentuh ujung pakaianmu. TAMAT: Kalian terdesak ke sudut buntu, menyadari dengan keputusasaan mutlak bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Gak usah peduliin, ayo terus turun aja!” teriakmu lantang, berusaha menghentikan kepanikan yang kian merayap. Kamu menarik paksa lengan Nana yang gemetaran dan memberi kode pada Beni untuk kembali berlari menuruni anak tangga menembus kegelapan pekat yang semakin berbau anyir. Setelah beberapa menit berlari dalam ketakutan mutlak hingga lutut terasa mau lolos, secercah harapan muncul saat sorot senter menangkap plang penunjuk lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, embusan napas lega itu langsung berubah menjadi jeritan keputusasaan ketika kamu mencoba mendobrak pintu besi di depanmu. Sial, pintu terkunci rapat oleh gembok besar dan lilitan rantai berkarat yang sangat tebal. Kamu menghantamkan tubuhmu berulang kali ke pintu, namun besi tua itu sama sekali tidak bergeming. “Gak bisa dibuka! Kita bener-bener dikunci dari luar!” seru Beni panik dengan suara yang sudah pecah. Belum sempat kalian mencari celah lain untuk meloloskan diri, keheningan di lorong tangga yang buntu itu mendadak pecah oleh teror yang paling nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas lantai semen dingin, meluncur turun dari kegelapan anak tangga atas dengan kecepatan tinggi. Gema putaran roda besi brankar itu terdengar sangat dekat, seolah hembusan angin dinginnya sudah menyentuh tengkukmu. TAMAT: Kalian terdesak ke sudut dinding, menyadari dengan keputusasaan mutlak bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar.",
-        "choices": [],
-        "is_ending": true
-      }
-    ]
-  },
-  "ENDING_2": {
-    "variations": [
-      {
-        "content": "“Tunggu, kita harus tahu itu suara apa,” bisikmu menahan Nana dan Beni agar diam di tempat. Menantang rasa takut, kamu memandu mereka memeriksa celah di sekitar tangga remang-remang itu. Sorot senter yang bergetar menuntun langkah kalian hingga akhirnya temukan ruangan kecil di bawah tangga yang tersembunyi di balik tumpukan kursi roda berkarat. Di dalam ruangan pengap berbau lembap tersebut, perhatianmu langsung tertuju pada sebuah meja kayu yang lapuk. Di atas meja itu, tergeletak sebuah catatan pasien lama: petunjuk buka pintu utama. Dengan tangan gemetar, kamu membaca tulisan di kertas yang menguning tersebut: “Kunci darurat ada di dalam kotak sekring di sebelah kanan lobi utama, hancurkan kacanya.” Tepat ketika suara tawa melengking itu terdengar tepat di atas kepala kalian, kamu memberikan kode untuk bergerak secepat kilat. Memanfaatkan petunjuk berharga tersebut, kalian berlari kencang menuju lobi, menghancurkan kotak sekring, dan berhasil memutar kunci utama. TAMAT: Pintu besi besar itu terbuka dengan derit keras tepat saat bayangan hitam besar nyaris mencengkeram jaket Beni. Kalian berlari keluar menembus halaman rumah sakit, berhasil kabur dengan cerita menyeramkan yang tidak akan pernah bisa kalian lupakan seumur hidup.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tunggu, kita harus tahu itu suara apa,” bisikmu menahan Nana dan Beni agar diam di tempat. Menantang rasa takut, kamu memandu mereka memeriksa celah di sekitar tangga remang-remang itu. Sorot senter yang bergetar menuntun langkah kalian hingga akhirnya temukan ruangan kecil di bawah tangga yang tersembunyi di balik tumpukan kursi roda berkarat. Di dalam ruangan pengap berbau lembap tersebut, perhatianmu langsung tertuju pada sebuah meja kayu yang lapuk. Di atas meja itu, tergeletak sebuah catatan pasien lama: petunjuk buka pintu utama. Dengan tangan gemetar, kamu membaca tulisan cakar ayam di kertas yang menguning tersebut: “Kunci darurat ada di dalam kotak sekring di sebelah kanan lobi utama, hancurkan kacanya.” Tepat ketika suara tawa melengking itu terdengar tepat di atas kepala kalian, kamu memberikan kode untuk bergerak secepat kilat. Memanfaatkan petunjuk berharga tersebut, kalian berlari kencang menuju lobi, menghancurkan kotak sekring, dan berhasil memutar kunci utama. TAMAT: Pintu besi besar itu terbuka dengan derit keras tepat saat bayangan hitam besar nyaris mencengkeram jaket Beni. Kalian berlari keluar menembus halaman rumah sakit, berhasil kabur dengan cerita menyeramkan yang tidak akan pernah bisa kalian lupakan seumur hidup.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tunggu, diem dulu. Gua harus tahu itu suara apa,” perintahmu dengan suara rendah, menahan langkah Nana dan Beni di anak tangga. Kamu memutuskan untuk melacak suara geseran kuku yang mengerikan itu. Bukannya naik ke atas, kamu justru menyorotkan senter ke bagian kolong semen dan temukan ruangan kecil di bawah tangga yang tertutup akar gantung raksasa. Di dalam rongga gua tersebut, kalian menemukan catatan penting milik pasien terdahulu: petunjuk buka pintu utama. Buku itu memuat memo: “Jika terjebak, tarik tuas manual di balik papan pengumuman lobi untuk melepas kunci otomatis.” Mendengar suara langkah patah-patah yang mulai menjauh dari pintu gudang, kalian langsung keluar dan berlari sekuat tenaga menuju lobi utama. Kamu meraba bagian belakang papan pengumuman yang berdebu, menarik tuas besinya, dan seketika pintu utama terbuka. TAMAT: Sambil terengah-engah, kalian berlari keluar ke area terbuka, berhasil kabur dengan cerita menyeramkan yang akan menjadi saksi bisu petualangan paling mematikan kalian.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tunggu, kita harus tahu itu suara apa,” bisikmu mantap, menepis kepanikan Beni. Kamu mengajak mereka bergerak perlahan ke arah bawah, melacak suara tawa anak kecil yang menggema. Di bagian terdalam struktur tangga yang gelap gulita, sorot sentermu secara tidak sengaja temukan ruangan kecil di bawah tangga yang hampir tertutup rapat oleh tumpukan berkas-berkas medis yang membusuk. Kalian menyelinap masuk untuk bersembunyi dari kejaran makhluk di atas. Di antara tumpukan kertas tersebut, Nana menemukan sebuah map merah bertuliskan catatan pasien lama: petunjuk buka pintu utama. Di dalamnya terlampir cetak biru gedung dengan catatan kaki bergaris bawah merah: “Sakelar pelepas kunci gerbang utama berada di bawah meja resepsionis.” Berbekal informasi krusial ini, kalian merangkak keluar menembus kegelapan menuju meja resepsionis lobi. Beni menekan tombol sakelar tersembunyi tersebut, memicu bunyi dentum keras dari pintu depan yang terbuka secara otomatis. TAMAT: Kalian langsung melompat keluar menjauhi gedung terkutuk itu, berhasil kabur dengan cerita menyeramkan tentang rumah sakit terbengkalai yang hampir merenggut nyawa kalian.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tunggu, kita harus tahu itu suara apa,” katamu dengan nada mendesak, menahan pundak Beni dan Nana agar tidak terus berlari tanpa arah. Kamu memimpin jalan, melangkah hati-hati menuju asal suara ketukan ritmis di balik dinding. Di sudut paling belakang di bawah struktur beton tangga, kamu temukan ruangan kecil di bawah tangga yang tampak seperti bekas ruang istirahat penjaga malam. Di dalam ruangan sempit itu, terdapat sebuah loker besi yang sudah berkarat. Ketika Beni membukanya, ia menemukan sebuah catatan pasien lama: petunjuk buka pintu utama yang diselipkan di dalam sebuah Alkitab tua. Catatan itu menginstruksikan untuk memutuskan kabel merah pada panel kontrol di dekat pintu masuk utama guna mematikan sistem penguncian magnetik gedung. Dengan sisa tenaga yang ada, kalian mengendap-endap kembali ke lobi utama. Kamu menggunakan tang kecil yang ditemukan di loker untuk memotong kabel merah tersebut sesuai petunjuk. Seketika itu juga, kunci magnetik terlepas dengan bunyi klik yang nyaring. TAMAT: Kalian langsung mendorong pintu hingga terbuka lebar dan berhasil kabur dengan cerita menyeramkan yang akan membekas seumur hidup kalian.",
-        "choices": [],
-        "is_ending": true
-      }
-    ]
-  },
-  "ALUR_1_2": {
-    "variations": [
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan isi tirai tersebut. Namun, saat kalian berbalik, braaakkk! Pintu tertutup dan terkunci dengan keras dari luar secara misterius. Senter Beni langsung menyorot ke ujung lorong bangsal, dan seketika jantung kalian serasa berhenti: sosok suster ngesot mendekat dengan cepat, menyeret tubuhnya yang hancur di atas lantai sambil menyeringai busuk. “Lari, guys! Lewat pintu belakang!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menyelamatkan diri. Anehnya, lorong memanjang seolah tanpa ujung, membuat $NAME dan rekan-rekan terjebak dalam labirin tak berujung. Teror semakin mencekam saat suara roda tempat tidur pasien yang berkarat mendadak bergaung nyaring dari arah belakang, berputar kencang mengejar langkah kaki kalian yang mulai kelelahan. “Gua gak kuat lagi! Kita harus sembunyi!” jerit Nana sambil menangis tersedu-sedu, napasnya sudah putus-putus karena syok. Di ujung lorong yang remang-remang, kamu melihat dua jalur penyelamatan yang bisa menjadi tempat berlindung sementara dari kejaran makhluk mengerikan itu. Nyawa kalian kini bertumpu pada keputusan cepatmu selanjutnya.",
-        "choices": [
-          {"choice_text": "Hancurkan Komputer", "next_node": "ENDING_3"},
-          {"choice_text": "Cari File Lain", "next_node": "ENDING_4"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan bayangan di balik kain tersebut. Namun, belum sempat kalian melangkah keluar, braaakkk! Pintu tertutup mendadak dan terkunci dari luar dengan sangat keras. Bersamaan dengan itu, senter Beni berkedip menyorot lantai, memperlihatkan sosok suster ngesot mendekat patah-patah dengan kecepatan tidak wajar, meninggalkan jejak darah hitam yang anyir. “Lari, guys! Jangan sampai ketangkep!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kegelapan. Sialnya, lorong memanjang seolah ditarik secara gaib, membuat pintu keluar terasa kian menjauh. Teror semakin menjadi-jadi saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring di belakang, berputar kencang mengejar langkah kaki kalian layaknya mesin pembunuh. “Gua gak kuat, kaki gua lemes!” jerit Nana histeris sambil memeluk pundak $NAME dalam kepanikan total. Suara geseran tubuh suster dan derit roda brankar itu terdengar makin mendekat, siap merenggut nyawa kalian. Di ujung lorong yang buntu, perhatianmu terpecah pada dua akses darurat yang tersisa.",
-        "choices": [
-          {"choice_text": "Hancurkan Komputer", "next_node": "ENDING_3"},
-          {"choice_text": "Cari File Lain", "next_node": "ENDING_4"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan cakar mengerikan itu. Namun, baru dua langkah kalian berbalik, braaakkk! Pintu tertutup membentur kosen dengan keras hingga terkunci secara gaib. Dari sudut tergelap dekat pintu, sesosok suster ngesot mendekat dengan gerakan patah-patah yang mengerikan, mengeluarkan suara rintihan pilu bercampur tawa cekikikan yang menggema di seluruh ruangan. “Lari, guys! Jangan lewat depan!” teriak Beni panik. Kalian langsung lari tunggang-langgang menembus pintu penghubung darurat. Sialnya, begitu kalian keluar, lorong memanjang secara aneh menjadi berkali-kali lipat lebih jauh, seolah mempermainkan kewarasan $NAME dan tim. Suasana makin mencekam saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring dari arah belakang, menggelinding cepat mengejar kalian seakan didorong oleh kemarahan makhluk halus. “Gua gak kuat lagi, sesek banget dadaku!” jerit Nana terengah-engah dengan air mata yang terus mengalir deras. Derit roda brankar dan suara seretan tubuh suster itu terdengar makin mendekat tepat di belakang tengkukmu. Di tengah kepanikan mutlak, pandanganmu menangkap dua jalan alternatif di ujung lorong yang bisa kalian masuki.",
-        "choices": [
-          {"choice_text": "Hancurkan Komputer", "next_node": "ENDING_3"},
-          {"choice_text": "Cari File Lain", "next_node": "ENDING_4"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan sepasang kaki pucat yang menggelantung tersebut. Namun, saat kalian berbalik menuju ambang pintu, braaakkk! Pintu tertutup secara bertenaga dan terkunci rapat dari luar. Senter Beni langsung menyorot ke bawah, memperlihatkan sosok suster ngesot mendekat secara agresif, menyeret tubuhnya yang hancur dengan kuku-kuku jari yang mencakar lantai hingga menimbulkan suara ngilu. “Lari, guys! Jangan sampai kena!” teriak Beni dengan suara pecah. Kalian langsung lari tunggang-langgang menerobos kegelapan koridor. Entah trik gaib apa yang terjadi, lorong memanjang seolah tanpa ujung, membuat $NAME and tim berputar-putar di tempat yang sama. Keadaan kian parah saat suara roda tempat tidur pasien yang berkarat mendadak berdengung nyaring dari kegelapan di belakang, melaju sangat kencang mengejar langkah kaki kalian. “Gua gak kuat lagi, kaki gua gemeteran!” jerit Nana histeris, napasnya sudah putus-putus menahan rasa takut yang luar biasa. Derit roda brankar misterius itu terdengar semakin mendekat, siap meremukkan apa saja di depannya. Tepat di persimpangan buntu, kamu melihat dua jalan keluar yang bisa menyelamatkan nyawa kalian.",
-        "choices": [
-          {"choice_text": "Hancurkan Komputer", "next_node": "ENDING_3"},
-          {"choice_text": "Cari File Lain", "next_node": "ENDING_4"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan rembesan darah misterius itu. Namun, baru saja kalian membalikkan badan, braaakkk! Pintu tertutup dengan hantaman keras dan langsung terkunci rapat dari luar. Dari kegelapan di bawah kolong meja medis, sesosok suster ngesot mendekat dengan sangat cepat, mendongakkan kepalanya yang hancur sambil mengeluarkan suara tawa melengking yang memekakkan telinga. “Lari, guys! Jangan sampai kedorong ke arah dia!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kepulan debu koridor. Sialnya, secara gaib lorong memanjang menjadi tak terbatas, membuat pintu-pintu di kanan-kiri kalian seolah bergerak mundur. Teror kian memuncak saat suara roda tempat tidur besi mendadak berderit nyaring dari arah belakang, meluncur sangat kencang mengejar langkah kaki kalian layaknya mesin pemburu yang haus darah. “Gua gak kuat lagi, dada gua sesek banget!” jerit Nana tersedu-sedu sambil terus berlari pincang karena panik. Derit roda brankar berdarah itu terdengar semakin mendekat, hanya berjarak beberapa meter di belakang tengkuk kalian. Di ujung persimpangan koridor yang remang-remang, $NAME harus segera menentukan arah pelarian selanjutnya.",
-        "choices": [
-          {"choice_text": "Hancurkan Komputer", "next_node": "ENDING_3"},
-          {"choice_text": "Cari File Lain", "next_node": "ENDING_4"}
-        ],
-        "is_ending": false
-      }
-    ]
-  },
-  "ENDING_3": {
-    "variations": [
-      {
-        "content": "“Hancurkan monitornya sekarang! Putuskan hubungannya!” teriakmu keras. Tanpa ragu, kamu mengangkat kursi besi di dekatmu dan menghantamkannya ke layar komputer hingga hancur berantakan dengan percikan api kecil. Namun, tindakanmu memicu konsekuensi instan. Brakkk! Seketika listrik padam di seluruh ruangan, melemparkan kalian ke dalam lorong gelap total yang pekat tanpa ada seberkas cahaya pun yang tersisa. “Senter kita mati! Gua gak bisa lihat apa-apa!” jerit Beni panik di kegelapan. Dalam kebutaan mutlak itu, kamu berbisik, “Pegang pundak gua! Kita harus keluar dari sini sekarang!” Kamu mulai memimpin barisan, meraba jalan di sepanjang dinding semen yang dingin dan lembap. Ketakutan kian memuncak saat telingamu menangkap suara seretan tubuh yang mengerikan di lantai. Suara suster makin dekat, diiringi tawa cekikikan parau yang bergema tepat di belakang tumit langkah kaki kalian. Adrenalin membuat $NAME terus maju, meraba setiap jengkal dinding hingga telapak tanganmu menyentuh sebuah daun pintu yang longgar. Dengan sisa tenaga yang tersisa, kamu mendobrak pintu tersebut hingga ambruk. Udara malam yang dingin langsung menerpa wajahmu saat kalian berhasil menerobos keluar dari gedung terkutuk itu. Namun, pandanganmu mendadak kabur karena kelelahan ekstrem dan teror yang luar biasa. Kamu kehilangan arah di tengah halaman yang luas, penglihatanmu menggelap, hingga akhirnya kalian semua ambruk dan pingsan di luar gedung di atas rumput liar.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Gua gak tahan lagi, hancurkan komputer ini!” serumu lantang. Kamu langsung menendang meja kayu itu dengan keras, membuat CPU dan monitor tabung di atasnya jatuh berdebum ke lantai hingga pecah. Detik berikutnya, suara dengung mesin berhenti, disusul dengan suara jepretan sakelar utama. Listrik padam seketika, menjebak kalian di dalam lorong gelap total yang menyekat pandangan mata. “Nana! Beni! Kalian di mana?!” serumu sambil mengayunkan tangan ke udara kosong. Setelah merasakan cengkeraman erat di jaketmu, kamu tahu mereka sudah berada di dekatmu. Tanpa bantuan cahaya senter yang tiba-tiba mati, $NAME and tim terpaksa meraba jalan di kegelapan, menyusuri dinding administrasi yang terasa basah oleh cairan misterius. Teror psikologis itu berubah menjadi ancaman nyata saat suara suster makin dekat; bunyi kuku-kuku jari yang mencakar tegel lantai terdengar kian agresif melaju ke arah kalian. “Dia di belakang kita! Cepat!” tangis Nana tertahan. Kamu terus meraba ke depan hingga jemarimu merasakan sebuah gagang pintu besi. Kamu menariknya kuat-kuat dan mendorong mereka semua keluar. Cahaya bulan samar-samar menyambut kalian, menandakan kalian telah terbebas dari dalam rumah sakit. Kamu mencoba berlari menjauh, namun rasa pusing yang hebat mendadak menyerang kepalamu. Karena kehilangan arah dan syok yang teramat sangat, kekuatan kakimu mendadak lenyap, membuatmu runtuh dan pingsan di luar gedung tak sadarkan diri.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Gak usah dilihat lagi, hancurkan komputer itu sekarang!” perintahmu pada Beni. Dengan sigap, Beni meraih bilah kayu lapuk di sudut ruangan dan menghantamkannya tepat ke arah monitor yang menyala. Plaakk! Layar itu retak dan mati, namun bersamaan dengan itu, seluruh lampu indikator di gedung itu ikut padam. Listrik padam total, menyisakan kegelapan malam yang begitu pekat dan mencekam di dalam lorong gelap total tersebut. “Jangan lepasin pegangan! Tetap berbaris!” perintahmu dengan suara bergetar. $NAME and rekan-rekan mulai bergerak perlahan sambil meraba jalan pada permukaan dinding yang mengelupas. Suasana yang sunyi membuat indra pendengaranmu menjadi sangat tajam. Detik berikutnya, jantungmu serasa berhenti berdetak. Suara suster makin dekat, terdengar jelas dari arah kanan koridor, menyeret badannya yang hancur dengan napas tersengal-sengal yang mengerikan. “Cepat, jalannya di sebelah sini!” bisikmu panik seraya mempercepat langkah kaki. Tanganku meraba celah udara di depan dan mendapati sebuah pintu keluar darurat. Kamu mendorong pintu itu hingga terbuka lebar, membawa kalian keluar dari cengkeraman makhluk gaib tersebut. Sayangnya, kepanikan membuatmu kehilangan arah di area luar yang dipenuhi semak belukar. Dengan kesadaran yang kian menipis akibat hantaman teror yang bertubi-tubi, pandanganmu seketika memutih hingga akhirnya kamu jatuh pingsan di luar gedung terbengkalai itu.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Hancurkan komputernya! Ini semua cuma ilusi gaib!” teriakmu, menolak untuk tunduk pada takdir tertulis di layar. Kamu mengangkat mesin CPU hitam itu dengan kedua tanganmu, lalu membantingnya sekuat tenaga ke lantai hingga hancur berkeping-keping. Seketika itu juga, terdengar suara ledakan kecil dari sirkuit ruangan. Listrik padam secara serentak, menenggelamkan kalian ke dalam lorong gelap total yang mencekam. “Ayo gerak, jangan diam di tempat!” serumu di tengah kegelapan yang pekat. Tanpa adanya pencahayaan sama sekali, $NAME and tim berjalan perlahan sembari meraba jalan di antara meja dan lemari arsip tua untuk menuju pintu keluar. Kengerian memuncak ketika kegelapan itu mulai berbisik. Suara suster makin dekat, derit tubuhnya yang bergesekan dengan lantai semen kini terdengar hanya beberapa jengkal di belakang punggung Beni. “Dia mau megang gua!” teriak Beni histeris. Kamu menarik Beni dan Nana maju secara membabi buta, meraba apa saja hingga tanganmu meraih kusen jendela besar yang sudah pecah. Tanpa pikir panjang, kalian melompat keluar melewati jendela tersebut. Udara bebas berembus, namun kepalamu terasa berputar hebat. Kamu kehilangan arah di halaman rumah sakit yang gelap, detak jantungmu melemah karena syok mutlak, hingga akhirnya kamu ambruk dan pingsan di luar gedung bersama teman-temanmu.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Jangan biarkan data itu selesai diproses, hancurkan komputernya!” serumu panik. Kamu mengambil sebuah pipa besi berkarat di lantai dan menghantamkannya ke monitor tabung tersebut hingga meledak. Hantaman itu memutus arus utama bangunan. Dalam sekejap, listrik padam dan merenggut seluruh cahaya, meninggalkan kalian di dalam lorong gelap total yang dingin layaknya liang kubur. “Pegangan tangan! Jangan sampai ada yang tertinggal!” teriakmu menenangkan Nana yang mulai sesak napas. $NAME and tim bergerak maju dalam kebutaan, hanya bisa meraba jalan dengan menempelkan telapak tangan ke dinding koridor yang berlendir. Di tengah keheningan yang absolut, teror yang paling kalian takuti kembali terdengar. Suara suster makin dekat, tawa melengkingnya yang parau bergema dari ujung lorong buntu, bergerak sangat cepat ke arah posisi kalian berdiri. “Pintunya di sini! Dorong!” teriakmu saat tanganmu merasakan tekstur pintu kayu luaran. Kalian bertiga menabrak pintu itu hingga jebak dan jatuh tersungkur di halaman luar rumah sakit yang sunyi. Kamu mencoba bangkit untuk melanjutkan pelarian, namun tubuhmu sudah mencapai batas maksimalnya. Karena kehilangan arah di kegelapan malam dan kehabisan energi, kesadaranmu perlahan menguap hingga akhirnya kamu jatuh pingsan di luar gedung tersebut, mengakhiri malam penuh teror itu dalam ketidaksadaran.",
-        "choices": [],
-        "is_ending": true
-      }
-    ]
-  },
-  "ENDING_4": {
-    "variations": [
-      {
-        "content": "“Tunggu, pasti ada dokumen lain yang bisa ngejelasin cara keluar dari sini!” Kamu menahan tangan Beni dan segera mengalihkan fokus dari monitor terkutuk itu. Dengan panik, kamu membongkar tumpukan berkas usang di laci meja administrasi. Keberuntungan berpihak padamu ketika tanganmu menarik sebuah map kulit yang tebal. Di dalamnya, kamu temukan peta RS dan jalur keluar tersembunyi yang terhubung langsung dari ruang bawah tanah menuju area luar pagar pembatas. “Guys, gua dapet petanya! Lewat sini!” serumu optimis. Kalian langsung berlari keluar ruangan mengikuti petunjuk peta tersebut menuju pintu lorong evakuasi di ujung koridor bawah. Namun, sesampainya di sana, kenyataan pahit menghantam kalian. Pintu terkunci rapat dari balik rantai besi yang berkarat. Kamu mencoba mendobraknya, tetapi pintu itu tetap bergeming kokoh. Di tengah keputusasaan yang memuncak, hawa dingin yang mencekam mendadak menyelimuti punggungmu. Teror nyata datang saat terdengar suara nafas berat di belakang kalian, disusul sepasang tangan pucat berkuku hitam yang mendadak muncul dari kegelapan atap. “Lari duluan! Gua tahan pintunya!” teriak Beni heroik sambil menghantamkan tubuhnya ke rantai hingga pintu itu terbuka sedikit karena engselnya jebol. Kamu dan Nana segera menyelinap masuk dan lolos lewat jalur rahasia tersebut ke luar gedung. Namun, ketika $NAME berbalik untuk menarik Beni, pintu itu membanting menutup dengan keras dari dalam diiringi jeritan histeris Beni yang mendadak lenyap. TAMAT: Kamu berhasil selamat, tapi satu teman tertinggal di dalam kegelapan abadi rumah sakit itu.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tahan dulu, Beni! Cari file lain di komputer, mungkin ada denah jalan keluar!” Kamu merebut tetikus dari tangan Beni dengan panik. Jari-jarimu bergerak cepat mengeklik folder-folder usang yang tersembunyi di dalam sistem. Detik-detik yang menegangkan itu membuahkan hasil saat sebuah dokumen berformat gambar terbuka. Kamu temukan peta RS dan jalur keluar tersembunyi berupa lorong pembuangan limbah medis tua yang menembus langsung ke luar area rumah sakit. “Ayo, ikuti gua! Jalurnya ada di ujung lorong administrasi ini!” teriakmu memberi komando. $NAME memimpin pelarian bersama Nana dan Beni yang terus berlari kencang tanpa berani menengok ke belakang. Langkah kaki kalian terhenti secara drastis di depan pintu besi menuju lorong limbah tersebut. Sial, Pintu terkunci dengan gembok besar yang sudah berkarat. Kamu memukul gembok itu menggunakan pipa besi di dekatmu dengan frustrasi. Di saat yang sama, bulu kudukmu berdiri sempurna ketika merasakan hembusan angin anyir disertai suara nafas berat di belakang lehermu. Bayangan hitam besar berwujud monster tanpa wajah perlahan bangkit dari lantai. Dalam kepanikan mutlak, kamu berhasil menghancurkan gembok itu dengan satu hantaman keras. Kamu dan Nana langsung menerobos masuk, lolos lewat jalur rahasia bawah tanah yang gelap dan sempit hingga akhirnya berhasil menghirup udara segar di luar pagar. Namun, kegembiraan itu sirna seketika saat kamu menyadari Beni tidak ada di sampingmu. TAMAT: Pintu besi di belakang kalian telah tertutup rapat, dan kamu tahu satu teman tertinggal di dalam cengkeraman kegelapan yang mengerikan itu.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Beni, bantu gua cari file lain di rak ini! Pasti ada berkas fisik penawarnya!” Kamu mengabaikan komputer yang terus berkedip itu dan mulai membongkar lemari arsip baja yang sudah berkarat. Lembar demi lembar kertas berdebu kamu buang ke lantai hingga akhirnya penglihatanmu menangkap sebuah dokumen berstempel rahasia. Di lembar tersebut, kamu temukan peta RS dan jalur keluar tersembunyi berupa pintu darurat khusus para dokter di balik dinding lobi bawah tanah. “Gua dapet jalurnya! Jangan lepasin pegangan, ayo lari!” serumu memecah kesunyian yang mencekam. Kalian bertiga segera berhamburan menuruni tangga darurat menuju titik yang ditunjukkan di dalam peta. Harapan kalian hancur berkeping-keping saat mendapati pintu terkunci mati oleh sistem palang balok dari luar. Kamu dan Beni mencoba menarik palang besi itu sekuat tenaga, namun tenagamu seolah tidak berarti. Suasana mendadak menjadi hening secara tidak wajar sebelum akhirnya terdengar suara nafas berat di belakang kalian. Sesosok bayangan suster dengan kepala miring melayang mendekat, siap mencabut nyawa kalian. “Dorong, cepat!” teriak Beni dengan sisa tenaganya, menahan tubuh makhluk itu agar tidak mendekatimu dan Nana. Kamu berhasil memanfaatkan celah sempit pada pintu yang sedikit terbuka untuk menyeret Nana keluar, lolos lewat jalur rahasia menuju halaman belakang. TAMAT: Sambil menangis tersedu-sedu, $NAME menatap pintu yang kini terkunci rapat kembali dari dalam, menyadari satu teman tertinggal di dalam neraka tersebut.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tunggu, lihat folder ‘Peta Evakuasi’ di layar! Cari file itu sekarang!” Kamu memerintah Beni dengan nada mendesak sembari terus mengawasi pintu ruang administrasi. Beni dengan gemetar mengetik papan kunci hingga sebuah cetak biru bangunan rumah sakit muncul di layar monitor. Melalui gambar digital tersebut, kamu temukan peta RS dan jalur keluar tersembunyi yang terhubung lewat terowongan generator di bagian belakang dapur rumah sakit. “Ayo pergi dari sini! Lewat dapur!” bisikmu tajam. $NAME bersama Nana dan Beni merangkak keluar dari ruangan, mengendap-endap menembus koridor gelap menuju area dapur yang dipenuhi peralatan masak berkarat. Langkah kalian terhenti tepat di mulut terowongan generator. Sial, pintu terkunci oleh lilitan kawat tebal yang sengaja dipasang. Dengan panik, kamu mencoba memutuskan kawat tersebut menggunakan gunting besar yang tergeletak di meja dapur. Tepat di detik-detik krusial itu, hawa sedingin es menusuk tengkukmu, diiringi suara nafas berat di belakang punggung yang terdengar sangat lapar dan mengerikan. “Gua gak bisa mutusin kawatnya sendirian!” teriakmu histeris. Beni langsung merebut gunting itu dan memotong kawatnya dengan sekali hentakan, membuka jalan untukmu dan Nana. Kamu dan Nana segera merangkak masuk, lolos lewat jalur rahasia terowongan sempit itu hingga berhasil keluar di semak-semak luar gedung. Namun, saat menengok ke belakang, Beni tidak pernah keluar. TAMAT: Lorong itu runtuh, meninggalkanmu dengan rasa bersalah yang mendalam karena satu teman tertinggal di dalam kegelapan.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Pasti ada file rahasia milik dokter kepala! Cari file lain sekarang!” Kamu melompat ke meja kerja dan membuka laci-laci yang terkunci dengan paksa menggunakan penggaris besi. Di laci paling bawah, kamu menemukan sebuah map merah usang berisi dokumen konstruksi bangunan. Beruntung, kamu temukan peta RS dan jalur keluar tersembunyi berupa lorong ventilasi besar yang menembus langsung ke atap bagian belakang rumah sakit. “Naik ke atas meja, kita masuk lewat ventilasi ini!” perintahmu pada Nana dan Beni. $NAME membantu Nana naik terlebih dahulu ke dalam lorong yang sempit dan berdebu itu. Namun, giliranmu terhambat karena bagian ujung pintu ventilasi terkunci oleh gembok luar yang macet. Kamu berusaha mendobrak penutupnya dengan bahumu berkali-kali di dalam ruang yang sangat sempit. Kengerian mencapai puncaknya ketika dari arah koridor bawah meja terdengar suara nafas berat di belakang tubuh Beni yang masih mengantre di bawah. Sosok makhluk menyeramkan dengan tangan memanjang mulai merayap naik ke atas meja kerja. “Cepat pergi! Jangan tengok belakang!” jerit Beni histeris. Ia sengaja menarik kaki makhluk itu untuk memberikanmu waktu mendobrak jeruji besi hingga jebol. Kamu pun berhasil merangkak keluar bersama Nana, lolos lewat jalur rahasia di atap dan turun ke tempat aman. TAMAT: Di bawah siraman cahaya bulan, kamu menangis sejadi-jadinya menyadari bahwa kalian selamat, tetapi satu teman tertinggal menjadi korban kebiadaban rumah sakit terkutuk itu.",
-        "choices": [],
-        "is_ending": true
-      }
-    ]
-  },
-  "ALUR_2": {
-    "variations": [
-      {
-        "content": "“Tunggu, kita harus tahu apa yang ada di balik tirai itu,” bisikmu menahan langkah Nana dan Beni. Mengabaikan firasat buruk yang mendesak untuk pergi, kamu melangkah perlahan mendekati ranjang berkarat di sudut bangsal. Dengan tangan gemetar, kamu meraih ujung kain pembatas yang tampak kusam dan berdebu. Sreeek! Kamu menariknya cepat, namun tirai terbuka, tidak ada siapa-siapa di atasnya. Kelegaan sesaat itu sirna seketika saat kamu memberanikan diri menyentuh seprei yang kusut. Jantungmu seakan berhenti berdetak; noda bekas tubuh masih hangat melekat di atas kain, seolah baru saja ditinggalkan oleh entitas yang tak kasat mata. “G-guys... kok kasurnya goyang?!” pekik Beni dengan suara tercekat di tenggorokan. Tepat setelah ucapan Beni, suasana berubah menjadi horor mutlak. Tempat tidur bergeser sendiri dengan suara decitan besi yang memekakkan telinga, menabrak dinding semen di dekatmu. Bersamaan dengan itu, lampu mati-nyala dengan cepat, memancarkan kilatan cahaya intermiten yang memperlihatkan bayangan hitam pekat sedang berdiri tepat di hadapan $NAME and tim setiap kali kegelapan menyergap.",
-        "choices": [
-          {"choice_text": "Tetap di Ruangan", "next_node": "ENDING_5"},
-          {"choice_text": "Kabur Keluar", "next_node": "ENDING_6"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Ssst, diam. Kita cek tempat tidur itu dulu,” perintahmu dengan suara rendah, menepis cengkeraman ketakutan Nana. Kamu memandu mereka berdua mendekati satu-satunya ranjang pasien yang tertutup rapat oleh kelambu hijau usang di tengah ruangan administrasi lama. Kamu mengulurkan tangan yang berkeringat dingin untuk menyibaknya. Srettt! Begitu tirai terbuka, tidak ada siapa-siapa di dalam bilik sempit itu. Namun, rasa penasaran berubah menjadi teror murni saat sorot sentermu menangkap siluet aneh di atas kasur. Kamu memberanikan diri meraba permukaannya; sepotong noda bekas tubuh masih hangat membekas di sana, memancarkan bau anyir darah segar yang menyengat indra penciuman kalian. “Sesuatu baru aja berdiri dari sini...” cicit Nana dengan air mata yang mulai menetes karena syok. Belum sempat $NAME and tim mundur, ruangan itu bergejolak. Tempat tidur bergeser sendiri secara agresif, berputar-putar di atas lantai tegel yang retak seolah didorong oleh kekuatan gaib yang murka. Suasana kian histeris saat lampu mati-nyala berulang kali. Dalam setiap detik kegelapan, kamu bisa merasakan embusan napas sedingin es berembus tepat di depan wajahmu.",
-        "choices": [
-          {"choice_text": "Tetap di Ruangan", "next_node": "ENDING_5"},
-          {"choice_text": "Kabur Keluar", "next_node": "ENDING_6"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Jangan lari dulu, kita harus mastiin ruangan ini aman. Cek tempat tidur itu,” bisikmu mantap pada Beni. Dengan sisa keberanian yang ada, kalian bertiga melangkah mendekati ranjang periksa darurat yang diselimuti debu tebal di pojok ruangan. Tanganmu menjangkau kain penutup yang tergantung kaku. Ketika kamu menyentaknya, tirai terbuka, tidak ada siapa-siapa di atas ranjang besi tersebut. Kosong. Tapi keanehan mistis langsung menyergap ketika kamu melihat lekukan dalam pada bantal usang di sana. Kamu menyentuhnya dan tertegun; noda bekas tubuh masih hangat terasa di telapak tanganmu, kontras dengan suhu ruangan yang mendadak anjlok drastis. “Senter gua... kok kedap-kedip?” seru Beni panik. Kengerian memuncak saat tempat tidur bergeser sendiri dengan sentakan keras, menutup akses jalan menuju pintu utama. Di saat yang sama, seluruh lampu $NAME and tim bawa mulai mati-nyala secara ekstrem. Di bawah kilatan cahaya yang tidak stabil itu, kalian melihat sesosok hantu perawat dengan wajah hancur perlahan merangkak turun dari langit-langit tepat di atas kepala kalian.",
-        "choices": [
-          {"choice_text": "Tetap di Ruangan", "next_node": "ENDING_5"},
-          {"choice_text": "Kabur Keluar", "next_node": "ENDING_6"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Tunggu, gua ngeliat ada yang gerak di balik tirai itu. Ayo cek tempat tidurnya,” katamu menantang bahaya. Nana mencengkeram jaketmu erat-erat saat kalian berjalan perlahan menuju ranjang bersalin yang terisolasi di tengah ruangan pengap. Dengan satu gerakan cepat, kamu membuka penghalang tersebut. Meskipun tirai terbuka, tidak ada siapa-siapa di sana, atmosfer di dalam ruangan seketika terasa sangat mencekam. Matamu terpaku pada seprei putih yang menyisakan noda bekas tubuh masih hangat, lengkap dengan uap tipis yang menguar dari bekas cairan ketuban hitam yang membusuk di atas kasur. “G-guys, denger suara seretan gak?” bisik Nana dengan tubuh gemetar hebat. Tiba-tiba, tempat tidur bergeser sendiri ke arah kalian dengan kecepatan tinggi, membuat $NAME and tim terpaksa melompat mundur untuk menghindar. Bersamaan dengan benturan keras itu, lampu mati-nyala disertai suara jepretan sekring yang korslet. Dalam kegelapan sesaat, suara tawa bayi yang melengking tinggi bergema tepat di dalam gendongan lenganmu yang kosong.",
-        "choices": [
-          {"choice_text": "Tetap di Ruangan", "next_node": "ENDING_5"},
-          {"choice_text": "Kabur Keluar", "next_node": "ENDING_6"}
-        ],
-        "is_ending": false
-      },
-      {
-        "content": "“Kita gak bisa lari terus, cek tempat tidur itu, siapa tahu ada kunci yang tertinggal,” usulmu logis namun berisiko. Kamu memimpin Beni dan Nana mendekati ranjang pasien bernomor tiga belas yang tertutup kelambu lusuh. Dengan helaan napas berat, kamu menyibak pembatas besi itu. Harapanmu pupus karena setelah tirai terbuka, tidak ada siapa-siapa di sana selain tumpukan bantal busuk. Sialnya, nalurimu menuntunmu untuk memeriksa bagian bawah selimut. Kamu mendapati noda bekas tubuh masih hangat membekas di sana, seakan-akan sosok yang menempatinya baru saja melebur menjadi udara tepat sebelum tirai dibuka. “Perasaan gua gak enak, ayo cabut!” teriak Beni yang mulai kehilangan kendali atas rasa takutnya. Sebelum $NAME and rekan-rekan sempat berbalik, tempat tidur bergeser sendiri secara brutal, menghantam meja kerja hingga hancur berantakan. Teror psikologis itu disempurnakan oleh sistem lampu mati-nyala yang menciptakan ilusi optik mengerikan. Setiap kali lampu padam, puluhan pasang mata merah menyala menatap kalian dari balik kegelapan sudut-sudut plafon ruangan.",
-        "choices": [
-          {"choice_text": "Tetap di Ruangan", "next_node": "ENDING_5"},
-          {"choice_text": "Kabur Keluar", "next_node": "ENDING_6"}
-        ],
-        "is_ending": false
-      }
-    ]
-  },
-  "ENDING_5": {
-    "variations": [
-      {
-        "content": "“Jangan bergerak! Kalau kita keluar sekarang, kita malah disergap di lorong!” teriakmu, memaksa Nana dan Beni untuk merapat ke sudut ruangan. Kalian mematung dalam kegelapan, mencoba menahan napas di tengah dentum lampu yang mati-nyala secara brutal. Di atas meja dekat ranjang yang bergeser tadi, sorot sentermu menangkap sebuah alat perekam pita kaset tua yang tiba-tiba berputar sendiri. Seketika, bulu kudukmu berdiri. Dari pelantang suara, kalian temukan rekaman suara pasien minta tolong dengan nada yang amat tersiksa. “Tolong... jangan suntik saya... tempat ini terkutuk!” jerit suara itu. Nana mulai menangis histeris karena ia mengenali suara di rekaman itu; itu adalah petunjuk suara dari korban-korban sebelum kalian. Kengerian memuncak saat rekaman itu mendadak melambat. Secara perlahan, suara berubah jadi tawa memenuhi ruangan, menggema dari segala sudut dinding semen dengan nada melengking yang memekakkan telinga. Detik berikutnya, pintu ruangan membanting menutup dari luar dengan bunyi dentum keras. Lampu di dalam ruangan mendadak menyala terang benderang, menyorot pakaian kalian yang entah sejak kapan telah berubah menjadi gaun pasien berwarna putih kusam. $NAME mencoba menggerakkan tubuhnya, namun terlambat. Tangan dan kakimu sudah terikat kuat pada sabuk kulit di atas ranjang periksa. TAMAT: Kalian menyadari dengan keputusasaan mutlak bahwa kalian telah terjebak di ruangan sebagai pasien berikutnya, menunggu giliran untuk dieksekusi di dalam kegelapan abadi rumah sakit ini.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tahan posisi! Jangan panik, kita cari benda tajam buat bertahan!” serumu, memutuskan untuk tetap tinggal di dalam ruang administrasi lama ini. Kamu menahan dada Beni dan Nana yang sudah siap berlari ke pintu. Di tengah kepungan lampu yang berkedip-kedip agresif, sebuah radio panggil di atas lemari besi mendadak mengeluarkan suara kresek yang nyaring. Kalian membeku saat temukan rekaman suara pasien minta tolong dari pemancar radio tersebut. Suara itu terdengar merintih, tersedak darah, seolah sedang digorok hidup-hidup. “Siapa pun di luar sana... selamatkan kami dari dokter bedah ini!” ratapnya pilu, membuat atmosfer ruangan terasa semakin dingin mencekik. Belum sempat kalian mencerna teror itu, frekuensi radio tersebut mendadak berdenging tajam. Detik berikutnya, suara berubah jadi tawa memenuhi ruangan. Bukan lagi dari radio, melainkan tawa parau gaib yang menggema langsung di atas plafon dan di balik dinding tempat kalian bersandar. $NAME mencoba berbalik untuk mencari jalan keluar, namun pandanganmu mendadak buram. Rasa kantuk yang luar biasa berat akibat bius gaib merayap ke seluruh tubuhmu. Ketika kesadaranmu menipis, kamu melihat Beni dan Nana sudah terbujur kaku di atas ranjang dorong di sampingmu. TAMAT: Dengan jeritan yang tertahan di tenggorokan, kalian resmi terjebak di ruangan sebagai pasien berikutnya, terperangkap dalam lingkaran setan medis yang takkan pernah berakhir.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Tutup mata kalian, jangan ditatap! Tetap di sini!” perintahmu dengan suara bergetar, memaksa mereka merunduk di balik lemari arsip baja. Kamu menolak keluar ke lorong karena tahu hantu perawat di atas langit-langit sedang mengintai. Di dalam kesunyian yang mencekam itu, sebuah telepon analog di atas meja kerja mendadak berdering nyaring. Kamu nekat mengangkat gagang teleponnya dan temukan rekaman suara pasien minta tolong di ujung talian. Suara anak kecil menangis histeris, “Ibu, sakit! Mereka mau mengambil mataku! Tolong!” Bisikan penuh keputusasaan itu merayap masuk ke dalam gendang telingamu, mengirimkan sinyal teror murni ke otak. Tiba-tiba, suara anak kecil itu terputus oleh distorsi gelombang. Suara berubah jadi tawa memenuhi ruangan, meledak dari corong telepon dan bergema di seluruh ruangan berdebu ini. Tawa itu terdengar begitu puas dan mengejek ketakutan kalian. $NAME and tim tersentak saat menyadari bahwa pintu dan jendela ruangan telah melebur menjadi dinding semen yang kokoh. Tidak ada jalan keluar lagi. Bau zat kimia antiseptik menyengat tajam, dan sesosok bayangan dokter tanpa wajah berdiri di depan kalian memegang jarum suntik raksasa. TAMAT: Jeritan kalian menjadi tak terdengar saat kalian resmi terjebak di ruangan sebagai pasien berikutnya di rumah sakit terkutuk ini.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Jangan berpencar! Tetap di ruangan ini sampai suaranya hilang!” Kamu mendekap Nana dan Beni erat-erat di sudut dinding, mencoba mengabaikan tempat tidur yang baru saja bergeser brutal. Di tengah kepungan kegelapan akibat lampu korslet, sebuah televisi tabung di pojok atas ruangan mendadak menyala, menampilkan layar statis hitam-putih. Dari pelantang suara TV yang rusak, kalian temukan rekaman suara pasien minta tolong. Suara seorang wanita paruh baya berteriak histeris diiringi bunyi detak jantung monitor medis yang melambat. “Jangan biarkan mereka mengunci ruangan ini! Tolong!” teriaknya sebelum suara itu berubah menjadi desisan statis yang aneh. Seketika itu juga, desisan di televisi berhenti dan suara berubah jadi tawa memenuhi ruangan. Suara tawa melengking tinggi khas anak kecil bergema bersahut-sahutan dari bawah lantai, seolah-olah ada puluhan makhluk gaib yang sedang mengelilingi posisi kalian berlutut. $NAME mencoba bangkit untuk kabur, namun kakimu terasa lumpuh total. Saat melihat ke bawah, seluruh tubuhmu telah terikat pada baju kekang pasien gangguan jiwa, begitu pula dengan Beni dan Nana. TAMAT: Ruangan ini perlahan menyempit, memadamkan sisa cahaya senter kalian, mengukuhkan takdir bahwa kalian telah terjebak di ruangan sebagai pasien berikutnya, terkubur hidup-hidup bersama kegilaan masa lalu.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Duduk dan diam! Jangan memicu mereka dengan gerakan!” Kamu memaksa Beni dan Nana untuk tiarap di lantai tegel yang dingin. Kalian memilih bertahan di dalam ruangan bersalin ini, berharap badai gaib di luar segera mereda. Namun, sebuah pemutar piringan hitam di sudut ruangan yang tertutup debu mendadak berputar lambat. Dari gesekan jarum kuno pada piringan itu, kalian temukan rekaman suara pasien minta tolong dengan rintihan yang sangat menyayat hati. “Mereka memotong kaki saya... tolong hentikan darahnya!” ratap suara pria tersebut, memicu rasa mual dan ngeri yang luar biasa di dalam dadamu. Detik berikutnya, lagu pengiring di piringan hitam itu mendadak berputar terbalik dengan kecepatan tinggi. Suara berubah jadi tawa memenuhi ruangan, bertransformasi menjadi tawa histeris massa yang menggelegar, merontokkan debu-debu dari langit-langit tepat ke atas kepala kalian. Saat $NAME mencoba mendongak, kilatan lampu operasi di atas kepala kalian menyala dengan terik yang membutakan. Tubuhmu secara ajaib sudah terlentang di atas meja operasi dengan peralatan bedah berkarat yang melayang di sekitarmu. TAMAT: Di sela-sela tawa gaib yang kian memekakkan telinga, kalian menyadari bahwa kalian tidak akan pernah bisa kembali pulang; kalian telah terjebak di ruangan sebagai pasien berikutnya.",
-        "choices": [],
-        "is_ending": true
-      }
-    ]
-  },
-  "ENDING_6": {
-    "variations": [
-      {
-        "content": "“Gak ada waktu lagi, lari!” teriakmu keras. Kamu mendobrak pintu bangsal dan memimpin pelarian menembus kegelapan koridor yang mencekam. Nana dan Beni berlari kencang tepat di belakangmu, mengabaikan suara ranjang yang berderit misterius di dalam ruangan tadi. Kalian terus memacu langkah kaki menuruni tangga, berbelok di setiap sudut, dan berlari menuju pintu keluar utama yang memancarkan cahaya bulan samar-samar. Namun, setelah mengerahkan seluruh sisa tenaga hingga paru-paru terasa terbakar, jantungmu mendadak mencelos. Bukannya melihat halaman luar, kalian justru kembali ke lorong yang sama, tepat di depan pintu bangsal dengan nomor kamar yang sama persis seperti sebelumnya. “Kok... kok kita balik lagi ke sini?!” pekik Beni dengan mata melotot penuh keputusasaan. $NAME menatap plang dinding yang retak dengan tubuh yang gemetar hebat. Seketika itu juga, sebuah kebenaran yang mengerikan menghantam isi kepalamu. Kamu sadar Rumah sakit selalu membawa kembali ke dalam, memanipulasi ruang dan waktu seolah bangunan tua ini adalah organisme hidup yang sedang mempermainkan mangsanya. Koridor di depan kalian perlahan memanjang secara tidak wajar, memutus semua ilusi tentang jalan keluar yang sedari tadi kalian cari. Pintu-pintu di kanan-kiri menutup serentak dengan bunyi berdentum keras, mengunci takdir kalian tanpa ampun. TAMAT: Tidak ada jalan pulang. Kalian telah terjebak selamanya karena Rumah sakit tidak ingin kalian pergi dari cengkeraman kegelapannya.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Pintu! Cepat keluar dari sini!” teriakmu sambil menarik lengan Nana secara membabi buta. Kalian menghambur melewati pintu administrasi, berlari tunggang-langgang menyusuri koridor rumah sakit yang dingin dan berbau anyir. Ketakutan yang mutlak membuat kalian tidak peduli lagi pada bayangan-bayangan yang berkelebat di langit-langit. Pikiranmu hanya tertuju pada satu hal: keluar dari gedung terkutuk ini. Kalian melihat papan penunjuk jalan bertuliskan ‘KELUAR’ di ujung lorong dan langsung menuju ke sana dengan harapan yang membubung tinggi. Namun, begitu melintasi pintu pembatas, langkahmu mendadak terkunci. Sorot sentermu menangkap tumpukan kertas administrasi yang berserakan di lantai. Kalian kembali ke lorong yang sama, berdiri tepat di depan titik awal pelarian kalian beberapa menit yang lalu. “Ini mustahil... kita udah lari lurus tadi!” rintih Nana sambil menangis histeris di lantai. Gema tawa samar yang parau mulai terdengar memantul di dinding semen. Di tengah kepanikan itu, $NAME sadar Rumah sakit selalu membawa kembali ke dalam. Gedung terbengkalai ini memiliki kehendak mistisnya sendiri, menjebak kesadaran kalian dalam labirin tanpa ujung yang mustahil ditembus oleh manusia. Udara di sekitar kalian mendadak terasa pekat dan menyesakkan, sementara seluruh lorong perlahan meredup menelan sisa cahaya senter. TAMAT: Harapan kalian runtuh sepenuhnya; kalian resmi terjebak selamanya karena Rumah sakit tidak ingin kalian pergi.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Lompat lewat jendela, cepat!” perintahmu tegas setelah menghantam kaca jendela bangsal hingga hancur berantakan. Kamu membantu Nana dan Beni memanjat keluar terlebih dahulu sebelum akhirnya kamu ikut melompat ke bawah. Kalian mendarat di atas tanah berlumpur dan langsung berlari sekencang-kencangnya menerobos kegelapan halaman malam, mencoba menjauh dari gedung rumah sakit yang mengerikan itu. Kalian berlari menembus kabut tebal selama beberapa menit yang melelahkan. Namun, ketika kabut itu sedikit menipis, langkah kaki kalian mendadak membeku. Di hadapan kalian bukan lagi pagar pembatas jalan raya, melainkan struktur bangunan beton yang sangat familiar. Tanpa sadar, kalian telah melangkah masuk melewati sebuah pintu besi dan kembali ke lorong yang sama di dalam rumah sakit. “Gak mungkin... kita kan tadi udah di luar?!” seru Beni dengan suara yang pecah karena syok. Bulu kudukmu berdiri sempurna saat menyadari seprei hangat di tempat tidur tadi masih berada di dekat kalian. Saat itulah $NAME sadar Rumah sakit selalu membawa kembali ke dalam bangunan utamanya. Halaman luar yang kalian lihat tadi hanyalah ilusi gaib yang diciptakan untuk memberi harapan palsu. Struktur bangunan ini seolah bergeser, menutup setiap celah udara dan mengunci semua akses evakuasi secara permanen. TAMAT: Kalian pun pasrah, terjebak selamanya karena Rumah sakit tidak ingin kalian pergi dari jerat mistisnya.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Ayo keluar, tempat ini udah gak beres!” serumu lantang. Kamu menendang pintu darurat bangsal hingga terbuka lebar, memimpin pelarian bersama Nana dan Beni untuk menjauhi tempat tidur yang bergeser gaib itu. Kalian berlari menuruni anak tangga darurat secara membabi buta, melompati undakan demi undakan beton dalam kegelapan pekat, berharap segera menemukan lobi utama. Langkah kaki kalian berdentum keras mengejar secercah cahaya di ujung tangga bawah. Namun, begitu melangkah keluar dari pintu darurat terbawah, lututmu mendadak lemas. Pandangan di depanmu adalah barisan ranjang bersalin yang berdebu. Kalian kembali ke lorong yang sama, terjebak di lantai yang seharusnya sudah kalian tinggali jauh di atas tadi. “Kita gak bisa keluar... tempat ini muter-muter terus!” tangis Nana dengan tubuh yang bergetar hebat. Melihat struktur lorong yang tidak masuk akal ini, sebuah realitas pahit menghantam benak $NAME. Kamu sadar Rumah sakit selalu membawa kembali ke dalam pusaran terornya. Sejauh apa pun kaki kalian melangkah, setiap sudut bangunan ini telah dirancang secara supranatural untuk membelokkan arah pelarian kembali ke titik tengah. TAMAT: Lorong-lorong gelap ini perlahan menyempit, mengunci kalian dalam keabadian yang sunyi. Kalian telah terjebak selamanya karena Rumah sakit tidak ingin kalian pergi.",
-        "choices": [],
-        "is_ending": true
-      },
-      {
-        "content": "“Gak ada pilihan lain, lari menembus koridor sekarang!” teriakmu, menarik pintu besi hingga terbuka dan melompat keluar ke lorong buntu. Beni dan Nana mengikuti langkahmu dengan napas yang memburu berkejaran dengan waktu. Kalian berlari lurus memanfaatkan sisa energi terakhir, melewati pintu demi pintu bangsal, berharap menemukan pintu keluar darurat di ujung bangunan. Namun, harapan itu pupus seketika saat koridor yang kalian lalui mendadak terasa berputar. Di ujung jalan, kalian justru melihat nomor kamar tiga belas yang sangat kalian kenali. Ya, kalian kembali ke lorong yang sama dan berdiri tepat di hadapan ranjang pasien yang kelambunya baru saja kalian sibak tadi. “Kenapa kita balik lagi ke sini? Tolong... gua mau pulang!” jerit Beni frustrasi sambil memukul dinding semen. Dalam kepanikan mutlak itu, $NAME melihat bayangan kalian di cermin retak koridor dan sadar Rumah sakit selalu membawa kembali ke dalam. Bangunan terkutuk ini telah mengunci jiwa kalian; setiap koridor dan pintu keluar yang kalian tuju hanyalah jebakan ruang yang akan selalu memutar balik langkah kaki ke tempat semula. TAMAT: Suara detak jam dinding tua yang lambat mulai menggema, menandakan waktu pelarian telah habis. Kalian kini terjebak selamanya karena Rumah sakit tidak ingin kalian pergi.",
-        "choices": [],
-        "is_ending": true
-      }
-    ]
-  }
+    "NARASI_AWAL": {
+        "variations": [
+            {
+                "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita dengan bau anyir yang menyengat dan hawa magis yang pekat. “Guys, perasaanku gak enak banget. Pulang aja yuk?” bisik Nana ketakutan sambil menggenggam erat lenganmu. “Tanggung, Na. Kita udah di dalam,” sahut Beni mencoba tenang, meski senter di tangannya mulai bergetar. $NAME pun mengangguk setuju, berusaha menguatkan mental. Kita terus melangkah menyusuri koridor yang runtuh hingga tiba di bangsal utama. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang berantakan itu. Kamu fokus membidik sebuah ranjang pasien tua di sudut ruangan. Tiba-tiba, suasana menjadi sunyi senyap. Detik berikutnya, bulu kudukmu berdiri sempurna saat melihat tirai tempat tidur bergerak sendiri secara perlahan. “Eh... lu lihat gak? Tirainya gerak sendiri...” gumam Beni dengan wajah pucat pasi. “Ssst! Jangan berisik, kamera gua lagi rekam,” bisikmu tegang. “Gua mau keluar! Ada sesuatu di balik tirai itu!” tangis Nana pecah sambil membekap mulutnya. Melalui lensa kameramu, sebuah siluet hitam samar mulai terbentuk di balik kain lusuh tersebut, seolah bersiap menerkam.",
+                "choices": [
+                    {
+                        "choice_text": "Abaikan dan Cabut",
+                        "next_node": "ALUR_1"
+                    },
+                    {
+                        "choice_text": "Mengecek Tempat Tidur",
+                        "next_node": "ALUR_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening narasi rumah sakit terbengkalai.png"
+            },
+            {
+                "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita dengan embusan angin malam yang menusuk tulang dan bau busuk yang menyengat, membuat nyali seketika menciut. “Guys, beneran deh, hawa di sini beda banget. Kita balik aja yuk?” bisik Nana dengan suara bergetar, meremas ujung jaketmu. “Jangan cemen, Na. Udah kepalang tanggung, kita harus dapet footage bagus,” potong Beni ketus, walau sorot senternya tampak bergetar tidak tenang. $NAME pun mengisyaratkan mereka untuk tetap melangkah masuk. Kita menyusuri lorong pengap yang gelap gulita hingga tiba di sebuah ruangan ujung. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang dipenuhi sisa alat medis karatan tersebut. Kamera kamu arahkan ke sebuah ranjang bersalin berkarat. Tiba-tiba, suhu ruangan anjlok drastis dan keheningan mencekam menyelimuti kita. Detik berikutnya, jantungmu serasa berhenti berdetak saat melihat tirai tempat tidur bergerak sendiri dengan sentakan kasar. “Eh... lu lihat gak? Itu tirainya gerak sendiri, makin kenceng!” gumam Beni, mendadak mundur selangkah dengan wajah pucat pasi. “Ssst! Diem dulu, kamera gua lagi dapet momen pas nih,” bisikmu tegang, menahan gemetar. “Gua gak tahan! Gua mau keluar! Ada yang berdiri di situ!” jerit Nana tertahan sambil menangis. Melalui layar kamera, kamu melihat bayangan kepala manusia perlahan menyembul dari balik tirai lusuh itu, bersiap menatap kalian.",
+                "choices": [
+                    {
+                        "choice_text": "Abaikan dan Cabut",
+                        "next_node": "ALUR_1"
+                    },
+                    {
+                        "choice_text": "Mengecek Tempat Tidur",
+                        "next_node": "ALUR_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening narasi rumah sakit terbengkalai.png"
+            },
+            {
+                "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita; terdengar suara rintihan samar dari langit-langit koridor bercampur bau obat-obatan kedaluwarsa yang membuat mual. “Guys, telinga gua sakit banget denger suara tadi. Pulang aja yuk, plis?” bisik Nana sambil menangis, menyembunyikan wajahnya di balik punggungmu. “Tahan, Na. Nanggung banget, bentar lagi kita kelar,” sahut Beni, berusaha menutupi rasa takutnya padahal keringat dingin mulai membahasi dahinya. $NAME pun memberi tanda untuk tetap bertahan. Kita terus berjalan meraba kegelapan hingga masuk ke dalam bangsal isolasi. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang penuh bercak hitam mirip darah kering. Fokus kameramu terkunci pada sebuah ranjang besi berkarat di pojok ruangan. Tiba-tiba, udara di sekitar kita menjadi sangat berat. Detik berikutnya, bulu kudukmu berdiri sempurna saat melihat tirai tempat tidur bergerak sendiri seperti ada seseorang yang sedang merangkak di baliknya. “Eh... lu lihat gak? Tirainya gerak-gerak kayak ada yang ngegeret dari bawah!” gumam Beni dengan suara gemetar hebat. “Ssst! Lu berdua diem dulu, kamera gua lagi rekam fokus ke sana,” bisikmu, mencoba menahan napas. “Gua mau keluar! Itu... itu ada tangan hitam keluar dari balik tirai!” jerit Nana histeris. Melalui lensa kameramu, sepasang punggung tangan kurus kering dengan kuku-kuku panjang perlahan mulai menyibak tirai lusuh tersebut.",
+                "choices": [
+                    {
+                        "choice_text": "Abaikan dan Cabut",
+                        "next_node": "ALUR_1"
+                    },
+                    {
+                        "choice_text": "Mengecek Tempat Tidur",
+                        "next_node": "ALUR_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening narasi rumah sakit terbengkalai.png"
+            },
+            {
+                "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita; pintu utama mendadak terbanting keras di belakang kita, diiringi kepulan debu tebal dan aroma tanah kuburan yang menusuk hidung. “Guys, ini udah gak beres, pintunya kekunci dari luar! Pulang aja yuk, gua takut!” bisik Nana histeris, mencengkeram erat kedua pundakmu dari belakang. “Tenang, Na, ada jalan keluar lain di belakang. Nanggung, kita terusin dulu,” sahut Beni dengan suara bergetar, mencoba menyembunyikan kepanikannya. $NAME pun mengangguk, memaksa langkah kaki untuk terus maju. Kita berjalan pelan menyusuri lorong IGD yang pengap hingga tiba di sebuah ruangan bersalin tua. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang dipenuhi pecahan kaca dan sisa botol infus. Sorot kameramu tertuju pada satu-satunya ranjang yang masih utuh. Tiba-tiba, keheningan mutlak melanda, bahkan suara jangkrik di luar pun lenyap. Detik berikutnya, jantungmu mencelos saat melihat tirai tempat tidur bergerak sendiri terangkat ke atas, seolah ditarik oleh sesuatu yang melayang di baliknya. “Eh... lu lihat gak? Tirainya keangkat sendiri, gak ada angin padahal!” gumam Beni, langkah kakinya spontan mundur ke dekat pintu. “Ssst! Jangan berisik, kamera gua lagi dapet footage yang paling jelas nih,” bisikmu tegang, menahan gemetar di tangan. “Gua gak mau mati di sini! Itu... ada kaki pucat ngegantung di balik tirai!” tangis Nana pecah terisak-isak. Melalui lensa kameramu, sepasang kaki anak kecil yang biru pucat perlahan turun dari atas langit-langit, menjuntai tepat di balik tirai lusuh tersebut.",
+                "choices": [
+                    {
+                        "choice_text": "Abaikan dan Cabut",
+                        "next_node": "ALUR_1"
+                    },
+                    {
+                        "choice_text": "Mengecek Tempat Tidur",
+                        "next_node": "ALUR_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening narasi rumah sakit terbengkalai.png"
+            },
+            {
+                "content": "Malam itu, atmosfer terasa sangat menekan sejak awal kaki kita melangkah melewati pagar berkarat $LOCATION ini. Perjalanan awal kurang mengenakkan langsung menyambut kita; sekilas bayangan hitam besar berkelebat cepat di ujung koridor, disusul suara ketukan ritmis dari dalam tembok yang membuat jantung berdegup kencang. “Guys, getaran di sini negatif banget, dada gua sesak. Pulang aja yuk, plis?” bisik Nana dengan napas memburu, wajahnya pucat pasi sambil memeluk lenganmu. “Tanggung, Na. Kamera udah on, bentar lagi kita sampai di bangsal paling angker,” sahut Beni tegang, sambil menyapu ruangan dengan senter yang mulai berkedip-kedip. $NAME pun memberi isyarat agar mereka tetap merapat dan tidak terpisah. Kita melangkah masuk ke bekas ruang rawat anak yang penuh dengan mainan usang berdebu. Demi konten uji nyali, kamu mulai merekam di ruang rawat yang hawanya sedingin es tersebut. Fokus kameramu terkunci pada sebuah ranjang bayi besi di sudut ruangan. Tiba-tiba, sebuah mainan kotak musik tua berbunyi sendiri secara instan. Detik berikutnya, bulu kudukmu berdiri sempurna saat melihat tirai tempat tidur bergerak sendiri meliuk-liuk kasar, seolah ada sesuatu yang sedang mengamuk di dalamnya. “Eh... lu lihat gak? Tirainya gerak sendiri kek ada yang nendang dari dalam!” gumam Beni, suaranya naik satu oktav karena panik. “Ssst! Tetap tenang, kamera gua lagi rekam fenomena ini. Jangan ada yang lari,” bisikmu, mencoba menstabilkan pegangan kamera. “Gua mau keluar! Itu... tirainya basah sama darah!” jerit Nana histeris sambil menunjuk ke depan. Melalui lensa kameramu, cairan merah kental mulai merembes cepat, menembus kain tirai lusuh tersebut disertai suara cakaran kuku yang memekakkan telinga.",
+                "choices": [
+                    {
+                        "choice_text": "Abaikan dan Cabut",
+                        "next_node": "ALUR_1"
+                    },
+                    {
+                        "choice_text": "Mengecek Tempat Tidur",
+                        "next_node": "ALUR_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening narasi rumah sakit terbengkalai.png"
+            }
+        ]
+    },
+    "ALUR_1": {
+        "variations": [
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan isi tirai tersebut. Namun, saat kalian berbalik, braaakkk! Pintu tertutup dan terkunci dengan keras dari luar secara misterius. Senter Beni langsung menyorot ke ujung lorong bangsal, dan seketika jantung kalian serasa berhenti: sosok suster ngesot mendekat dengan cepat, menyeret tubuhnya yang hancur di atas lantai sambil menyeringai busuk. “Lari, guys! Lewat pintu belakang!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menyelamatkan diri. Anehnya, lorong memanjang seolah tanpa ujung, membuat $NAME dan rekan-rekan terjebak dalam labirin tak berujung. Teror semakin mencekam saat suara roda tempat tidur pasien yang berkarat mendadak bergaung nyaring dari arah belakang, berputar kencang mengejar langkah kaki kalian yang mulai kelelahan. “Gua gak kuat lagi! Kita harus sembunyi!” jerit Nana sambil menangis tersedu-sedu, napasnya sudah putus-putus karena syok. Di ujung lorong yang remang-remang, kamu melihat dua jalur penyelamatan yang bisa menjadi tempat berlindung sementara dari kejaran makhluk mengerikan itu. Nyawa kalian kini bertumpu pada keputusan cepatmu selanjutnya.",
+                "choices": [
+                    {
+                        "choice_text": "Tangga Darurat",
+                        "next_node": "ALUR_1_1"
+                    },
+                    {
+                        "choice_text": "Ruang Administrasi",
+                        "next_node": "ALUR_1_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 1 abaikan tempat tidur bergerak sendiri.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan bayangan di balik kain tersebut. Namun, belum sempat kalian melangkah keluar, braaakkk! Pintu tertutup mendadak dan terkunci dari luar dengan sangat keras. Bersamaan dengan itu, senter Beni berkedip menyorot lantai, memperlihatkan sosok suster ngesot mendekat patah-patah dengan kecepatan tidak wajar, meninggalkan jejak darah hitam yang anyir. “Lari, guys! Jangan sampai ketangkep!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kegelapan. Sialnya, lorong memanjang seolah ditarik secara gaib, membuat pintu keluar terasa kian menjauh. Teror semakin menjadi-jadi saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring di belakang, berputar kencang mengejar langkah kaki kalian layaknya mesin pembunuh. “Gua gak kuat, kaki gua lemes!” jerit Nana histeris sambil memeluk pundak $NAME dalam kepanikan total. Suara geseran tubuh suster dan derit roda brankar itu terdengar makin mendekat, siap merenggut nyawa kalian. Di ujung lorong yang buntu, perhatianmu terpecah pada dua akses darurat yang tersisa.",
+                "choices": [
+                    {
+                        "choice_text": "Tangga Darurat",
+                        "next_node": "ALUR_1_1"
+                    },
+                    {
+                        "choice_text": "Ruang Administrasi",
+                        "next_node": "ALUR_1_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 1 abaikan tempat tidur bergerak sendiri.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan cakar mengerikan itu. Namun, baru dua langkah kalian berbalik, braaakkk! Pintu tertutup membentur kosen dengan keras hingga terkunci secara gaib. Dari sudut tergelap dekat pintu, sesosok suster ngesot mendekat dengan gerakan patah-patah yang mengerikan, mengeluarkan suara rintihan pilu bercampur tawa cekikikan yang menggema di seluruh ruangan. “Lari, guys! Jangan lewat depan!” teriak Beni panik. Kalian langsung lari tunggang-langgang menembus pintu penghubung darurat. Sialnya, begitu kalian keluar, lorong memanjang secara aneh menjadi berkali-kali lipat lebih jauh, seolah mempermainkan kewarasan $NAME dan tim. Suasana makin mencekam saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring dari arah belakang, menggelinding cepat mengejar kalian seakan didorong oleh kemarahan makhluk halus. “Gua gak kuat lagi, sesek banget dadaku!” jerit Nana terengah-engah dengan air mata yang terus mengalir deras. Derit roda brankar dan suara seretan tubuh suster itu terdengar makin mendekat tepat di belakang tengkukmu. Di tengah kepanikan mutlak, pandanganmu menangkap dua jalan alternatif di ujung lorong yang bisa kalian masuki.",
+                "choices": [
+                    {
+                        "choice_text": "Tangga Darurat",
+                        "next_node": "ALUR_1_1"
+                    },
+                    {
+                        "choice_text": "Ruang Administrasi",
+                        "next_node": "ALUR_1_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 1 abaikan tempat tidur bergerak sendiri.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan sepasang kaki pucat yang menggelantung tersebut. Namun, saat kalian berbalik menuju ambang pintu, braaakkk! Pintu tertutup secara bertenaga dan terkunci rapat dari luar. Senter Beni langsung menyorot ke bawah, memperlihatkan sosok suster ngesot mendekat secara agresif, menyeret tubuhnya yang hancur dengan kuku-kuku jari yang mencakar lantai hingga menimbulkan suara ngilu. “Lari, guys! Jangan sampai kena!” teriak Beni dengan suara pecah. Kalian langsung lari tunggang-langgang menerobos kegelapan koridor. Entah trik gaib apa yang terjadi, lorong memanjang seolah tanpa ujung, membuat $NAME dan tim berputar-putar di tempat yang sama. Keadaan kian parah saat suara roda tempat tidur pasien yang berkarat mendadak berdengung nyaring dari kegelapan di belakang, melaju sangat kencang mengejar langkah kaki kalian. “Gua gak kuat lagi, kaki gua gemeteran!” jerit Nana histeris, napasnya sudah putus-putus menahan rasa takut yang luar biasa. Derit roda brankar misterius itu terdengar semakin mendekat, siap meremukkan apa saja di depannya. Tepat di persimpangan buntu, kamu melihat dua jalan keluar yang bisa menyelamatkan nyawa kalian.",
+                "choices": [
+                    {
+                        "choice_text": "Tangga Darurat",
+                        "next_node": "ALUR_1_1"
+                    },
+                    {
+                        "choice_text": "Ruang Administrasi",
+                        "next_node": "ALUR_1_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 1 abaikan tempat tidur bergerak sendiri.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan rembesan darah misterius itu. Namun, baru saja kalian membalikkan badan, braaakkk! Pintu tertutup dengan hantaman keras dan langsung terkunci rapat dari luar. Dari kegelapan di bawah kolong meja medis, sesosok suster ngesot mendekat dengan sangat cepat, mendongakkan kepalanya yang hancur sambil mengeluarkan suara tawa melengking yang memekakkan telinga. “Lari, guys! Jangan sampai kedorong ke arah dia!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kepulan debu koridor. Sialnya, secara gaib lorong memanjang menjadi tak terbatas, membuat pintu-pintu di kanan-kiri kalian seolah bergerak mundur. Teror kian memuncak saat suara roda tempat tidur besi mendadak berderit nyaring dari arah belakang, meluncur sangat kencang mengejar langkah kaki kalian layaknya mesin pemburu yang haus darah. “Gua gak kuat lagi, dada gua sesek banget!” jerit Nana tersedu-sedu sambil terus berlari pincang karena panik. Derit roda brankar berdarah itu terdengar semakin mendekat, hanya berjarak beberapa meter di belakang tengkuk kalian. Di ujung persimpangan koridor yang remang-remang, $NAME harus segera menentukan arah pelarian selanjutnya.",
+                "choices": [
+                    {
+                        "choice_text": "Tangga Darurat",
+                        "next_node": "ALUR_1_1"
+                    },
+                    {
+                        "choice_text": "Ruang Administrasi",
+                        "next_node": "ALUR_1_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 1 abaikan tempat tidur bergerak sendiri.png"
+            }
+        ]
+    },
+    "ALUR_1_1": {
+        "variations": [
+            {
+                "content": "“Lewat sini! Kita turun ke lantai bawah!” teriakmu sambil menarik pintu besi hijau itu. Kalian bertiga langsung menghambur masuk dan mulai turun tangga dengan tergesa-gesa. Langkah kaki kalian bergema keras di dalam lorong tangga yang sempit dan berdebu. Namun, setelah berlari turun selama beberapa menit yang melelahkan, kamu menyadari ada yang tidak beres. Langkahmu terhenti seketika saat melihat plang di dinding; nomer lantai tidak berubah sama sekali, tetap menunjukkan angka lantai empat secara tidak masuk akal. “Kok... kok kita gak nyampe-nyampe bawah? Ini masih lantai empat!” bisik Beni dengan suara gemetar, menyenter plang semen tersebut. Keheningan yang dingin tiba-tiba mencekik udara di sekitar kalian, membuat bulu kuduk berdiri sempurna. Di tengah kebingungan dan rasa lelah yang mendera, Nana mendadak mematung dengan mata melotot penuh teror. Wajahnya pucat pasi seolah darah telah tersedot habis dari tubuhnya. “G-guys... lu berdua denger gak?” rintih Nana dengan bibir bergetar hebat. Dia mencengkeram lengan jaket $NAME dengan sangat kencang. “Ada suara di dekat kuping gua... teman dengar bisikan dingin banget: ‘Tunggu giliran’.” Seketika itu juga, terdengar suara tawa melengking seorang wanita yang menggema dari arah bawah tangga, disusul suara langkah kaki yang berat mulai menaiki anak tangga menuju posisi kalian.",
+                "choices": [
+                    {
+                        "choice_text": "Terus Turun",
+                        "next_node": "ENDING_1"
+                    },
+                    {
+                        "choice_text": "Berhenti Cari Suara",
+                        "next_node": "ENDING_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 1 pintu tertutup dan lari ke tangga darurat.png"
+            },
+            {
+                "content": "“Lewat tangga, cepat turun!” teriakmu sambil mendobrak pintu besi darurat yang berdebu. Kalian bertiga langsung menghambur masuk dan mulai turun tangga secepat mungkin, berharap bisa segera keluar dari tempat terkutuk ini. Napas kalian memburu, berkejaran dengan gema langkah kaki sendiri yang memantul di dinding semen yang lembap. Tapi, keanehan segera terjadi. Meski kaki kalian sudah melangkah turun puluhan anak tangga, nomer lantai tidak berubah sama sekali; plang di dinding tetap menunjukkan angka yang sama secara mustahil. “Tunggu, ini gak masuk akal! Kita dari tadi muter-muter di lantai yang sama!” seru Beni panik, mengarahkan senternya ke arah plang angka lantai yang seolah mengejek kewarasan $NAME dan tim. Suhu di dalam lorong tangga mendadak anjlok drastis hingga napas kalian mengembun. Di tengah keheningan mencekam itu, Nana tiba-tiba berhenti melangkah. Tubuhnya gemetar hebat dan kedua tangannya spontan membekap telinga. “G-guys... ada yang ngomong di sebelah gua,” bisik Nana dengan suara nyaris habis karena ketakutan. Air matanya kembali tumpah. Teman dengar bisikan gaib yang sangat dingin dan serak tepat di telinganya: ‘Tunggu giliran’. Belum sempat kamu mencerna ucapan Nana, gema suara tangisan bayi yang menyayat hati mendadak terdengar dari kegelapan anak tangga di bawah kalian, perlahan berubah menjadi suara tawa cekikikan yang semakin mendekat.",
+                "choices": [
+                    {
+                        "choice_text": "Terus Turun",
+                        "next_node": "ENDING_1"
+                    },
+                    {
+                        "choice_text": "Berhenti Cari Suara",
+                        "next_node": "ENDING_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 1 pintu tertutup dan lari ke tangga darurat.png"
+            },
+            {
+                "content": "“Lewat tangga darurat, cepat turun!” teriakmu sambil menarik pintu besi hijau di ujung kiri. Kalian langsung menghambur masuk dan turun tangga setengah melompat demi menghindari kejaran hantu suster tersebut. Langkah kaki kalian berdentum keras di lorong semen yang sempit. Namun, setelah berlari turun cukup jauh hingga lutut terasa lemas, kamu menyadari keanehan yang mengerikan: nomer lantai tidak berubah sama sekali, plang di dinding tetap menunjukkan angka lantai yang sama seolah kalian terjebak dalam lingkaran waktu. “Gua gak salah lihat, kan? Kita gak turun-turun dari tadi!” seru Beni panik, menyenter plang semen itu dengan tangan yang gemetar hebat. Udara di sekitar kalian mendadak terasa sangat pekat dan berbau busuk. Di tengah kepanikan itu, Nana tiba-tiba membeku di anak tangga. Wajahnya pucat pasi seperti mayat, dan tatapannya kosong menatap dinding kosong di sampingnya. “Guys... ada yang nempel di belakang gua,” rintih Nana dengan suara bergetar menahan tangis. Teman dengar bisikan gaib yang sangat dingin dan serak tepat di lubang telinganya: ‘Tunggu giliran’. Seketika itu juga, terdengar suara gesekan kuku yang sangat nyaring mencakar dinding dari arah bawah tangga, perlahan mendaki ke arah posisi $NAME berdiri.",
+                "choices": [
+                    {
+                        "choice_text": "Terus Turun",
+                        "next_node": "ENDING_1"
+                    },
+                    {
+                        "choice_text": "Berhenti Cari Suara",
+                        "next_node": "ENDING_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 1 pintu tertutup dan lari ke tangga darurat.png"
+            },
+            {
+                "content": "“Lewat sini, kita turun ke bawah!” teriakmu sambil menarik pintu darurat abu-abu yang berdebu. Kalian bertiga langsung menghambur masuk dan mulai turun tangga dengan tergesa-gesa, melompati anak tangga dalam kegelapan yang pekat. Jantungmu berdegup kencang, berkejaran dengan gema langkah kaki yang memantul di dinding semen dingin. Namun, setelah berlari turun cukup jauh hingga napas terasa sesak, kamu menyadari keanehan yang membuat darahmu berdesir; nomer lantai tidak berubah sama sekali pada plang dinding, seolah kalian hanya berlari di tempat yang sama secara tidak masuk akal. “Kemana tangganya? Ini masih lantai empat!” seru Beni panik, sorot senternya bergetar hebat menunjuk plang usang tersebut. Suhu udara mendadak anjlok drastis hingga sedingin es. Di tengah kepanikan mutlak itu, Nana tiba-tiba menghentikan langkahnya dan mematung dengan mata melotot penuh teror. Wajahnya pucat pasi tanpa darah. “Guys... ada yang napas di leher gua,” bisik Nana dengan suara nyaris habis karena syok. Teman dengar bisikan gaib yang sangat berat, dingin, dan berbau busuk tepat di telinganya: ‘Tunggu giliran’. Seketika itu juga, terdengar suara tawa cekikikan anak kecil yang melengking tinggi dari arah kegelapan bawah tangga, disusul suara benturan keras yang mulai menaiki anak tangga menuju posisi $NAME.",
+                "choices": [
+                    {
+                        "choice_text": "Terus Turun",
+                        "next_node": "ENDING_1"
+                    },
+                    {
+                        "choice_text": "Berhenti Cari Suara",
+                        "next_node": "ENDING_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 1 pintu tertutup dan lari ke tangga darurat.png"
+            },
+            {
+                "content": "“Lewat tangga darurat, cepat turun ke bawah!” teriakmu sambil menarik pintu besi hijau di ujung lorong. Kalian bertiga langsung menghambur masuk dan mulai turun tangga setengah melompat dalam kegelapan yang pekat. Napas kalian memburu berkejaran dengan gema langkah kaki yang memantul di dinding semen. Namun, setelah berlari turun dengan lutut yang mulai lemas, kamu menyadari keanehan yang membuat darahmu berdesir; nomer lantai tidak berubah sama sekali, plang usang di dinding tetap menunjukkan angka yang sama secara tidak masuk akal. “Kok kita gak nyampe-nyampe bawah? Ini masih lantai yang sama!” seru Beni panik, sorot senternya bergetar hebat menunjuk plang tersebut. Suhu udara mendadak anjlok drastis hingga sedingin es, bersamaan dengan bau anyir darah yang semakin menyengat. Di tengah kepanikan mutlak itu, Nana tiba-tiba menghentikan langkahnya dan mematung dengan mata melotot penuh teror. “G-guys... ada yang tiup-tiup leher gua,” bisik Nana dengan suara nyaris habis karena syok. Teman dengar bisikan gaib yang sangat berat, dingin, dan parau tepat di telinganya: ‘Tunggu giliran’. Seketika itu juga, terdengar suara ketukan ritmis yang sangat keras dari balik dinding semen di bawah tangga, diiringi suara cakaran kuku yang mulai mendaki naik menuju ke arah posisi $NAME berdiri.",
+                "choices": [
+                    {
+                        "choice_text": "Terus Turun",
+                        "next_node": "ENDING_1"
+                    },
+                    {
+                        "choice_text": "Berhenti Cari Suara",
+                        "next_node": "ENDING_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 1 pintu tertutup dan lari ke tangga darurat.png"
+            }
+        ]
+    },
+    "ENDING_1": {
+        "variations": [
+            {
+                "content": "“Gak usah peduliin, ayo terus turun aja, pasti ada jalan keluar!” teriakmu, memutus kepanikan. Kamu menarik paksa Nana dan Beni untuk mengabaikan bisikan gaib itu dan kembali berlari menuruni anak tangga secepat mungkin. Jantungmu berdegup kencang, memompa adrenalin di tengah kegelapan yang kian pekat. Setelah perjuangan yang menguras tenaga hingga kaki terasa mati rasa, secercah harapan muncul saat kalian melihat papan penunjuk bertuliskan lantai paling bawah. Kalian akhirnya sampai lantai dasar, namun kegembiraan itu langsung sirna seketika saat kamu mencoba mendobrak pintu keluar. Sial, pintu terkunci rapat dari luar dengan rantai besi yang tebal! Kamu menggedornya dengan frustrasi, namun pintu itu sama sekali tidak bergeming. “Gak bisa dibuka! Kunci mati!” serumu panik. “G-guys... di atas kita...” cicit Nana dengan wajah yang sudah seputih kapas, menunjuk ke arah koridor tangga yang baru saja kalian lewati. Seketika itu juga, keheningan mencekam pecah oleh sebuah teror yang nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas semen dingin, bergema sangat dekat di ujung tangga. Gema putaran besi berkarat itu bergerak turun dengan kecepatan tinggi, bersiap menggilas apa saja. Kalian berbalik, mencoba mencari celah untuk meloloskan diri, namun terlambat. TAMAT: Kalian menyadari bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar, terkunci di sudut sempit bersama kegelapan yang perlahan mulai menelan kalian hidup-hidup.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.1 Ending 1 terjebak di lantai dasar.png"
+            },
+            {
+                "content": "“Jangan dihiraukan, ayo terus turun! Kita harus cari jalan keluar!” teriakmu lantang, mencoba mengalahkan rasa takut yang mulai melumpuhkan akal sehat. Kamu menarik paksa lengan Nana dan Beni, memaksa langkah kaki kalian untuk kembali berderap menuruni anak tangga menembus kegelapan pekat yang terasa semakin dingin mencekik. Setelah beberapa menit berlari dalam kepanikan total hingga paru-paru terasa terbakar, secercah harapan muncul saat sorot senter Beni menangkap plang bertuliskan lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, embusan napas lega itu langsung berubah menjadi jeritan frustrasi ketika kamu mencoba mendobrak pintu besi di depanmu. Sial, pintu terkunci rapat dari luar dengan belitan rantai berkarat yang sangat tebal. Kamu menghantamkan tubuhmu ke pintu, namun benda padat itu sama sekali tidak bergeming. “Gak bisa! Kunci mati, guys! Kita gak bisa keluar!” seru Beni panik, menyenter rantai besi tersebut dengan tangan yang gemetar hebat. Belum sempat kalian berbalik mencari jalan lain, keheningan lorong tangga itu mendadak pecah oleh teror yang paling nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas lantai semen, menggelinding turun dari arah kegelapan anak tangga atas dengan kecepatan tinggi. Gema putaran roda besi brankar yang berkarat itu terdengar sangat dekat, siap meremukkan tubuh kalian. TAMAT: Kalian terdesak, meraba-raba dinding dengan panik, hingga akhirnya tersadar bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar, menunggu ajal di ujung lorong yang buntu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.1 Ending 1 terjebak di lantai dasar.png"
+            },
+            {
+                "content": "“Gak usah dipikirin, ayo terus turun aja!” teriakmu, berusaha memotong kepanikan yang kian merayap. Kamu menarik paksa Nana yang membeku dan memberi isyarat pada Beni untuk kembali berlari menuruni anak tangga menembus kegelapan. Deru napas kalian berkejaran dengan ketakutan yang kian mencekik. Setelah beberapa menit yang terasa seperti keabadian, secercah harapan muncul saat sorot senter Beni menangkap plang penunjuk lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, kebahagiaan itu langsung sirna dan berganti menjadi keputusasaan total ketika kamu mencoba mendobrak pintu besi di depanmu. Sial, pintu terkunci rapat oleh gembok besar dan belitan rantai berkarat yang mustahil dihancurkan dengan tangan kosong. Kamu menggedornya dengan frustrasi hingga telapak tanganmu memar. “Gak bisa dibuka! Kita terkunci, guys!” serumu panik. “Udah lambat... dia udah di sini,” bisik Nana pasrah, menatap ke arah tangga dengan pandangan kosong. Seketika itu juga, bulu kudukmu berdiri sempurna. Suara roda tepat di belakang kalian, berderit nyaring menuruni anak tangga terakhir. Gema putaran roda besi brankar yang berkarat itu meluncur cepat di atas semen dingin, memotong semua jalur yang tersisa. Kalian berbalik memunggungi pintu, meraba dinding mencari celah pelarian, namun terlambat. TAMAT: Kalian menyadari bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar, terkunci bersama sosok mengerikan yang perlahan muncul dari balik kegelapan.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.1 Ending 1 terjebak di lantai dasar.png"
+            },
+            {
+                "content": "“Gak usah peduliin, ayo terus turun aja!” teriakmu lantang, berusaha mengalahkan rasa takut yang melumpuhkan. Kamu menarik paksa lengan Nana yang lemas dan memberi isyarat pada Beni untuk kembali berlari menuruni anak tangga menembus kegelapan pekat. Napas kalian memburu berkejaran dengan gema langkah kaki sendiri yang memantul di dinding semen dingin. Setelah beberapa menit berlari dalam kepanikan total, secercah harapan muncul saat sorot senter menangkap plang penunjuk lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, embusan napas lega itu langsung berubah menjadi jeritan frustrasi ketika kamu mencoba mendobrak pintu darurat di depanmu. Sial, pintu terkunci rapat dari luar oleh belitan rantai besi berkarat yang sangat tebal. Kamu menghantamkan seluruh berat tubuhmu ke pintu, namun besi tua itu tetap tidak bergeming. “Gak bisa! Pintunya dikunci mati!” seru Beni panik, sorot senternya bergetar hebat. Belum sempat kalian berbalik mencari jalan lain, keheningan di dalam lorong tangga itu mendadak pecah oleh teror yang paling nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas lantai semen, meluncur turun dari kegelapan anak tangga atas dengan kecepatan tinggi. Gema putaran roda besi brankar itu terdengar sangat dekat, seolah ujungnya sudah menyentuh ujung pakaianmu. TAMAT: Kalian terdesak ke sudut buntu, menyadari dengan keputusasaan mutlak bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.1 Ending 1 terjebak di lantai dasar.png"
+            },
+            {
+                "content": "“Gak usah peduliin, ayo terus turun aja!” teriakmu lantang, berusaha menghentikan kepanikan yang kian merayap. Kamu menarik paksa lengan Nana yang gemetaran dan memberi kode pada Beni untuk kembali berlari menuruni anak tangga menembus kegelapan pekat yang semakin berbau anyir. Setelah beberapa menit berlari dalam ketakutan mutlak hingga lutut terasa mau lolos, secercah harapan muncul saat sorot senter menangkap plang penunjuk lantai paling bawah. Langkah kaki kalian berdentum keras saat akhirnya sampai lantai dasar. Namun, embusan napas lega itu langsung berubah menjadi jeritan keputusasaan ketika kamu mencoba mendobrak pintu besi di depanmu. Sial, pintu terkunci rapat oleh gembok besar dan lilitan rantai berkarat yang sangat tebal. Kamu menghantamkan tubuhmu berulang kali ke pintu, namun besi tua itu sama sekali tidak bergeming. “Gak bisa dibuka! Kita bener-bener dikunci dari luar!” seru Beni panik dengan suara yang sudah pecah. Belum sempat kalian mencari celah lain untuk meloloskan diri, keheningan di lorong tangga yang buntu itu mendadak pecah oleh teror yang paling nyata. Suara roda tepat di belakang kalian, berderit nyaring di atas lantai semen dingin, meluncur turun dari kegelapan anak tangga atas dengan kecepatan tinggi. Gema putaran roda besi brankar itu terdengar sangat dekat, seolah hembusan angin dinginnya sudah menyentuh tengkukmu. TAMAT: Kalian terdesak ke sudut dinding, menyadari dengan keputusasaan mutlak bahwa kalian telah terjebak di lantai yang sama tanpa jalan keluar.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.1 Ending 1 terjebak di lantai dasar.png"
+            }
+        ]
+    },
+    "ENDING_2": {
+        "variations": [
+            {
+                "content": "“Tunggu, kita harus tahu itu suara apa,” bisikmu menahan Nana dan Beni agar diam di tempat. Menantang rasa takut, kamu memandu mereka memeriksa celah di sekitar tangga remang-remang itu. Sorot senter yang bergetar menuntun langkah kalian hingga akhirnya temukan ruangan kecil di bawah tangga yang tersembunyi di balik tumpukan kursi roda berkarat. Di dalam ruangan pengap berbau lembap tersebut, perhatianmu langsung tertuju pada sebuah meja kayu yang lapuk. Di atas meja itu, tergeletak sebuah catatan pasien lama: petunjuk buka pintu utama. Dengan tangan gemetar, kamu membaca tulisan di kertas yang menguning tersebut: “Kunci darurat ada di dalam kotak sekring di sebelah kanan lobi utama, hancurkan kacanya.” Tepat ketika suara tawa melengking itu terdengar tepat di atas kepala kalian, kamu memberikan kode untuk bergerak secepat kilat. Memanfaatkan petunjuk berharga tersebut, kalian berlari kencang menuju lobi, menghancurkan kotak sekring, dan berhasil memutar kunci utama. TAMAT: Pintu besi besar itu terbuka dengan derit keras tepat saat bayangan hitam besar nyaris mencengkeram jaket Beni. Kalian berlari keluar menembus halaman rumah sakit, berhasil kabur dengan cerita menyeramkan yang tidak akan pernah bisa kalian lupakan seumur hidup.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.2 Ending 2 revisi.png"
+            },
+            {
+                "content": "“Tunggu, kita harus tahu itu suara apa,” bisikmu menahan Nana dan Beni agar diam di tempat. Menantang rasa takut, kamu memandu mereka memeriksa celah di sekitar tangga remang-remang itu. Sorot senter yang bergetar menuntun langkah kalian hingga akhirnya temukan ruangan kecil di bawah tangga yang tersembunyi di balik tumpukan kursi roda berkarat. Di dalam ruangan pengap berbau lembap tersebut, perhatianmu langsung tertuju pada sebuah meja kayu yang lapuk. Di atas meja itu, tergeletak sebuah catatan pasien lama: petunjuk buka pintu utama. Dengan tangan gemetar, kamu membaca tulisan cakar ayam di kertas yang menguning tersebut: “Kunci darurat ada di dalam kotak sekring di sebelah kanan lobi utama, hancurkan kacanya.” Tepat ketika suara tawa melengking itu terdengar tepat di atas kepala kalian, kamu memberikan kode untuk bergerak secepat kilat. Memanfaatkan petunjuk berharga tersebut, kalian berlari kencang menuju lobi, menghancurkan kotak sekring, dan berhasil memutar kunci utama. TAMAT: Pintu besi besar itu terbuka dengan derit keras tepat saat bayangan hitam besar nyaris mencengkeram jaket Beni. Kalian berlari keluar menembus halaman rumah sakit, berhasil kabur dengan cerita menyeramkan yang tidak akan pernah bisa kalian lupakan seumur hidup.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.2 Ending 2 revisi.png"
+            },
+            {
+                "content": "“Tunggu, diem dulu. Gua harus tahu itu suara apa,” perintahmu dengan suara rendah, menahan langkah Nana dan Beni di anak tangga. Kamu memutuskan untuk melacak suara geseran kuku yang mengerikan itu. Bukannya naik ke atas, kamu justru menyorotkan senter ke bagian kolong semen dan temukan ruangan kecil di bawah tangga yang tertutup akar gantung raksasa. Di dalam rongga gua tersebut, kalian menemukan catatan penting milik pasien terdahulu: petunjuk buka pintu utama. Buku itu memuat memo: “Jika terjebak, tarik tuas manual di balik papan pengumuman lobi untuk melepas kunci otomatis.” Mendengar suara langkah patah-patah yang mulai menjauh dari pintu gudang, kalian langsung keluar dan berlari sekuat tenaga menuju lobi utama. Kamu meraba bagian belakang papan pengumuman yang berdebu, menarik tuas besinya, dan seketika pintu utama terbuka. TAMAT: Sambil terengah-engah, kalian berlari keluar ke area terbuka, berhasil kabur dengan cerita menyeramkan yang akan menjadi saksi bisu petualangan paling mematikan kalian.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.2 Ending 2 revisi.png"
+            },
+            {
+                "content": "“Tunggu, kita harus tahu itu suara apa,” bisikmu mantap, menepis kepanikan Beni. Kamu mengajak mereka bergerak perlahan ke arah bawah, melacak suara tawa anak kecil yang menggema. Di bagian terdalam struktur tangga yang gelap gulita, sorot sentermu secara tidak sengaja temukan ruangan kecil di bawah tangga yang hampir tertutup rapat oleh tumpukan berkas-berkas medis yang membusuk. Kalian menyelinap masuk untuk bersembunyi dari kejaran makhluk di atas. Di antara tumpukan kertas tersebut, Nana menemukan sebuah map merah bertuliskan catatan pasien lama: petunjuk buka pintu utama. Di dalamnya terlampir cetak biru gedung dengan catatan kaki bergaris bawah merah: “Sakelar pelepas kunci gerbang utama berada di bawah meja resepsionis.” Berbekal informasi krusial ini, kalian merangkak keluar menembus kegelapan menuju meja resepsionis lobi. Beni menekan tombol sakelar tersembunyi tersebut, memicu bunyi dentum keras dari pintu depan yang terbuka secara otomatis. TAMAT: Kalian langsung melompat keluar menjauhi gedung terkutuk itu, berhasil kabur dengan cerita menyeramkan tentang rumah sakit terbengkalai yang hampir merenggut nyawa kalian.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.2 Ending 2 revisi.png"
+            },
+            {
+                "content": "“Tunggu, kita harus tahu itu suara apa,” katamu dengan nada mendesak, menahan pundak Beni dan Nana agar tidak terus berlari tanpa arah. Kamu memimpin jalan, melangkah hati-hati menuju asal suara ketukan ritmis di balik dinding. Di sudut paling belakang di bawah struktur beton tangga, kamu temukan ruangan kecil di bawah tangga yang tampak seperti bekas ruang istirahat penjaga malam. Di dalam ruangan sempit itu, terdapat sebuah loker besi yang sudah berkarat. Ketika Beni membukanya, ia menemukan sebuah catatan pasien lama: petunjuk buka pintu utama yang diselipkan di dalam sebuah Alkitab tua. Catatan itu menginstruksikan untuk memutuskan kabel merah pada panel kontrol di dekat pintu masuk utama guna mematikan sistem penguncian magnetik gedung. Dengan sisa tenaga yang ada, kalian mengendap-endap kembali ke lobi utama. Kamu menggunakan tang kecil yang ditemukan di loker untuk memotong kabel merah tersebut sesuai petunjuk. Seketika itu juga, kunci magnetik terlepas dengan bunyi klik yang nyaring. TAMAT: Kalian langsung mendorong pintu hingga terbuka lebar dan berhasil kabur dengan cerita menyeramkan yang akan membekas seumur hidup kalian.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.1.2 Ending 2 revisi.png"
+            }
+        ]
+    },
+    "ALUR_1_2": {
+        "variations": [
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan isi tirai tersebut. Namun, saat kalian berbalik, braaakkk! Pintu tertutup dan terkunci dengan keras dari luar secara misterius. Senter Beni langsung menyorot ke ujung lorong bangsal, dan seketika jantung kalian serasa berhenti: sosok suster ngesot mendekat dengan cepat, menyeret tubuhnya yang hancur di atas lantai sambil menyeringai busuk. “Lari, guys! Lewat pintu belakang!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menyelamatkan diri. Anehnya, lorong memanjang seolah tanpa ujung, membuat $NAME dan rekan-rekan terjebak dalam labirin tak berujung. Teror semakin mencekam saat suara roda tempat tidur pasien yang berkarat mendadak bergaung nyaring dari arah belakang, berputar kencang mengejar langkah kaki kalian yang mulai kelelahan. “Gua gak kuat lagi! Kita harus sembunyi!” jerit Nana sambil menangis tersedu-sedu, napasnya sudah putus-putus karena syok. Di ujung lorong yang remang-remang, kamu melihat dua jalur penyelamatan yang bisa menjadi tempat berlindung sementara dari kejaran makhluk mengerikan itu. Nyawa kalian kini bertumpu pada keputusan cepatmu selanjutnya.",
+                "choices": [
+                    {
+                        "choice_text": "Hancurkan Komputer",
+                        "next_node": "ENDING_3"
+                    },
+                    {
+                        "choice_text": "Cari File Lain",
+                        "next_node": "ENDING_4"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 2 lari keruangan administrasi.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan bayangan di balik kain tersebut. Namun, belum sempat kalian melangkah keluar, braaakkk! Pintu tertutup mendadak dan terkunci dari luar dengan sangat keras. Bersamaan dengan itu, senter Beni berkedip menyorot lantai, memperlihatkan sosok suster ngesot mendekat patah-patah dengan kecepatan tidak wajar, meninggalkan jejak darah hitam yang anyir. “Lari, guys! Jangan sampai ketangkep!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kegelapan. Sialnya, lorong memanjang seolah ditarik secara gaib, membuat pintu keluar terasa kian menjauh. Teror semakin menjadi-jadi saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring di belakang, berputar kencang mengejar langkah kaki kalian layaknya mesin pembunuh. “Gua gak kuat, kaki gua lemes!” jerit Nana histeris sambil memeluk pundak $NAME dalam kepanikan total. Suara geseran tubuh suster dan derit roda brankar itu terdengar makin mendekat, siap merenggut nyawa kalian. Di ujung lorong yang buntu, perhatianmu terpecah pada dua akses darurat yang tersisa.",
+                "choices": [
+                    {
+                        "choice_text": "Hancurkan Komputer",
+                        "next_node": "ENDING_3"
+                    },
+                    {
+                        "choice_text": "Cari File Lain",
+                        "next_node": "ENDING_4"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 2 lari keruangan administrasi.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan cakar mengerikan itu. Namun, baru dua langkah kalian berbalik, braaakkk! Pintu tertutup membentur kosen dengan keras hingga terkunci secara gaib. Dari sudut tergelap dekat pintu, sesosok suster ngesot mendekat dengan gerakan patah-patah yang mengerikan, mengeluarkan suara rintihan pilu bercampur tawa cekikikan yang menggema di seluruh ruangan. “Lari, guys! Jangan lewat depan!” teriak Beni panik. Kalian langsung lari tunggang-langgang menembus pintu penghubung darurat. Sialnya, begitu kalian keluar, lorong memanjang secara aneh menjadi berkali-kali lipat lebih jauh, seolah mempermainkan kewarasan $NAME dan tim. Suasana makin mencekam saat suara roda tempat tidur besi yang berkarat mendadak berderit nyaring dari arah belakang, menggelinding cepat mengejar kalian seakan didorong oleh kemarahan makhluk halus. “Gua gak kuat lagi, sesek banget dadaku!” jerit Nana terengah-engah dengan air mata yang terus mengalir deras. Derit roda brankar dan suara seretan tubuh suster itu terdengar makin mendekat tepat di belakang tengkukmu. Di tengah kepanikan mutlak, pandanganmu menangkap dua jalan alternatif di ujung lorong yang bisa kalian masuki.",
+                "choices": [
+                    {
+                        "choice_text": "Hancurkan Komputer",
+                        "next_node": "ENDING_3"
+                    },
+                    {
+                        "choice_text": "Cari File Lain",
+                        "next_node": "ENDING_4"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 2 lari keruangan administrasi.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan sepasang kaki pucat yang menggelantung tersebut. Namun, saat kalian berbalik menuju ambang pintu, braaakkk! Pintu tertutup secara bertenaga dan terkunci rapat dari luar. Senter Beni langsung menyorot ke bawah, memperlihatkan sosok suster ngesot mendekat secara agresif, menyeret tubuhnya yang hancur dengan kuku-kuku jari yang mencakar lantai hingga menimbulkan suara ngilu. “Lari, guys! Jangan sampai kena!” teriak Beni dengan suara pecah. Kalian langsung lari tunggang-langgang menerobos kegelapan koridor. Entah trik gaib apa yang terjadi, lorong memanjang seolah tanpa ujung, membuat $NAME and tim berputar-putar di tempat yang sama. Keadaan kian parah saat suara roda tempat tidur pasien yang berkarat mendadak berdengung nyaring dari kegelapan di belakang, melaju sangat kencang mengejar langkah kaki kalian. “Gua gak kuat lagi, kaki gua gemeteran!” jerit Nana histeris, napasnya sudah putus-putus menahan rasa takut yang luar biasa. Derit roda brankar misterius itu terdengar semakin mendekat, siap meremukkan apa saja di depannya. Tepat di persimpangan buntu, kamu melihat dua jalan keluar yang bisa menyelamatkan nyawa kalian.",
+                "choices": [
+                    {
+                        "choice_text": "Hancurkan Komputer",
+                        "next_node": "ENDING_3"
+                    },
+                    {
+                        "choice_text": "Cari File Lain",
+                        "next_node": "ENDING_4"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 2 lari keruangan administrasi.png"
+            },
+            {
+                "content": "“Gak usah ambil risiko, ayo cabut!” bisikmu panik. Kamu langsung mematikan kamera setelah memilih untuk abaikan rembesan darah misterius itu. Namun, baru saja kalian membalikkan badan, braaakkk! Pintu tertutup dengan hantaman keras dan langsung terkunci rapat dari luar. Dari kegelapan di bawah kolong meja medis, sesosok suster ngesot mendekat dengan sangat cepat, mendongakkan kepalanya yang hancur sambil mengeluarkan suara tawa melengking yang memekakkan telinga. “Lari, guys! Jangan sampai kedorong ke arah dia!” teriak Beni histeris. Kalian langsung lari tunggang-langgang menembus kepulan debu koridor. Sialnya, secara gaib lorong memanjang menjadi tak terbatas, membuat pintu-pintu di kanan-kiri kalian seolah bergerak mundur. Teror kian memuncak saat suara roda tempat tidur besi mendadak berderit nyaring dari arah belakang, meluncur sangat kencang mengejar langkah kaki kalian layaknya mesin pemburu yang haus darah. “Gua gak kuat lagi, dada gua sesek banget!” jerit Nana tersedu-sedu sambil terus berlari pincang karena panik. Derit roda brankar berdarah itu terdengar semakin mendekat, hanya berjarak beberapa meter di belakang tengkuk kalian. Di ujung persimpangan koridor yang remang-remang, $NAME harus segera menentukan arah pelarian selanjutnya.",
+                "choices": [
+                    {
+                        "choice_text": "Hancurkan Komputer",
+                        "next_node": "ENDING_3"
+                    },
+                    {
+                        "choice_text": "Cari File Lain",
+                        "next_node": "ENDING_4"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/Alur 1 pilihan 2 lari keruangan administrasi.png"
+            }
+        ]
+    },
+    "ENDING_3": {
+        "variations": [
+            {
+                "content": "“Hancurkan monitornya sekarang! Putuskan hubungannya!” teriakmu keras. Tanpa ragu, kamu mengangkat kursi besi di dekatmu dan menghantamkannya ke layar komputer hingga hancur berantakan dengan percikan api kecil. Namun, tindakanmu memicu konsekuensi instan. Brakkk! Seketika listrik padam di seluruh ruangan, melemparkan kalian ke dalam lorong gelap total yang pekat tanpa ada seberkas cahaya pun yang tersisa. “Senter kita mati! Gua gak bisa lihat apa-apa!” jerit Beni panik di kegelapan. Dalam kebutaan mutlak itu, kamu berbisik, “Pegang pundak gua! Kita harus keluar dari sini sekarang!” Kamu mulai memimpin barisan, meraba jalan di sepanjang dinding semen yang dingin dan lembap. Ketakutan kian memuncak saat telingamu menangkap suara seretan tubuh yang mengerikan di lantai. Suara suster makin dekat, diiringi tawa cekikikan parau yang bergema tepat di belakang tumit langkah kaki kalian. Adrenalin membuat $NAME terus maju, meraba setiap jengkal dinding hingga telapak tanganmu menyentuh sebuah daun pintu yang longgar. Dengan sisa tenaga yang tersisa, kamu mendobrak pintu tersebut hingga ambruk. Udara malam yang dingin langsung menerpa wajahmu saat kalian berhasil menerobos keluar dari gedung terkutuk itu. Namun, pandanganmu mendadak kabur karena kelelahan ekstrem dan teror yang luar biasa. Kamu kehilangan arah di tengah halaman yang luas, penglihatanmu menggelap, hingga akhirnya kalian semua ambruk dan pingsan di luar gedung di atas rumput liar.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan menghancurkan komputer.png"
+            },
+            {
+                "content": "“Gua gak tahan lagi, hancurkan komputer ini!” serumu lantang. Kamu langsung menendang meja kayu itu dengan keras, membuat CPU dan monitor tabung di atasnya jatuh berdebum ke lantai hingga pecah. Detik berikutnya, suara dengung mesin berhenti, disusul dengan suara jepretan sakelar utama. Listrik padam seketika, menjebak kalian di dalam lorong gelap total yang menyekat pandangan mata. “Nana! Beni! Kalian di mana?!” serumu sambil mengayunkan tangan ke udara kosong. Setelah merasakan cengkeraman erat di jaketmu, kamu tahu mereka sudah berada di dekatmu. Tanpa bantuan cahaya senter yang tiba-tiba mati, $NAME and tim terpaksa meraba jalan di kegelapan, menyusuri dinding administrasi yang terasa basah oleh cairan misterius. Teror psikologis itu berubah menjadi ancaman nyata saat suara suster makin dekat; bunyi kuku-kuku jari yang mencakar tegel lantai terdengar kian agresif melaju ke arah kalian. “Dia di belakang kita! Cepat!” tangis Nana tertahan. Kamu terus meraba ke depan hingga jemarimu merasakan sebuah gagang pintu besi. Kamu menariknya kuat-kuat dan mendorong mereka semua keluar. Cahaya bulan samar-samar menyambut kalian, menandakan kalian telah terbebas dari dalam rumah sakit. Kamu mencoba berlari menjauh, namun rasa pusing yang hebat mendadak menyerang kepalamu. Karena kehilangan arah dan syok yang teramat sangat, kekuatan kakimu mendadak lenyap, membuatmu runtuh dan pingsan di luar gedung tak sadarkan diri.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan menghancurkan komputer.png"
+            },
+            {
+                "content": "“Gak usah dilihat lagi, hancurkan komputer itu sekarang!” perintahmu pada Beni. Dengan sigap, Beni meraih bilah kayu lapuk di sudut ruangan dan menghantamkannya tepat ke arah monitor yang menyala. Plaakk! Layar itu retak dan mati, namun bersamaan dengan itu, seluruh lampu indikator di gedung itu ikut padam. Listrik padam total, menyisakan kegelapan malam yang begitu pekat dan mencekam di dalam lorong gelap total tersebut. “Jangan lepasin pegangan! Tetap berbaris!” perintahmu dengan suara bergetar. $NAME and rekan-rekan mulai bergerak perlahan sambil meraba jalan pada permukaan dinding yang mengelupas. Suasana yang sunyi membuat indra pendengaranmu menjadi sangat tajam. Detik berikutnya, jantungmu serasa berhenti berdetak. Suara suster makin dekat, terdengar jelas dari arah kanan koridor, menyeret badannya yang hancur dengan napas tersengal-sengal yang mengerikan. “Cepat, jalannya di sebelah sini!” bisikmu panik seraya mempercepat langkah kaki. Tanganku meraba celah udara di depan dan mendapati sebuah pintu keluar darurat. Kamu mendorong pintu itu hingga terbuka lebar, membawa kalian keluar dari cengkeraman makhluk gaib tersebut. Sayangnya, kepanikan membuatmu kehilangan arah di area luar yang dipenuhi semak belukar. Dengan kesadaran yang kian menipis akibat hantaman teror yang bertubi-tubi, pandanganmu seketika memutih hingga akhirnya kamu jatuh pingsan di luar gedung terbengkalai itu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan menghancurkan komputer.png"
+            },
+            {
+                "content": "“Hancurkan komputernya! Ini semua cuma ilusi gaib!” teriakmu, menolak untuk tunduk pada takdir tertulis di layar. Kamu mengangkat mesin CPU hitam itu dengan kedua tanganmu, lalu membantingnya sekuat tenaga ke lantai hingga hancur berkeping-keping. Seketika itu juga, terdengar suara ledakan kecil dari sirkuit ruangan. Listrik padam secara serentak, menenggelamkan kalian ke dalam lorong gelap total yang mencekam. “Ayo gerak, jangan diam di tempat!” serumu di tengah kegelapan yang pekat. Tanpa adanya pencahayaan sama sekali, $NAME and tim berjalan perlahan sembari meraba jalan di antara meja dan lemari arsip tua untuk menuju pintu keluar. Kengerian memuncak ketika kegelapan itu mulai berbisik. Suara suster makin dekat, derit tubuhnya yang bergesekan dengan lantai semen kini terdengar hanya beberapa jengkal di belakang punggung Beni. “Dia mau megang gua!” teriak Beni histeris. Kamu menarik Beni dan Nana maju secara membabi buta, meraba apa saja hingga tanganmu meraih kusen jendela besar yang sudah pecah. Tanpa pikir panjang, kalian melompat keluar melewati jendela tersebut. Udara bebas berembus, namun kepalamu terasa berputar hebat. Kamu kehilangan arah di halaman rumah sakit yang gelap, detak jantungmu melemah karena syok mutlak, hingga akhirnya kamu ambruk dan pingsan di luar gedung bersama teman-temanmu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan menghancurkan komputer.png"
+            },
+            {
+                "content": "“Jangan biarkan data itu selesai diproses, hancurkan komputernya!” serumu panik. Kamu mengambil sebuah pipa besi berkarat di lantai dan menghantamkannya ke monitor tabung tersebut hingga meledak. Hantaman itu memutus arus utama bangunan. Dalam sekejap, listrik padam dan merenggut seluruh cahaya, meninggalkan kalian di dalam lorong gelap total yang dingin layaknya liang kubur. “Pegangan tangan! Jangan sampai ada yang tertinggal!” teriakmu menenangkan Nana yang mulai sesak napas. $NAME and tim bergerak maju dalam kebutaan, hanya bisa meraba jalan dengan menempelkan telapak tangan ke dinding koridor yang berlendir. Di tengah keheningan yang absolut, teror yang paling kalian takuti kembali terdengar. Suara suster makin dekat, tawa melengkingnya yang parau bergema dari ujung lorong buntu, bergerak sangat cepat ke arah posisi kalian berdiri. “Pintunya di sini! Dorong!” teriakmu saat tanganmu merasakan tekstur pintu kayu luaran. Kalian bertiga menabrak pintu itu hingga jebak dan jatuh tersungkur di halaman luar rumah sakit yang sunyi. Kamu mencoba bangkit untuk melanjutkan pelarian, namun tubuhmu sudah mencapai batas maksimalnya. Karena kehilangan arah di kegelapan malam dan kehabisan energi, kesadaranmu perlahan menguap hingga akhirnya kamu jatuh pingsan di luar gedung tersebut, mengakhiri malam penuh teror itu dalam ketidaksadaran.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan menghancurkan komputer.png"
+            }
+        ]
+    },
+    "ENDING_4": {
+        "variations": [
+            {
+                "content": "“Tunggu, pasti ada dokumen lain yang bisa ngejelasin cara keluar dari sini!” Kamu menahan tangan Beni dan segera mengalihkan fokus dari monitor terkutuk itu. Dengan panik, kamu membongkar tumpukan berkas usang di laci meja administrasi. Keberuntungan berpihak padamu ketika tanganmu menarik sebuah map kulit yang tebal. Di dalamnya, kamu temukan peta RS dan jalur keluar tersembunyi yang terhubung langsung dari ruang bawah tanah menuju area luar pagar pembatas. “Guys, gua dapet petanya! Lewat sini!” serumu optimis. Kalian langsung berlari keluar ruangan mengikuti petunjuk peta tersebut menuju pintu lorong evakuasi di ujung koridor bawah. Namun, sesampainya di sana, kenyataan pahit menghantam kalian. Pintu terkunci rapat dari balik rantai besi yang berkarat. Kamu mencoba mendobraknya, tetapi pintu itu tetap bergeming kokoh. Di tengah keputusasaan yang memuncak, hawa dingin yang mencekam mendadak menyelimuti punggungmu. Teror nyata datang saat terdengar suara nafas berat di belakang kalian, disusul sepasang tangan pucat berkuku hitam yang mendadak muncul dari kegelapan atap. “Lari duluan! Gua tahan pintunya!” teriak Beni heroik sambil menghantamkan tubuhnya ke rantai hingga pintu itu terbuka sedikit karena engselnya jebol. Kamu dan Nana segera menyelinap masuk dan lolos lewat jalur rahasia tersebut ke luar gedung. Namun, ketika $NAME berbalik untuk menarik Beni, pintu itu membanting menutup dengan keras dari dalam diiringi jeritan histeris Beni yang mendadak lenyap. TAMAT: Kamu berhasil selamat, tapi satu teman tertinggal di dalam kegelapan abadi rumah sakit itu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan 2 cari file lain revisi.png"
+            },
+            {
+                "content": "“Tahan dulu, Beni! Cari file lain di komputer, mungkin ada denah jalan keluar!” Kamu merebut tetikus dari tangan Beni dengan panik. Jari-jarimu bergerak cepat mengeklik folder-folder usang yang tersembunyi di dalam sistem. Detik-detik yang menegangkan itu membuahkan hasil saat sebuah dokumen berformat gambar terbuka. Kamu temukan peta RS dan jalur keluar tersembunyi berupa lorong pembuangan limbah medis tua yang menembus langsung ke luar area rumah sakit. “Ayo, ikuti gua! Jalurnya ada di ujung lorong administrasi ini!” teriakmu memberi komando. $NAME memimpin pelarian bersama Nana dan Beni yang terus berlari kencang tanpa berani menengok ke belakang. Langkah kaki kalian terhenti secara drastis di depan pintu besi menuju lorong limbah tersebut. Sial, Pintu terkunci dengan gembok besar yang sudah berkarat. Kamu memukul gembok itu menggunakan pipa besi di dekatmu dengan frustrasi. Di saat yang sama, bulu kudukmu berdiri sempurna ketika merasakan hembusan angin anyir disertai suara nafas berat di belakang lehermu. Bayangan hitam besar berwujud monster tanpa wajah perlahan bangkit dari lantai. Dalam kepanikan mutlak, kamu berhasil menghancurkan gembok itu dengan satu hantaman keras. Kamu dan Nana langsung menerobos masuk, lolos lewat jalur rahasia bawah tanah yang gelap dan sempit hingga akhirnya berhasil menghirup udara segar di luar pagar. Namun, kegembiraan itu sirna seketika saat kamu menyadari Beni tidak ada di sampingmu. TAMAT: Pintu besi di belakang kalian telah tertutup rapat, dan kamu tahu satu teman tertinggal di dalam cengkeraman kegelapan yang mengerikan itu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan 2 cari file lain revisi.png"
+            },
+            {
+                "content": "“Beni, bantu gua cari file lain di rak ini! Pasti ada berkas fisik penawarnya!” Kamu mengabaikan komputer yang terus berkedip itu dan mulai membongkar lemari arsip baja yang sudah berkarat. Lembar demi lembar kertas berdebu kamu buang ke lantai hingga akhirnya penglihatanmu menangkap sebuah dokumen berstempel rahasia. Di lembar tersebut, kamu temukan peta RS dan jalur keluar tersembunyi berupa pintu darurat khusus para dokter di balik dinding lobi bawah tanah. “Gua dapet jalurnya! Jangan lepasin pegangan, ayo lari!” serumu memecah kesunyian yang mencekam. Kalian bertiga segera berhamburan menuruni tangga darurat menuju titik yang ditunjukkan di dalam peta. Harapan kalian hancur berkeping-keping saat mendapati pintu terkunci mati oleh sistem palang balok dari luar. Kamu dan Beni mencoba menarik palang besi itu sekuat tenaga, namun tenagamu seolah tidak berarti. Suasana mendadak menjadi hening secara tidak wajar sebelum akhirnya terdengar suara nafas berat di belakang kalian. Sesosok bayangan suster dengan kepala miring melayang mendekat, siap mencabut nyawa kalian. “Dorong, cepat!” teriak Beni dengan sisa tenaganya, menahan tubuh makhluk itu agar tidak mendekatimu dan Nana. Kamu berhasil memanfaatkan celah sempit pada pintu yang sedikit terbuka untuk menyeret Nana keluar, lolos lewat jalur rahasia menuju halaman belakang. TAMAT: Sambil menangis tersedu-sedu, $NAME menatap pintu yang kini terkunci rapat kembali dari dalam, menyadari satu teman tertinggal di dalam neraka tersebut.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan 2 cari file lain revisi.png"
+            },
+            {
+                "content": "“Tunggu, lihat folder ‘Peta Evakuasi’ di layar! Cari file itu sekarang!” Kamu memerintah Beni dengan nada mendesak sembari terus mengawasi pintu ruang administrasi. Beni dengan gemetar mengetik papan kunci hingga sebuah cetak biru bangunan rumah sakit muncul di layar monitor. Melalui gambar digital tersebut, kamu temukan peta RS dan jalur keluar tersembunyi yang terhubung lewat terowongan generator di bagian belakang dapur rumah sakit. “Ayo pergi dari sini! Lewat dapur!” bisikmu tajam. $NAME bersama Nana dan Beni merangkak keluar dari ruangan, mengendap-endap menembus koridor gelap menuju area dapur yang dipenuhi peralatan masak berkarat. Langkah kalian terhenti tepat di mulut terowongan generator. Sial, pintu terkunci oleh lilitan kawat tebal yang sengaja dipasang. Dengan panik, kamu mencoba memutuskan kawat tersebut menggunakan gunting besar yang tergeletak di meja dapur. Tepat di detik-detik krusial itu, hawa sedingin es menusuk tengkukmu, diiringi suara nafas berat di belakang punggung yang terdengar sangat lapar dan mengerikan. “Gua gak bisa mutusin kawatnya sendirian!” teriakmu histeris. Beni langsung merebut gunting itu dan memotong kawatnya dengan sekali hentakan, membuka jalan untukmu dan Nana. Kamu dan Nana segera merangkak masuk, lolos lewat jalur rahasia terowongan sempit itu hingga berhasil keluar di semak-semak luar gedung. Namun, saat menengok ke belakang, Beni tidak pernah keluar. TAMAT: Lorong itu runtuh, meninggalkanmu dengan rasa bersalah yang mendalam karena satu teman tertinggal di dalam kegelapan.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan 2 cari file lain revisi.png"
+            },
+            {
+                "content": "“Pasti ada file rahasia milik dokter kepala! Cari file lain sekarang!” Kamu melompat ke meja kerja dan membuka laci-laci yang terkunci dengan paksa menggunakan penggaris besi. Di laci paling bawah, kamu menemukan sebuah map merah usang berisi dokumen konstruksi bangunan. Beruntung, kamu temukan peta RS dan jalur keluar tersembunyi berupa lorong ventilasi besar yang menembus langsung ke atap bagian belakang rumah sakit. “Naik ke atas meja, kita masuk lewat ventilasi ini!” perintahmu pada Nana dan Beni. $NAME membantu Nana naik terlebih dahulu ke dalam lorong yang sempit dan berdebu itu. Namun, giliranmu terhambat karena bagian ujung pintu ventilasi terkunci oleh gembok luar yang macet. Kamu berusaha mendobrak penutupnya dengan bahumu berkali-kali di dalam ruang yang sangat sempit. Kengerian mencapai puncaknya ketika dari arah koridor bawah meja terdengar suara nafas berat di belakang tubuh Beni yang masih mengantre di bawah. Sosok makhluk menyeramkan dengan tangan memanjang mulai merayap naik ke atas meja kerja. “Cepat pergi! Jangan tengok belakang!” jerit Beni histeris. Ia sengaja menarik kaki makhluk itu untuk memberikanmu waktu mendobrak jeruji besi hingga jebol. Kamu pun berhasil merangkak keluar bersama Nana, lolos lewat jalur rahasia di atap dan turun ke tempat aman. TAMAT: Di bawah siraman cahaya bulan, kamu menangis sejadi-jadinya menyadari bahwa kalian selamat, tetapi satu teman tertinggal menjadi korban kebiadaban rumah sakit terkutuk itu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 1.2 pilihan 2 cari file lain revisi.png"
+            }
+        ]
+    },
+    "ALUR_2": {
+        "variations": [
+            {
+                "content": "“Tunggu, kita harus tahu apa yang ada di balik tirai itu,” bisikmu menahan langkah Nana dan Beni. Mengabaikan firasat buruk yang mendesak untuk pergi, kamu melangkah perlahan mendekati ranjang berkarat di sudut bangsal. Dengan tangan gemetar, kamu meraih ujung kain pembatas yang tampak kusam dan berdebu. Sreeek! Kamu menariknya cepat, namun tirai terbuka, tidak ada siapa-siapa di atasnya. Kelegaan sesaat itu sirna seketika saat kamu memberanikan diri menyentuh seprei yang kusut. Jantungmu seakan berhenti berdetak; noda bekas tubuh masih hangat melekat di atas kain, seolah baru saja ditinggalkan oleh entitas yang tak kasat mata. “G-guys... kok kasurnya goyang?!” pekik Beni dengan suara tercekat di tenggorokan. Tepat setelah ucapan Beni, suasana berubah menjadi horor mutlak. Tempat tidur bergeser sendiri dengan suara decitan besi yang memekakkan telinga, menabrak dinding semen di dekatmu. Bersamaan dengan itu, lampu mati-nyala dengan cepat, memancarkan kilatan cahaya intermiten yang memperlihatkan bayangan hitam pekat sedang berdiri tepat di hadapan $NAME and tim setiap kali kegelapan menyergap.",
+                "choices": [
+                    {
+                        "choice_text": "Tetap di Ruangan",
+                        "next_node": "ENDING_5"
+                    },
+                    {
+                        "choice_text": "Kabur Keluar",
+                        "next_node": "ENDING_6"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 2 mengecek tempat tidur.png"
+            },
+            {
+                "content": "“Ssst, diam. Kita cek tempat tidur itu dulu,” perintahmu dengan suara rendah, menepis cengkeraman ketakutan Nana. Kamu memandu mereka berdua mendekati satu-satunya ranjang pasien yang tertutup rapat oleh kelambu hijau usang di tengah ruangan administrasi lama. Kamu mengulurkan tangan yang berkeringat dingin untuk menyibaknya. Srettt! Begitu tirai terbuka, tidak ada siapa-siapa di dalam bilik sempit itu. Namun, rasa penasaran berubah menjadi teror murni saat sorot sentermu menangkap siluet aneh di atas kasur. Kamu memberanikan diri meraba permukaannya; sepotong noda bekas tubuh masih hangat membekas di sana, memancarkan bau anyir darah segar yang menyengat indra penciuman kalian. “Sesuatu baru aja berdiri dari sini...” cicit Nana dengan air mata yang mulai menetes karena syok. Belum sempat $NAME and tim mundur, ruangan itu bergejolak. Tempat tidur bergeser sendiri secara agresif, berputar-putar di atas lantai tegel yang retak seolah didorong oleh kekuatan gaib yang murka. Suasana kian histeris saat lampu mati-nyala berulang kali. Dalam setiap detik kegelapan, kamu bisa merasakan embusan napas sedingin es berembus tepat di depan wajahmu.",
+                "choices": [
+                    {
+                        "choice_text": "Tetap di Ruangan",
+                        "next_node": "ENDING_5"
+                    },
+                    {
+                        "choice_text": "Kabur Keluar",
+                        "next_node": "ENDING_6"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 2 mengecek tempat tidur.png"
+            },
+            {
+                "content": "“Jangan lari dulu, kita harus mastiin ruangan ini aman. Cek tempat tidur itu,” bisikmu mantap pada Beni. Dengan sisa keberanian yang ada, kalian bertiga melangkah mendekati ranjang periksa darurat yang diselimuti debu tebal di pojok ruangan. Tanganmu menjangkau kain penutup yang tergantung kaku. Ketika kamu menyentaknya, tirai terbuka, tidak ada siapa-siapa di atas ranjang besi tersebut. Kosong. Tapi keanehan mistis langsung menyergap ketika kamu melihat lekukan dalam pada bantal usang di sana. Kamu menyentuhnya dan tertegun; noda bekas tubuh masih hangat terasa di telapak tanganmu, kontras dengan suhu ruangan yang mendadak anjlok drastis. “Senter gua... kok kedap-kedip?” seru Beni panik. Kengerian memuncak saat tempat tidur bergeser sendiri dengan sentakan keras, menutup akses jalan menuju pintu utama. Di saat yang sama, seluruh lampu $NAME and tim bawa mulai mati-nyala secara ekstrem. Di bawah kilatan cahaya yang tidak stabil itu, kalian melihat sesosok hantu perawat dengan wajah hancur perlahan merangkak turun dari langit-langit tepat di atas kepala kalian.",
+                "choices": [
+                    {
+                        "choice_text": "Tetap di Ruangan",
+                        "next_node": "ENDING_5"
+                    },
+                    {
+                        "choice_text": "Kabur Keluar",
+                        "next_node": "ENDING_6"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 2 mengecek tempat tidur.png"
+            },
+            {
+                "content": "“Tunggu, gua ngeliat ada yang gerak di balik tirai itu. Ayo cek tempat tidurnya,” katamu menantang bahaya. Nana mencengkeram jaketmu erat-erat saat kalian berjalan perlahan menuju ranjang bersalin yang terisolasi di tengah ruangan pengap. Dengan satu gerakan cepat, kamu membuka penghalang tersebut. Meskipun tirai terbuka, tidak ada siapa-siapa di sana, atmosfer di dalam ruangan seketika terasa sangat mencekam. Matamu terpaku pada seprei putih yang menyisakan noda bekas tubuh masih hangat, lengkap dengan uap tipis yang menguar dari bekas cairan ketuban hitam yang membusuk di atas kasur. “G-guys, denger suara seretan gak?” bisik Nana dengan tubuh gemetar hebat. Tiba-tiba, tempat tidur bergeser sendiri ke arah kalian dengan kecepatan tinggi, membuat $NAME and tim terpaksa melompat mundur untuk menghindar. Bersamaan dengan benturan keras itu, lampu mati-nyala disertai suara jepretan sekring yang korslet. Dalam kegelapan sesaat, suara tawa bayi yang melengking tinggi bergema tepat di dalam gendongan lenganmu yang kosong.",
+                "choices": [
+                    {
+                        "choice_text": "Tetap di Ruangan",
+                        "next_node": "ENDING_5"
+                    },
+                    {
+                        "choice_text": "Kabur Keluar",
+                        "next_node": "ENDING_6"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 2 mengecek tempat tidur.png"
+            },
+            {
+                "content": "“Kita gak bisa lari terus, cek tempat tidur itu, siapa tahu ada kunci yang tertinggal,” usulmu logis namun berisiko. Kamu memimpin Beni dan Nana mendekati ranjang pasien bernomor tiga belas yang tertutup kelambu lusuh. Dengan helaan napas berat, kamu menyibak pembatas besi itu. Harapanmu pupus karena setelah tirai terbuka, tidak ada siapa-siapa di sana selain tumpukan bantal busuk. Sialnya, nalurimu menuntunmu untuk memeriksa bagian bawah selimut. Kamu mendapati noda bekas tubuh masih hangat membekas di sana, seakan-akan sosok yang menempatinya baru saja melebur menjadi udara tepat sebelum tirai dibuka. “Perasaan gua gak enak, ayo cabut!” teriak Beni yang mulai kehilangan kendali atas rasa takutnya. Sebelum $NAME and rekan-rekan sempat berbalik, tempat tidur bergeser sendiri secara brutal, menghantam meja kerja hingga hancur berantakan. Teror psikologis itu disempurnakan oleh sistem lampu mati-nyala yang menciptakan ilusi optik mengerikan. Setiap kali lampu padam, puluhan pasang mata merah menyala menatap kalian dari balik kegelapan sudut-sudut plafon ruangan.",
+                "choices": [
+                    {
+                        "choice_text": "Tetap di Ruangan",
+                        "next_node": "ENDING_5"
+                    },
+                    {
+                        "choice_text": "Kabur Keluar",
+                        "next_node": "ENDING_6"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Horror/rumahSakit/alur opening pilihan 2 mengecek tempat tidur.png"
+            }
+        ]
+    },
+    "ENDING_5": {
+        "variations": [
+            {
+                "content": "“Jangan bergerak! Kalau kita keluar sekarang, kita malah disergap di lorong!” teriakmu, memaksa Nana dan Beni untuk merapat ke sudut ruangan. Kalian mematung dalam kegelapan, mencoba menahan napas di tengah dentum lampu yang mati-nyala secara brutal. Di atas meja dekat ranjang yang bergeser tadi, sorot sentermu menangkap sebuah alat perekam pita kaset tua yang tiba-tiba berputar sendiri. Seketika, bulu kudukmu berdiri. Dari pelantang suara, kalian temukan rekaman suara pasien minta tolong dengan nada yang amat tersiksa. “Tolong... jangan suntik saya... tempat ini terkutuk!” jerit suara itu. Nana mulai menangis histeris karena ia mengenali suara di rekaman itu; itu adalah petunjuk suara dari korban-korban sebelum kalian. Kengerian memuncak saat rekaman itu mendadak melambat. Secara perlahan, suara berubah jadi tawa memenuhi ruangan, menggema dari segala sudut dinding semen dengan nada melengking yang memekakkan telinga. Detik berikutnya, pintu ruangan membanting menutup dari luar dengan bunyi dentum keras. Lampu di dalam ruangan mendadak menyala terang benderang, menyorot pakaian kalian yang entah sejak kapan telah berubah menjadi gaun pasien berwarna putih kusam. $NAME mencoba menggerakkan tubuhnya, namun terlambat. Tangan dan kakimu sudah terikat kuat pada sabuk kulit di atas ranjang periksa. TAMAT: Kalian menyadari dengan keputusasaan mutlak bahwa kalian telah terjebak di ruangan sebagai pasien berikutnya, menunggu giliran untuk dieksekusi di dalam kegelapan abadi rumah sakit ini.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.1 Ending 5.png"
+            },
+            {
+                "content": "“Tahan posisi! Jangan panik, kita cari benda tajam buat bertahan!” serumu, memutuskan untuk tetap tinggal di dalam ruang administrasi lama ini. Kamu menahan dada Beni dan Nana yang sudah siap berlari ke pintu. Di tengah kepungan lampu yang berkedip-kedip agresif, sebuah radio panggil di atas lemari besi mendadak mengeluarkan suara kresek yang nyaring. Kalian membeku saat temukan rekaman suara pasien minta tolong dari pemancar radio tersebut. Suara itu terdengar merintih, tersedak darah, seolah sedang digorok hidup-hidup. “Siapa pun di luar sana... selamatkan kami dari dokter bedah ini!” ratapnya pilu, membuat atmosfer ruangan terasa semakin dingin mencekik. Belum sempat kalian mencerna teror itu, frekuensi radio tersebut mendadak berdenging tajam. Detik berikutnya, suara berubah jadi tawa memenuhi ruangan. Bukan lagi dari radio, melainkan tawa parau gaib yang menggema langsung di atas plafon dan di balik dinding tempat kalian bersandar. $NAME mencoba berbalik untuk mencari jalan keluar, namun pandanganmu mendadak buram. Rasa kantuk yang luar biasa berat akibat bius gaib merayap ke seluruh tubuhmu. Ketika kesadaranmu menipis, kamu melihat Beni dan Nana sudah terbujur kaku di atas ranjang dorong di sampingmu. TAMAT: Dengan jeritan yang tertahan di tenggorokan, kalian resmi terjebak di ruangan sebagai pasien berikutnya, terperangkap dalam lingkaran setan medis yang takkan pernah berakhir.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.1 Ending 5.png"
+            },
+            {
+                "content": "“Tutup mata kalian, jangan ditatap! Tetap di sini!” perintahmu dengan suara bergetar, memaksa mereka merunduk di balik lemari arsip baja. Kamu menolak keluar ke lorong karena tahu hantu perawat di atas langit-langit sedang mengintai. Di dalam kesunyian yang mencekam itu, sebuah telepon analog di atas meja kerja mendadak berdering nyaring. Kamu nekat mengangkat gagang teleponnya dan temukan rekaman suara pasien minta tolong di ujung talian. Suara anak kecil menangis histeris, “Ibu, sakit! Mereka mau mengambil mataku! Tolong!” Bisikan penuh keputusasaan itu merayap masuk ke dalam gendang telingamu, mengirimkan sinyal teror murni ke otak. Tiba-tiba, suara anak kecil itu terputus oleh distorsi gelombang. Suara berubah jadi tawa memenuhi ruangan, meledak dari corong telepon dan bergema di seluruh ruangan berdebu ini. Tawa itu terdengar begitu puas dan mengejek ketakutan kalian. $NAME and tim tersentak saat menyadari bahwa pintu dan jendela ruangan telah melebur menjadi dinding semen yang kokoh. Tidak ada jalan keluar lagi. Bau zat kimia antiseptik menyengat tajam, dan sesosok bayangan dokter tanpa wajah berdiri di depan kalian memegang jarum suntik raksasa. TAMAT: Jeritan kalian menjadi tak terdengar saat kalian resmi terjebak di ruangan sebagai pasien berikutnya di rumah sakit terkutuk ini.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.1 Ending 5.png"
+            },
+            {
+                "content": "“Jangan berpencar! Tetap di ruangan ini sampai suaranya hilang!” Kamu mendekap Nana dan Beni erat-erat di sudut dinding, mencoba mengabaikan tempat tidur yang baru saja bergeser brutal. Di tengah kepungan kegelapan akibat lampu korslet, sebuah televisi tabung di pojok atas ruangan mendadak menyala, menampilkan layar statis hitam-putih. Dari pelantang suara TV yang rusak, kalian temukan rekaman suara pasien minta tolong. Suara seorang wanita paruh baya berteriak histeris diiringi bunyi detak jantung monitor medis yang melambat. “Jangan biarkan mereka mengunci ruangan ini! Tolong!” teriaknya sebelum suara itu berubah menjadi desisan statis yang aneh. Seketika itu juga, desisan di televisi berhenti dan suara berubah jadi tawa memenuhi ruangan. Suara tawa melengking tinggi khas anak kecil bergema bersahut-sahutan dari bawah lantai, seolah-olah ada puluhan makhluk gaib yang sedang mengelilingi posisi kalian berlutut. $NAME mencoba bangkit untuk kabur, namun kakimu terasa lumpuh total. Saat melihat ke bawah, seluruh tubuhmu telah terikat pada baju kekang pasien gangguan jiwa, begitu pula dengan Beni dan Nana. TAMAT: Ruangan ini perlahan menyempit, memadamkan sisa cahaya senter kalian, mengukuhkan takdir bahwa kalian telah terjebak di ruangan sebagai pasien berikutnya, terkubur hidup-hidup bersama kegilaan masa lalu.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.1 Ending 5.png"
+            },
+            {
+                "content": "“Duduk dan diam! Jangan memicu mereka dengan gerakan!” Kamu memaksa Beni dan Nana untuk tiarap di lantai tegel yang dingin. Kalian memilih bertahan di dalam ruangan bersalin ini, berharap badai gaib di luar segera mereda. Namun, sebuah pemutar piringan hitam di sudut ruangan yang tertutup debu mendadak berputar lambat. Dari gesekan jarum kuno pada piringan itu, kalian temukan rekaman suara pasien minta tolong dengan rintihan yang sangat menyayat hati. “Mereka memotong kaki saya... tolong hentikan darahnya!” ratap suara pria tersebut, memicu rasa mual dan ngeri yang luar biasa di dalam dadamu. Detik berikutnya, lagu pengiring di piringan hitam itu mendadak berputar terbalik dengan kecepatan tinggi. Suara berubah jadi tawa memenuhi ruangan, bertransformasi menjadi tawa histeris massa yang menggelegar, merontokkan debu-debu dari langit-langit tepat ke atas kepala kalian. Saat $NAME mencoba mendongak, kilatan lampu operasi di atas kepala kalian menyala dengan terik yang membutakan. Tubuhmu secara ajaib sudah terlentang di atas meja operasi dengan peralatan bedah berkarat yang melayang di sekitarmu. TAMAT: Di sela-sela tawa gaib yang kian memekakkan telinga, kalian menyadari bahwa kalian tidak akan pernah bisa kembali pulang; kalian telah terjebak di ruangan sebagai pasien berikutnya.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.1 Ending 5.png"
+            }
+        ]
+    },
+    "ENDING_6": {
+        "variations": [
+            {
+                "content": "“Gak ada waktu lagi, lari!” teriakmu keras. Kamu mendobrak pintu bangsal dan memimpin pelarian menembus kegelapan koridor yang mencekam. Nana dan Beni berlari kencang tepat di belakangmu, mengabaikan suara ranjang yang berderit misterius di dalam ruangan tadi. Kalian terus memacu langkah kaki menuruni tangga, berbelok di setiap sudut, dan berlari menuju pintu keluar utama yang memancarkan cahaya bulan samar-samar. Namun, setelah mengerahkan seluruh sisa tenaga hingga paru-paru terasa terbakar, jantungmu mendadak mencelos. Bukannya melihat halaman luar, kalian justru kembali ke lorong yang sama, tepat di depan pintu bangsal dengan nomor kamar yang sama persis seperti sebelumnya. “Kok... kok kita balik lagi ke sini?!” pekik Beni dengan mata melotot penuh keputusasaan. $NAME menatap plang dinding yang retak dengan tubuh yang gemetar hebat. Seketika itu juga, sebuah kebenaran yang mengerikan menghantam isi kepalamu. Kamu sadar Rumah sakit selalu membawa kembali ke dalam, memanipulasi ruang dan waktu seolah bangunan tua ini adalah organisme hidup yang sedang mempermainkan mangsanya. Koridor di depan kalian perlahan memanjang secara tidak wajar, memutus semua ilusi tentang jalan keluar yang sedari tadi kalian cari. Pintu-pintu di kanan-kiri menutup serentak dengan bunyi berdentum keras, mengunci takdir kalian tanpa ampun. TAMAT: Tidak ada jalan pulang. Kalian telah terjebak selamanya karena Rumah sakit tidak ingin kalian pergi dari cengkeraman kegelapannya.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.2 Ending 6.png"
+            },
+            {
+                "content": "“Pintu! Cepat keluar dari sini!” teriakmu sambil menarik lengan Nana secara membabi buta. Kalian menghambur melewati pintu administrasi, berlari tunggang-langgang menyusuri koridor rumah sakit yang dingin dan berbau anyir. Ketakutan yang mutlak membuat kalian tidak peduli lagi pada bayangan-bayangan yang berkelebat di langit-langit. Pikiranmu hanya tertuju pada satu hal: keluar dari gedung terkutuk ini. Kalian melihat papan penunjuk jalan bertuliskan ‘KELUAR’ di ujung lorong dan langsung menuju ke sana dengan harapan yang membubung tinggi. Namun, begitu melintasi pintu pembatas, langkahmu mendadak terkunci. Sorot sentermu menangkap tumpukan kertas administrasi yang berserakan di lantai. Kalian kembali ke lorong yang sama, berdiri tepat di depan titik awal pelarian kalian beberapa menit yang lalu. “Ini mustahil... kita udah lari lurus tadi!” rintih Nana sambil menangis histeris di lantai. Gema tawa samar yang parau mulai terdengar memantul di dinding semen. Di tengah kepanikan itu, $NAME sadar Rumah sakit selalu membawa kembali ke dalam. Gedung terbengkalai ini memiliki kehendak mistisnya sendiri, menjebak kesadaran kalian dalam labirin tanpa ujung yang mustahil ditembus oleh manusia. Udara di sekitar kalian mendadak terasa pekat dan menyesakkan, sementara seluruh lorong perlahan meredup menelan sisa cahaya senter. TAMAT: Harapan kalian runtuh sepenuhnya; kalian resmi terjebak selamanya karena Rumah sakit tidak ingin kalian pergi.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.2 Ending 6.png"
+            },
+            {
+                "content": "“Lompat lewat jendela, cepat!” perintahmu tegas setelah menghantam kaca jendela bangsal hingga hancur berantakan. Kamu membantu Nana dan Beni memanjat keluar terlebih dahulu sebelum akhirnya kamu ikut melompat ke bawah. Kalian mendarat di atas tanah berlumpur dan langsung berlari sekencang-kencangnya menerobos kegelapan halaman malam, mencoba menjauh dari gedung rumah sakit yang mengerikan itu. Kalian berlari menembus kabut tebal selama beberapa menit yang melelahkan. Namun, ketika kabut itu sedikit menipis, langkah kaki kalian mendadak membeku. Di hadapan kalian bukan lagi pagar pembatas jalan raya, melainkan struktur bangunan beton yang sangat familiar. Tanpa sadar, kalian telah melangkah masuk melewati sebuah pintu besi dan kembali ke lorong yang sama di dalam rumah sakit. “Gak mungkin... kita kan tadi udah di luar?!” seru Beni dengan suara yang pecah karena syok. Bulu kudukmu berdiri sempurna saat menyadari seprei hangat di tempat tidur tadi masih berada di dekat kalian. Saat itulah $NAME sadar Rumah sakit selalu membawa kembali ke dalam bangunan utamanya. Halaman luar yang kalian lihat tadi hanyalah ilusi gaib yang diciptakan untuk memberi harapan palsu. Struktur bangunan ini seolah bergeser, menutup setiap celah udara dan mengunci semua akses evakuasi secara permanen. TAMAT: Kalian pun pasrah, terjebak selamanya karena Rumah sakit tidak ingin kalian pergi dari jerat mistisnya.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.2 Ending 6.png"
+            },
+            {
+                "content": "“Ayo keluar, tempat ini udah gak beres!” serumu lantang. Kamu menendang pintu darurat bangsal hingga terbuka lebar, memimpin pelarian bersama Nana dan Beni untuk menjauhi tempat tidur yang bergeser gaib itu. Kalian berlari menuruni anak tangga darurat secara membabi buta, melompati undakan demi undakan beton dalam kegelapan pekat, berharap segera menemukan lobi utama. Langkah kaki kalian berdentum keras mengejar secercah cahaya di ujung tangga bawah. Namun, begitu melangkah keluar dari pintu darurat terbawah, lututmu mendadak lemas. Pandangan di depanmu adalah barisan ranjang bersalin yang berdebu. Kalian kembali ke lorong yang sama, terjebak di lantai yang seharusnya sudah kalian tinggali jauh di atas tadi. “Kita gak bisa keluar... tempat ini muter-muter terus!” tangis Nana dengan tubuh yang bergetar hebat. Melihat struktur lorong yang tidak masuk akal ini, sebuah realitas pahit menghantam benak $NAME. Kamu sadar Rumah sakit selalu membawa kembali ke dalam pusaran terornya. Sejauh apa pun kaki kalian melangkah, setiap sudut bangunan ini telah dirancang secara supranatural untuk membelokkan arah pelarian kembali ke titik tengah. TAMAT: Lorong-lorong gelap ini perlahan menyempit, mengunci kalian dalam keabadian yang sunyi. Kalian telah terjebak selamanya karena Rumah sakit tidak ingin kalian pergi.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.2 Ending 6.png"
+            },
+            {
+                "content": "“Gak ada pilihan lain, lari menembus koridor sekarang!” teriakmu, menarik pintu besi hingga terbuka dan melompat keluar ke lorong buntu. Beni dan Nana mengikuti langkahmu dengan napas yang memburu berkejaran dengan waktu. Kalian berlari lurus memanfaatkan sisa energi terakhir, melewati pintu demi pintu bangsal, berharap menemukan pintu keluar darurat di ujung bangunan. Namun, harapan itu pupus seketika saat koridor yang kalian lalui mendadak terasa berputar. Di ujung jalan, kalian justru melihat nomor kamar tiga belas yang sangat kalian kenali. Ya, kalian kembali ke lorong yang sama dan berdiri tepat di hadapan ranjang pasien yang kelambunya baru saja kalian sibak tadi. “Kenapa kita balik lagi ke sini? Tolong... gua mau pulang!” jerit Beni frustrasi sambil memukul dinding semen. Dalam kepanikan mutlak itu, $NAME melihat bayangan kalian di cermin retak koridor dan sadar Rumah sakit selalu membawa kembali ke dalam. Bangunan terkutuk ini telah mengunci jiwa kalian; setiap koridor dan pintu keluar yang kalian tuju hanyalah jebakan ruang yang akan selalu memutar balik langkah kaki ke tempat semula. TAMAT: Suara detak jam dinding tua yang lambat mulai menggema, menandakan waktu pelarian telah habis. Kalian kini terjebak selamanya karena Rumah sakit tidak ingin kalian pergi.",
+                "choices": [],
+                "is_ending": true,
+                "image": "Horror/rumahSakit/Alur 2.2 Ending 6.png"
+            }
+        ]
+    }
 }
