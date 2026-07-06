@@ -128,7 +128,8 @@ class StoryGenerator
                             'content'   => $content,
                             'choices'   => $choices,
                             'is_ending' => (bool) ($selectedVariation['is_ending'] ?? false),
-                            'node_id'   => $nodeId
+                            'node_id'   => $nodeId,
+                            'image'     => $selectedVariation['image'] ?? null
                         ];
                     }
                 }
@@ -161,12 +162,19 @@ class StoryGenerator
         $locClean = strtolower(str_replace(' ', '', trim($location)));
 
         if ($genreLower === 'horror') {
-            if (str_contains($locClean, 'hike') || str_contains($locClean, 'pendakian')) {
-                return 'horror_hike_intro.png';
+            if (str_contains($locClean, 'hike') || str_contains($locClean, 'pendakian') || str_contains($locClean, 'gunung')) {
+                return 'Horror/Pendakian/intro awal.png';
             }
-            return 'horror_hospital_intro.png';
+            return 'Horror/rumahSakit/alur opening narasi rumah sakit terbengkalai.png';
         }
 
-        return 'adventure_generic_intro.png';
+        if ($genreLower === 'adventure') {
+            if (str_contains($locClean, 'island') || str_contains($locClean, 'pulau')) {
+                return 'Adventure/Pulau/pulau terpencil ( awal ).png';
+            }
+            return 'Adventure/Gua/opening menuju bunker.png';
+        }
+
+        return 'landing page bg2.png';
     }
 }

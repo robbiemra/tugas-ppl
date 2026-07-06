@@ -1,5 +1,9 @@
 <?php
 
+// Suppress PHP 8.5 deprecation warnings
+ini_set('display_errors', '0');
+error_reporting(E_ALL & ~E_DEPRECATED);
+
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));

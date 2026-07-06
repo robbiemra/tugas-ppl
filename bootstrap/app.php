@@ -1,5 +1,9 @@
 <?php
 
+// Suppress PHP 8.5 deprecation warnings to prevent layout distortion and JSON corruption
+ini_set('display_errors', '0');
+error_reporting(E_ALL & ~E_DEPRECATED);
+
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;

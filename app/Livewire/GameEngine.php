@@ -134,7 +134,7 @@ class GameEngine extends Component
             'node_id'     => $this->currentNodeId,
         ];
 
-        $rawImagePath = $story['image'] ?? 'wallpaperhorror.jpeg';
+        $rawImagePath = $story['image'] ?? 'landing page bg2.png';
         $this->aiImageUrl = asset($rawImagePath);
         $this->bgImageUrl = $this->aiImageUrl;
 
@@ -397,7 +397,7 @@ class GameEngine extends Component
                 return 'Horror/Pendakian/intro awal.png';
             }
             if (str_contains($locClean, 'rumahsakit') || str_contains($locClean, 'rs')) {
-                return 'wpkakek.jpeg';
+                return 'Horror/rumahSakit/landing page rumah sakit.png';
             }
         }
 
@@ -405,9 +405,12 @@ class GameEngine extends Component
             if (str_contains($locClean, 'pulau')) {
                 return 'Adventure/Pulau/pulau terpencil ( awal ).png';
             }
+            if (str_contains($locClean, 'gua') || str_contains($locClean, 'cave')) {
+                return 'Adventure/Gua/landing page gua misterius.png';
+            }
         }
 
-        return 'wallpaperhorror.jpeg';
+        return 'landing page bg2.png';
     }
 
     /**
