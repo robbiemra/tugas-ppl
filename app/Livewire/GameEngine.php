@@ -34,6 +34,13 @@ class GameEngine extends Component
             'userName' => 'required|min:3',
             'userAge' => 'required|numeric|min:1',
             'gender' => 'required|in:Laki-laki,Perempuan',
+        ], [
+            'userName.required' => 'Nama Pemain harus diisi.',
+            'userName.min' => 'Nama Pemain minimal harus 3 karakter.',
+            'userAge.required' => 'Usia harus diisi.',
+            'userAge.numeric' => 'Usia harus berupa angka.',
+            'userAge.min' => 'Usia minimal harus 1 tahun.',
+            'gender.required' => 'Gender harus diisi.',
         ]);
         $this->step = 'select_genre';
     }
@@ -57,6 +64,10 @@ class GameEngine extends Component
         $this->validate([
             'loginEmail' => 'required|email',
             'loginPassword' => 'required',
+        ], [
+            'loginEmail.required' => 'Email harus diisi.',
+            'loginEmail.email' => 'Format email tidak valid.',
+            'loginPassword.required' => 'Password harus diisi.',
         ]);
 
         if (Auth::attempt(['email' => $this->loginEmail, 'password' => $this->loginPassword])) {
@@ -73,6 +84,13 @@ class GameEngine extends Component
             'registerName' => 'required|string|max:255',
             'registerEmail' => 'required|string|email|max:255|unique:users,email',
             'registerPassword' => 'required|string|min:8',
+        ], [
+            'registerName.required' => 'Nama harus diisi.',
+            'registerEmail.required' => 'Email harus diisi.',
+            'registerEmail.email' => 'Format email tidak valid.',
+            'registerEmail.unique' => 'Email sudah terdaftar.',
+            'registerPassword.required' => 'Password harus diisi.',
+            'registerPassword.min' => 'Password minimal harus 8 karakter.',
         ]);
 
         $user = User::create([
@@ -334,8 +352,11 @@ class GameEngine extends Component
         }
 
         // Convert image URLs to base64 so DomPDF can render them locally without networking issues
+        // Hanya lakukan jika ekstensi GD tersedia untuk mencegah error "PHP GD extension is required"
+        $gdInstalled = extension_loaded('gd') && function_exists('imagecreatefrompng');
+        
         foreach ($storyPages as &$page) {
-            if (isset($page['image']) && $page['image']) {
+            if ($gdInstalled && isset($page['image']) && $page['image']) {
                 $urlPath = parse_url($page['image'], PHP_URL_PATH);
                 $relativeFilePath = ltrim($urlPath, '/');
                 
@@ -356,6 +377,9 @@ class GameEngine extends Component
                 } else {
                     $page['image_base64'] = null;
                 }
+            } else {
+                $page['image_base64'] = null;
+                $page['image'] = null; // Cegah pemanggilan image langsung di view blade jika GD mati
             }
         }
 
