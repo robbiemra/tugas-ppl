@@ -2,7 +2,7 @@
     "NARASI_AWAL": {
         "variations": [
             {
-                "content": "Tetesan air bergema konstan di dalam gua misterius ini, beradu dengan detak jantungmu yang kian cepat. Kamu, Nana, dan Beni sudah berjalan berjam-jam menembus kegelapan, hanya mengandalkan cahaya redup dari senter di tangan. Tiba-tiba, sorot lampu Beni berhenti pada sebuah struktur asing yang janggal. Di hadapan kalian, tertanam pada dinding batu gua, berdiri sebuah pintu bunker kuno yang tebal dan berkarat. \"Lihat ini... rasanya benda ini tidak ada di peta,\" bisik Nana sambil menyentuh permukaan besi yang mengelupas. Beni mendorong pintu itu dengan sikutnya. Dengan suara derit logam yang memekakkan telinga, pintu bergeser, membuka jalan menuju kegelapan yang lebih pekat. Bau apak langsung menyengat hidungmu. Mau tidak mau, kalian melangkah masuk ke dalam bunker yang gelap gulita dan sangat lembab. Dinginnya dinding beton seolah menyedot kehangatan dari tubuhmu, sementara lantai yang licin membuat setiap langkah terasa berbahaya. Senter kalian menyapu ruangan yang luas, hingga akhirnya sinarnya terpecah di ujung lorong. Di sana, jalan buntu memaksa kalian menghadapi dua lorong baru yang sama-sama sunyi dan mencekam. \"Kita tidak bisa berlama-lama di atmosfer selembab ini, oksigen kita terbatas,\" ujar Beni cemas, menatapmu meminta keputusan. Nana pun menoleh, menggenggam senternya erat-erat, menanti arahan darimu. Kini, kelanjutan petualangan kalian ada di tanganmu. Jalan mana yang akan kamu pilih untuk menembus misteri bunker ini?",
+                "content": "Tetesan air bergema di dalam gua misterius ini, beradu dengan detak jantungmu. Kamu, Nana, dan Beni berjalan menembus kegelapan hanya bermodalkan senter redup. Tiba-tiba, sorot lampu Beni berhenti pada pintu bunker kuno berkarat yang tertanam di dinding batu. Dengan derit logam memekakkan telinga, pintu itu berhasil digeser, membuka jalan ke dalam. Kalian melangkah masuk ke ruang bunker yang gelap gulita dan sangat lembap. Dinginnya dinding beton langsung menyedot kehangatan tubuh, sementara lantai yang licin membuat setiap langkah terasa berbahaya. Senter kalian menyapu ruangan hingga sinarnya terpecah di ujung jalan buntu, menampilkan dua lorong baru yang sunyi dan mencekam. \"Oksigen kita terbatas di atmosfer selembab ini, kita harus cepat,\" bisik Beni cemas. Nana menggenggam senternya erat, menatapmu penuh harap. Keputusan ada di tanganmu. Jalur mana yang akan kamu pilih untuk menembus misteri ini?",
                 "choices": [
                     {
                         "choice_text": "Ambil Jalur Kiri",
@@ -17,7 +17,7 @@
                 "image": "Adventure/Gua/opening menuju bunker.png"
             },
             {
-                "content": "Langkahmu terhenti ketika ujung sepatumu membentur sesuatu yang keras. Di dalam perut gua misterius yang minim cahaya ini, kamu, Nana, dan Beni justru menemukan keanehan. Senter di tanganmu menyorot sebongkah logam raksasa yang tertanam di dinding batu: sebuah pintu bunker kuno yang dipenuhi karat tebal. \"Gila... bunker militer peninggalan perang?\" gumam Beni, matanya berbinar antara takut dan penasaran. Nana menarik ranselmu, berbisik ragu, \"Perasaanku tidak enak. Sebaiknya kita balik kanan.\" Namun, rasa penasaranmu jauh lebih kuat. Bersama Beni, kamu bahu-membahu mendorong pintu besi berat itu hingga terbuka sedikit. Detik berikutnya, kalian terpaksa melangkah masuk ke dalam bunker yang teramat gelap dan lembab. Udara di dalam sini terasa berat, dingin, dan dipenuhi aroma besi berkarat bercampur tanah basah. Setiap embusan napas kalian berubah menjadi kabun tipis, dan air menetes dari langit-langit beton yang mulai retak, membasahi pundakmu. Keheningan bunker ini mendadak terasa mencekam. Senter Nana bergerak gelisah, menyinari ujung ruangan di mana koridor utama terbelah menjadi dua terowongan gelap yang sama-sama menyimpan misteri. Beni menelan ludah, menatapmu lekat-lekat. \"Oksigen di ruangan selembab ini terbatas. Kita harus bergerak cepat. Kamu yang pegang kendali, kita lewat mana?\" Nana hanya diam, memegang lengan jaketmu dengan gemetar, menunggu keputusan mutlak darimu.",
+                "content": "\"Tetap bersama dan jangan terpisah,\" bisikmu menembus keheningan gua misterius yang mencekam. Langkah kaki kalian terhenti saat Nana menunjuk ke sebuah struktur aneh: pintu bunker militer kuno yang tebal dan dipenuhi karat. Bersama Beni, kamu mendorong tuas besi yang membeku hingga pintu terbuka perlahan. Udara apak langsung menyengat saat kalian memasuki interior bunker yang gelap gulita dan sangat lembap. Kegelapan di dalam sini seolah menelan cahaya senter kalian, sementara hawa basah beton membuat bulu kuduk meremang. Langkah demi langkah membawa kalian ke sebuah persimpangan krusial di ujung bunker yang memaksa kalian memilih. \"Kita tidak punya banyak waktu sebelum baterai senter ini habis,\" ujar Beni panik sambil menatapmu. Nana menunggu komandomu di titik penentuan ini.",
                 "choices": [
                     {
                         "choice_text": "Masuk ke Jalur Kiri",
@@ -32,7 +32,7 @@
                 "image": "Adventure/Gua/opening menuju bunker.png"
             },
             {
-                "content": "Hawa dingin gua misterius ini perlahan menusuk hingga ke tulang. Kamu melangkah hati-hati, memimpin jalan di depan Nana dan Beni yang terus waspada. Tiba-tiba, sorot sentermu menangkap siluet kotak yang tidak selaras dengan struktur alami gua. Ketika didekati, sebuah pintu bunker kokoh yang dipenuhi karat merah berdiri angkuh, mengunci sebuah rahasia besar. \"Logam besi di tengah gua sedalam ini? Ini tidak masuk akal,\" cetus Nana, menyapu debu tebal yang menempel di permukaannya. Beni, dengan rasa penasaran yang membuncah, langsung mencari celah roda pengunci. Dengan satu hentakan keras bersama, pintu itu terbuka, menciptakan celah sempit yang menganga. Tanpa pilihan lain untuk kembali, kalian terpaksa menyelinap masuk ke dalam bunker yang gelap gulita dan sangat lembab. Suasananya instan berubah drastis. Kamar beton ini terasa seperti ruang hampa yang basah; dindingnya berkeringat oleh uap air, dan setiap langkahmu menimbulkan suara kecipak dari lantai yang digenangi air dangkal. Kegelapan di sini seolah menelan cahaya senter kalian, menyisakan jarak pandang yang sangat pendek. Tepat di ujung ruangan utama, langkah Beni terhenti. Di hadapan kalian, bunker ini membelah menjadi dua percabangan lorong yang sama-sama gelap gulita. \"Energi baterai kita tidak akan bertahan lama di suhu selembab ini,\" bisik Beni cemas. Nana menatapmu, memercayakan keselamatan tim pada instingmu. \"Ke mana kita sekarang?\"",
+                "content": "\"Tetap bersama dan jangan terpisah,\" bisikmu menembus keheningan gua misterius yang mencekam. Langkah kaki kalian terhenti saat Nana menunjuk ke sebuah struktur aneh: pintu bunker militer kuno yang tebal dan dipenuhi karat. Bersama Beni, kamu mendorong tuas besi yang membeku hingga pintu terbuka perlahan. Udara apak langsung menyengat saat kalian memasuki interior bunker yang gelap gulita dan sangat lembap. Kegelapan di dalam sini seolah menelan cahaya senter kalian, sementara hawa basah beton membuat bulu kuduk meremang. Langkah demi langkah membawa kalian ke sebuah persimpangan krusial di ujung bunker yang memaksa kalian memilih. \"Kita tidak punya banyak waktu sebelum baterai senter ini habis,\" ujar Beni panik sambil menatapmu. Nana menunggu komandomu di titik penentuan ini.",
                 "choices": [
                     {
                         "choice_text": "Pilih Jalur Kiri",
@@ -47,7 +47,7 @@
                 "image": "Adventure/Gua/opening menuju bunker.png"
             },
             {
-                "content": "Bau tanah basah dan lumut mengiringi setiap langkah kalian jauh ke dalam perut gua yang misterius ini. Di belakangmu, Nana sibuk memeriksa kompas yang layarnya terus berputar kacau, sementara Beni berjaga-jaga di barisan paling belakang. Tiba-tiba, langkahmu terhenti saat sentermu menabrak dinding buntu yang tidak biasa. Itu bukan batu, melainkan sebuah pintu bunker raksasa yang tertutup rapat dan dilapisi karat tebal. \"Kompasnya mati total tepat di depan pintu ini,\" bisik Nana dengan suara bergetar. Beni maju, memeriksa engsel besi yang sudah keropos dimakan usia. Menggunakan seluruh tenaga yang tersisa, kalian bertiga mendorong pintu berat tersebut hingga berderit nyaring, memecah kesunyian gua. Begitu terbuka, kalian tidak punya pilihan selain melangkah masuk ke dalam bunker yang gelap gulita dan teramat lembab. Atmosfer di dalam sini terasa sangat menekan. Dinding betonnya terasa basah dan licin saat disentuh, seolah bunker ini telah mengembun selama puluhan tahun. Suara napas kalian bergaung berat di dalam ruangan yang dingin, bercampur dengan aroma kuno yang menyengat indung telinga. Senter kalian terus menyapu kegelapan, hingga sinarnya memperlihatkan ujung ruangan yang terpecah menjadi dua terowongan pengap. \"Jantungku berdegup kencang, tempat selembab ini membuatku sesak,\" kata Beni sambil memegang dadanya. Nana menatapmu dengan mata penuh harap. \"Kamu yang memimpin jalan sejak awal. Sekarang, instingmu bilang kita harus lewat mana?\"",
+                "content": "Keheningan eksplorasi gua misterius kalian pecah saat senter Beni menerangi pintu bunker kuno berkarat yang tersembunyi di balik stalaktit. Rasa penasaran mengalahkan rasa takut; kalian sepakat mendorong pintu berat tersebut hingga terbuka. Seketika, kalian terjebak di dalam bunker yang gelap gulita dan sangat lembap. Suasana di dalam terasa begitu mengintimidasi dengan dinding-dinding beton basah yang dingin. Langkah kaki kalian menggema mistis saat menelusuri ruangan luas yang pengap ini. Tiba-tiba, jalur utama berakhir dan terpecah menjadi dua lorong baru yang sama-sama pekat. \"Atmosfer ini terlalu sesak, kita harus segera keluar,\" desak Beni sambil menggenggam tombaknya. Nana menatapmu, menunggu keputusan mutlak darimu untuk melanjutkan pelarian malam ini.",
                 "choices": [
                     {
                         "choice_text": "Pilih Jalur Kiri",
@@ -62,7 +62,7 @@
                 "image": "Adventure/Gua/opening menuju bunker.png"
             },
             {
-                "content": "Gua misterius ini terasa seperti labirin tanpa ujung yang siap menelan siapa saja. Kamu memimpin di depan, memastikan jalan aman bagi Nana dan Beni yang berjalan beriringan di belakangmu. Ketika sorot sentermu menyapu dinding batu di ujung lorong, kamu tertegun. Sebuah struktur buatan manusia berdiri angkuh di sana: pintu bunker kuno yang lapuk dan dipenuhi karat cokelat kemerahan. \"Bagaimana bisa ada teknologi militer tersembunyi di kedalaman seperti ini?\" gumam Nana heran, sambil mengusap permukaan besi yang kasar. Beni menendang bagian bawah pintu yang sudah keropos. Dengan suara patahan logam yang berdentang keras, pintu itu jebol, menyisakan celah hitam yang menganga. Didorong rasa penasaran, kalian bertiga memutuskan masuk ke dalam bunker yang gelap gulita dan sangat lembab. Seketika, hawa pengap langsung mengurung kalian. Udara di dalam sini begitu basah hingga membuat pakaianmu terasa menempel di kulit, dan setiap hembusan napas memicu rasa dingin yang ganjil. Dinding-dinding beton di sekeliling kalian tampak \"berkeringat\" oleh uap air, menciptakan suasana mencekam yang membuat bulu kuduk berdiri. Langkah kaki kalian yang menggema tiba-tiba terhenti di sebuah persimpangan simetris. Senter di tanganmu memperlihatkan dua lorong kembar yang membelah bunker ini. \"Suhu selembab ini bisa merusak peralatan elektronik kita, termasuk senter,\" ujar Beni dengan nada mendesak. Nana menggenggam pundakmu, menyalurkan rasa cemasnya. \"Keputusan ada di tanganmu. Kita tidak bisa berdiam diri di sini.\"",
+                "content": "Kamu bisa merasakan kecemasan Nana dan Beni saat kalian bergerak makin dalam di gua misterius ini. Tiba-tiba, dinding batu di depan kalian berganti menjadi pintu bunker kuno berkarat yang tampak menyeramkan. Mengumpulkan keberanian, kalian membuka paksa pintu besi tersebut. Udara dingin langsung menyergap saat kalian melangkah masuk ke bunker yang gelap gulita dan sangat lembap. Kegelapan absolut di dalam sini terasa sangat pekat, ditemani suara tetesan air yang lambat dari langit-langit beton. Senter kalian bergetar, menyapu sekeliling hingga menemukan dua jalur navigasi baru di ujung koridor buntu. \"Udara di sini sangat lembap dan terasa berat, kita harus memilih cepat!\" desak Nana dengan suara bergetar. Beni menatapmu, menantikan isyarat keputusanmu yang akan menentukan nasib mereka bertiga di sini.",
                 "choices": [
                     {
                         "choice_text": "Pilih Jalur Kiri",
@@ -81,7 +81,7 @@
     "ALUR_1": {
         "variations": [
             {
-                "content": "Udara lembap langsung menyergap saat kamu, Nana, dan Beni melangkah melewati jalur kiri yang gelap. Senter di tanganmu bergoyang, memotong keheningan gua misterius yang terasa kian menjepit. \"Pilihan yang berani,\" bisik Nana sambil merapatkan jaketnya, matanya waspada menatap stalaktit yang tajam. \"Tapi bau di sini... seperti tempat yang sudah lama ditinggalkan.\" Beni di depan mendadak berhenti. Senter tangannya menembus sebuah celah batu, menyoroti sebuah pintu besi yang ringkih. Dengan dorongan perlahan, pintu itu terbuka, membawa kalian masuk ke sebuah ruang kontrol tua yang tertutup debu tebal. Meja-meja berkarat dan kabel jalar berserakan seperti bangkai monster mekanis. Bzzzt... krrshkk... Kalian bertiga tersentak. Di sudut ruangan, kalian menemukan sebuah radio tua yang entah bagaimana bisa menyala di kedalaman bumi ini. Lampu indikatornya berkedip merah redup dalam kegelapan. \"Bagaimana mungkin ada listrik di sini?\" Beni menelan ludah, perlahan mundur mendekatimu. Tiba-tiba, suara statis itu berubah. Kalian mendengar suara aneh dari radio tersebut. Bukan sekadar distorsi, melainkan suara bisikan parau yang menyebutkan nama kalian satu per satu, disusul oleh ketukan ritmis yang terdengar seperti kode... atau peringatan. Bulu kudukmu meremang tajam. Suara itu terasa begitu dekat, seolah ada sesuatu yang sedang mengawasi dari balik speaker. Sekarang, keputusan ada di tanganmu. Apa yang akan kamu lakukan selanjutnya?",
+                "content": "Kamu memilih jalur kiri, memandu Nana dan Beni menembus kegelapan lorong bunker yang dingin. Setelah berjalan beberapa menit, langkah kalian terhenti di sebuah ruang kontrol berdebu tebal yang dipenuhi mesin-mesin usang tak terawat. Di tengah ruangan, kalian terkejut menemukan sebuah radio tua menyala, memancarkan seberkas cahaya indikator merah yang redup. Suasana mendadak mencekam saat kalian mendengar suara aneh dari radio tersebut—sebuah bisikan parau bercampur statis kresek-kresek yang menyebut nama kalian secara berulang. Beni langsung mundur selangkah dengan wajah pucat, sementara Nana mengenggamp lenganmu ketakutan. \"Benda ini seharusnya mati, dari mana asal dayanya?\" bisik Beni gemetar. Senter di tanganmu bergetar, menyorot mikrofon tua yang terhubung pada radio itu. Kini, kepemimpinanmu kembali diuji untuk mengambil tindakan cepat.",
                 "choices": [
                     {
                         "choice_text": "Jawab radio",
@@ -96,7 +96,7 @@
                 "image": "Adventure/Gua/alur opening pilihan 1 masuk jalur kiri.png"
             },
             {
-                "content": "Langkahmu mantap memilih jalur kiri, memimpin jalan bagi Nana dan Beni menembus labirin gua yang kian menyempit. Dinding batu di sekelilingmu mendadak berubah menjadi struktur beton kuno. Kamu baru saja membawa mereka masuk ke sebuah ruang kontrol berdebu yang tampaknya telah terkubur selama puluhan tahun. Di atas meja kerja yang lapuk, lembaran kertas cetak biru tampak usang dan dipenuhi sarang laba-laba. \"Tempat apa ini? Rasanya seperti markas militer rahasia,\" gumam Nana, menyeka debu dari salah satu panel layar yang retak. Tiba-tiba, sebuah gelombang elektromagnetik membuat senter kalian berkedip. Di tengah keheningan yang mencekam, kalian menemukan sebuah radio tua menyala. Benda bermaterial besi berat itu memancarkan pendar cahaya hijau neon yang kontras dengan kegelapan sekitar. \"Jangan disentuh,\" seru Beni tertahan, tangannya refleks mencengkeram lenganmu. \"Ada yang tidak beres di sini.\" Belum sempat kamu merespons, kalian mendengar suara aneh dari radio tersebut. Suara itu bergetar hebat—perpaduan antara frekuensi statis yang memekakkan telinga dengan isak tangis pilu seorang wanita, yang anehnya, bertransformasi menjadi tawa cekikikan yang dingin. Suasana seketika mencekam. Frekuensi suara itu seolah tahu bahwa kalian sedang berdiri tepat di hadapannya. Napasmu tertahan. Keputusan besar kini berada sepenuhnya di tanganmu untuk menentukan nasib kalian bertiga.",
+                "content": "Keputusanmu mengambil jalur kiri membawa tim masuk lebih dalam ke dalam perut bunker. Langkah kaki kalian menuntun ke sebuah ruang kontrol berdebu yang dipenuhi panel instrumen kuno berkarat. Di atas meja besi, kalian tertegun menemukan radio tua menyala di tengah keheningan. Bulu kudukmu meremang saat mendengar suara aneh dari radio tersebut; desisan misterius yang terdengar seperti ketukan kode morse diselingi rintihan minta tolong. Nana memundurkan langkahnya dengan ngeri, sedangkan Beni bersiap dengan kayu di tangannya. \"Ini tidak masuk akal, siapa yang menyiarkan ini di tempat terpencil?\" tanya Nana dengan suara bergetar. Atmosfer ruangan terasa kian sesak dan menekan mental kalian. Nyawa tim kembali berada di tanganmu, tentukan tindakanmu sekarang sebelum terlambat.",
                 "choices": [
                     {
                         "choice_text": "Jawab radio",
@@ -111,7 +111,7 @@
                 "image": "Adventure/Gua/alur opening pilihan 1 masuk jalur kiri.png"
             },
             {
-                "content": "Bau tanah basah dan karat menyengat indra penciumanmu saat kamu, Nana, dan Beni memantapkan langkah menyusuri jalur kiri. Keputusanmu membawa kalian semakin dalam, hingga langkah kaki kalian bergema di lantai logam. Tanpa diduga, kalian masuk ke sebuah ruang kontrol berdebu yang dipenuhi komputer tabung raksasa yang telah mati, menyisakan aura masa lalu yang mencekam. \"Lihat jejak kaki ini... hanya ada jejak kaki kita,\" bisik Nana dengan suara bergetar, mengarahkan senternya ke lantai yang tertutup debu tebal. Namun, kontras dengan ruangan yang mati total, kalian menemukan sebuah radio tua menyala di atas meja operator. Alat pemancar berbahan kayu itu bergetar pelan, mengeluarkan hawa hangat yang aneh di tengah dinginnya gua. Beni melangkah mundur, wajahnya pucat pasi. \"Sinyal radio tidak bisa menembus kedalaman gua ini. Ini mustahil...\" Kalimat Beni terputus saat kalian mendengar suara aneh dari radio tersebut. Suara itu bukan bahasa manusia, melainkan deretan nada melodi kotak musik kuno yang berputar terlalu lambat, diselingi suara napas berat yang memburu tepat di depan mikrofon seberang. Rasanya seperti ada entitas gaib yang sedang bernapas di dekat telinga kalian, menunggu respons dari ruang gelap ini. Keheningan gua kini terasa begitu mengancam. Keberanianmu menjadi satu-satunya kompas untuk bertahan hidup.",
+                "content": "Langkah kaki kalian berderap menyusuri jalur kiri yang lembap hingga tiba di sebuah ruang kontrol berdebu tebal. Senter Beni menyapu deretan layar tabung yang pecah, lalu berhenti tepat pada sebuah radio tua menyala secara misterius. Dari pengeras suaranya yang berkarat, kalian mendengar suara aneh dari radio yang memecah kesunyian bunker. Suara itu berupa gumaman cepat dalam bahasa asing yang terdengar sangat intens dan penuh kepanikan. Beni menatap panel listrik yang mati total dengan bingung. \"Bagaimana mungkin radio ini aktif tanpa aliran listrik?\" seru Beni panik. Nana menatapmu dengan mata terbelalak, menanti komando darimu di tengah situasi supranatural ini. Keputusan taktis berada di tanganmu untuk menentukan nasib pelarian ini.",
                 "choices": [
                     {
                         "choice_text": "Jawab radio",
@@ -126,7 +126,7 @@
                 "image": "Adventure/Gua/alur opening pilihan 1 masuk jalur kiri.png"
             },
             {
-                "content": "Keputusanmu mengambil jalur kiri membawa kalian bertiga ke dalam lorong yang kian curam dan licin. Bersama Nana dan Beni, kamu terpaksa merayap turun sebelum akhirnya terperosok dan masuk ke sebuah ruang kontrol berdebu yang tersembunyi di balik dinding gua. Ruangan itu tampak seperti fasilitas penelitian bawah tanah yang runtuh, dengan sisa-sisa tabung kaca yang pecah berserakan. \"Kurasa kita terjebak,\" desah Beni, berusaha mendorong pintu besi di ujung ruangan yang ternyata sudah terpatri mati. Di tengah keputusasaan itu, sebuah kedipan cahaya kuning menarik perhatianmu. Di sudut meja yang miring, kalian menemukan sebuah radio tua menyala. Keanehan ini membuat bulu kuduk berdiri, sebab seluruh kabel daya di ruangan ini telah putus dan membusuk. \"Tunggu, dengerin deh...\" Nana menaruh jarinya di bibir, memberi isyarat agar semua diam. Seketika, kalian mendengar suara aneh dari radio kuno tersebut. Suara itu berupa ketukan mekanis yang ritmis, menyerupai detak jantung raksasa yang berdenyut cepat, disusul suara bisikan parau yang terus mengulang-ulang koordinat lokasi tempat kalian berdiri saat ini. Seseorang—atau sesuatu—di luar sana tahu persis bahwa kalian telah masuk ke dalam jebakan ini. Suasana semakin intens, dan setiap detik sangat berharga. Nyawa Nana dan Beni kini bergantung pada tindakan instingtif yang akan kamu ambil.",
+                "content": "Menuruti instingmu, kalian bergerak cepat menyusuri jalur kiri yang gelap gulita. Lorong ini berakhir di sebuah ruang kontrol berdebu tempat arsip-arsip militer berserakan di lantai. Di sudut meja utama, kalian mendapati radio tua menyala membelah keheningan malam. Jantungmu berdegup kencang saat mendengar suara aneh dari radio tersebut, berupa frekuensi statis yang lambat laun berubah menjadi suara tawa lirih yang menyayat hati. \"Aku tidak suka atmosfer tempat ini, ayo pergi,\" desak Nana sambil memeluk ranselnya erat-erat. Namun, Beni justru terpaku menatap tombol transmisi yang berkedip. Ruangan terasa kian dingin seolah ada entitas lain yang mengawasi. Kamu harus segera memilih langkah evakuasi terbaik untuk melindungi mereka.",
                 "choices": [
                     {
                         "choice_text": "Jawab radio",
@@ -141,7 +141,7 @@
                 "image": "Adventure/Gua/alur opening pilihan 1 masuk jalur kiri.png"
             },
             {
-                "content": "Lorong kiri yang kamu pilih ternyata membawa perjalanan ini ke titik yang paling tidak masuk akal. Kamu, Nana, dan Beni terpaksa merangkak melalui celah batu sempit sebelum akhirnya merosot jatuh dan masuk ke sebuah ruang kontrol berdebu. Ruangan ini berbentuk melingkar, dikelilingi oleh puluhan layar monitor cembung yang telah retak dan dipenuhi jaring laba-laba tebal. \"Tempat ini... seperti pusat pemantauan yang sengaja dihapus dari sejarah,\" bisik Nana sambil mengusap kaca salah satu monitor yang buram. Di tengah keheningan yang mati, sebuah distorsi magnetik mendadak membuat jam tangan kalian berputar kacau. Tepat di meja utama, kalian menemukan sebuah radio tua menyala dengan bodi besi yang berkarat. Jarum analognya bergerak sendiri seolah sedang mencari frekuensi di tengah kegelapan bumi. \"Jangan mendekat! Itu tidak masuk akal!\" seru Beni, menahan pundakmu dengan tangan yang gemetar hebat. Tepat saat Beni memperingatkanmu, kalian mendengar suara aneh dari radio tersebut. Suara itu bukan sekadar statis, melainkan rekaman audio berulang dari langkah kaki berat yang berjalan di atas genangan air, disusul oleh suara napasmu sendiri yang terengah-engah—sebuah rekaman yang baru saja terjadi beberapa menit lalu. Sesuatu di balik radio itu telah merekam pergerakan kalian sejak pertama kali menginjakkan kaki di gua ini. Ketakutan kini mencengkeram ruang kontrol. Nyawa kalian bertiga berada di ujung tanduk, menunggu keputusan instingtif darimu.",
+                "content": "Jalur kiri membawa petualangan kalian ke sebuah ruangan besi yang luas. Begitu mendorong pintu yang seret, kalian masuk ke ruang kontrol berdebu dengan aroma oli pekat yang menyengat. Di tengah meja komando, sebuah radio tua menyala memancarkan gelombang elektromagnetik yang mengganggu senter kalian. Ketakutan baru merayap saat kalian mendengar suara aneh dari radio, menyerupai pesan darurat berulang yang terdistorsi berat oleh gangguan sinyal. Beni langsung menggenggam senjatanya dengan cemas, sementara Nana menunjuk ke arah jarum indikator yang bergerak sendiri. \"Sinyal ini dikirim dari dalam pulau ini!\" seru Beni menyadari bahaya. Ketajaman instingmu kembali diuji di titik krusial ini untuk merespons misteri di hadapan kalian.",
                 "choices": [
                     {
                         "choice_text": "Jawab radio",
@@ -154,92 +154,13 @@
                 ],
                 "is_ending": false,
                 "image": "Adventure/Gua/alur opening pilihan 1 masuk jalur kiri.png"
-            }
-        ]
-    },
-    "ALUR_2": {
-        "variations": [
-            {
-                "content": "Langkah kaki kalian menggema di sunyinya lorong kanan yang baru saja kamu pilih. Senter di tanganmu berkedip, menerangi dinding gua yang basah dan berlumut. \"Pilihan yang berani,\" bisik Beni sambil menggenggam belatinya erat-erat. \"Semoga instingmu benar.\" Di ujung lorong, sebuah pintu besi yang lapuk menyambut kalian. Saat didorong, derit kerasnya memecah keheningan. Kalian mendapati diri berada di sebuah gudang senjata tua. Ratusan pedang, tameng, dan tombak yang sudah berkarat pudar berserakan di lantai, saksi bisu dari peradaban kuno yang hilang. \"Lihat ini!\" seru Nana dari balik tumpukan perisai hancur. Kamu dan Beni menghampirinya. Di sana, tersembunyi di bawah kain terpal yang sudah membusuk, sebuah peti rahasia kayu dengan ukiran naga perak tampak masih utuh, kontras dengan sekelilingnya yang hancur. Tepat saat tanganmu hendak menyentuh gemboknya, suasana mendadak mencekam. Tap... tap... tap... Suara langkah kaki berat sedang mendekat dari arah kegelapan di luar gudang. Jantungmu berdegup kencang. Waktu kalian tidak banyak. Sesuatu yang tak diundang sedang menuju ke arah kalian. \"Kita harus pergi sekarang!\" desak Nana panik. Namun Beni menahan lenganmu, \"Tapi rahasia gua ini ada di depan matamu!\" Sekarang, keputusan sepenuhnya ada di tanganmu. Nyawa kalian bertiga bergantung pada apa yang kamu pilih berikutnya:",
-                "choices": [
-                    {
-                        "choice_text": "Buka peti",
-                        "next_node": "ALUR_2_1"
-                    },
-                    {
-                        "choice_text": "Lanjutkan perjalanan",
-                        "next_node": "ALUR_2_2"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
-            },
-            {
-                "content": "Lorong kanan yang kamu pilih ternyata membawa kalian jauh lebih dalam ke jantung bumi. Udara semakin dingin, dan bau besi berkarat mulai menusuk hidung. \"Sepertinya kita memasuki area pertahanan kuno,\" gumam Beni, mengarahkan senternya ke sebuah ruangan luas. Kamu melangkah masuk dan menyadari tempat itu adalah gudang senjata kuno. Ribuan baju zirah dan pedang yang telah berkarat berbaris rapi seperti pasukan hantu. Di tengah keheningan yang mencekam itu, matamu menangkap sesuatu yang ganjil di sudut ruangan. \"Hei, coba lihat ke mari!\" panggilmu setengah berbisik. Nana bergegas mendekat, menyibak sarang laba-laba tebal yang menutupi sebuah sudut rahasia. Di sana, tertimbun di antara runtuhan batu, sebuah peti rahasia berlapis emas redup memancarkan aura mistis. Ketiganya terpaku menatap simbol aneh yang terukir di atasnya. Deg! Langkah kaki kalian terhenti. Dari lorong gelap di balik gudang, terdengar suara gema yang menyeramkan. Srak... srak... Suara langkah kaki yang menyeret mendekat dengan cepat ke arah kalian. Sesuatu yang besar sedang memburu sumber cahaya senter kalian. \"Sesuatu datang! Kita harus sembunyi!\" bisik Nana dengan wajah pucat pasi. \"Tapi peti ini... ini kesempatan kita!\" potong Beni, tidak ingin pulang dengan tangan kosong. Napasmu memburu. Makhluk itu semakin dekat, dan waktu seolah berhenti. Apa yang akan kamu lakukan sekarang?",
-                "choices": [
-                    {
-                        "choice_text": "Buka peti",
-                        "next_node": "ALUR_2_1"
-                    },
-                    {
-                        "choice_text": "Lanjutkan perjalanan",
-                        "next_node": "ALUR_2_2"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
-            },
-            {
-                "content": "Tetesan air dari langit-langit gua beradu dengan detak jantungmu yang kian cepat. Keputusanmu mengambil jalur kanan membawa kalian bertiga masuk ke dalam labirin yang semakin menyempit, hingga akhirnya bermuara di sebuah ruangan luas yang pengap. \"Bau apa ini? Seperti logam tua,\" keluh Nana sambil menutup hidungnya. Senter di tanganmu menyorot sekeliling. Kalian rupanya berada di sebuah gudang senjata terbengkalai. Ratusan kapak raksasa dan tameng baja yang telah berkarat dipajang di dinding stonehenge mini, diselimuti debu berabad-abad. Saat kamu melangkah hati-hati menghindari serpihan besi tajam, kakimu tidak sengaja menendang sesuatu yang keras. Sebuah peti rahasia berbahan kayu jati kuno dengan engsel kuningan yang masih kokoh tersembunyi di bawah lantai batu yang retak. \"Luar biasa... Ini pasti peninggalan sang raja,\" bisik Beni dengan mata berbinar, langsung berlutut di dekat peti tersebut. Tap... Tak... Tap... Ketukan misterius itu seketika membekukan darah kalian. Suara langkah kaki berat yang teratur terdengar mendekat dari lorong tempat kalian masuk tadi. Sesuatu—atau seseorang—sedang berpatroli, dan mereka tahu ada penyusup di sini. \"Beni, hentikan! Kita tidak punya waktu, makhluk itu mendekat!\" desak Nana dengan suara bergetar menahan tangis. \"Sebentar lagi! Gembok ini hampir terbuka!\" seru Beni keras kepala. Logam berkarat di sekeliling kalian seolah ikut bergetar seiring semakin dekatnya ancaman tersebut. Keputusan krusial kini ada di pundakmu.",
-                "choices": [
-                    {
-                        "choice_text": "Buka peti",
-                        "next_node": "ALUR_2_1"
-                    },
-                    {
-                        "choice_text": "Lanjutkan perjalanan",
-                        "next_node": "ALUR_2_2"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
-            },
-            {
-                "content": "Lorong kanan yang kamu pilih membawa petualangan ini ke tingkat yang jauh lebih menegangkan. Dinding batu di sekeliling kalian mulai berubah menjadi struktur dinding bata kuno yang lembap. \"Jalur ini terasa berbeda. Hati-hati,\" peringat Beni, memasang posisi siaga dengan senter besarnya. Langkah kalian terhenti di sebuah ruangan bawah tanah yang luas. Tempat itu adalah gudang senjata sisa peperangan. Ribuan tombak dan senapan kuno yang telah berkarat parah tertumpuk seperti gunung sampah besi. Namun, perhatianmu teralih pada seberang ruangan. \"Teman-teman, lihat di bawah meja taktik itu!\" serumu menunjuk ke sudut remang-remang. Nana berlari kecil dan membersihkan debu tebal yang menutupi sebuah objek. Sebuah peti rahasia dari besi hitam dengan segel lilin merah yang masih utuh tergeletak di sana. Aura magis yang kuat memancar dari balik gemboknya yang berbentuk kepala serigala. Sreeek... Sreeek... Suara gesekan rantai dan langkah kaki lambat namun pasti terdengar mendekat dari pintu masuk gudang. Sesuatu yang mengerikan sedang berjalan menuju posisi kalian, memotong jalan pulang. Udara di dalam ruangan seketika terasa membeku. \"Apalagi yang kamu tunggu? Kita harus lari sekarang!\" teriak Nana panik sambil menarik jaketmu. \"Jangan gila, Nana! Kita sudah sejauh ini, buka dulu petinya!\" bantah Beni yang mulai panik namun penasaran. Suara langkah itu kini tepat berada di balik pintu. Detik-detik penentuan telah tiba, dan semua mata tertuju padamu.",
-                "choices": [
-                    {
-                        "choice_text": "Buka peti",
-                        "next_node": "ALUR_2_1"
-                    },
-                    {
-                        "choice_text": "Lanjutkan perjalanan",
-                        "next_node": "ALUR_2_2"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
-            },
-            {
-                "content": "Lorong kanan yang kamu pilih membawa kalian berbelok tajam ke arah bawah, di mana udara malam yang menusuk berganti dengan hawa pengap yang pekat. Di ujung jalan, sebuah ruangan berbentuk kubah batu menyambut kalian. \"Tempat apa ini? Rasanya seperti... pangkalan militer kuno,\" bisik Beni sambil menyapukan cahaya senternya. Kalian melangkah masuk ke sebuah gudang senjata terbengkalai. Di kanan-kiri kalian, rak-rak kayu yang hampir roboh menampung ratusan meriam mini dan pedang yang telah berkarat hingga keropos. Di tengah kekacauan itu, matamu menangkap kilatan aneh di balik sebuah bendera usang yang robek. Kamu menarik bendera tersebut dan terengah selangkah ke belakang. Sebuah peti rahasia berukir batu giok hijau bertatahkan permata merah tampak bersinar redup di dalam ceruk dinding. \"Astaga, keindahan yang mematikan,\" gumam Nana yang ikut terpesona saat mendekat. BUM... BUM... BUM... Lantai batu yang kalian pijak tiba-tiba bergetar. Suara langkah kaki raksasa terdengar mendekat dari lorong gelap tepat di depan kalian. Sesuatu yang sangat besar dan berat sedang berjalan menuju gudang ini, terpancing oleh cahaya senter kalian. \"Beni, Nana, kita dalam bahaya besar!\" serumu, merasakan hawa dingin mencekam. \"Cepat putuskan! Kita buka ini sekarang atau kita lari?!\" teriak Beni panik di tengah gemuruh langkah yang kian mendekat. Waktu kalian habis dalam hitungan detik. Takdir kalian bertiga ditentukan oleh gerakanmu selanjutnya:",
-                "choices": [
-                    {
-                        "choice_text": "Buka peti",
-                        "next_node": "ALUR_2_1"
-                    },
-                    {
-                        "choice_text": "Lanjutkan perjalanan",
-                        "next_node": "ALUR_2_2"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
             }
         ]
     },
     "ALUR_1_1": {
         "variations": [
             {
-                "content": "Sentakan keras pada tali pengaman membuat jantungmu hampir copot. Di dalam perut Gua Leang-Leang yang gulita, hanya cahaya senter kepala milikmu, Nana, dan Beni yang memotong keheningan. Bau tanah basah dan aura magis tempat ini mendadak terasa mencekam saat radio HT di genggamanmu berkresek nyaring. \"Pilihan 1,\" suara berat dari seberang radio memerintah, memecah kepanikan. \"Tetap di jalur kiri. Jangan berhenti.\" Beni menoleh ragu, wajahnya pucat pasi terkena bias cahaya lampu. \"Kita ikuti instruksi radio itu? Tapi jalur kiri itu menuju jurang terdalam, kita belum tahu apa di bawah sana!\" \"Tapi radio itu satu-satunya pemandu kita sejak tersesat di labirin misterius ini, Ben!\" sahut Nana, suaranya bergetar hebat menahan takut. Keduanya kini menatapmu, menunggu keputusan mutlak dari dirimu sebagai pemimpin pergerakan. Sesuai instruksi radio, kamu melangkah maju memimpin jalur kiri. Namun, baru beberapa meter berjalan, sebuah gema memilukan menyapu dinding-dinding gua. “Toloonggg... Siapa pun di atas... tolong...” Suara rintihan itu terdengar sangat dekat, datang dari dasar celah batuan curam tepat di bawah kakimu. Senter kepalamu menyorot ke bawah, memperlihatkan bayangan seseorang yang terjebak di kegelapan terdalam. Ego dan kemanusiaanmu kini berbenturan hebat di bawah tekanan atmosfer gua yang mencekik. Senter di kepalamu berkedip redup, menandakan waktu yang kian menipis. Sekarang, keputusan sepenuhnya ada di tanganmu:",
+                "content": "Kamu memberanikan diri menjawab radio, menekan tombol transmisi dengan tangan bergetar. Berusaha tenang, kamu ikuti instruksi radio yang terdengar parau menuntun kalian keluar dari ruang kontrol. Suara statis itu mengarahkan kalian melewati koridor tersembunyi hingga tiba di bibir sebuah lubang poros vertikal yang gelap gulita. Saat senter Beni menyorot ke dalam kegelapan pekat di bawah, kalian mendadak mendengar suara minta tolong dari bawah sana. Suaranya terdengar sangat lemas, bergaung mistis di dinding beton bunker. \"Ada seseorang di bawah sana! Kita harus bagaimana?\" tanya Nana dengan kepanikan yang kian memuncak. Beni mencengerkam tali darurat di ranselnya, menatapmu dengan ragu. Atmosfer bunker terasa makin menekan, menuntut ketajaman insting kepemimpinanmu. Nasib orang tersebut dan keselamatan tim kini sepenuhnya berada di tanganmu.",
                 "choices": [
                     {
                         "choice_text": "Turun menolong",
@@ -254,7 +175,7 @@
                 "image": "Adventure/Gua/Alur 1 pilihan 1 menjawab radio.png"
             },
             {
-                "content": "Lentera di tangan Nana bergetar hebat, menyoroti dinding gua yang dipenuhi pahatan kuno. \"Sudah dua jam kita berputar, Beni!\" seru Nana, suaranya memantul tajam di lorong sempit Gua Terlarang. Beni hanya diam, wajahnya tertutup debu, tangannya menggenggam HT yang terus mengeluarkan bunyi statis yang memuakkan. Tiba-tiba, suara pria misterius terdengar dari radio itu. \"Pilihan 1,\" perintahnya dingin. \"Berhenti, matikan cahaya, dan dengarkan detak jantung gua.\" Tanpa membantah, kamu menekan tombol radio tersebut. \"Laksanakan,\" jawabmu tegas. Sesuai instruksi, kalian segera mematikan semua sumber cahaya. Kegelapan total menyelimuti, mencekam hingga kamu bisa mendengar napas Nana yang tersengal ketakutan. Setelah keheningan menyiksa selama beberapa menit, sebuah jeritan pilu menyayat kesunyian. \"Tolong... mereka datang...\" Suara itu berasal dari lubang vertikal yang menganga tepat di depan kaki kalian. Jantungmu berpacu liar. Radio di tangan Beni kembali berbunyi, memerintahkan untuk segera melanjutkan perjalanan ke arah utara, mengabaikan suara tadi. Nana menarik lengan bajumu, matanya berkaca-kaca. \"Itu suara manusia, kita harus menolongnya!\" Beni menggeleng keras, memucat. \"Itu jebakan! Suaranya tidak wajar, kita harus kabur sekarang sebelum hal buruk terjadi!\" Kini, nasib mereka ada di tanganmu. Mengabaikan firasat atau mempertaruhkan nyawa demi rasa kemanusiaan? Waktu berhenti di titik ini.",
+                "content": "Napasmu tertahan saat kamu memutuskan untuk menjawab radio di tengah keheningan ruang kontrol. Suara misterius dari seberang frekuensi mendiktekan koordinat, lalu kamu ikuti instruksi radio tersebut bersama Nana dan Beni. Kalian melangkah taktis menyusuri lorong beton yang menurun curam hingga sampai di tepi lubang drainase besar. Ketegangan memuncak ketika kalian mendengar suara minta tolong dari bawah lubang tersebut. Suara itu terdengar akrab namun penuh penderitaan, memecah kesunyian bunker yang mencekam. \"Apakah itu kru kapal yang hilang?\" bisik Beni sambil mengarahkan obornya ke bawah. Nana menggeleng ketakutan, merasakan firasat buruk yang mengintai dari kegelapan bawah tanah. Waktu kalian terbatas sebelum entitas lain menyadari posisi kalian di sini. Putuskan langkah taktis kalian sekarang juga!",
                 "choices": [
                     {
                         "choice_text": "Turun menolong",
@@ -269,7 +190,7 @@
                 "image": "Adventure/Gua/Alur 1 pilihan 1 menjawab radio.png"
             },
             {
-                "content": "Tetesan air yang jatuh dari langit-langit gua terdengar seperti detak jam pasir yang menghitung sisa umurmu. Di dalam kedalaman Gua Hitam, kamu bersama Nana dan Beni terjebak dalam labirin yang terus bergeser. Satu-satunya penuntun kalian adalah sebuah radio usang yang mendadak menyala sendiri beberapa menit lalu. \"Pilihan 1,\" desis suara parau dari balik pengeras suara radio. \"Ikuti jalur stalaktit yang meneteskan darah. Jangan menoleh.\" Beni merinding, memegang pundakmu dengan cengkeraman erat. \"Jalur itu mengerikan! Tapi radio ini tahu segalanya tentang gua misterius ini.\" Nana mengangguk setuju, mengarahkan senternya ke lorong penuh stalaktit runcing. \"Kita tidak punya pilihan lain. Mari ikuti instruksi radio itu.\" Kamu memimpin di depan, berjalan perlahan menembus lorong yang semakin menyempit. Namun, langkahmu mendadak terkunci ketika sebuah jeritan pilu memecah kegelapan dari arah bawah celah batu. \"Tolong... kakiku terjepit... tempat ini runtuh... tolong!\" Suara itu terdengar sangat nyata dan menderita, berasal dari sebuah rongga vertikal di bawah pijakan kalian. Di saat yang sama, radio di genggamanmu kembali berkresek, memberi peringatan bahwa dinding gua akan segera menutup dalam hitungan detik. Nana panik dan ingin melompat ke bawah, sementara Beni menariknya mundur karena ketakutan. Mereka berdua kini menatapmu, menunggu komando terakhir.",
+                "content": "Kamu menekan gagang mikrofon dan menjawab radio, memilih menghadapi misteri ini. Suara operator tak dikenal itu memberikan rute pelarian, dan tanpa ragu kamu ikuti instruksi radio menembus labirin bunker yang pekat. Langkah kaki kalian terhenti di sebuah ruangan mesin yang lantainya telah runtuh ke bawah. Di tengah keheningan, kalian bertiga tertegun mendengar suara minta tolong dari bawah runtuhan tersebut. Jeritan lirih itu meminta bantuan secepatnya sebelum air bawah tanah meluap. \"Kita tidak bisa meninggalkan mereka begitu saja,\" ujar Nana iba, meski matanya memancarkan ketakutan nyata. Beni justru bersiap dengan senjatanya, waspada akan adanya jebakan predator. Kompas moral dan tanggung jawab kepemimpinanmu kini diuji di titik paling krusial ini.",
                 "choices": [
                     {
                         "choice_text": "Turun menolong",
@@ -284,7 +205,7 @@
                 "image": "Adventure/Gua/Alur 1 pilihan 1 menjawab radio.png"
             },
             {
-                "content": "Udara di dalam Gua Tengkorak mendadak menjadi sangat dingin, hingga setiap napas yang kamu embuskan berubah menjadi kabut tipis. Di belakangmu, Nana terus memegangi tali tas ranselmu dengan erat, sementara Beni sibuk mengetuk-ngetuk radio HT yang terus memancarkan gelombang aneh sejak kalian memasuki zona terdalam gua misterius ini. Bzzzt... \"Pilihan 1,\" suara berat seorang wanita terdengar dari frekuensi radio yang asing. \"Masuk ke celah sempit di balik batu besar. Cepat.\" \"Kita harus percaya pada instruksi radio ini,\" bisik Beni sambil menyorot celah batu yang dimaksud dengan senternya. Nana mengangguk ragu, \"Benar, tidak ada jalan lain yang terbuka.\" Kamu pun memutuskan untuk memimpin, merayap masuk ke dalam celah sempit sesuai arahan mistis tersebut. Namun, baru beberapa meter merangkak, sebuah suara gema yang menyayat hati terdengar dari sebuah lubang vertikal tepat di bawah posisi kalian. \"Tolong... oksigen di bawah sini hampir habis... tolong aku...\" Rintihan itu terdengar begitu dekat dan sekarat. Bersamaan dengan itu, dinding gua di sekitar kalian mulai bergetar hebat, runtuhan batu kecil mulai berjatuhan dari langit-langit gua. Radio di tangan Beni kembali berteriak, memerintahkan kalian untuk terus berlari ke depan sebelum jalur ini tertutup selamanya. Nana menangis histeris ingin turun membantu, sedangkan Beni berteriak mengajakmu lari. Keputusan krusial kini berada di tanganmu:",
+                "content": "Keputusanmu untuk menjawab radio mengubah arah pelarian malam ini. Suara distorsi itu memerintahkan kalian membuka pintu besi rahasia, dan kalian ikuti instruksi radio tersebut dengan waspada. Rute itu membawa kalian ke sebuah balkon besi yang menghadap langsung ke ruang bawah tanah yang sangat luas. Tiba-tiba, bulu kudukmu meremang saat kalian mendengar suara minta tolong dari bawah kegelapan ruangan tersebut. Suara ketukan batu dan rintihan pilu bergema konstan, memicu adrenalin kalian kembali bergejolak. \"Ada yang tidak beres di bawah sana, suaranya terlalu seperti jeratan,\" bisik Nana dengan tubuh gemetar. Di sisi lain, Beni sudah mengikatkan tali ke tiang beton, menatapmu menanti komando tegas di tengah kepanikan yang kian memuncak ini. Nasib mereka dan misteri ini ada di tanganmu.",
                 "choices": [
                     {
                         "choice_text": "Turun menolong",
@@ -299,7 +220,7 @@
                 "image": "Adventure/Gua/Alur 1 pilihan 1 menjawab radio.png"
             },
             {
-                "content": "Dinding Gua Tenggelam mulai mengeluarkan uap hangat yang membuat pandanganmu mengabur. Di dalam ruang bawah tanah yang lembap ini, kamu, Nana, dan Beni terkunci setelah jalan masuk utama runtuh. Satu-satunya alat komunikasi yang berfungsi hanyalah sebuah radio pemancar kuno yang ditemukan Beni di sudut gua. Kreseekk... \"Pilihan 1,\" suara digital yang kaku bergema dari pengeras suara radio. \"Gunakan masker kalian. Berjalanlah menembus kabut hijau di sebelah kanan.\" Beni segera memakai maskernya dan menatapmu tajam. \"Kita harus ikuti instruksi radio ini, tidak ada waktu untuk ragu!\" Nana yang ketakutan langsung mencengkeram lenganmu. \"Aku percaya keputusanmu. Mari kita masuk ke kabut itu.\" Sesuai arahan radio, kamu melangkah maju membelah kabut hijau yang mulai pekat. Namun, baru beberapa langkah berjalan, sebuah suara ketukan batu yang berirama diikuti rintihan lemah terdengar dari sebuah lubang pembuangan air di bawah kaki kalian. \"Tolong... airnya mulai naik... aku tenggelam... tolong...\" Suara anak kecil yang ketakutan itu menggema dari kegelapan bawah tanah. Di saat bersamaan, radio di tangan Beni berbunyi nyaring, memperingatkan bahwa kabut beracun akan memenuhi ruangan dalam waktu tiga puluh detik. Nana langsung berlutut di tepi lubang, bersiap terjun. Beni menariknya paksa, berteriak bahwa itu bisa jadi halusinasi akibat gas. Semua mata kini tertuju padamu, menuntut satu perintah mutlak.",
+                "content": "Kamu angkat bicara menjawab radio, memecah teror psikologis yang melanda tim. Melalui panduan sinyal yang terputus-putus, kalian ikuti instruksi radio melewati jalur evakuasi darurat di balik dinding ruang kontrol. Namun, jalur itu membawa kalian ke sebuah sumur angin yang vertikal dan dalam. Keadaan mendadak mencekam ketika kalian dengan jelas mendengar suara minta tolong dari bawah sumur tersebut. Suara jeritan itu terdengar sangat panik seolah sedang diburu oleh sesuatu yang masif di kedalaman bumi. \"Waktu kita tidak banyak, putuskan sekarang!\" seru Beni tegang saat mendengar suara geraman samar dari kejauhan. Nana menganggukkan senternya erat, bersiap menghadapi kemungkinan terburuk. Instingmu kembali diuji untuk memilih tindakan evakuasi ini.",
                 "choices": [
                     {
                         "choice_text": "Turun menolong",
@@ -312,195 +233,37 @@
                 ],
                 "is_ending": false,
                 "image": "Adventure/Gua/Alur 1 pilihan 1 menjawab radio.png"
-            }
-        ]
-    },
-    "ALUR_2_1": {
-        "variations": [
-            {
-                "content": "Kegelapan Gua Labirin seolah menelan cahaya sentermu. Kamu, Nana, dan Beni melangkah hati-hati di atas batu yang licin. Gemercik air terdengar samar, menambah ketegangan yang sedari tadi merayap di tengkuk. Tiba-tiba, langkah Nana terhenti. \"Hei, lihat itu!\" serunya sambil menunjuk ke sudut gua. Sebuah peti tua berukir kuno berdiri megah, kontras dengan sekitarnya. Beni langsung memperingatkan, \"Jangan gegabah, kita tidak tahu apa isinya.\" Namun, rasa penasaranmu lebih kuat. Sesuai keputusanmu untuk membuka peti, kamu mendekat dan perlahan mengangkat penutupnya yang berat. KREEEKKK... Bukan emas atau permata yang menyambutmu. Sepersekian detik setelah peti terbuka, asap hijau pekat menyembur keluar dengan cepat! \"Uhuk! Gas beracun! Tutup hidung kalian!\" teriak Beni panik sambil terbatuk-batuk. Nana langsung menarik bajumu, wajahnya pucat pasi. \"Perasaanku tidak enak, ayo pergi!\" Di dalam peti yang kini dipenuhi kepulan gas, kamu sekilas melihat sebuah kalung permata yang bersinar redup. Gas beracun ini mulai membuat matamu perih dan napasmu memendek. Kamu tahu, kamu hanya punya waktu beberapa detik sebelum paru-parumu lumpuh sepenuhnya akibat racun ini. Nyawamu dan kedua temanmu kini berada di ujung tanduk. Setiap detik sangat berharga, dan keputusan berikutnya ada di tanganmu. Apa yang akan kamu lakukan sekarang?",
-                "choices": [
-                    {
-                        "choice_text": "Tutup",
-                        "next_node": "ENDING_4"
-                    },
-                    {
-                        "choice_text": "Ambil isi",
-                        "next_node": "ENDING_5"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
-            },
-            {
-                "content": "Hawa dingin Gua Tengkorak menusuk hingga ke tulang. Kamu melangkah di antara bebatuan runcing, diapit oleh Nana yang terus waspada dan Beni yang sibuk memperhatikan peta tua di tangannya. Suasana begitu sunyi, hanya menyisakan suara langkah kaki kalian yang bergema aneh. \"Tunggu, sepertinya kita tidak sendirian,\" bisik Nana tiba-tiba, mencengkeram lenganmu. Di depan kalian, sebuah altar batu berdiri kokoh. Di atasnya, tergeletak sebuah peti kayu lapuk yang dililit rantai berkarat. Beni mendekat, matanya berbinar. \"Ini dia. Peti yang tertulis di legenda.\" Mengabaikan firasat buruk yang menggelayut, kamu memantapkan niat untuk membuka peti tersebut. Dengan sekali sentakan kuat, rantai itu putus dan penutup peti terbuka lebar. SSSHHHUTTT! Alih-alih harta karun, embusan angin malam yang busuk keluar dari dalam peti, berubah menjadi kepulan gas ungu pekat yang menyebar cepat. \"Mundur! Itu gas beracun!\" teriak Beni tegang, langsung merobek kain bajunya untuk menutupi hidung. Nana terhuyung ke belakang, dadanya sesak. \"Uhuk! Kepalaku pusing sekali... kita harus keluar dari sini sekarang!\" Di dasar peti, di balik kabut beracun yang kian tebal, matamu menangkap kilauan sebuah gulungan perkamen emas. Kesadaranmu mulai mengabur, dan paru-parumu terasa membara. Kamu tahu, satu gerakan salah bisa berakibat fatal bagi kalian bertiga.",
-                "choices": [
-                    {
-                        "choice_text": "Tutup",
-                        "next_node": "ENDING_4"
-                    },
-                    {
-                        "choice_text": "Ambil isi",
-                        "next_node": "ENDING_5"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
-            },
-            {
-                "content": "Tetesan air dari langit-langit Gua Kristal berbunyi seirama dengan detak jantungmu yang kian berpacu. Kamu, Nana, dan Beni baru saja melewati celah sempit yang mengarah ke sebuah aula tersembunyi. Di tengah ruangan, cahaya sentermu menyorot sebuah peti besi hitam yang tampak tak tersentuh selama berabad-abad. \"Jangan disentuh,\" bisik Nana ragu, merasakan aura mistis yang pekat. \"Tempat ini terasa salah.\" Beni justru melangkah maju, memindai ukiran aneh di permukaan besi. \"Tapi kita sudah sejauh ini. Ini kesempatan kita.\" Didorong rasa penasaran yang membuncah, kamu mengambil keputusan bulat: membuka peti. Kamu menekan tombol mekanis di bagian depan peti. KLIK. Bukan kilauan logam mulia yang menyambut pandanganmu. Sebuah desisan keras terdengar, disusul semburan gas kuning pekat yang membubung tinggi ke udara, mengabaikan gravitasi. \"Uhuk! Jangan dihirup! Ini gas saraf!\" teriak Beni dengan suara serak, langsung ambruk berlutut sambil memegangi tenggorokannya. Nana menjerit panik, mencoba menarik tubuh Beni menjauh, namun matanya sendiri mulai berair dan memerah. \"Cepat lakukan sesuatu! Kita bisa mati di sini!\" Di dalam peti, samar-samar di balik pekatnya gas mematikan, kamu melihat sebuah belati kuno berhias rutil yang berkilau seolah memanggilmu. Pandanganmu mulai mengabur, dan dadamu terasa seperti dihantam godam berat. Waktumu kurang dari lima detik.",
-                "choices": [
-                    {
-                        "choice_text": "Tutup",
-                        "next_node": "ENDING_4"
-                    },
-                    {
-                        "choice_text": "Ambil isi",
-                        "next_node": "ENDING_5"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
-            },
-            {
-                "content": "Dinding Gua Purba yang basah tampak berkilau aneh di bawah sorotan lampu kepalamu. Kamu memimpin jalan, diikuti Nana yang membawa obor dan Beni yang berjaga di barisan belakang dengan belati terhunus. Bau tanah basah dan lumut pekat menyelimuti udara, menciptakan atmosfer yang mencekam. Langkahmu terhenti di sebuah ceruk dinding. Di sana, setengah tertimbun tanah, sebuah peti perunggu dengan ukiran ular melingkar tampak menunggumu. \"Peti itu... auranya mengerikan,\" gumam Nana, memundurkan langkahnya ketakutan. Beni menepuk pundakmu, memberikan anggukan penuh keyakinan. \"Kita tidak akan tahu sebelum mencobanya. Keputusan ada di tanganmu.\" Naluri petualangmu bergejolak. Kamu memantapkan hati untuk membuka peti tersebut. Begitu segelnya patah, penutup perunggu itu tergeser. BLAAASST! Bukan keajaiban yang terjadi, melainkan petaka. Asap merah darah menyembur keluar bak naga yang mengamuk, memenuhi rongga gua dalam sekejap. \"Uhuk! Gas beracun! Sial, ini jebakan!\" Beni berteriak panik, terbatuk-batuk hebat hingga menjatuhkan belatinya. Nana langsung lemas, terduduk di tanah sambil mencengkeram dadanya yang mulai menyempit. \"Napas-ku... sesak sekali... tolong...\" Di dasar peti, di tengah kepulan asap yang memerihkan mata, sebuah mahkota kecil bertahtakan batu delima berkilau menggoda. Kesadaranmu mulai menipis, dan racun itu mulai membakar tenggorokanmu. Waktumu habis, kamu harus memilih nasib kalian sekarang juga!",
-                "choices": [
-                    {
-                        "choice_text": "Tutup",
-                        "next_node": "ENDING_4"
-                    },
-                    {
-                        "choice_text": "Ambil isi",
-                        "next_node": "ENDING_5"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
-            },
-            {
-                "content": "Deru angin bawah tanah menderu di dalam Gua Asap, menciptakan suara mirip rintihan yang membuat bulu kuduk berdiri. Kamu berjalan di barisan depan, sementara Nana menggenggam erat tali tasmu dan Beni sibuk menyinari relief-relief aneh di dinding gua dengan senter besarnya. \"Arah ini terasa semakin dingin,\" bisik Nana, suaranya bergetar hebat menahan ketakutan. Tiba-tiba, cahaya senter Beni terpaku pada sebuah ceruk alami. Di sana, bertumpu di atas tengkorak hewan purba, sebuah peti perak berbentuk silinder berdiri kokoh. Beni menelan ludah. \"Ini dia, artefak yang hilang itu.\" Mengabaikan hawa mistis yang semakin mencekam, tekadmu sudah bulat untuk membuka peti tersebut. Kamu memutar tuas penguncinya yang berkarat hingga terdengar suara dentingan besi yang nyaring. WUUUSH! Alih-alih kilauan logam mulia, kepulan gas hitam pekat beraroma belerang menyembur dahsyat dari dalam peti, langsung menyelimuti langit-langit gua. \"Uhuk! Jangan dihirup! Ini gas beracun kuno!\" teriak Beni tegang, matanya langsung merah dan berair. Nana terhuyung dan jatuh berlutut, memegangi lehernya yang terasa tercekik. \"Uhuk... aku... tidak bisa bernapas...\" Di dasar peti, di balik pusaran gas hitam yang mematikan, kamu sekilas melihat sebuah bola kristal biru yang memancarkan cahaya magis. Kepalamu mulai berdenyut pusing, dan paru-parumu terasa seperti terbakar. Kamu hanya punya waktu satu tarikan napas sebelum kehilangan kesadaran.",
-                "choices": [
-                    {
-                        "choice_text": "Tutup",
-                        "next_node": "ENDING_4"
-                    },
-                    {
-                        "choice_text": "Ambil isi",
-                        "next_node": "ENDING_5"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
-            }
-        ]
-    },
-    "ALUR_2_2": {
-        "variations": [
-            {
-                "content": "Langkah kaki kalian menggema di dalam kegelapan Gua Tengkorak. Setelah memutuskan untuk melanjutkan perjalanan, suasana justru terasa semakin mencekam. Dinginnya udara lembap mulai menusuk kulit, namun rasa penasaran mengalahkan rasa takutmu. \"Keputusan yang berani,\" bisik Beni sambil mengarahkan senter ke dinding batu yang basah. \"Tapi, tetaplah di dekatku.\" Nana berjalan di depan, mengamati struktur gua dengan teliti. Tiba-tiba, ia terpekik kecil. \"Hei, lihat ini! Senter kalian arahkan ke sini!\" Kamu dan Beni segera merapat. Di dinding gua yang berlumut, samar-samar terlihat ukiran beralur rumit. Setelah Nana membersihkan debunya, jantungmu berdegup kencang—kalian sedang melihat peta kuno di dinding. Peta itu menggambarkan rute rahasia yang tidak ada dalam catatan sejarah mana pun. Mengikuti petunjuk dari garis-garis kuno tersebut, pandanganmu terjatuh pada gundukan batu di sudut gelap. Kamu melangkah mendekat, menggeser beberapa bongkahan batu runtuh, dan terkejut saat menemukan terowongan rahasia yang tersembunyi di baliknya. Hembusan angin hangat keluar dari sana, membawa aroma petualangan yang tak dikenal. Kini, rahasia besar abad ini ada di hadapanmu. Nana menatapmu penuh harap, sementara Beni tampak ragu dan waspada. Keputusan terbesar ada di tanganmu sekarang. Apa yang akan kamu lakukan selanjutnya?",
-                "choices": [
-                    {
-                        "choice_text": "Masuk terowongan",
-                        "next_node": "ENDING_6"
-                    },
-                    {
-                        "choice_text": "Kembali",
-                        "next_node": "ENDING_7"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
-            },
-            {
-                "content": "Sorot lampu sentermu memotong kegelapan abadi Gua Labirin. Keputusanmu untuk melanjutkan perjalanan membawa kalian bertiga semakin jauh ke dalam perut bumi. Gemercik air yang menetes dari stalaktit menjadi satu-satunya melodi yang menemani langkah kaki yang kian berat. \"Untung kita tidak berbalik arah,\" ujar Beni penuh semangat, meski napasnya sedikit terengah-engah. \"Firasatku mengatakan ada sesuatu yang besar di depan.\" Nana mendadak berhenti, membuatmu hampir menabrak punggungnya. Ia meraba permukaan batu yang terasa berbeda. \"Beni, bawa sentermu ke sini! Lihat ini...\" Saat cahaya terang menyinari dinding gua, matamu terbelalak. Kalian sedang melihat peta kuno di dinding batu yang terpahat rapi. Garis-garisnya menggambarkan labirin gua ini, lengkap dengan sebuah simbol mahkota di titik terdalam. Kamu memperhatikan peta itu dengan saksama, lalu menyadari ada kejanggalan pada relief di bawahnya. Didorong rasa penasaran, kamu menekan salah satu batu yang menonjol. KREK! Dinding batu bergeser perlahan, dan kamu berhasil menemukan terowongan rahasia yang gelap namun memancarkan aura magis. \"Luar biasa... pilihanmu membawa kita ke jalur tersembunyi,\" bisik Nana takjub. Namun, Beni justru melangkah mundur, memandang kegelapan pekat di dalam terowongan itu dengan cemas. Kini, takdir perjalanan ini kembali bertumpu pada keberanianmu. Jalan di depan penuh ketidakpastian, namun jalan pulang menjanjikan keamanan. Apa tindakanmu berikutnya?",
-                "choices": [
-                    {
-                        "choice_text": "Masuk terowongan",
-                        "next_node": "ENDING_6"
-                    },
-                    {
-                        "choice_text": "Kembali",
-                        "next_node": "ENDING_7"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
-            },
-            {
-                "content": "Udara dingin dan bau tanah basah menyergap indra penciumanmu saat kamu memutuskan untuk melanjutkan perjalanan menembus kegelapan Gua Purba. Di sampingmu, Beni mempererat genggaman pada belatinya, sementara Nana memastikan tali pengaman kalian terpasang kuat. Atmosfer di sekitar terasa semakin menekan, seolah gua ini hidup dan sedang mengawasi setiap gerak-gerik kalian. \"Sssut, diam sebentar,\" bisik Nana tiba-tiba. Ia mengarahkan lampu suar ke dinding sebelah kanan yang tertutup akar gantung. Kamu membantu menyibak akar-akar tersebut, dan seketika kalian terpaku. Matamu langsung melihat peta kuno di dinding gua. Peta itu dipahat menggunakan tinta fosfor yang menyala redup dalam gelap, menunjukkan rute berliku menuju sebuah ruang rahasia yang terisolasi. Mengikuti arah kompas pada pahatan purba tersebut, kamu menyusuri lekukan dinding batu. Instingmu menuntun tanganmu untuk meraba celah sempit di sudut gua. Dengan sedikit dorongan, sebuah batuan besar runtuh dan kamu berhasil menemukan terowongan rahasia yang mengeluarkan hembusan angin hangat beraroma belerang. \"Ini gila. Peta ini nyata, dan jalur ini mengarah ke tempat yang tak terpetakan,\" kata Beni dengan suara bergetar antara cemas dan kagum. Nana menatapmu, menunggu komando dari sang pemimpin kelompok. Langkah berikutnya akan menentukan nasib kalian di dalam perut bumi ini. Pilihan sulit kembali menantimu:",
-                "choices": [
-                    {
-                        "choice_text": "Masuk terowongan",
-                        "next_node": "ENDING_6"
-                    },
-                    {
-                        "choice_text": "Kembali",
-                        "next_node": "ENDING_7"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
-            },
-            {
-                "content": "Gema gemuruh air bawah tanah menyambut keputusanmu untuk melanjutkan perjalanan ke bagian Gua Hitam yang belum terjamah. Kegelapan di sini terasa lebih pekat, seolah menelan cahaya senter yang kalian bawa. Namun, tekad di dadamu justru semakin membara untuk menuntaskan ekspedisi ini. \"Langkah yang nekat, tapi aku suka energimu,\" cetus Beni sambil membetulkan letak tas ranselnya yang berat. Nana yang berjalan di sisi kiri mendadak menghentikan langkah. Senter di tangannya bergetar, menyorot ke permukaan batu yang datar dan licin. \"Kalian harus lihat ini. Ini bukan sekadar coretan alami.\" Kamu melangkah mendekat dan terkesiap saat melihat peta kuno di dinding gua. Guratan purba itu dilapisi kristal berkilau, membentuk jaringan rute rumit yang menyembunyikan sebuah lokasi misterius. Menggunakan jarimu, kamu merunut jalur pada peta tersebut hingga ke titik ujungnya. Tepat di bawah titik itu, kamu melihat retakan vertikal yang aneh. Kamu mendorong panel batu tersebut dengan seluruh tenaga, hingga pintu alami itu terbuka dan kamu berhasil menemukan terowongan rahasia yang curam ke bawah. Aroma logam tua langsung menyeruak keluar dari sana. \"Peta ini menuntun kita langsung ke jantung gua,\" bisik Nana dengan mata berbinar takjub. Beni justru menggeleng cemas, \"Aura tempat ini tidak beres. Kita harus realistis.\" Sekali lagi, benang takdir kelompok ini berada di genggamanmu. Ke mana arah kompasmu akan berputar?",
-                "choices": [
-                    {
-                        "choice_text": "Masuk terowongan",
-                        "next_node": "ENDING_6"
-                    },
-                    {
-                        "choice_text": "Kembali",
-                        "next_node": "ENDING_7"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
-            },
-            {
-                "content": "Detak jantungmu kian berpacu seiring langkah kaki yang mantap untuk melanjutkan perjalanan ke kedalaman Gua labirin ini. Cahaya senter yang mulai meredup memaksa kalian bertiga untuk saling merapat, menembus kabut tipis yang mulai turun menyelimuti lantai gua. \"Pilihan yang menantang. Tapi ingat, kita tidak tahu apa yang menunggu di depan,\" ujar Beni sambil memeriksa sisa baterai di sakunya dengan raut wajah serius. Nana yang berjalan di posisi paling belakang tiba-tiba menepuk pundakmu dengan keras. \"Tunggu! Coba arahkan cahayamu ke dinding sebelah kiri ini!\" Saat berkas cahaya menyinari permukaan batu yang kasar, napasmu tercekat. Kalian sedang melihat peta kuno di dinding gua yang terukir dari sapuan darah kering atau zat pewarna purba. Peta itu menunjukkan sebuah labirin besar, dengan tanda silang di sebuah titik tersembunyi. Mengikuti nalurimu yang tajam, kamu berjalan mendekati sudut batu yang ditunjuk oleh ekor panah pada peta. Tanganmu meraba sela-sela batu, hingga jemarimu menyentuh sebuah tuas mekanis kuno dari kayu yang hampir membusuk. Ketika kamu menariknya, dinding batu di hadapanmu runtuh perlahan, dan kamu berhasil menemukan terowongan rahasia yang mengarah lurus ke bawah, memancarkan gema suara aneh yang samar. \"Luar biasa, instingmu tidak pernah salah,\" puji Nana dengan mata berbinar. Namun, Beni tampak memegangi senjatanya dengan cemas, \"Ini terlalu berisiko. Kita tidak tahu apa yang ada di bawah sana.\" Gerbang menuju misteri terbesar kini terbuka lebar di hadapanmu. Ke mana arah langkahmu selanjutnya?",
-                "choices": [
-                    {
-                        "choice_text": "Masuk terowongan",
-                        "next_node": "ENDING_6"
-                    },
-                    {
-                        "choice_text": "Kembali",
-                        "next_node": "ENDING_7"
-                    }
-                ],
-                "is_ending": false,
-                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
             }
         ]
     },
     "ENDING_1": {
         "variations": [
             {
-                "content": "Langkah kaki kalian terhenti di bibir jurang bawah tanah yang gelap gulita. Samar-samar, terdengar rintihan pilu dari dasar gua misterius ini. \"Suara apa itu? Jangan-jangan ada monster!\" bisik Beni sambil mengeratkan genggaman pada sentirnya, wajahnya pias ketakutan. Nana menggeleng cepat, matanya menatap tajam ke kegelapan di bawah. \"Bukan, Ben. Itu suara manusia yang kesakitan. Kita tidak bisa membiarkannya!\" Nana menoleh ke arahmu, menanti keputusanmu dengan cemas. Keberanian membakar dadamu. Kamu memilih Pilihan 1: Turun menolong. Dengan hati-hati, kamu memimpin jalan menyusuri dinding batu yang licin. Begitu sampai di dasar, cahaya senter kalian menyorot sesosok tubuh. Di sana, kamu menemukan seorang penjaga tua yang terluka parah, kakinya tertimpa runtuhan batu purba. \"Syukurlah... ada kehidupan di sini,\" gumam kakek itu lemas. Tanpa ragu, kamu langsung bertindak untuk menolong penjaga tua tersebut. Kamu mengomando Beni dan Nana untuk mengangkat batu besar itu bersama-sama. Dengan sigap, kamu membalut lukanya menggunakan kain seadanya. Napas sang penjaga mulai teratur. Ia tersenyum tulus, lalu menunjuk ke sebuah celah tersembunyi di balik lumut. \"Kebaikan hati kalian telah membuka jalan keluar sejati yang selama ini terkunci,\" bisiknya. Mengikuti petunjuknya, kamu, Nana, dan Beni memapah sang penjaga masuk ke celah tersebut. Secercah cahaya matahari menyambut kalian di ujung lorong. Berkat keputusan beranimu, misteri gua terpecahkan, dan kalian semua berhasil selamat sampai ke permukaan.",
+                "content": "   Selamat! Keputusan berani kalian menolong penjaga tua membuahkan hasil. Ia menunjukkan celah rahasia yang membawa kalian semua selamat sampai ke permukaan!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 1 Alur 1.1.1 menolong penjaga tua.png"
             },
             {
-                "content": "Udara lembap dan aroma tanah basah menusuk hidung saat kalian bertiga berdiri di persimpangan lorong gua yang menyeramkan. Tiba-tiba, sebuah gemuruh kecil terdengar, disusul jeritan lemah dari arah jurang di sebelah kiri. \"Duh, firasatku makin gak enak. Kita balik kanan aja yuk?\" keluh Beni dengan lutut yang mulai gemetar. Nana langsung menyenggol lengan Beni kesal. \"Mana bisa kita pergi begitu saja? Seseorang di bawah sana butuh bantuan kita!\" Nana kemudian menatapmu, menyerahkan seluruh keputusan di tanganmu. Jiwa pahlawanmu bergejolak. Kamu memantapkan hati dan memilih Pilihan 1: Turun menolong. Kamu memimpin pergerakan, menuruni batuan terjal dengan tali tambang seadanya. Begitu menapak di dasar yang gelap, kilatan sentermu menangkap pemandangan mengejutkan. Di balik pilar kristal, kamu menemukan seorang penjaga tua yang terluka dan terkulai lemas akibat terperosok. Melihat kondisinya yang memprihatinkan, kamu segera bergerak untuk menolong penjaga tua itu. Kamu meminta Nana mengambil air minum dari tas, sementara Beni membantu menopang tubuh ringkih sang kakek. Dengan keahlian pertolongan pertamamu, kamu membersihkan luka di lengannya hingga ia bisa kembali terduduk. Mata tua itu berbinar haru. \"Kalian anak-anak yang tulus. Gua ini menguji hati setiap pendatang, dan kalian lolos,\" bisiknya sambil menyerahkan sebuah tuas kuno. Saat kamu menarik tuas tersebut, dinding batu di samping kalian bergeser, membuka jalur evakuasi yang aman. Dengan saling merangkul, kamu, Nana, Beni, dan sang penjaga berjalan keluar menuju embusan angin segar. Kalian semua selamat dan berhasil keluar dari cengkeraman gua misterius ini!",
+                "content": "   Selamat! Keputusan tulus kalian menolong penjaga tua berbuah manis. Tuas kuno darinya membuka jalur evakuasi yang membawa kalian semua selamat keluar dari gua!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 1 Alur 1.1.1 menolong penjaga tua.png"
             },
             {
-                "content": "Gema tetesan air di dalam gua misterius ini mendadak kalah oleh suara rintihan mistis yang memantul di dinding batu. Di depan kalian, sebuah lubang menganga lebar memuntahkan hawa dingin yang mencekam. \"Aku bersumpah, tempat ini terkutuk! Ayo kita cari jalan lain saja!\" seru Beni, wajahnya pucat pasi sambil melangkah mundur. Namun, Nana menahan tas Beni, matanya berkaca-kaca menatap ke dalam lubang. \"Seseorang sekarat di bawah sana, Ben. Kita tidak boleh egois!\" Nana beralih memandangmu penuh harap, menanti komandomu sebagai pemimpin tim. Mengabaikan rasa takut, kamu menegakkan tubuh. Kamu mengambil keputusan tegas: Pilihan 1: Turun menolong. Menggunakan sisa akar pohon yang menjalar, kamu meluncur ke bawah, diikuti Nana dan Beni yang pasrah. Di dasar labirin yang dipenuhi tulang belulang kuno, kamu menemukan seorang penjaga tua yang terluka. Dada kakek itu sesak akibat menghirup gas beracun gua. Tanpa membuang waktu, kamu langsung menolong penjaga tua tersebut. Kamu memerintahkan Beni memberikan masker cadangan, sementara Nana memijat punggung sang kakek agar pernapasannya kembali normal. Berkat kesigapanmu, sang penjaga akhirnya sadar dan terbatuk lega. \"Ketulusan kalian telah memecahkan kutukan gua ini,\" bisik sang penjaga dengan suara serak. Ia menekan sebutir batu safir di dinding gua. Seketika, sebuah tangga mekanis kuno turun dari langit-langit gua, membuka jalan pintas langsung menuju permukaan. Sambil memapah sang kakek, kamu, Nana, dan Beni memanjat naik hingga disambut hangatnya fajar. Kalian semua selamat tanpa kurang satu apa pun!",
+                "content": "   Selamat! Kesigapan kalian menolong penjaga tua membuahkan hasil. Batu safir rahasia yang ditekan membuka tangga mekanis, membawa kalian semua selamat sampai ke permukaan!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 1 Alur 1.1.1 menolong penjaga tua.png"
             },
             {
-                "content": "Lorong gua yang gelap gulita ini mendadak terasa makin mencekam ketika embusan angin malam membawa suara erangan lirih dari balik celah tebing bawah tanah. \"Sudah kubilang kita pulang saja! Tempat ini tidak aman!\" cerocos Beni dengan suara bergetar, senternya bergoyang seiring tangannya yang gemetar hebat. Nana mendelik ke arah Beni, lalu mencengkeram lengan jaketmu. \"Itu suara manusia, bukan hantu. Kita harus memeriksa ke bawah sekarang!\" Nana menatapmu lekat-lekat, menyerahkan takdir tim ke dalam keputusanmu. Melihat kepanikan mereka, kamu menarik napas dalam-dalam. Sambil mengangguk mantap, kamu memilih Pilihan 1: Turun menolong. Kamu memandu jalan memutari tebing curam yang licin. Di dasar yang dipenuhi batuan tajam, spektrum cahaya sentermu mengungkap pemandangan pilu. Kamu menemukan seorang penjaga tua yang terluka, terjepit di antara reruntuhan gerbang kuno yang runtuh. Dengan sigap, kamu memimpin aksi untuk menolong penjaga tua tersebut. Kamu menyuruh Beni mencari kayu kuat sebagai pengungkit, sementara Nana menahan posisi batu agar tidak merosot. Dengan kerja sama yang solid di bawah arahanmu, tubuh kakek itu berhasil dievakuasi dengan aman. Sang penjaga terbatuk, lalu tersenyum lemah melihat ketulusan kalian. \"Kalian memiliki hati emas. Gua ini hanya mengizinkan mereka yang berjiwa penolong untuk pulang,\" ucapnya sambil menunjuk sebuah relief matahari di dinding. Saat kamu menekan relief tersebut, dinding batu itu berputar, membuka koridor luas yang langsung mengarah ke luar gua. Sembari memapah sang penjaga bersama Beni dan Nana, kalian melangkah keluar menuju hamparan rumput hijau. Kalian semua selamat berkat kepemimpinan dan keberanianmu!",
+                "content": "   Selamat! Kerja sama kalian menolong penjaga tua berbuah manis. Relief matahari yang ditekan membuka koridor rahasia, membawa kalian semua selamat keluar dari gua!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 1 Alur 1.1.1 menolong penjaga tua.png"
             },
             {
-                "content": "Detak jantungmu berpacu di dalam keheningan gua yang mencekam. Di tengah lorong, kalian menemukan lubang vertikal yang dalam, dari sana terdengar suara rintihan yang meminta belas kasihan. \"Tolong aku... aku tak sanggup lagi,\" suara itu terdengar sangat lemah. Beni mematung, senternya bergetar hebat hingga sinarnya menari-nari tak beraturan di dinding gua. \"Kita tidak tahu apa yang ada di bawah sana. Bisa saja itu jebakan atau makhluk buas, ayo pergi saja!\" serunya panik. Nana menggeleng tegas, ia menatapmu dengan sorot mata yang penuh harap. \"Kita penjelajah, Beni. Hati nurani kita diuji di sini. Bagaimana keputusanmu?\" tanya Nana padamu, menunggu komando untuk menentukan arah perjalanan. Tanpa keraguan yang berarti, kamu memilih Pilihan 1: Turun menolong. Kamu dengan cekatan menambatkan tali ke stalagmit besar dan mulai turun. Di dasar gua yang gelap, kamu menemukan seorang penjaga tua yang terluka dengan pergelangan kaki yang patah akibat terjatuh dari tangga batu yang lapuk. Kamu segera bergerak untuk menolong penjaga tua itu. Kamu menginstruksikan Beni untuk memberikan air minum, sementara Nana membantu membalut kaki sang kakek menggunakan kain medis dari tasmu. Dengan arahan yang tenang, kamu berhasil mendudukkan sang penjaga dan menenangkan kondisinya. Sang penjaga tersenyum, menunjukkan jalan rahasia di balik air terjun kecil yang ada di sudut gua. Berkat bantuanmu, kalian berhasil menemukan jalan keluar yang tersembunyi. Saat sinar matahari menerpa wajah kalian, kalian semua selamat dengan perasaan lega dan bangga.",
+                "content": "   Selamat! Ketulusan kalian menolong penjaga tua berbuah manis. Jalan rahasia di balik air terjun membimbing kalian, membuat kalian semua selamat sampai ke permukaan!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 1 Alur 1.1.1 menolong penjaga tua.png"
@@ -510,31 +273,31 @@
     "ENDING_2": {
         "variations": [
             {
-                "content": "Derap langkahmu bergema cepat, memantul di dinding batu gua yang basah dan dingin. Napasmu memburu. Di belakangmu, sesuatu yang tak terlihat dalam kegelapan terus mengejar. \"Lari! Jangan menengok ke belakang!\" teriak Beni dengan suara serak, menyenter jalan berlumpur di depan. Nana memegang lenganmu erat, wajahnya pucat pasi oleh rasa teror. \"Kita harus keluar dari sini sekarang juga! Tempat ini hidup!\" Melihat celah cahaya di ujung lorong, kamu mengambil keputusan mutlak: Pilihan 2 - Kabur. Kamu memimpin mereka berlari kencang menuju satu-satunya jalan keluar yang terlihat. Tepat saat kamu, Nana, dan Beni berhasil melompati ambang pintu gua yang terbuat dari rahang batu raksasa, sebuah suara gemuruh keras meruntuhkan harapan kalian. BRAAK! Sebuah gerbang batu tebal luruh dari langit-langit gua, menutup jalan kembali dengan keras. Pintu itu terkunci otomatis, mengurung kalian dari jalan yang baru saja kalian lewati. Napasmu tersengal, kamu mencoba menenangkan diri dan melihat ke sekeliling. Namun, rasa lega itu hanya bertahan sedetik. Senter di tangan Beni berkedip-kedip lalu padam sepenuhnya. Kegelapan total menyelimuti kalian. Bukan jalan keluar menembus hutan yang kalian temukan, melainkan sebuah ruang isolasi tanpa celah udara, jauh di dalam perut bumi. Kamu meraba dinding mencari celah, namun hanya batu pejal yang dingin yang menyambut jemarimu. Tidak ada jalan maju, tidak ada jalan kembali. Kamu benar-benar terjebak.",
+                "content": "   Keputusan untuk kabur justru menjebak kalian. Pintu gua runtuh dan mengunci kalian di ruang isolasi yang gelap gulita tanpa jalan keluar.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 1.1.2 Ending 2 terjebak di dalam ruang kontrol.png"
             },
             {
-                "content": "Jantungmu berdegup kencang, seirama dengan tetesan air yang jatuh dari langit-langit gua yang gelap gulita. Bau tanah basah dan aroma kuno yang pekat membuat dadamu sesak. Di depanmu, sebuah lorong bercabang dua menanti keputusanmu. \"Aku mendengar suara langkah kaki dari lorong kanan,\" bisik Nana dengan tubuh bergetar, mencengkeram senter yang cahayanya mulai meredup. Beni menatapmu tajam, menanti komando. \"Kita harus putuskan sekarang. Maju menyelidiki, atau putar balik?\" Ketakutan memuncak, dan kamu langsung meneriakkan keputusanmu: Pilihan 2 - Kabur. Tanpa pikir panjang, kamu membalikkan badan dan berlari sekencang mungkin menuju jalur masuk awal, diikuti oleh Nana dan Beni yang terengah-engah di belakangmu. Harapan untuk melihat cahaya matahari membubung saat siluet pintu keluar gua mulai terlihat. Namun, tepat beberapa langkah sebelum kamu berhasil melewatinya, mekanisme kuno di dalam dinding gua terpicu. KLIK! CRASH! Sebuah pintu besi berkarat raksasa meluncur turun dari atas, menghantam tanah dengan dentuman keras. Pintu itu terkunci otomatis secara permanen. Kamu terkesiap, berbalik arah dengan panik. Namun, sebuah dinding batu solid tiba-tiba bergeser di belakang Beni dan Nana, menutup lorong yang baru saja kalian lewati. Ruang tempat kalian berdiri menyempit seketika. Kalian tidak berada di luar gua, melainkan di dalam sebuah kotak penalti batu yang perlahan kehabisan oksigen.",
+                "content": "   Keputusan untuk kabur justru membawa petaka. Pintu besi raksasa runtuh dan mengunci kalian di dalam kotak penalti batu yang perlahan kehabisan oksigen.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 1.1.2 Ending 2 terjebak di dalam ruang kontrol.png"
             },
             {
-                "content": "Udara di dalam gua mendadak berubah menjadi sedingin es. Di hadapanmu, sebuah peti mati kuno yang terlilit rantai perlahan bergetar, memancarkan aura magis yang mencekam. \"Jangan mendekat! Sesuatu di dalam sana sedang terbangun!\" seru Beni sambil melangkah mundur, mengacungkan bilah pisaunya dengan tangan gemetar. Nana menatapmu dengan mata membelalak panik. \"Kita tidak siap untuk ini! Pilihannya hanya maju menghadapi makhluk itu, atau selamatkan nyawa kita!\" Insting bertahan hidupmu mengambil alih. Kamu memilih Pilihan 2 - Kabur. Kamu berbalik arah, menarik lengan Nana, dan memberi kode pada Beni untuk segera mengikutimu melesat kembali menyusuri lorong sempit yang licin. Lorong itu terasa sangat panjang dan membingungkan, seolah dinding gua sengaja bergeser untuk menyesatkan kalian. Tiba-tiba, aroma udara segar tercium, menandakan mulut gua sudah dekat. Namun, sebelum kaki kalian sempat menginjak rumput di luar, sebuah getaran hebat mengguncang tanah. TRREEEKK... BOOM! Sebuah pilar batu raksasa runtuh dari langit-langit, menutup mulut gua dengan rapat. Pintu keluar tersebut terkunci otomatis oleh sistem jebakan kuno yang aktif. Napas kalian memburu dalam keheningan yang mencekam. Saat Beni mengarahkan senternya ke bawah, barulah kamu menyadari kesalahan fatal kalian. Lantai tempat kalian berdiri bukanlah tanah padat, melainkan sebuah jaring besi rapuh di atas jurang tak berdasar. Terdengar suara besi berkarat yang mulai patah. Kalian tidak berhasil lolos, kalian justru terjebak di titik paling mematikan.",
+                "content": "   Keputusan untuk kabur berujung fatal. Pilar batu runtuh menutup mulut gua dan mengunci kalian di atas jaring besi rapuh yang siap runtuh ke dalam jurang.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 1.1.2 Ending 2 terjebak di dalam ruang kontrol.png"
             },
             {
-                "content": "Kabut tebal berwarna keunguan mulai keluar dari sela-sela batu gua, membawa aroma belerang yang menusuk hidung. Di ujung ruangan, sebuah patung dewa kuno bermata merah menyala seolah sedang mengawasi setiap gerak-gerik kalian. \"Kepalaku pusing... Kabut ini beracun!\" rintih Nana sambil berlutut, mencoba menutup hidungnya dengan kain syal. Beni berteriak panik di sampingmu, \"Kita harus cari penawarnya di altar depan itu, atau kita lari kembali ke jalur awal!\" Melihat kondisi Nana yang melemah, kamu tidak mau mengambil risiko bertarung dengan waktu. Kamu memilih Pilihan 2 - Kabur. Kamu langsung membopong Nana bersama Beni, berbalik arah dan berlari sekuat tenaga menembus kegelapan gua yang perlahan mulai runtuh. Lari kalian melambat karena beban tubuh Nana, namun bayangan mulut gua sudah melambai di depan mata. Sedikit lagi kalian bebas! Namun, tepat sebelum langkah pertama kalian menyentuh area luar, terdengar suara dentingan mekanis dari bawah tanah. KRETEK... BAM! Sebuah dinding jeruji baja tebal melesat dari lantai ke langit-langit gua. Pintu jeruji itu terkunci otomatis dengan bunyi klik yang dingin. Kamu mencengkeram jeruji itu, mengguncangnya dengan frustrasi. Melalui celah besi, kamu bisa melihat hutan luar yang terang benderang. Namun, kebebasan itu hanya sejauh pandangan mata. Saat kamu berbalik, kabut ungu beracun yang tadi kalian hindari telah memenuhi ruangan kecil tempat kalian terkurung.",
+                "content": "   Niat melarikan diri malah mengantar kalian ke ujung maut. Pintu keluar yang tertutup permanen memaksa kalian terkurung selamanya di dasar bumi.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 1.1.2 Ending 2 terjebak di dalam ruang kontrol.png"
             },
             {
-                "content": "Gema suara tawa tanpa wujud mendadak berkumandang dari dinding-dinding gua, membuat bulu kudukmu berdiri. Di tengah ruangan, sebuah batu altar kuno mulai berputar, memancarkan cahaya hijau berpendar yang menyilaukan. \"Jangan lihat cahayanya! Itu sihir hipnotis!\" teriak Beni, mencoba menutupi matanya dengan telapak tangan yang gemetar. Nana berteriak histeris di sampingmu, \"pikiranku mulai kacau! Kita harus menghancurkan altar itu sekarang atau lari sejauh mungkin!\" Menolak untuk kehilangan akal sehat, kamu mengambil keputusan tegas: Pilihan 2 - Kabur. Kamu menarik kerah jaket Beni dan menggandeng tangan Nana, memaksa mereka berbalik arah dan berlari kencang menyusuri lorong berlumut yang terus menurun. Langkah kaki kalian berdentum panik di atas batuan yang basah. Di ujung lorong, sebuah lengkungan batu yang menyerupai pintu keluar terlihat begitu dekat. Namun, harapan itu hancur dalam sekejap. Tepat sebelum tubuhmu melewati ambang pintu, sebuah lempengan batu obsidian hitam meluncur turun secepat kilat. SLAAM! Pintu itu terkunci otomatis tanpa celah sedikit pun. Kamu mencoba mendorongnya, namun sia-sia. Ketika Beni mengarahkan senternya ke arah belakang untuk mencari jalan lain, jantungmu seakan berhenti berdetak. Dinding gua di sekeliling kalian ternyata dilapisi oleh cermin kuno. Di dalam pantulan cermin itu, kalian tidak melihat bayangan diri kalian sendiri, melainkan sesosok makhluk mengerikan yang perlahan melangkah keluar dari dalam kaca. Kalian terjebak bersama mimpi buruk.",
+                "content": "   Kepanikan membuat kalian salah mengambil tindakan. Mekanisme kuno yang aktif telah menyegel ruangan buntu ini tanpa menyisakan celah untuk lolos.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 1.1.2 Ending 2 terjebak di dalam ruang kontrol.png"
@@ -544,65 +307,223 @@
     "ENDING_3": {
         "variations": [
             {
-                "content": "Kegelapan gua misterius ini mendadak terasa mencekam saat kamu memutuskan untuk memutar kenop dan mematikan radio. Keheningan total langsung menyergap. Beni menoleh tajam, senter di tangannya bergetar. \"Kenapa dimatikan? Suara static tadi satu-satunya petunjuk kita!\" bisiknya panik. Nana mencoba menenangkan situasi, \"Tenang, Beni. Mungkin ini tindakan tepat supaya kita tidak memancing sesuatu.\" Namun, belum sempat Nana menyelesaikan kalimatnya, klik. Lampu senter dan generator portabel kalian mati mendadak. Kegelapan pekat yang mutlak menelan segalanya. Hanya ada suara napas kalian yang memburu di dalam perut bumi. \"Ada yang datang,\" bisikmu lirih. Zzzzzt… Bip! Sepasang mata mekanis berwarna merah darah menyala di ujung lorong. Robot penjaga kuno telah aktif. Langkah kakinya yang berat dan terbuat dari besi bergema, menggetarkan dinding-dinding gua. Kalian terkunci, tidak ada jalan keluar. Nana berteriak saat sebuah cakar baja menariknya ke dalam kegelapan. Beni mencoba melawan, namun dalam hitungan detik, suaranya hilang digantikan oleh keheningan yang dingin. Kini, giliranmu. Sesuatu yang besar dan panas mendekat di belakangmu. Kamu menyadari, keputusan mematikan radio adalah kesalahan fatal yang memutus navigasi keselamatan kalian. Rasa sakit yang hebat menghantam dada, dan pandanganmu perlahan kabur menjadi hitam abadi.",
+                "content": "   Harapan untuk bebas sirna seketika. Robot penjaga yang aktif dalam kegelapan langsung menyerang dan memastikan kalian tidak akan pernah selamat.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 3 Alur 1.2 robot menyerang nana dan beni.png"
             },
             {
-                "content": "\"Jangan! Hidupkan lagi radionya!\" Beni berteriak, namun terlambat. Jarimu sudah menekan tombol dan mematikan radio. Seketika, frekuensi aneh yang tadinya memandu langkah kalian di kedalaman gua misterius ini lenyap, digantikan oleh keheningan yang mencekam. Nana memeluk ranselnya erat-erat, wajahnya pucat. \"Firasatku buruk. Sinyal radio itu... seperti menahan sesuatu agar tetap tertidur.\" Benar saja. Belum sempat kamu membela diri, seluruh area menjadi gelap gulita. Lampu senter kalian mati mendadak, seolah energinya diisap habis oleh dinding gua. Di tengah kegelapan total yang menakutkan, gesekan logam berat mulai terdengar. Clank! Clank! Bzzzt! Dinding batu di depan kalian bergeser, dan sepasang robot penjaga kuno aktif, memancarkan laser pemindai berwarna merah langsung ke arah wajahmu. \"Lari!\" jerit Beni. Namun, gerakan mesin-mesin itu terlalu cepat. Suara tebasan keras terdengar, diikuti erangan pendek Beni yang ambruk ke tanah. Nana mencoba menarik lenganmu dalam kepanikan, tetapi sebuah lengan mekanis raksasa mencengkeram lehernya, mematahkan perlawanannya seketika. Kini, sensor merah robot itu mengunci tubuhmu yang gemetar. Kamu lumpuh ketakutan, menyadari bahwa keputusan mematikan suara radio telah membangunkan algoritma pembantai di tempat ini. Detik berikutnya, hantaman besi dingin menghancurkan kesadaranmu, mengakhiri perjalanan ini selamanya.",
+                "content": "   Langkah kalian terhenti di titik paling mematikan. Serangan brutal dari robot penjaga merenggut nyawa kalian di kedalaman gua yang gelap gulita.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 3 Alur 1.2 robot menyerang nana dan beni.png"
             },
             {
-                "content": "Suasana gua misterius ini mendadak berubah dingin saat kamu memilih untuk mematikan radio. Suara bising frekuensi yang tadi menemani langkah kalian hilang, menyisakan kesunyian yang menekan dada. Beni langsung berhenti melangkah, napasnya memburu. \"Kamu gila? Radio itu pelindung kita!\" bentaknya dengan nada gemetar. Nana mencoba menengahi sambil menatap dinding gua yang dipenuhi ukiran kuno. \"Sudah, jangan bertengkar. Kita harus tetap ber—\" Kata-katanya terputus. Bup! Lampu senter kalian mati mendadak. Kegelapan yang pekat dan mutlak langsung mengurung kalian tanpa ampun. Di tengah kepanikan, suara mesin berkarat mulai berputar dari langit-langit gua. Krrrkkk... Bzzzt! Robot penjaga kuno telah aktif, mendeteksi keberadaan kalian lewat sensor termal. Sepasang mata mekanisnya berkilat merah di kegelapan. \"Mereka di atas kita!\" teriak Beni. Namun, kegelapan membuat kalian buta. Sebuah hantaman logam berat terdengar, disusul jeritan histeris Nana yang langsung lenyap ditelan kesunyian. Beni mencoba menembakkan suar, namun robot itu bergerak lebih cepat, melibasnya hingga tak lagi bersuara. Kini, udara di sekitarmu berembun, hawa panas dari mesin pembunuh itu tepat berada di depan wajahmu. Kamu terpojok di dinding batu, menyadari bahwa keputusanmu membunuh suara radio adalah undangan maut bagi sang penjaga. Detik berikutnya, cakar baja dingin meremukkan segalanya.",
+                "content": "   Pertahanan kalian runtuh dalam sekejap. Tanpa cahaya dan perlindungan, kalian gagal menyelamatkan diri dari amukan robot penjaga yang kejam.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 3 Alur 1.2 robot menyerang nana dan beni.png"
             },
             {
-                "content": "Kamu menekan tombol power, dan suara desis frekuensi itu langsung hilang. Kamu memilih mematikan radio. Tindakanmu membuat lorong gua misterius ini mendadak senyap, menyisakan gema tetesan air yang terasa mencekam. Beni langsung mencengkeram kerah jaketmu. \"Apa yang kamu lakukan?! Frekuensi itu menyamarkan keberadaan kita!\" bisiknya dengan kemarahan yang tertahan. Nana belum sempat melerai ketika tiba-tiba, pet! Lampu senter di tangan kalian mati mendadak. Bukan hanya senter, bahkan arloji digitalmu ikut padam. Kegelapan total yang pekat seketika membutakan mata. Dalam keheningan malam abadi itu, tanah di bawah kaki kalian bergetar. Whirrr... Klik! Suara mesin kuno yang menggetarkan fusi hidrolik bergema. Robot penjaga gua telah aktif. Sepasang lampu sensor biru di dada robot itu menyala, memindai kegelapan, lalu berubah menjadi merah darah saat mengunci posisi kalian. \"Beni! Nana! Lari!\" teriakmu panik. Namun, kegelapan membuat kalian tak bisa ke mana-mana. Terdengar suara hantaman keras, disusul teriakan pilu Nana yang terlempar ke dinding batu. Beni mencoba menerjang maju, namun suara patahan tulang yang mengerikan mengakhiri perlawanannya dalam sekejap. Kini, langkah kaki besi seberat satu ton itu mendekat ke arahmu. Kamu mundur hingga punggungmu membentur jalan buntu. Menyesal pun tak ada gunanya; keputusanmu mematikan radio telah mengakhiri segalanya. Sebuah lengan baja dingin mencengkeram kepalamu, dan semuanya menjadi gelap selamanya.",
+                "content": "   Kegelapan total mengunci pergerakan kalian dari incaran musuh. Robot penjaga menghabisi kalian tanpa ampun, mengakhiri petualangan maut ini dengan tragis.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 3 Alur 1.2 robot menyerang nana dan beni.png"
             },
             {
-                "content": "Keheningan yang pekat langsung mengurung lorong gua misterius ini begitu jarimu bergerak mematikan radio. Suara bising frekuensi yang tadinya memuakkan kini terasa seperti kehilangan sebuah pelindung tak kasat mata. Beni menatapmu dengan mata terbelalak di balik remangan cahaya. \"Kamu baru saja menghentikan umpan sinyalnya!\" desisnya dengan suara yang bergetar hebat. Nana memegang pundakmu, mencoba mencari rasa aman. \"Kumohon, katakan kalau tindakanmu ini punya alasan...\" Namun, ucapan Nana menggantung di udara. Klik. Lampu senter kalian mati mendadak, menyisakan kegelapan mutlak yang begitu tebal hingga membuat matamu terasa perih. Di tengah kebutaan itu, suara hidrolik tua yang berat mulai menderu dari balik dinding batu. Bzzzt... Khhhkkk! Robot penjaga kuno telah aktif. Dua titik cahaya merah pekat menyala di kegelapan, memindai suhu tubuh kalian yang mendingin karena ketakutan. \"Jangan bergerak!\" teriak Beni dalam kepanikan. Namun, mesin pembunuh itu tidak mengenal kompromi. Sebuah ayunan logam besar membelah udara, disusul suara hantaman keras dan jeritan pendek Nana yang langsung terputus. Beni mencoba berlari dalam gelap, namun suara langkah berat robot itu mengejarnya, diakhiri dentuman fatal yang membuat gua kembali hening. Kini, sensor merah itu berputar dan mengunci tepat di dadamu. Kamu terengah-engah, menyadari bahwa keputusan mematikan radio adalah tiket satu arah menuju maut. Sebelum sempat melangkah mundur, cakar besi yang dingin telah menembus kegelapan, mengakhiri hidupmu seketika.",
+                "content": "   Keberadaan kalian terendus oleh sistem keamanan kuno. Kalian gagal bertahan hidup setelah robot penjaga menghancurkan sisa tenaga kalian di dasar bumi.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 3 Alur 1.2 robot menyerang nana dan beni.png"
             }
         ]
     },
+    "ALUR_2": {
+        "variations": [
+            {
+                "content": "Kamu mengambil rute alternatif dan memilih jalur kanan, memandu Nana dan Beni menembus lorong yang sunyi. Setelah berjalan beberapa menit, langkah kalian terhenti saat kalian masuk gudang senjata berkarat yang dipenuhi sisa-sisa amunisi kuno. Senter Beni menyapu ruangan yang berdebu hingga kalian temukan peti rahasia bermotif janggal di bawah tumpukan senapan usang. Ketegangan mendadak memuncak saat kalian mendengar suara langkah mendekat dari koridor gelap di belakang kalian. \"Ada sesuatu yang datang!\" bisik Nana dengan wajah pucat pasi. Beni langsung bersiap di dekat pintu sambil menggenggam sebatang besi tua. Detak jantungmu berpacu cepat melawan waktu yang kian menipis. Pilihan krusial kini berada di tanganmu untuk menentukan nasib tim. Apakah kalian akan memeriksa isi peti atau segera pergi?",
+                "choices": [
+                    {
+                        "choice_text": "Buka peti",
+                        "next_node": "ALUR_2_1"
+                    },
+                    {
+                        "choice_text": "Lanjutkan perjalanan",
+                        "next_node": "ALUR_2_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
+            },
+            {
+                "content": "Keputusanmu memilih jalur kanan membawa tim melangkah taktis menyusuri lorong beton yang menurun. Di ujung jalan, kalian masuk gudang senjata berkarat dengan aroma mesiu dan besi tua yang menyengat indra penciuman. Saat memeriksa sekeliling untuk mencari jalan keluar, kalian justru temukan peti rahasia berbahan logam tebal yang terkunci rapat di sudut ruangan. Atmosfer darurat langsung merayap masuk ketika kalian mendengar suara langkah mendekat yang berat dan berirama konstan dari arah lorong tadi. Nana memeluk ranselnya erat-erat karena ketakutan, sementara Beni menatapmu meminta isyarat tindakan. \"Suara itu makin dekat, kita harus cepat!\" desak Beni dengan suara setengah berbisik. Insting kepemimpinanmu kembali diuji di titik paling kritis ini untuk memilih langkah keselamatan bersama.",
+                "choices": [
+                    {
+                        "choice_text": "Buka peti",
+                        "next_node": "ALUR_2_1"
+                    },
+                    {
+                        "choice_text": "Lanjutkan perjalanan",
+                        "next_node": "ALUR_2_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
+            },
+            {
+                "content": "Menolak risiko di sisi lain, kalian bergerak cepat menyusuri opsi jalur kanan yang gelap gulita. Langkah kaki membawa kalian masuk gudang senjata berkarat yang runtuh sebagian akibat usia. Di balik reruntuhan kotak amunisi kuno, kejelianmu membuat kalian temukan peti rahasia yang terbuat dari kayu jati berlapis pelat baja misterius. Sebelum sempat memeriksanya, bulu kudukmu meremang saat kalian mendengar suara langkah mendekat disertai seretan sesuatu di atas lantai semen luar ruangan. Nana terkesiap dan langsung mematikan senternya demi keamanan, sementara Beni bersiap menghadapi potensi ancaman satwa liar atau predator puncak. Waktu kalian untuk berpikir sangat terbatas sebelum entitas tersebut menemukan posisi kalian di ruangan buntu ini. Putuskan tindakan taktis kalian sekarang!",
+                "choices": [
+                    {
+                        "choice_text": "Buka peti",
+                        "next_node": "ALUR_2_1"
+                    },
+                    {
+                        "choice_text": "Lanjutkan perjalanan",
+                        "next_node": "ALUR_2_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
+            },
+            {
+                "content": "Kamu memimpin Nana dan Beni menyusuri kegelapan jalur kanan yang terasa kian dingin dan mencekam. Lorong ini akhirnya menuntun kalian hingga masuk gudang senjata berkarat yang luas dan pengap. Senter di tanganmu menyorot barisan rak senapan kosong, hingga akhirnya kalian temukan peti rahasia berlogo militer kuno yang masih utuh di tengah ruangan. Sesaat kemudian, keheningan pecah ketika kalian mendengar suara langkah mendekat dari luar pintu besi gudang tersebut. \"Kita terjebak, suaranya tepat di koridor utama!\" ujar Beni panik sambil mengokang senjata daruratnya. Nana menatapmu dengan mata terbelalak, menanti komando mutlak dari kepemimpinanmu di tengah teror psikologis yang nyata ini. Keputusan taktis kini berada sepenuhnya di tanganmu.",
+                "choices": [
+                    {
+                        "choice_text": "Buka peti",
+                        "next_node": "ALUR_2_1"
+                    },
+                    {
+                        "choice_text": "Lanjutkan perjalanan",
+                        "next_node": "ALUR_2_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
+            },
+            {
+                "content": "Instingmu memilih jalur kanan terbukti membawa petualangan ini ke dalam ruang sejarah yang kelam. Kalian masuk gudang senjata berkarat tempat berbagai artileri tua berserakan tak teratur di lantai beton basah. Di bawah meja komando yang hancur, kalian temukan peti rahasia berukuran besar dengan gembok kuno yang mulai rapuh. Namun, ketenangan sirna dalam sekejap saat kalian mendengar suara langkah mendekat dari kegelapan lorong masuk gua. Beni langsung memasang posisi bertahan di balik dinding, sedangkan Nana menggenggam tanganmu dengan sangat erat dalam kepanikan. \"Sesuatu sedang memburu kita, putuskan sekarang!\" bisik Nana dengan napas memburu seiring makin jelasnya suara derap kaki tersebut. Kompas kepemimpinanmu kembali diuji untuk merespons situasi darurat ini.",
+                "choices": [
+                    {
+                        "choice_text": "Buka peti",
+                        "next_node": "ALUR_2_1"
+                    },
+                    {
+                        "choice_text": "Lanjutkan perjalanan",
+                        "next_node": "ALUR_2_2"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/alur opening pilihan 2 masuk jalur kanan.png"
+            }
+        ]
+    },
+    "ALUR_2_1": {
+        "variations": [
+            {
+                "content": "Kamu memutuskan membuka peti, merusak gembok kuno itu dengan besi tua hingga engselnya terlepas. Harapan menemukan jawaban instan sirna ketika tutupnya terbuka dan gas beracun keluar dalam bentuk asap hijau pekat yang beraroma belerang menyengat. Seketika, dada kalian terasa sesak dan mata mulai perih akibat paparan udara berbahaya tersebut. Di dalam peti, samar-samar terlihat sebuah artefak berkilau di balik gulungan asap yang kian tebal memenuhi gudang senjata. \"Jangan dihirup! Ini jebakan kimia kuno!\" teriak Beni sambil menutup hidungnya dengan syal. Nana terbatuk-batuk hebat di dekatmu, berusaha mempertahankan kesadarannya yang mulai menipis di tengah kepanikan. Oksigen di sekitar kalian kian berkurang, menuntut keputusan taktis yang sangat cepat sebelum kalian pingsan. Pilihan krusial kini berada di tanganmu untuk menentukan nasib pelarian tim.",
+                "choices": [
+                    {
+                        "choice_text": "Tutup",
+                        "next_node": "ENDING_4"
+                    },
+                    {
+                        "choice_text": "Ambil isi",
+                        "next_node": "ENDING_5"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
+            },
+            {
+                "content": "Dengan penuh rasa penasaran, kamu memimpin tim untuk membuka peti rahasia yang tergeletak di sudut gudang senjata berkarat. Namun, begitu penutup logam itu terangkat, desisan keras terdengar dan gas beracun keluar dengan cepat mematikan sirkulasi udara di sekitar kalian. Asap pekat berbau busuk langsung mengaburkan pandangan senter Beni, menciptakan kepanikan massal di ruang buntu tersebut. \"Mundur! Udara ini berbahaya!\" seru Nana sambil terengah-engah menahan perih di tenggorokannya. Melalui sisa pandangan yang buram, kamu melihat kilatan benda berharga di dasar peti yang terbuka itu. Adrenalinmu bergejolak hebat, berkejaran dengan efek racun yang mulai melemaskan otot-otot tubuhmu. Sebagai pemimpin, instingmu kembali diuji di titik paling kritis ini untuk merespons ancaman kimia darurat tersebut sebelum terlambat.",
+                "choices": [
+                    {
+                        "choice_text": "Tutup",
+                        "next_node": "ENDING_4"
+                    },
+                    {
+                        "choice_text": "Ambil isi",
+                        "next_node": "ENDING_5"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
+            },
+            {
+                "content": "Kamu mengabaikan suara langkah kaki yang mendekat dan memilih segera membuka peti misterius itu demi mencari alat bertahan hidup. Sialnya, begitu engsel besi itu terbuka, mekanisme kuno terpicu dan gas beracun keluar menyembur ke udara bebas. Hawa dingin yang mematikan langsung menyelimuti ruangan, membuat Nana terkesiap dan langsung lemas di lantai semen yang basah. Beni berusaha menyapu asap pekat itu dengan jaketnya, namun zat kimia tersebut menyebar terlalu masif dan cepat. Di tengah pusaran asap, sentermu menangkap sebuah kunci emas yang tampak sangat penting bagi kelanjutan petualangan kalian di gua ini. Waktu kalian untuk berpikir tidak lebih dari beberapa detik sebelum paru-paru kalian lumpuh sepenuhnya. Putuskan tindakan taktis kalian sekarang demi keselamatan bersama!",
+                "choices": [
+                    {
+                        "choice_text": "Tutup",
+                        "next_node": "ENDING_4"
+                    },
+                    {
+                        "choice_text": "Ambil isi",
+                        "next_node": "ENDING_5"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
+            },
+            {
+                "content": "Napasmu tertahan saat kamu mengambil risiko besar untuk membuka peti berlogo militer kuno tersebut. Harapan mendapatkan senjata perlindungan hancur saat penutupnya terbuka dan gas beracun keluar menyerang indra penciuman kalian secara brutal. Ruangan pengap itu seketika dipenuhi kabut kuning yang mengintimidasi batin dan merusak fokus visual kalian. Beni terbatuk-batuk di balik dinding, sementara Nana memegang lenganmu erat-erat dengan sisa tenaga yang ia miliki. Di dasar peti, terdapat dokumen penting yang terbungkus kain kedap air, menggoda insting petualanganmu untuk memilikinya. Namun, setiap detik yang terbuang di dalam atmosfer beracun ini bisa menjadi akhir dari nyawa kalian bertiga. Kompas kepemimpinanmu kembali diuji di titik paling darurat ini. Tentukan pilihanmu!",
+                "choices": [
+                    {
+                        "choice_text": "Tutup",
+                        "next_node": "ENDING_4"
+                    },
+                    {
+                        "choice_text": "Ambil isi",
+                        "next_node": "ENDING_5"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
+            },
+            {
+                "content": "Kamu mencongkel penutup kayu dengan cepat, memilih membuka peti rahasia sebelum entitas misterius di luar menemukan posisi kalian. Sayangnya, tindakan agresifmu memicu malapetaka baru ketika gas beracun keluar dalam semburan asap tebal yang menyesakkan dada. Suasana gudang senjata langsung berubah menjadi neraka darurat yang mengancam nyawa tim. \"Udara ini beracun, kita terjebak!\" teriak Beni dengan suara parau menahan perih yang membakar paru-parunya. Di tengah kekacauan itu, matamu menangkap sebuah kompas navigasi kuno yang tersimpan di dalam peti yang terbuka lebar tersebut. Suara derap kaki di luar terdengar kian mendekat bersamaan dengan menipisnya sisa oksigen kalian. Keputusan mutlak kini berada di tanganmu untuk menentukan langkah evakuasi terbaik.",
+                "choices": [
+                    {
+                        "choice_text": "Tutup",
+                        "next_node": "ENDING_4"
+                    },
+                    {
+                        "choice_text": "Ambil isi",
+                        "next_node": "ENDING_5"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 1 membuka peti membuka peti.png"
+            }
+        ]
+    },
     "ENDING_4": {
         "variations": [
             {
-                "content": "Gelap mencekam. Hanya ada kamu, Nana, dan Beni yang berdiri gemetar di depan sebuah pintu batu raksasa di kedalaman Gua Larangan. Di dinding gua, simbol-simbol kuno tampak menyala samar, seolah memperingatkan kalian untuk tidak melangkah lebih jauh. \"Kita harus balik,\" bisik Nana, suaranya bergetar hebat saat jemarinya mencengkeram senter. Beni menggeleng cepat, matanya menatap celah pintu yang terbuka sedikit. \"Tapi rahasia gua ini ada di dalam sana!\" Keputusan ada di tanganmu. Menghadapi desakan Beni, kamu dengan tegas memilih Pilihan 1: Tutup. Kamu melangkah maju dan mendorong pintu batu itu hingga menutup rapat dengan dentuman keras yang mengguncang langit-langit gua. BOOM! Tiba-kira, tanah di bawah kaki kalian retak. Suara gemuruh mengerikan menggema dari balik dinding, disusul rontokan batu tajam dari atas. \"LARI!\" teriakmu histeris. Tanpa berpikir dua kali, kamu, Nana, dan Beni langsung berbalik dan kabur secepat mungkin. Kamu berlari membuta, melewati lorong-lorong sempit dan memanjat tebing batu dengan sisa tenaga yang ada. Napasmu memburu, jantungmu serasa mau copot, sementara kegelapan di belakang seolah siap menelan kalian hidup-hidup. Dengan satu lompatan terakhir, kalian berhasil menerobos keluar gua tepat saat pintu masuknya runtuh total. Kalian selamat, terengah-engah di bawah sinar matahari. Namun, saat kamu menatap reruntuhan gua, rasa selamat itu perlahan digantikan oleh rasa penasaran yang menyiksa. Apa sebenarnya yang ada di balik pintu tadi? Misteri itu kini terkubur selamanya.",
+                "content": "   Keputusan menutup pintu menyelamatkan nyawa kalian dari keruntuhan gua. Kalian berhasil selamat sampai ke permukaan, meskipun misteri di dalam gua kini terkubur selamanya.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 4 Alur 2.1.1 mentup dan kabur tapi penasaran.png"
             },
             {
-                "content": "Udara dingin dan bau tanah basah menusuk hidungmu saat kamu, Nana, dan Beni melangkah semakin dalam ke perut Gua Labirin. Di hadapan kalian, sebuah gerbang besi berkarat berdiri kokoh, memancarkan aura magis yang ganjil. Di balik jerujinya, laras-laras cahaya keemasan tampak berkelebat, menyembunyikan sesuatu yang luar biasa. \"Jangan disentuh!\" teriak Nana, menahan tangan Beni yang sudah gatal ingin menarik tuas pembukanya. \"Firasatku buruk tentang tempat ini.\" Beni mendengus kecewa, lalu menatapmu, menunggu keputusanmu sebagai pemimpin pergerakan. Tanpa ragu, kamu memilih Pilihan 1: Tutup. Kamu menarik tuas pengunci ke arah berlawanan, mengunci gerbang besi itu rapat-rapat. KLIK! BANG! Keputusanmu memicu mekanisme kuno. Seluruh dinding gua bergetar hebat, dan dari langit-langit mulai berjatuhan batu-batu sebesar kepalan tangan. Suara raungan misterius mendadak menggema dari kegelapan di belakang kalian. \"Sial, guanya runtuh! Kabur cepat!\" seru Beni panik. Kamu memimpin barisan, berlari kencang menerobos kepulan debu. Nana berlari tepat di sampingmu, sementara Beni sesekali menunduk menghindari reruntuhan. Jantungmu berpacu melawan maut, kakimu terus memacu melewati jalur-jalur curam yang mulai tertutup batu. Dengan satu hentakan kaki yang putus asa, kalian bertiga berhasil berguling keluar ke permukaan tanah, tepat sebelum mulut gua runtuh total dan menutup aksesnya selamanya. Kalian selamat tanpa luka berarti. Namun, saat kamu terduduk lemas sambil memandang debu yang membubung, sebuah tanya besar menggelitik benakmu. Benda berkilau apa yang sebenarnya tersimpan di sana? Rasa penasaran itu kini terkunci rapat di dalam tanah.",
+                "content": "   Tindakan cepat kalian menutup pintu berhasil menghindari maut. Kalian tiba di luar dengan selamat, meninggalkan rahasia besar gua yang kini terkubur untuk selamanya.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 4 Alur 2.1.1 mentup dan kabur tapi penasaran.png"
             },
             {
-                "content": "Tetesan air terdengar bagai detak jam dinding raksasa di dalam ruangan gua yang menyerupai altar kuno. Kamu, Nana, dan Beni berdiri terpaku di depan sebuah peti batu hitam yang tertutup rapat. Di atasnya, sebuah sakelar kristal biru berkedip redup, memancarkan daya pikat yang aneh. \"Aku bersumpah melihat sesuatu bergerak di dalam sana,\" bisik Nana sambil melangkah mundur, wajahnya pucat pasi dalam pendar cahaya senter. Beni justru mendekat, matanya berbinar ambisius. \"Ini penemuan terbesar abad ini! Kita harus melihat isinya!\" Sebelum Beni sempat bertindak ceroboh, kamu mengambil langkah berani. Kamu memilih Pilihan 1: Tutup. Dengan sekali sentak, kamu memutar sakelar kristal tersebut ke posisi mengunci, mematikan pendar cahayanya seketika. KRETEK... BLARR! Tindakanmu memicu alarm tak kasat mata. Seluruh ruangan gua berguncang dahsyat. Air hitam mulai menyembur dari sela-sela lantai batu, dan retakan besar merayap cepat di dinding gua. \"Tempat ini mau hancur! Kabur cepat!\" teriakmu lantang. Kalian bertiga berbalik arah dan berlari sekencang mungkin. Kamu mencengkeram lengan Nana yang sempat tersandung, sementara Beni memimpin di depan, melompati celah-celah tanah yang mulai terbelah. Udara tipis dan debu pekat mencekik paru-paru kalian saat lorong gua di belakang runtuh satu per satu. Dengan sisa tenaga terakhir, kalian meluncur keluar dari celah tebing, jatuh tersungkur di atas rumput hijau yang aman. Kalian selamat. Namun, saat kamu telentang menatap langit sambil mengatur napas, sebuah pemikiran mistis terus berputar di kepalamu. Makhluk atau kutukan apa yang sebenarnya baru saja kamu kunci di dalam sana? Rasa penasaran itu kini membayangimu selamanya.",
+                "content": "   Tindakan cepat kalian menutup pintu berhasil menghindari maut. Kalian tiba di luar dengan selamat, meninggalkan rahasia besar gua yang kini terkubur untuk selamanya.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 4 Alur 2.1.1 mentup dan kabur tapi penasaran.png"
             },
             {
-                "content": "Langkah kaki kalian menggema di dalam aula gua yang dipenuhi pilar-pilar kristal raksasa. Kamu, Nana, dan Beni terkesiap saat menemukan sebuah sumur kuno tanpa dasar di tengah ruangan. Dari dalam sumur itu, mengalun suara senandung magis yang seolah hipnotis, memanggil kalian untuk mendekat. \"Suara ini... indah sekali, tapi entah kenapa membuat bulu kudukku merinding,\" kata Nana sambil menutup kedua telinganya dengan cemas. Beni, yang tampak setengah sadar, berjalan mendekat. \"Ada sesuatu yang bernilai tinggi di bawah sana. Kita harus membuka penutup pelindungnya!\" Melihat gelagat berbahaya Beni, kamu langsung bertindak cepat. Kamu memilih Pilihan 1: Tutup. Dengan sekuat tenaga, kamu membanting lempengan baja berat di samping sumur untuk menyegel lubang tersebut hingga terdengar suara dentingan besi yang mengunci otomatis. DUMMM! Seketika, energi senandung itu berbalik menjadi gelombang kejut yang dahsyat. Pilar-pilar kristal di sekeliling kalian retak dan pecah menjadi serpihan tajam yang beterbangan bagai hujan pisau. \"Guanya runtuh! Kabur cepat!\" teriak Beni yang langsung tersadar dari hipnotisnya. Kamu, Nana, dan Beni berlari kesetanan membelah jalur gua. Kamu merunduk menghindari pecahan kristal yang meluncur deras, sementara Nana terus memacu langkahnya di depan. Jantungmu berdebar ekstrem saat jalur di belakang kalian runtuh tertimbun batu-batu raksasa. Sambil melompat keluar dari mulut gua, kalian berguling di atas tanah berbatu, tepat saat seluruh gua di belakang kalian ambruk total. Kalian selamat, bernapas lega dalam dekapan udara luar. Namun, saat kamu menyeka keringat di dahimu, sebuah misteri besar terus mengusik pikiranmu. Suara siapakah yang bernyanyi di dalam sumur tadi? Penasaran itu kini terkubur dalam keheningan abadi.",
+                "content": "   Pelarian kalian yang menegangkan berbuah manis saat sinar matahari menyambut di luar gua. Kalian berhasil lolos, meskipun semua harta karun di dalamnya kini lenyap tertimbun bumi.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 4 Alur 2.1.1 mentup dan kabur tapi penasaran.png"
             },
             {
-                "content": "Uap belerang tipis melayang di antara ribuan akar gantung yang memenuhi langit-langit gua tersembunyi ini. Di tengah ruangan, kamu, Nana, dan Beni berdiri mengitari sebuah mesin mekanis kuno bertenaga uap dengan roda-roda gigi kuningan yang berputar lambat. Di bagian pusatnya, sebuah katup besar bertuliskan aksara kuno tampak bergetar hebat. \"Jangan disentuh, getarannya makin kuat! Aku rasa tekanan di bawah kita sudah tidak stabil,\" peringat Nana, senternya menyorot uap panas yang mulai bocor dari sela pipa. Beni malah tertawa takjub, tangannya melayang di atas katup. \"Kalau kita buka penuh, kita bisa tahu sumber energi apa yang menggerakkan teknologi purba ini!\" Melihat bahaya di depan mata, kamu mengambil alih kendali. Kamu memilih Pilihan 1: Tutup. Dengan sekuat tenaga, kamu memutar katup besar itu ke arah kanan hingga mengunci mati, menghentikan seluruh putaran roda gigi secara paksa. KREKKK... BOOM! Tindakan instanmu memicu efek domino. Tekanan gas yang tersumbat membuat pipa-pipa besi di dinding gua meledak satu per satu, menyemburkan uap panas dan meruntuhkan struktur batu di atasnya. \"Tempat ini mau meledak! Kabur cepat!\" teriakmu memecah kegaduhan. Kalian bertiga langsung berbalik arah dan berlari kesetanan. Kamu menarik jaket Beni yang sempat terpana, sementara Nana memimpin di depan, melompati bongkahan batu yang mulai berjatuhan. Udara terasa panas membakar, memacu adrenalinmu hingga batas maksimal saat lorong di belakang kalian runtuh total. Sambil melompat keluar dari celah sempit gua, kalian bertiga jatuh terguling di atas rerumputan luar yang sejuk. Kalian selamat, terengah-engah menatap asap tebal yang keluar dari reruntuhan. Namun, saat kamu menyeka keringat di wajahmu, rasa penasaran yang hebat mendadak merayap di hatimu. Energi luar biasa apa yang sebenarnya baru saja kamu kunci di dalam sana? Misteri itu kini terkubur selamanya.",
+                "content": "   Nyawa kalian berhasil terselamatkan berkat pilihan tepat di detik-detik terakhir. Gua itu runtuh sepenuhnya, mengunci rapat-rapat semua misteri dan keajaiban di dalam perut bumi.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 4 Alur 2.1.1 mentup dan kabur tapi penasaran.png"
@@ -612,65 +533,144 @@
     "ENDING_5": {
         "variations": [
             {
-                "content": "Langkah kakimu menggema di dinding Gua Kristal Hitam yang lembap. Di depanmu, Nana menyenter sebuah peti kuno yang diselimuti lumut tebal, sementara Beni tampak gelisah sambil terus mengawasi kegelapan di belakang kalian. \"Kita tidak punya banyak waktu,\" bisik Beni panik. \"Pilih cepat: tinggalkan peti ini atau ambil isinya?\" Kamu menarik napas dalam, memantapkan hati, dan memilih pilihan 2: ambil isi. Dengan hati-hati, kamu membuka engsel besi yang berkarat. Di dalamnya, tidak ada emas atau permata, melainkan sebuah gulungan kain pembungkus dokumen rahasia bersimbol kerajaan kuno yang hilang. Nana terengah-engah saat membaca baris demi baris teks kuno tersebut. Dokumen itu ternyata berisi peta peradaban bawah tanah dan formula teknologi masa lalu yang bisa mengubah dunia energi modern. \"Kamu baru saja menemukan sejarah yang hilang,\" ujar Nana dengan mata berbinar tak percaya. Keputusan beranimu malam itu mengubah segalanya. Begitu kalian berhasil keluar dari gua misterius tersebut, berita penemuanmu langsung mengguncang dunia arkeologi dan sains global. Kini, wajahmu terpampang di berbagai sampul majalah internasional, menghadiri wawancap eksklusif, dan namamu dicatat abadi sebagai penjelajah paling fenomenal abad ini. Kamu tidak hanya berhasil bertahan hidup di dalam gua, tetapi kamu resmi menjadi sangat terkenal dan dihormati di seluruh penjuru dunia. Semua berkat satu keberanianmu dalam mengambil keputusan!",
+                "content": "   Selamat karena pilihan kalian mengambil isi peti membawa kesuksesan luar biasa, mengubahmu menjadi penjelajah paling terkenal di dunia!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 5 Alur 2.1.2 menemukan dokumen rahasia dan terkenal.png"
             },
             {
-                "content": "Udara dingin langsung menusuk kulit saat kamu, Nana, dan Beni melangkah semakin dalam ke Gua Tengkorak Merah. Di tengah ruangan berbatu, sebuah patung dewa kuno berdiri kokoh, memeluk sebuah kotak hitam yang memancarkan aura magis. Beni menelan ludah, wajahnya pucat. \"Firasatku buruk. Kita abaikan saja kotak itu atau kita ambil?\" Tanpa ragu, kamu memilih pilihan 2: ambil isi. Saat tanganmu menyentuh kotak tersebut, mekanik kuno berdentang keras. Kamu berhasil meraih isinya tepat sebelum runtuhan batu hampir menimbun kalian. Di dalam pelarian yang menegangkan, kamu membuka kotak itu dan menemukan sebuah dokumen rahasia bersampul kulit naga. Dokumen tersebut ternyata berisi konspirasi elite global dan cetak biru kota masa depan yang tersembunyi di inti bumi. \"Ini... ini bisa mengubah tatanan dunia!\" seru Nana dengan tangan gemetar saat memeriksa lembar demi lembar kertas kuno itu. Keberanianmu mengeksekusi pilihan kedua menjadi titik balik hidupmu. Begitu kalian berhasil keluar dari gua, rahasia yang kamu bawa menjadi sensasi global terbesar abad ini. Sekarang, namamu dielu-elukan di mana-mana. Kamu terkenal sebagai visioner legendaris, diundang ke berbagai forum dunia, dan jutaan orang terinspirasi oleh kisah petualanganmu. Pilihan nekatmu di dalam gua misterius itu tidak hanya menyelamatkan rahasia masa lalu, tetapi juga membawa dirimu ke puncak popularitas tertinggi di dunia!",
+                "content": "   Berkat keputusan berani kalian malam itu, formula kuno berhasil diselamatkan dan kini namamu dikagumi oleh seluruh dunia.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 5 Alur 2.1.2 menemukan dokumen rahasia dan terkenal.png"
             },
             {
-                "content": "Gemercik air menetes lambat di dalam Gua Labirin Abadi, mengiringi langkahmu yang semakin jauh ke perut bumi. Di ujung jalan buntu, terdapat sebuah altar batu yang memancarkan cahaya keperakan, menyinari sebuah tabung logam kuno yang terkunci rapat. \"Aura tempat ini aneh sekali,\" bisik Nana sambil menggenggam belatinya dengan erat. Beni menatap tabung itu dengan cemas, \"Kita biarkan saja atau ambil risikonya?\" Dengan keyakinan penuh, kamu memutuskan pilihan 2: ambil isi. Kamu memutar sandi kuno pada tabung tersebut hingga terbuka dengan bunyi klik yang menggema. Di dalamnya, tersimpan sebuah dokumen rahasia berparfum gaharu purba. Sambil terus berjalan keluar dari labirin yang mulai runtuh, Nana membantu menerjemahkan aksara di dalamnya. Dokumen itu ternyata berisi catatan medis kuno yang memuat formula penawar dari segala jenis virus mematikan di dunia. \"Pilihanmu akan menyelamatkan jutaan nyawa,\" ujar Beni dengan tatapan penuh kagum. Keputusan nekatmu di dalam gua misterius itu seketika mengubah takdirmu. Begitu kalian berhasil kembali ke peradaban dan membagikan isi dokumen tersebut, dunia langsung gempar. Kini, namamu diabadikan di berbagai institusi sains internasional, wajahmu menghiasi papan reklame kota-kota besar, dan kamu menjadi sangat terkenal sebagai pahlawan kemanusiaan universal. Keberanianmu mengambil isi tabung itu tidak hanya menorehkan sejarah baru, tetapi juga membawa dirimu ke puncak kejayaan yang tak pernah kamu bayangkan sebelumnya!",
+                "content": "   Langkah kalian terbukti jenius! Dokumen rahasia ini sukses mengguncang sejarah sains dan mengantarkanmu ke puncak kejayaan global.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 5 Alur 2.1.2 menemukan dokumen rahasia dan terkenal.png"
             },
             {
-                "content": "Lampu sentermu membelah kegelapan Gua Kerajaan Hilang yang pengap dan dipenuhi stalaktit tajam. Tepat di tengah aula gua, sesosok mumi jenderal kuno duduk di singgasananya, mendekap sebuah tas kulit yang dirantai besi. \"Rantainya tampak rapuh,\" bisik Beni sambil menyeka keringat dingin di dahinya. Nana menggeleng cepat, \"Tapi ini bisa jadi jebakan. Kita lewatkan saja atau ambil?\" Dengan insting tajam, kamu memantapkan hati memilih pilihan 2: ambil isi. Kamu memutuskan rantai tersebut dengan hantaman batu. Begitu tas terbuka, tanah di bawah kaki kalian berguncang hebat. Sambil berlari menghindari langit-langit gua yang mulai runtuh, kamu mengamankan isi tas tersebut: sebuah dokumen rahasia bersampul logam cair. Di bawah pencahayaan darurat, Nana terkesiap membaca isinya yang ternyata merupakan sertifikat kepemilikan sah atas pulau-pulau kaya minyak yang selama ini dianggap mitos. \"Kamu baru saja memegang kunci kekayaan terbesar di bumi!\" teriak Nana di tengah gemuruh gua. Keputusan instanmu di dalam kegelapan gua itu mengubah total garis hidupmu. Segera setelah kalian berhasil lolos dari maut dan keluar ke permukaan, penemuan luar biasa ini langsung mengguncang halaman utama media internasional. Kini, kamu menjadi sosok yang sangat terkenal di seluruh dunia. Kamu tidak hanya dikenal sebagai penjelajah pemberani, tetapi juga sebagai miliarder baru yang dihormati oleh para pemimpin negara. Namamu selalu trending di media sosial, dan dunia tidak akan pernah melupakan namamu berkat pilihan berani yang kamu ambil malam itu!",
+                "content": "   Rasa takut yang berhasil kalian kalahkan berbuah manis; penemuan berharga ini resmi menobatkanmu sebagai penjelajah terbaik abad ini.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 5 Alur 2.1.2 menemukan dokumen rahasia dan terkenal.png"
             },
             {
-                "content": "Uap belerang tipis menyelimuti langkahmu, Nana, dan Beni di dalam Gua Jantung Purba. Di balik dinding batu yang retak, sebuah kotak mekanik bertenaga uap kuno berdesis pelan, memancarkan cahaya neon biru yang misterius. \"Energi kotak ini tidak stabil,\" peringat Nana sambil memantau alat pemindai di tangannya. Beni melangkah mundur, \"Lebih baik kita menjauh, atau kamu mau ambil risikonya?\" Tanpa gentar, kamu memilih pilihan 2: ambil isi. Dengan cekatan, kamu membongkar katup mekanik kotak tersebut menggunakan pisau lipatmu. Tepat sebelum sistemnya meledak, kamu berhasil menarik keluar sebuah dokumen rahasia yang terbuat dari lembaran serat karbon kuno. Di tengah kepulan asap, kalian bertiga membaca isinya. Dokumen itu ternyata berisi formula algoritma enkripsi mutlak yang mampu mengendalikan seluruh jaringan satelit dan internet di dunia. \"Ini bukan sekadar kertas... Ini adalah kunci kendali digital dunia!\" bisik Beni dengan mata terbelalak. Pilihan beranimu di dalam gua misterius itu langsung membalikkan sejarah modern. Begitu kalian berhasil keluar dan mengamankan data tersebut, dunia teknologi global mengalami guncangan hebat. Kini, kamu menjadi ikon teknologi terbesar abad ini dan sangat terkenal di seluruh penjuru bumi. Wajahmu menghiasi layar digital di Times Square, namamu disebut dalam setiap seminar teknologi tingkat tinggi, dan kamu dihormati sebagai sosok yang memegang masa depan peradaban digital dunia!",
+                "content": "   Petualangan berakhir dengan kemenangan mutlak. Peta peradaban hilang dari gua itu membawa kesuksesan besar dan ketenaran abadi bagimu.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 5 Alur 2.1.2 menemukan dokumen rahasia dan terkenal.png"
             }
         ]
     },
+    "ALUR_2_2": {
+        "variations": [
+            {
+                "content": "Kamu memilih mengabaikan peti itu dan memutuskan lanjut perjalanan, memandu Nana dan Beni bergerak cepat menjauhi suara langkah kaki yang kian mendekat. Senter di tanganmu menyapu dinding batu yang lembap hingga kalian menemukan terowongan rahasia yang tersembunyi di balik jalinan lumut tebal. Begitu menyibak tanaman tersebut, kalian tertegun saat melihat peta kuno di dinding pintu masuk terowongan yang dipahat dengan tinta merah darah. Peta itu menggambarkan seluruh rute bawah tanah pulau misterius ini beserta titik-titik bahayanya. \"Lihat, ini jalur evakuasi yang kita cari selama ini!\" bisik Nana dengan mata berbinar di tengah kegelapan. Namun, Beni tampak cemas menatap lorong baru yang gelap gulita dan pengap tersebut. Di titik krusial ini, kompas kepemimpinanmu kembali diuji untuk menentukan langkah taktis berikutnya bagi keselamatan tim.",
+                "choices": [
+                    {
+                        "choice_text": "Masuk terowongan",
+                        "next_node": "ENDING_6"
+                    },
+                    {
+                        "choice_text": "Kembali",
+                        "next_node": "ENDING_7"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
+            },
+            {
+                "content": "Mengikuti insting taktis, kamu memimpin tim untuk mengabaikan godaan peti dan segera lanjut perjalanan demi menghindari ancaman misterius. Pelarian cepat ini membawa kalian menyusuri koridor sempit hingga berhasil menemukan terowongan rahasia yang mengarah vertikal ke dalam perut bumi. Sebelum melangkah lebih jauh, sorot lampu senter Beni mendadak terpaku saat kalian melihat peta kuno di dinding batu yang sudah retak dimakan usia. Peta tersebut menunjukkan jalan keluar menuju pantai, namun jalurnya tampak dipenuhi tanda peringatan yang mengintimidasi batin. \"Apakah kita harus memercayai petunjuk purba ini?\" tanya Beni ragu sambil berjaga-jaga dengan senjatanya. Nana menatapmu lekat-lekat, menanti keputusan mutlak darimu untuk menentukan nasib pelarian malam ini. Putuskan arah tindakanmu sekarang sebelum entitas di belakang menemukan kalian!",
+                "choices": [
+                    {
+                        "choice_text": "Masuk terowongan",
+                        "next_node": "ENDING_6"
+                    },
+                    {
+                        "choice_text": "Kembali",
+                        "next_node": "ENDING_7"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
+            },
+            {
+                "content": "Kamu mendesak Nana dan Beni untuk tidak membuang waktu dan segera lanjut perjalanan menerobos kegelapan gudang senjata. Langkah kaki yang dipacu adrenalin membawa kalian menemukan terowongan rahasia yang tersembunyi di balik runtuhan pilar beton kuno. Tepat sebelum masuk, langkah kalian terhenti ketika melihat peta kuno di dinding gua yang digambar menggunakan simbol-simbol navigasi navigasi kuno. Peta itu tampak seperti denah pelarian militer zaman dahulu yang menunjukkan langsung ke arah jantung pulau terpencil ini. \"Jalur ini mungkin satu-satunya kesempatan kita untuk selamat,\" ujar Nana dengan suara bergetar menahan lelah. Namun, hembusan angin dingin dari dalam lorong baru itu memicu ketakutan baru yang nyata. Kini, kelanjutan petualangan berada sepenuhnya di tanganmu. Jalan mana yang kamu pilih?",
+                "choices": [
+                    {
+                        "choice_text": "Masuk terowongan",
+                        "next_node": "ENDING_6"
+                    },
+                    {
+                        "choice_text": "Kembali",
+                        "next_node": "ENDING_7"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
+            },
+            {
+                "content": "Tanpa ragu, kamu memutuskan untuk lanjut perjalanan dan membiarkan peti misterius itu tetap terkunci demi keselamatan bersama. Kamu memandu Beni dan Nana melangkah taktis menembus celah batuan hingga berhasil menemukan terowongan rahasia yang memiliki sirkulasi udara cukup baik. Ketegangan baru merayap masuk saat kalian melihat peta kuno di dinding pintu masuk yang memuat rincian labirin bawah tanah secara detail. Peta usang itu tampak sengaja ditinggalkan oleh penjelajah terdahulu sebagai peringatan bagi siapa pun yang lewat. \"Suara seretan di belakang kita sudah berhenti, mereka mungkin kehilangan jejak,\" bisik Beni waspada sambil menatap koridor gelap di depan. Sebagai pemimpin, ketajaman instingmu kembali diuji di titik penentuan ini untuk menentukan rute evakuasi darurat terbaik.",
+                "choices": [
+                    {
+                        "choice_text": "Masuk terowongan",
+                        "next_node": "ENDING_6"
+                    },
+                    {
+                        "choice_text": "Kembali",
+                        "next_node": "ENDING_7"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
+            },
+            {
+                "content": "Kamu memilih fokus pada pelarian dan langsung lanjut perjalanan membelakangi gudang senjata yang mencekam tersebut. Kejelian visualmu membuahkan hasil ketika di ujung koridor buntu, kalian menemukan terowongan rahasia yang meliuk jauh ke bawah tanah. Namun, sebelum masuk, pandanganmu terpaku saat melihat peta kuno di dinding batu yang tergores kasar. Peta tersebut menggambarkan percabangan jalan menuju permukaan, sekaligus mengonfirmasi adanya wilayah predator di sekitar gua ini. \"Kita tidak punya banyak waktu sebelum baterai senter ini habis total,\" desak Beni dengan raut wajah panik. Nana menggenggam tas perbekalannya erat-erat, menanti komando tegas darimu di tengah atmosfer gua yang kian menekan mental kalian. Langkah krusial apa yang akan kamu pilih saat ini juga?",
+                "choices": [
+                    {
+                        "choice_text": "Masuk terowongan",
+                        "next_node": "ENDING_6"
+                    },
+                    {
+                        "choice_text": "Kembali",
+                        "next_node": "ENDING_7"
+                    }
+                ],
+                "is_ending": false,
+                "image": "Adventure/Gua/Alur 2 pilihan 2 lanjutkan perjalanan.png"
+            }
+        ]
+    },
     "ENDING_6": {
         "variations": [
             {
-                "content": "Gelap, lembap, dan sunyi. Langkah kakimu bergema di dalam gua misterius ini, beradu dengan napas memburu milik Nana dan Beni. Di hadapan kalian, jalan terbelah menjadi dua. Nana menunjuk ke arah celah berbatu yang sempit, sementara Beni gemetar menatap terowongan gelap gulita di sebelah kanan. \"Kita harus lewat sini,\" bisikmu mantap, menunjuk Terowongan 1. Nana sempat ragu, namun sorot matamu meyakinkannya. Kalian melangkah masuk. Dinginnya udara mencengkeram kulit, dan dinding gua tampak berkilau oleh zat tak dikenal. Tiba-tiba, kaki Beni tersandung sesuatu yang keras. KRIEK… Bukan batu. Cahaya sentermu menyorot sebuah peti harta karun kuno berhias emas yang tertimbun tanah. Jantungmu berdegup kencang saat membuka tutupnya—isinya dipenuhi permata langka dan koin emas murni yang berkilauan menembus kegelapan! \"Kita kaya!\" teriak Beni histeris, nyaris tak percaya. Pilihan beranimu membawa keberuntungan luar biasa. Dengan membawa pulang isi peti ini, nasibmu berubah total dalam semalam. Selamat, kamu berhasil keluar dari gua ini sebagai seorang yang kaya raya! Sekarang, apa yang akan kamu lakukan dengan kekayaan barumu?",
+                "content": "   Selamat karena pilihan kalian masuk Terowongan 1 berbuah manis, membawa pulang harta karun melimpah yang mengubahmu menjadi kaya raya!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 2.2.1 Ending 6 menemukan peti harta karun dan menjadi kaya.png"
             },
             {
-                "content": "Dinginnya udara malam mulai menusuk tulang saat kamu, Nana, dan Beni berdiri di persimpangan jalan di dalam perut gua yang tak berujung. Bau tanah basah begitu pekat. Nana menyalakan obor terakhir, sementara Beni sibuk menyeka keringat dingin di dahinya. \"Jangan gila, lorong itu gelap sekali!\" seru Beni saat melihatmu melangkah maju. Namun, intuisimu kuat. Kamu mengabaikan rasa takut dan memilih masuk ke Terowongan 1. Nana dan Beni terpaksa mengekor di belakangmu dengan langkah gemetar. Baru beberapa puluh meter melangkah, cahaya obor Nana menangkap sebuah siluet kotak besar di sudut gua. Sambil menahan napas, kalian mendekat. Detak jantungmu bergemuruh saat membersihkan debu tebal yang menutupi permukaan sebuah peti harta karun raksasa. Dengan satu dorongan kuat, kalian membuka tutupnya. Kilauan berlian, batuan safir, dan tumpukan koin kuno langsung menerangi wajah kalian yang takjub. Beni terjatuh lemas saking bahagianya, sementara Nana menutup mulutnya tak percaya. Keputusan cepatmu mengambil Terowongan 1 terbukti sangat tepat. Petualangan ekstrem ini berakhir manis; kamu berhasil membawa pulang harta karun legendaris yang mengubah hidupmu menjadi kaya raya dalam sekejap. Berkat keberanianmu, kemewahan kini ada di genggamanmu!",
+                "content": "   Keputusan tepatmu masuk ke terowongan sempit itu terbayar lunas. Emas murni di dalamnya sukses mengubah nasibmu dalam semalam.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 2.2.1 Ending 6 menemukan peti harta karun dan menjadi kaya.png"
             },
             {
-                "content": "Tetesan air dari langit-langit gua berbunyi beraturan, menciptakan atmosfer mencekam yang membuat bulu kuduk berdiri. Kamu berdiri di garis depan, memimpin penjelajahan bersama Nana yang menggenggam peta usang dan Beni yang terus menengok ke belakang karena ketakutan. Di depan kalian, jalur gua terbelah. Tanpa ragu, kamu mengambil keputusan besar: masuk ke Terowongan 1. \"Tunggu! Peta ini tidak mencatat jalur itu!\" seru Nana panik. Namun, kamu tetap melangkah masuk, membiarkan rasa penasaran menuntunmu. Beni dan Nana akhirnya terpaksa mengikutimu menembus kegelapan yang kian pekat. Setelah berjalan berkelok-kelok, jalan buntu menghadang. Tapi tunggu—ada sesuatu yang ganjil di balik semak akar gantung. Kamu menyibak akar tersebut dan menemukan sebuah ruangan rahasia. Di tengah ruangan, sebuah peti harta karun kuno yang megah berdiri kokoh. Saat kamu membuka gemboknya yang berkarat, cahaya keemasan langsung terpancar merona, memantulkan kilauan ribuan perhiasan mewah, mahkota bertahtakan rubi, dan batangan emas murni. \"Demi apa... kita berhasil!\" teriak Beni sambil tertawa lepas, sementara Nana meneteskan air mata haru. Keberanianmu memilih Terowongan 1 telah membuahkan hasil yang tak terbayangkan. Kamu pulang dari gua misterius ini bukan lagi sebagai petualang biasa, melainkan sebagai seorang yang kaya raya dengan harta yang tak akan habis tujuh turunan!",
+                "content": "   Langkah kalian masuk terowongan pilihanmu terbukti jenis! Peti emas ini resmi menjadikanmu milarder baru yang bergelimang harta.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 2.2.1 Ending 6 menemukan peti harta karun dan menjadi kaya.png"
             },
             {
-                "content": "Suara desis angin dari dalam tanah membuat suasana semakin tegang. Kamu, Nana, dan Beni terpaku di persimpangan terdalam gua misterius ini. Nana sibuk memeriksa kompasnya yang tiba-tiba berputar liar, sementara Beni terus bergumam cemas memikirkan jalan pulang. Di tengah kebingungan itu, sebuah dorongan kuat dalam dirimu berbisik. Kamu menunjuk jalur sebelah kiri dan memutuskan: masuk ke Terowongan 1. \"Hei, kompasku kacau kalau kita ke sana!\" peringat Nana dengan nada tegang. Namun, kamu tidak goyah. Kamu memimpin jalan, membelah kabut tipis yang menyelimuti terowongan. Beni dan Nana berjalan merapat di belakangmu, saling mencengkeram pundak. Tiba-tiba, ujung sepatu Beni membentur sebuah benda logam yang tertanam di dasar gua. Saat sentermu diarahkan ke bawah, jantung kalian seakan berhenti berdetak. Itu adalah sebuah peti harta karun peninggalan bajak laut kuno yang legendaris. Dengan napas tertahan, kamu membuka paksa engselnya. Detik berikutnya, gua yang gelap itu langsung benderang oleh pantulan cahaya dari tumpukan batangan emas, kalung mutiara, dan batu mulia sewarna darah. \"Kita tidak sedang bermimpi, kan?\" bisik Beni dengan mata membelalak, sementara Nana terduduk lemas karena syok. Langkah berani yang kamu ambil di Terowongan 1 telah mengubah segalanya. Kamu berhasil menaklukkan kegelapan gua dan keluar membawa pulang kekayaan yang tak ternilai, mengubah hidupmu menjadi kaya raya selamanya!",
+                "content": "   Keberanian kalian menembus terowongan itu membuahkan hasil luar biasa; permata langka di dalamnya siap mewujudkan semua impian besarmu.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 2.2.1 Ending 6 menemukan peti harta karun dan menjadi kaya.png"
             },
             {
-                "content": "Gema langkah kaki kalian terdengar mencekam di antara dinding batu yang basah. Kamu berjalan paling depan, disusul Nana yang memegang obor dengan tangan gemetar, dan Beni yang terus waspada mengawasi kegelapan di belakang. Tepat di hadapan kalian, sebuah lorong sempit bercabang dua bagai mulut monster yang siap menerkam. Instingmu bergerak cepat. Tanpa banyak bicara, kamu langsung memilih untuk masuk ke Terowongan 1. \"Kau yakin? Lorong ini baunya aneh sekali,\" bisik Beni sambil menahan napas, wajahnya pucat pasi. Nana pun tampak ragu, namun mereka tidak punya pilihan selain memercayai langkahmu. Kalian merangkak melewati celah batu yang semakin menyempit hingga tiba di sebuah aula gua yang sangat luas. Di tengah aula tersebut, seberkas cahaya misterius menyorot langsung ke sebuah benda: peti harta karun kuno berukuran raksasa yang dilapisi ukiran perak. Dengan sisa tenaga yang ada, kamu dan Beni mengangkat tutup peti yang berat itu. Seketika, kilauan magis memancar! Isi peti itu dipenuhi oleh artefak emas murni, berlian sebesar kepalan tangan, dan tumpukan koin kerajaan kuno yang tak ternilai harganya. \"A-aku tidak salah lihat, kan? Kita berhasil!\" teriak Nana histeris kegirangan, sementara Beni langsung sujud syukur di lantai gua. Pilihan nekatmu masuk ke Terowongan 1 terbukti menjadi keputusan terbaik dalam hidupmu. Kamu resmi keluar dari kegelapan gua ini sebagai pemenang, membawa pulang kekayaan melimpah yang menjadikannya seorang yang kaya raya seketika!",
+                "content": "   Petualangan berakhir dengan kejayaan mutlak. Setelah masuk terowongan misterius ini, kamu berhasil keluar sebagai sultan baru yang sukses!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Alur 2.2.1 Ending 6 menemukan peti harta karun dan menjadi kaya.png"
@@ -680,31 +680,31 @@
     "ENDING_7": {
         "variations": [
             {
-                "content": "Kegelapan Gua Labirin menelan cahaya senter milikmu, Nana, dan Beni. Dinding batu di sekeliling kalian terus meneteskan air murni yang menggema, seolah memperingatkan bahwa tempat ini menyimpan rahasia purba yang belum siap dijamah manusia. Di hadapan kalian, jalan bercabang dua: lorong kiri yang gelap pekat dengan embusan angin aneh, dan lorong kanan yang curam ke bawah. Setelah berdiskusi sengit, kamu mengambil keputusan tegas. \"Kita pilih Pilihan 2: Kembali,\" ujarmu penuh pertimbangan. Nana menghela napas lega, sementara Beni perlahan menurunkan kameranya. Keputusanmu sangat tepat. Alih-alih tersesat di dalam perut bumi tanpa persiapan, kalian berhasil keluar dengan selamat membawa dokumentasi vegetasi langka dan jalur pemetaan gua yang belum pernah tercatat di peta mana pun. Tak ingin keindahan sekaligus bahaya gua ini disalahgunakan, kamu memimpin Nana dan Beni untuk melapor ke dinas pemerintah terkait. Laporan komprehensif yang kalian serahkan membuka mata dunia akan potensi luar biasa dari Gua Labirin. Pemerintah akhirnya resmi menetapkan area tersebut sebagai situs warisan alam yang dilindungi. Kini, beberapa tahun telah berlalu. Kamu tidak lagi berdiri di sana sebagai petualang amatir yang tersesat. Berbekal keberanian, logika kuat saat memilih jalan pulang, dan pengetahuan mendalam yang kamu miliki, kamu telah bertransformasi sepenuhnya. Di sinilah kamu sekarang, berdiri gagah di mulut gua dengan seragam resmi, siap menyambut para penjelajah baru sebagai seorang Pemandu Wisata dan Konservasi profesional. Petualangan sejati bukan hanya tentang seberapa jauh kamu melangkah, tapi bagaimana kamu pulang dan menjaga jalan tersebut untuk orang lain.",
+                "content": "   Selamat karena pilihan kalian kembali membawa berkah, mengubahmu menjadi seorang pemandu wisata dan konservasi profesional yang dihormati!",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 7 Alur 2.2.2 menjadi pemandu dan melaporkan ke pemerintah.png"
             },
             {
-                "content": "Udara lembap dan aroma belerang menusuk hidung saat kamu, Nana, dan Beni melangkah makin dalam ke jantung Gua Tengkorak. Di depan kalian, struktur kristal raksasa memancarkan pendar biru yang hipnotik, namun di baliknya membentang jurang tanpa dasar dengan dua jembatan tali yang sudah rapuh. Senter di tangan Beni mulai berkedip kehabisan daya. Nana mencengkeram lenganmu erat, ketakutan melihat bayangan aneh yang bergerak di dinding gua. Naluri bertahan hidupmu berteriak keras. \"Bahaya. Kita ambil Pilihan 2: Kembali sekarang juga!\" bisikmu tegas. Beni sempat protes, namun kepemimpinanmu yang tenang membuat mereka patuh. Kalian berbalik arah, meraba dinding batu dalam gelap, hingga akhirnya berhasil menghirup udara segar di luar gua. Kamu tahu, misteri di dalam sana terlalu besar untuk dipendam sendiri. Keesokan harinya, kamu membawa Nana dan Beni melapor ke Kementerian Kebudayaan dan Lingkungan. Data koordinat serta sampel batuan purba yang sempat kamu kantongi memicu kepanikan positif di kalangan ilmuwan. Pemerintah langsung menyegel area tersebut untuk penelitian steril. Waktu berlalu, dan keputusan malam itu mengubah takdirmu. Kamu tidak pernah benar-benar meninggalkan gua tersebut. Berkat dedikasi dan laporan awalmu, pemerintah memercayaimu untuk memimpin proyek eksplorasi resmi. Kini, dengan helm pelindung dan lencana di dada, kamu berdiri di depan gerbang baja gua yang baru dibangun. Kamu adalah pemandu kepala yang bertanggung jawab atas setiap nyawa peneliti dan petualang yang ingin mengungkap rahasia dunia bawah tanah.",
+                "content": "   Keputusan tepatmu memilih jalan pulang berhasil menyelamatkan tim sekaligus membuka karier barumu sebagai penjaga kelestarian gua ini.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 7 Alur 2.2.2 menjadi pemandu dan melaporkan ke pemerintah.png"
             },
             {
-                "content": "Suara gemuruh air terjun bawah tanah menggema di dalam Gua Keabadian, menggetarkan nyali siapa pun yang mendengarnya. Kamu, Nana, dan Beni berdiri di sebuah ruang batu raksasa yang dipenuhi oleh ukiran relief kuno yang belum pernah terdeteksi sejarah. Oksigen di dalam tabung kalian mulai menipis secara drastis. Beni bersikeras ingin memanjat dinding batu untuk melihat isi altar di atas, sementara Nana mulai terbatuk-batuk karena udara yang makin berat. Di tengah kepanikan itu, kamu melihat indikator bahaya di pergelangan tanganmu. \"Cukup. Kita ambil Pilihan 2: Kembali. Keselamatan nomor satu,\" perintahmu tanpa ragu. Dengan sisa tenaga yang ada, kamu memandu Nana dan Beni merangkak keluar melalui celah sempit tempat kalian masuk. Keputusan cepatmu menyelamatkan nyawa mereka dari keracunan gas bawah tanah. Sadarkan pentingnya penemuan relief kuno tersebut, kamu segera melapor ke pihak otoritas dan dinas arkeologi pemerintah. Langkah tanggapmu membuat area gua langsung diamankan dari para penjarah dokumen sejarah. Pemerintah pun memulai proyek pemugaran besar-besaran untuk menjadikannya situs edukasi nasional. Keputusan logis di ambang maut itu justru membuka gerbang karier barumu. Bertahun-tahun setelah kejadian itu, kamu tidak lagi datang ke sana sebagai penyusup. Kini, dengan seragam resmi dan pengeras suara di tangan, kamu berdiri di jalur aman yang telah dibangun pemerintah. Kamu telah resmi menjadi pemandu ahli yang berjalan di depan, mengedukasi ratusan wisatawan dan sejarawan dunia tentang keajaiban Gua Keabadian yang dulu hampir merenggut nyawamu.",
+                "content": "   Langkah kalian untuk kembali terbukti sangat jenius! Dokumentasi yang kalian bawa sukses mengubah gua ini menjadi warisan alam dilindungi.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 7 Alur 2.2.2 menjadi pemandu dan melaporkan ke pemerintah.png"
             },
             {
-                "content": "Kabut tipis beraroma kuno menyelimuti langkah kaki milikmu, Nana, dan Beni di dalam Gua Sanubari. Senter bersorot tajam yang kamu pegang tidak sengaja menyorot ribuan tanaman paku purba bioluminesens yang menyala hijau neon, menciptakan pemandangan magis sekaligus mencekam. Di ujung jalur, jalan terpecah menjadi dua terowongan vertikal. Nana mendeteksi adanya getaran seismik minor melalui alatnya, sedangkan Beni terlalu sibuk mengagumi keindahan flora langka tersebut hingga abai pada risiko runtuh. Instingmu sebagai pemimpin kelompok langsung mengambil alih situasi. \"Jangan ambil risiko. Kita pilih Pilihan 2: Kembali sekarang,\" instruksimu dengan nada yang tidak menerima bantahan. Meskipun Beni sempat kecewa, ketegasanmu berhasil membawa mereka bertiga mundur dengan tenang sebelum getaran gua semakin parah. Setibanya di luar, kamu langsung bergerak cepat memimpin tim untuk melapor ke badan geologi dan pemerintah daerah. Laporanmu mengenai aktivitas seismik dan ekosistem unik tersebut membuat pemerintah segera menetapkan status cagar alam yang diproteksi ketat. Keputusan bijak untuk mundur hari itu justru menjadi langkah awal masa depanmu. Pemerintah melihat potensi dan kecintaanmu yang besar pada kelestarian Gua Sanubari. Kini, waktu telah menempa dirimu menjadi sosok yang berbeda. Dengan lencana resmi di pundak, kamu berdiri di pos depan gua, memegang peta digital. Kamu telah bertransformasi menjadi pemandu dan pengawas konservasi utama, siap memimpin ekspedisi ilmiah berikutnya dengan aman dan bertanggung jawab.",
+                "content": "   Keberanianmu untuk berbalik arah kini berbuah manis; kamu berhasil bertransformasi menjadi pemandu resmi yang gagah di tempat ini.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 7 Alur 2.2.2 menjadi pemandu dan melaporkan ke pemerintah.png"
             },
             {
-                "content": "Gema tetesan air sedingin es jatuh dari langit-langit Gua Atlantis, memecah keheningan mencekam yang menyelimuti kamu, Nana, dan Beni. Di depan kalian, sebuah pintu batu raksasa dengan mekanisme roda gigi kuno berdiri kokoh, memisahkan kalian dari ruang harta karun yang melegenda. Beni sudah bersiap menarik tuas berkarat di dinding, sementara Nana memperingatkan bahwa struktur langit-langit gua di atas mereka sangat rapuh dan bisa runtuh kapan saja. Melihat debu batu yang mulai berguguran, kamu mengambil keputusan krusial demi keselamatan bersama. \"Lepaskan tuas itu, Beni! Kita ambil Pilihan 2: Kembali!\" serumu, menarik mereka menjauh. Kalian berlari sepanjang lorong gelap, tepat sebelum lorong di belakang kalian runtuh tertutup batu besar. Selamat dari maut, kamu segera memimpin Nana dan Beni untuk melapor ke dinas penyelamatan dan cagar budaya pemerintah. Informasi mengenai situs bawah tanah yang tidak stabil ini membuat pemerintah bergerak cepat menutup area demi keselamatan publik, sekaligus memulai ekskavasi resmi yang aman. Siapa sangka, tindakan penyelamatanmu hari itu mengubah jalan hidupmu selamanya. Pemerintah mengagumi penguasaan medan dan ketenanganmu dalam menghadapi situasi darurat. Kini, setelah melewati pelatihan sertifikasi yang ketat, kamu berdiri di mulut gua yang telah direnovasi total dengan aman. Menggunakan pengeras suara dan seragam resmi, kamu tersenyum menyambut rombongan turis pertama. Kamu telah lahir baru sebagai pemandu keselamatan dan petualangan profesional yang dipercaya negara.",
+                "content": "   Petualangan berakhir dengan kesuksesan mutlak. Pilihan pulang di waktu yang tepat mengantarkanmu menjadi pemimpin konservasi situs purba ini.",
                 "choices": [],
                 "is_ending": true,
                 "image": "Adventure/Gua/Ending 7 Alur 2.2.2 menjadi pemandu dan melaporkan ke pemerintah.png"
