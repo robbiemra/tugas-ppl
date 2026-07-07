@@ -20,7 +20,7 @@
 
         .horror-subtitle {
             font-family: 'Work Sans', sans-serif !important;
-            font-weight: 500 !important;
+            font-weight: 500 !important;        
             letter-spacing: 0.28em !important;
             text-transform: uppercase;
         }
@@ -148,7 +148,7 @@
                         title="Toggle music">
                     🔇
                 </button>
-                <audio id="backgroundMusic" src="{{ asset('audio/horror-pendakian.mp3') }}" preload="auto" loop></audio>
+                <audio id="backgroundMusic" src="{{ asset('audio/sound fix.mp3') }}" preload="auto" loop></audio>
             </div>
 
             @if (session()->has('error'))
