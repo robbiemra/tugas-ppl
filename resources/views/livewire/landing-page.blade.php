@@ -152,7 +152,7 @@
 
             <div class="landing-card max-w-2xl rounded-2xl p-6 md:p-8 mb-8 shadow-[0_0_30px_rgba(0,0,0,0.7)]">
                 <p class="landing-desc leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
-                    Setiap pilihan adalah benang yang membentuk kisahmu. Jelajahi dunia yang berbeda-beda — dari lorong tua yang mencekam hingga pulau tak berpenghuni yang menantang — dan tentukan sendiri bagaimana ceritamu berakhir.
+                    Setiap pilihan adalah benang yang membentuk kisahmu. Jelajahi dunia yang berbeda-beda  dari lorong tua yang mencekam hingga pulau tak berpenghuni yang menantang  dan tentukan sendiri bagaimana ceritamu berakhir.
                 </p>
             </div>
 

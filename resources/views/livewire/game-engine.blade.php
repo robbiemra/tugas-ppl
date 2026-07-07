@@ -1,90 +1,110 @@
 <div class="min-h-screen p-4 md:p-8"
-     style="background-image: linear-gradient(180deg, rgba(30,30,25,0.6) 0%, rgba(40,35,30,0.65) 40%, rgba(20,15,10,0.8) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #d4c5a9;">
+     style="background-image: linear-gradient(180deg, rgba(10,10,20,0.72) 0%, rgba(14,15,30,0.78) 40%, rgba(6,7,16,0.94) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #e8d9b5;">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&family=Inter:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
-        /* Scoped overrides to align with landing page styling */
+        /* Scoped overrides — synchronized with landing page (Fraunces + Work Sans) */
         .horror-title {
-            font-family: 'Montserrat', sans-serif !important;
-            font-weight: 800 !important;
-            letter-spacing: 0.15em !important;
-            background: linear-gradient(135deg, #ffffff 0%, #d4c5a9 55%, #a6906f 100%) !important;
+            font-family: 'Fraunces', serif !important;
+            font-weight: 600 !important;
+            font-style: italic;
+            font-optical-sizing: auto;
+            letter-spacing: 0.01em !important;
+            background: linear-gradient(135deg, #fdf8ec 0%, #e8d9b5 50%, #c7a568 100%) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
-            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5) !important;
             animation: none !important;
         }
 
         .horror-subtitle {
-            font-family: 'Montserrat', sans-serif !important;
-            font-weight: 600 !important;
-            letter-spacing: 0.2em !important;
+            font-family: 'Work Sans', sans-serif !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.28em !important;
             text-transform: uppercase;
         }
 
         .story-text {
-            font-family: 'Inter', sans-serif !important;
+            font-family: 'Work Sans', sans-serif !important;
             font-weight: 400 !important;
-            line-height: 1.75 !important;
+            line-height: 1.7 !important;
         }
 
         .horror-card {
-            background: linear-gradient(135deg, rgba(15, 12, 10, 0.45) 0%, rgba(5, 2, 2, 0.65) 100%) !important;
+            background: linear-gradient(135deg, rgba(22, 24, 40, 0.5) 0%, rgba(8, 9, 18, 0.68) 100%) !important;
             backdrop-filter: blur(12px) saturate(120%);
             -webkit-backdrop-filter: blur(12px) saturate(120%);
-            border: 1px solid rgba(217, 119, 6, 0.15) !important;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(217, 119, 6, 0.02) !important;
+            border: 1px solid rgba(212, 169, 96, 0.18) !important;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), inset 0 0 20px rgba(212, 169, 96, 0.03) !important;
         }
 
         .horror-btn {
-            font-family: 'Montserrat', sans-serif !important;
+            font-family: 'Work Sans', sans-serif !important;
             font-weight: 600 !important;
             background: rgba(20, 16, 12, 0.25) !important;
-            border: 1px solid rgba(217, 119, 6, 0.12) !important;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45), inset 0 0 15px rgba(217, 119, 6, 0.02) !important;
-            color: rgba(235, 220, 185, 0.8) !important;
+            border: 1px solid rgba(212, 169, 96, 0.12) !important;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45), inset 0 0 15px rgba(212, 169, 96, 0.02) !important;
+            color: rgba(236, 223, 194, 0.8) !important;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
             transform: none !important;
         }
         .horror-btn:hover {
-            background: rgba(217, 119, 6, 0.12) !important;
-            border-color: rgba(217, 119, 6, 0.4) !important;
+            background: rgba(212, 169, 96, 0.12) !important;
+            border-color: rgba(212, 169, 96, 0.4) !important;
             color: #ffffff !important;
-            box-shadow: 0 12px 30px rgba(217, 119, 6, 0.15), inset 0 0 15px rgba(217, 119, 6, 0.05) !important;
+            box-shadow: 0 12px 30px rgba(212, 169, 96, 0.15), inset 0 0 15px rgba(212, 169, 96, 0.05) !important;
             transform: translateY(-2px) scale(1.01) !important;
         }
 
         .horror-input {
-            font-family: 'Inter', sans-serif !important;
+            font-family: 'Work Sans', sans-serif !important;
             background: rgba(10, 8, 6, 0.85) !important;
-            border: 1px solid rgba(217, 119, 6, 0.25) !important;
-            color: #ebdcb9 !important;
+            border: 1px solid rgba(212, 169, 96, 0.25) !important;
+            color: #ecdfc2 !important;
             transition: all 0.3s ease;
         }
         .horror-input:focus {
-            border-color: #8f6e4a !important;
-            box-shadow: 0 0 12px rgba(217, 119, 6, 0.25) !important;
+            border-color: #c7a568 !important;
+            box-shadow: 0 0 12px rgba(212, 169, 96, 0.25) !important;
         }
 
         /* Scrollbar override */
         ::-webkit-scrollbar-thumb {
-            background: #8f6e4a !important;
+            background: #c7a568 !important;
         }
 
         .landing-btn {
-            font-family: 'Montserrat', sans-serif !important;
+            font-family: 'Work Sans', sans-serif !important;
             font-weight: 600 !important;
-            background: linear-gradient(90deg, #5c3a21 0%, #8f6e4a 50%, #5c3a21 100%) !important;
-            border: 1px solid rgba(217, 119, 6, 0.4) !important;
-            box-shadow: 0 10px 30px rgba(143, 110, 74, 0.25), inset 0 0 15px rgba(217, 119, 6, 0.15) !important;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+            background: linear-gradient(90deg, #7a5a24 0%, #c7a568 50%, #7a5a24 100%) !important;
+            border: 1px solid rgba(212, 169, 96, 0.4) !important;
+            box-shadow: 0 10px 30px rgba(199, 165, 104, 0.22), inset 0 0 15px rgba(212, 169, 96, 0.15) !important;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
         }
         .landing-btn:hover {
-            background: linear-gradient(90deg, #6d4b2e 0%, #a3825d 50%, #6d4b2e 100%) !important;
-            box-shadow: 0 15px 40px rgba(143, 110, 74, 0.45), 0 0 15px rgba(217, 119, 6, 0.35), inset 0 0 15px rgba(217, 119, 6, 0.2) !important;
+            background: linear-gradient(90deg, #8c6a2c 0%, #d9b87a 50%, #8c6a2c 100%) !important;
+            box-shadow: 0 15px 40px rgba(199, 165, 104, 0.4), 0 0 15px rgba(212, 169, 96, 0.3), inset 0 0 15px rgba(212, 169, 96, 0.2) !important;
             transform: translateY(-2px) scale(1.02) !important;
+        }
+
+        .landing-btn-subtle {
+            font-family: 'Work Sans', sans-serif !important;
+            font-weight: 600 !important;
+            background: linear-gradient(90deg, #3d2b0e 0%, #7a5a24 50%, #3d2b0e 100%) !important;
+            border: 1px solid rgba(212, 169, 96, 0.25) !important;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(212, 169, 96, 0.05) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            color: rgba(236, 223, 194, 0.85) !important;
+        }
+        .landing-btn-subtle:hover {
+            background: linear-gradient(90deg, #4d3714 0%, #8c6a2c 50%, #4d3714 100%) !important;
+            border-color: rgba(212, 169, 96, 0.4) !important;
+            box-shadow: 0 10px 25px rgba(199, 165, 104, 0.15), inset 0 0 15px rgba(212, 169, 96, 0.1) !important;
+            color: #ffffff !important;
+            transform: translateY(-1px) scale(1.01) !important;
         }
     </style>
 
@@ -93,9 +113,9 @@
         {{-- Fog particles background --}}
         <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
             <div class="absolute w-[600px] h-[200px] rounded-full top-[20%] -left-[10%] opacity-10"
-                 style="background: radial-gradient(ellipse, rgba(217,119,6,0.3), transparent); animation: fog-drift 12s ease-in-out infinite;"></div>
+                 style="background: radial-gradient(ellipse, rgba(212,169,96,0.3), transparent); animation: fog-drift 12s ease-in-out infinite;"></div>
             <div class="absolute w-[500px] h-[150px] rounded-full top-[60%] -right-[10%] opacity-10"
-                 style="background: radial-gradient(ellipse, rgba(217,119,6,0.2), transparent); animation: fog-drift 15s ease-in-out infinite reverse;"></div>
+                 style="background: radial-gradient(ellipse, rgba(212,169,96,0.2), transparent); animation: fog-drift 15s ease-in-out infinite reverse;"></div>
         </div>
 
         <div class="relative z-10">
@@ -151,17 +171,25 @@
                     </div>
 
                     {{-- Form --}}
-                    <div class="horror-card rounded-xl p-8 md:p-10 w-full max-w-md space-y-5">
+                    <div class="horror-card rounded-xl p-8 md:p-10 w-full max-w-md space-y-5 text-left">
+                        @if ($errors->any())
+                            <div class="bg-red-950/50 border border-red-500/30 p-4 rounded-lg text-red-300 text-sm font-semibold text-center mb-2">
+                                ⚠️ Semua form pengisian wajib diisi sebelum memulai petualangan!
+                            </div>
+                        @endif
+
                         <div>
                             <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Nama Pemain</label>
                             <input type="text" wire:model="userName" placeholder="Siapa namamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
+                            @error('userName') <span class="text-red-400 text-xs mt-1 block">{{ $message }}</span> @enderror
                         </div>
 
                         <div>
                             <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Usia</label>
                             <input type="number" wire:model="userAge" placeholder="Berapa usiamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
+                            @error('userAge') <span class="text-red-400 text-xs mt-1 block">{{ $message }}</span> @enderror
                         </div>
 
                         <div>
@@ -171,6 +199,7 @@
                                 <option value="Laki-laki">Laki-laki</option>
                                 <option value="Perempuan">Perempuan</option>
                             </select>
+                            @error('gender') <span class="text-red-400 text-xs mt-1 block">{{ $message }}</span> @enderror
                         </div>
 
                         <button wire:click="saveBiodata"
@@ -295,7 +324,7 @@
                     </div>
 
                     <button wire:click="$set('step', 'select_genre')"
-                            class="mt-10 text-amber-400/40 hover:text-amber-400 transition text-sm story-text">
+                            class="landing-btn-subtle mt-10 px-6 py-3 rounded-lg text-sm tracking-wider uppercase">
                         ← Kembali Pilih Genre
                     </button>
                 </div>
@@ -319,7 +348,7 @@
 
                     {{-- Konten Cerita --}}
                     <div class="z-30">
-                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col relative overflow-y-auto custom-scrollbar bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]" style="max-height: 70vh;">
+                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col relative overflow-y-auto custom-scrollbar backdrop-blur-md" style="max-height: 70vh;">
                             {{-- Loading Overlay for AI Generation --}}
                             <div wire:loading wire:target="startStory, selectChoice"
                                  class="absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-20 rounded-xl">
@@ -351,7 +380,7 @@
                             <div class="space-y-4 max-h-[65vh] overflow-y-auto custom-scrollbar">
                                 @foreach(explode("\n", $displayStory) as $paragraph)
                                     @if(trim($paragraph))
-                                        <p class="story-text text-base md:text-lg leading-relaxed text-[#d4c5a9]" style="text-indent: 1.5em; line-height: 1.9;">
+                                        <p class="story-text text-base md:text-lg leading-relaxed text-[#ecdfc2]" style="text-indent: 1.5em; line-height: 1.9;">
                                             {{ trim($paragraph) }}
                                         </p>
                                     @endif
@@ -362,7 +391,7 @@
 
                     {{-- Pilihan Cerita --}}
                     <div class="z-40">
-                        <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 bg-black/70 backdrop-blur-md border border-amber-900/50 shadow-[0_0_20px_rgba(0,0,0,0.8)]">
+                        <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 backdrop-blur-md">
                             <div class="mb-4">
                                 <p class="text-xs text-amber-400/20 story-text italic mb-2">Setiap pilihan menentukan nasibmu...</p>
                                 <h4 class="horror-subtitle text-lg text-amber-500/80 flex items-center gap-2">
@@ -433,7 +462,7 @@
 
                         <div class="w-24 h-[1px] mx-auto bg-gradient-to-r from-transparent via-amber-700 to-transparent"></div>
 
-                        <p class="story-text text-lg md:text-xl text-[#c4b599] leading-relaxed italic px-4">
+                        <p class="story-text text-lg md:text-xl text-[#ecdfc2] leading-relaxed italic px-4">
                             {{ $this->currentNode['content'] ?? '' }}
                         </p>
 
