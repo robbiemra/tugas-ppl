@@ -1,5 +1,5 @@
 <div class="min-h-screen p-4 md:p-8"
-     style="background-image: linear-gradient(180deg, rgba(10,10,20,0.72) 0%, rgba(14,15,30,0.78) 40%, rgba(6,7,16,0.94) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #e8d9b5;">
+     style="background-image: linear-gradient(180deg, rgba(10,10,20,0.45) 0%, rgba(14,15,30,0.50) 40%, rgba(6,7,16,0.70) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #e8d9b5;">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600;700&display=swap');
