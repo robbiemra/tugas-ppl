@@ -141,7 +141,7 @@ class StoryGeneratorTest extends TestCase
             0
         );
         $this->assertArrayHasKey('image', $initial);
-        $this->assertEquals('Adventure/Pulau/pulau terpencil ( awal ).png', $initial['image']);
+        $this->assertEquals('Adventure/Pulau/Alur opening pulau terpencil mempersiapkan pembekalan.png', $initial['image']);
 
         // Test next node
         $next = $generator->generateNextNode(
@@ -153,7 +153,7 @@ class StoryGeneratorTest extends TestCase
             0
         );
         $this->assertArrayHasKey('image', $next);
-        $this->assertEquals('Adventure/Pulau/Alur 1.png', $next['image']);
+        $this->assertEquals('Adventure/Pulau/Alur opening pilihan pertama tetap di pantai.png', $next['image']);
     }
 }
 

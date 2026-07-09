@@ -170,7 +170,7 @@ class StoryGenerator
 
         if ($genreLower === 'adventure') {
             if (str_contains($locClean, 'island') || str_contains($locClean, 'pulau')) {
-                return 'Adventure/Pulau/pulau terpencil ( awal ).png';
+                return 'Adventure/Pulau/Alur opening pulau terpencil mempersiapkan pembekalan.png';
             }
             return 'Adventure/Gua/opening menuju bunker.png';
         }

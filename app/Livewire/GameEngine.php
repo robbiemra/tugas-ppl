@@ -32,15 +32,9 @@ class GameEngine extends Component
     {
         $this->validate([
             'userName' => 'required|min:3',
-            'userAge' => 'required|numeric|min:1',
-            'gender' => 'required|in:Laki-laki,Perempuan',
         ], [
             'userName.required' => 'Nama Pemain harus diisi.',
             'userName.min' => 'Nama Pemain minimal harus 3 karakter.',
-            'userAge.required' => 'Usia harus diisi.',
-            'userAge.numeric' => 'Usia harus berupa angka.',
-            'userAge.min' => 'Usia minimal harus 1 tahun.',
-            'gender.required' => 'Gender harus diisi.',
         ]);
         $this->step = 'select_genre';
     }

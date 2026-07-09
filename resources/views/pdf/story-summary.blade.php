@@ -174,11 +174,10 @@
                     <table class="meta-table">
                         <tr>
                             <td><strong>NAMA USER:</strong> {{ $history->user_name }}</td>
-                            <td><strong>GENDER:</strong> {{ $history->gender }}</td>
+                            <td><strong>GENRE CERITA:</strong> {{ ucfirst($history->selected_genre ?? 'Interactive Story') }}</td>
                         </tr>
                         <tr>
-                            <td><strong>WAKTU KEJADIAN:</strong> {{ now()->format('d F Y - H:i:s') }}</td>
-                            <td><strong>GENRE CERITA:</strong> {{ ucfirst($history->selected_genre ?? 'Interactive Story') }}</td>
+                            <td colspan="2"><strong>WAKTU KEJADIAN:</strong> {{ now()->format('d F Y - H:i:s') }}</td>
                         </tr>
                     </table>
                 @endif

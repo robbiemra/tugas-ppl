@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +26,10 @@
             body {
                 background-color: var(--shadow);
                 overflow-x: hidden;
+            }
+
+            body.gameplay-active {
+                overflow: hidden;
             }
 
             /* Flickering text animation */
@@ -147,9 +151,9 @@
             ::-webkit-scrollbar-thumb { background: var(--blood-dark); border-radius: 3px; }
         </style>
     </head>
-    <body class="antialiased">
+    <body class="antialiased h-full">
         <div class="fog-overlay"></div>
-        <div class="relative z-10">
+        <div class="relative z-10 h-full">
             {{ $slot }}
         </div>
         @livewireScripts
