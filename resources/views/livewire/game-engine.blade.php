@@ -1,6 +1,4 @@
 <div class="{{ $step === 'gameplay' ? 'h-screen overflow-hidden flex flex-col p-4 md:p-6' : 'min-h-screen p-4 md:p-8' }}"
-     x-data="{ step: @entangle('step') }"
-     x-effect="document.body.classList.toggle('gameplay-active', step === 'gameplay')"
      style="background-image: linear-gradient(180deg, rgba(10,10,20,0.72) 0%, rgba(14,15,30,0.78) 40%, rgba(6,7,16,0.94) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #e8d9b5;">
 
     <style>
@@ -74,6 +72,15 @@
         /* Scrollbar override */
         ::-webkit-scrollbar-thumb {
             background: #c7a568 !important;
+        }
+
+        /* Hide scrollbar for narrative content */
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none !important;
+        }
+        .custom-scrollbar {
+            -ms-overflow-style: none !important;  /* IE and Edge */
+            scrollbar-width: none !important;  /* Firefox */
         }
 
         .landing-btn {
@@ -319,21 +326,38 @@
             {{-- ═══════════════════════════════════════════════════════════ --}}
             @elseif($step === 'gameplay')
                 @php
-                    $storyText = trim($this->currentNode['content'] ?? '');
-                    $storyWords = preg_split('/\s+/', strip_tags($storyText), -1, PREG_SPLIT_NO_EMPTY);
-                    $wordCount = count($storyWords);
-                    if ($wordCount > 250) {
-                        $storyWords = array_slice($storyWords, 0, 250);
-                        $wordCount = 250;
+                    $storyText   = trim($this->currentNode['content'] ?? '');
+                    // Split into paragraphs by one or more newlines, preserving structure
+                    $rawParagraphs = preg_split('/\n+/', $storyText);
+                    $rawParagraphs = array_values(array_filter(
+                        array_map('trim', $rawParagraphs),
+                        fn($p) => $p !== ''
+                    ));
+
+                    // Count total words and build displayParagraphs with 250-word cap
+                    $totalWords      = 0;
+                    $displayParagraphs = [];
+                    foreach ($rawParagraphs as $para) {
+                        $paraWords = preg_split('/\s+/', strip_tags($para), -1, PREG_SPLIT_NO_EMPTY);
+                        $available = 250 - $totalWords;
+                        if ($available <= 0) break;
+                        if (count($paraWords) <= $available) {
+                            $displayParagraphs[] = $para;
+                            $totalWords += count($paraWords);
+                        } else {
+                            $displayParagraphs[] = implode(' ', array_slice($paraWords, 0, $available)) . '…';
+                            $totalWords = 250;
+                            break;
+                        }
                     }
-                    $displayStory = implode(' ', $storyWords);
+                    $wordCount = $totalWords;
                 @endphp
 
                 <div class="max-w-2xl mr-auto flex-1 flex flex-col gap-4 overflow-hidden min-h-0 w-full">
 
                     {{-- Konten Cerita --}}
                     <div class="z-30 flex-1 min-h-0">
-                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col h-full relative backdrop-blur-md overflow-hidden">
+                        <div class="horror-card rounded-xl p-4 md:p-5 flex flex-col h-full relative backdrop-blur-md overflow-hidden">
                             {{-- Loading Overlay for AI Generation --}}
                             <div wire:loading wire:target="startStory, selectChoice"
                                  class="absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-20 rounded-xl">
@@ -362,13 +386,12 @@
                                 </div>
                             </div>
 
-                            <div class="space-y-4 flex-1 overflow-y-auto custom-scrollbar pr-2 min-h-0">
-                                @foreach(explode("\n", $displayStory) as $paragraph)
-                                    @if(trim($paragraph))
-                                        <p class="story-text text-base md:text-lg leading-relaxed text-[#ecdfc2]" style="text-indent: 1.5em; line-height: 1.9;">
-                                            {{ trim($paragraph) }}
-                                        </p>
-                                    @endif
+                            <div class="flex-1 overflow-y-auto custom-scrollbar pr-2 min-h-0">
+                                @foreach($displayParagraphs as $paragraph)
+                                    <p class="story-text text-base md:text-lg text-[#ecdfc2] mb-4"
+                                       style="text-align: justify; text-indent: 1.5em; line-height: 1.9; hyphens: auto;">
+                                        {{ $paragraph }}
+                                    </p>
                                 @endforeach
                             </div>
                         </div>
@@ -376,7 +399,7 @@
 
                     {{-- Pilihan Cerita --}}
                     <div class="z-40 shrink-0">
-                        <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 backdrop-blur-md">
+                        <div class="space-y-2 horror-card rounded-xl p-3 md:p-4 backdrop-blur-md">
                             <div class="mb-4">
                                 <p class="text-xs text-amber-400/20 story-text italic mb-2">Setiap pilihan menentukan nasibmu...</p>
                                 <h4 class="horror-subtitle text-lg text-amber-500/80 flex items-center gap-2">

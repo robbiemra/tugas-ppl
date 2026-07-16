@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +26,12 @@
             body {
                 background-color: var(--shadow);
                 overflow-x: hidden;
+                overflow-y: auto;
             }
 
             body.gameplay-active {
-                overflow: hidden;
+                overflow: hidden !important;
+                height: 100vh !important;
             }
 
             /* Flickering text animation */
@@ -151,11 +153,21 @@
             ::-webkit-scrollbar-thumb { background: var(--blood-dark); border-radius: 3px; }
         </style>
     </head>
-    <body class="antialiased h-full">
+    <body class="antialiased">
         <div class="fog-overlay"></div>
         <div class="relative z-10 h-full">
             {{ $slot }}
         </div>
         @livewireScripts
+        <script>
+            document.addEventListener('livewire:init', () => {
+                Livewire.on('gameplay-started', () => {
+                    document.body.classList.add('gameplay-active');
+                });
+                Livewire.on('gameplay-ended', () => {
+                    document.body.classList.remove('gameplay-active');
+                });
+            });
+        </script>
     </body>
 </html>

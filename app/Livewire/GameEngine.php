@@ -173,6 +173,7 @@ class GameEngine extends Component
         ]];
         $history->save();
         $this->step = 'gameplay';
+        $this->dispatch('gameplay-started');
     }
 
 
@@ -269,6 +270,7 @@ class GameEngine extends Component
 
         if ($this->currentNode['is_ending']) {
             $this->step = 'ending';
+            $this->dispatch('gameplay-ended');
         }
     }
 
@@ -278,7 +280,8 @@ class GameEngine extends Component
         $this->currentNode['is_ending'] = true;
         $this->currentNode['choices'] = [];
         $this->step = 'ending';
-        
+        $this->dispatch('gameplay-ended');
+
         $history = UserHistory::find($this->historyId);
         if ($history) {
             $storyPages = $history->full_story_json ?: [];
@@ -298,6 +301,7 @@ class GameEngine extends Component
         // Menyimpan game sementara bagi user yang login
         if (Auth::check()) {
             $this->step = 'biodata';
+            $this->dispatch('gameplay-ended');
             $this->reset(['historyId', 'currentNode', 'storyStep', 'selectedGenre', 'selectedLocation']);
         }
     }
@@ -324,6 +328,7 @@ class GameEngine extends Component
             $this->aiImageUrl    = $history->character_visual;
             $this->bgImageUrl    = $history->character_visual;
             $this->step          = 'gameplay';
+            $this->dispatch('gameplay-started');
         }
     }
 
