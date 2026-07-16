@@ -1,5 +1,5 @@
-<div class="min-h-screen p-4 md:p-8"
-     style="background-image: linear-gradient(180deg, rgba(10,10,20,0.45) 0%, rgba(14,15,30,0.50) 40%, rgba(6,7,16,0.70) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #e8d9b5;">
+<div class="{{ $step === 'gameplay' ? 'h-screen overflow-hidden flex flex-col p-4 md:p-6' : 'min-h-screen p-4 md:p-8' }}"
+     style="background-image: linear-gradient(180deg, rgba(10,10,20,0.72) 0%, rgba(14,15,30,0.78) 40%, rgba(6,7,16,0.94) 100%), url('{{ $bgImageUrl ?? asset('landing page bg2.png') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: #e8d9b5;">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600;700&display=swap');
@@ -74,6 +74,15 @@
             background: #c7a568 !important;
         }
 
+        /* Hide scrollbar for narrative content */
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none !important;
+        }
+        .custom-scrollbar {
+            -ms-overflow-style: none !important;  /* IE and Edge */
+            scrollbar-width: none !important;  /* Firefox */
+        }
+
         .landing-btn {
             font-family: 'Work Sans', sans-serif !important;
             font-weight: 600 !important;
@@ -108,7 +117,7 @@
         }
     </style>
 
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto w-full {{ $step === 'gameplay' ? 'flex-1 flex flex-col overflow-hidden min-h-0' : '' }}">
 
         {{-- Fog particles background --}}
         <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -118,9 +127,9 @@
                  style="background: radial-gradient(ellipse, rgba(212,169,96,0.2), transparent); animation: fog-drift 15s ease-in-out infinite reverse;"></div>
         </div>
 
-        <div class="relative z-10">
+        <div class="relative z-10 {{ $step === 'gameplay' ? 'flex-1 flex flex-col overflow-hidden min-h-0' : '' }}">
             {{-- Top Navbar for Auth --}}
-            <div class="flex justify-between items-center mb-8 bg-black/40 p-4 rounded-xl border border-amber-900/30 backdrop-blur-sm">
+            <div class="flex justify-between items-center {{ $step === 'gameplay' ? 'mb-4' : 'mb-8' }} bg-black/40 p-4 rounded-xl border border-amber-900/30 backdrop-blur-sm shrink-0">
                 <div class="text-amber-500 font-bold tracking-widest uppercase text-sm flex items-center gap-3">
                     <img src="{{ asset('images/Gemini_Generated_Image_p9lajmp9lajmp9la.png') }}" alt="NarraTech" class="h-6 md:h-7 w-auto transition-all duration-300" />
                     <span class="hidden sm:inline">NarraTech Engine</span>
@@ -152,7 +161,7 @@
             </div>
 
             @if (session()->has('error'))
-                <div class="bg-amber-900/30 border border-amber-800/60 p-4 rounded-lg mb-6 text-amber-300 font-bold text-center story-text backdrop-blur-sm">
+                <div class="bg-amber-900/30 border border-amber-800/60 p-4 rounded-lg mb-6 text-amber-300 font-bold text-center story-text backdrop-blur-sm shrink-0">
                     ⚠ {{ session('error') }}
                 </div>
             @endif
@@ -174,7 +183,7 @@
                     <div class="horror-card rounded-xl p-8 md:p-10 w-full max-w-md space-y-5 text-left">
                         @if ($errors->any())
                             <div class="bg-red-950/50 border border-red-500/30 p-4 rounded-lg text-red-300 text-sm font-semibold text-center mb-2">
-                                ⚠️ Semua form pengisian wajib diisi sebelum memulai petualangan!
+                                ⚠️ Nama Pemain wajib diisi sebelum memulai petualangan!
                             </div>
                         @endif
 
@@ -183,23 +192,6 @@
                             <input type="text" wire:model="userName" placeholder="Siapa namamu..."
                                    class="horror-input w-full p-4 rounded-lg text-lg">
                             @error('userName') <span class="text-red-400 text-xs mt-1 block">{{ $message }}</span> @enderror
-                        </div>
-
-                        <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Usia</label>
-                            <input type="number" wire:model="userAge" placeholder="Berapa usiamu..."
-                                   class="horror-input w-full p-4 rounded-lg text-lg">
-                            @error('userAge') <span class="text-red-400 text-xs mt-1 block">{{ $message }}</span> @enderror
-                        </div>
-
-                        <div>
-                            <label class="block text-xs uppercase text-amber-400/70 tracking-[0.2em] font-sans mb-2">Gender</label>
-                            <select wire:model="gender" class="horror-input w-full p-4 rounded-lg text-lg">
-                                <option value="">Pilih Gender...</option>
-                                <option value="Laki-laki">Laki-laki</option>
-                                <option value="Perempuan">Perempuan</option>
-                            </select>
-                            @error('gender') <span class="text-red-400 text-xs mt-1 block">{{ $message }}</span> @enderror
                         </div>
 
                         <button wire:click="saveBiodata"
@@ -334,21 +326,38 @@
             {{-- ═══════════════════════════════════════════════════════════ --}}
             @elseif($step === 'gameplay')
                 @php
-                    $storyText = trim($this->currentNode['content'] ?? '');
-                    $storyWords = preg_split('/\s+/', strip_tags($storyText), -1, PREG_SPLIT_NO_EMPTY);
-                    $wordCount = count($storyWords);
-                    if ($wordCount > 250) {
-                        $storyWords = array_slice($storyWords, 0, 250);
-                        $wordCount = 250;
+                    $storyText   = trim($this->currentNode['content'] ?? '');
+                    // Split into paragraphs by one or more newlines, preserving structure
+                    $rawParagraphs = preg_split('/\n+/', $storyText);
+                    $rawParagraphs = array_values(array_filter(
+                        array_map('trim', $rawParagraphs),
+                        fn($p) => $p !== ''
+                    ));
+
+                    // Count total words and build displayParagraphs with 250-word cap
+                    $totalWords      = 0;
+                    $displayParagraphs = [];
+                    foreach ($rawParagraphs as $para) {
+                        $paraWords = preg_split('/\s+/', strip_tags($para), -1, PREG_SPLIT_NO_EMPTY);
+                        $available = 250 - $totalWords;
+                        if ($available <= 0) break;
+                        if (count($paraWords) <= $available) {
+                            $displayParagraphs[] = $para;
+                            $totalWords += count($paraWords);
+                        } else {
+                            $displayParagraphs[] = implode(' ', array_slice($paraWords, 0, $available)) . '…';
+                            $totalWords = 250;
+                            break;
+                        }
                     }
-                    $displayStory = implode(' ', $storyWords);
+                    $wordCount = $totalWords;
                 @endphp
 
-                <div class="max-w-2xl mr-auto space-y-6 pb-20">
+                <div class="max-w-2xl mr-auto flex-1 flex flex-col gap-4 overflow-hidden min-h-0 w-full">
 
                     {{-- Konten Cerita --}}
-                    <div class="z-30">
-                        <div class="horror-card rounded-xl p-6 md:p-8 flex flex-col relative overflow-y-auto custom-scrollbar backdrop-blur-md" style="max-height: 70vh;">
+                    <div class="z-30 flex-1 min-h-0">
+                        <div class="horror-card rounded-xl p-4 md:p-5 flex flex-col h-full relative backdrop-blur-md overflow-hidden">
                             {{-- Loading Overlay for AI Generation --}}
                             <div wire:loading wire:target="startStory, selectChoice"
                                  class="absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-20 rounded-xl">
@@ -363,7 +372,7 @@
                                 </p>
                             </div>
 
-                            <div class="flex flex-col gap-4 mb-4">
+                            <div class="flex flex-col gap-4 mb-4 shrink-0">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                                     <div>
                                         <h3 class="text-xs uppercase text-amber-500/50 tracking-[0.2em] font-sans flex items-center gap-2">
@@ -377,21 +386,20 @@
                                 </div>
                             </div>
 
-                            <div class="space-y-4 max-h-[65vh] overflow-y-auto custom-scrollbar">
-                                @foreach(explode("\n", $displayStory) as $paragraph)
-                                    @if(trim($paragraph))
-                                        <p class="story-text text-base md:text-lg leading-relaxed text-[#ecdfc2]" style="text-indent: 1.5em; line-height: 1.9;">
-                                            {{ trim($paragraph) }}
-                                        </p>
-                                    @endif
+                            <div class="flex-1 overflow-y-auto custom-scrollbar pr-2 min-h-0">
+                                @foreach($displayParagraphs as $paragraph)
+                                    <p class="story-text text-base md:text-lg text-[#ecdfc2] mb-4"
+                                       style="text-align: justify; text-indent: 1.5em; line-height: 1.9; hyphens: auto;">
+                                        {{ $paragraph }}
+                                    </p>
                                 @endforeach
                             </div>
                         </div>
                     </div>
 
                     {{-- Pilihan Cerita --}}
-                    <div class="z-40">
-                        <div class="space-y-3 horror-card rounded-xl p-5 md:p-6 backdrop-blur-md">
+                    <div class="z-40 shrink-0">
+                        <div class="space-y-2 horror-card rounded-xl p-3 md:p-4 backdrop-blur-md">
                             <div class="mb-4">
                                 <p class="text-xs text-amber-400/20 story-text italic mb-2">Setiap pilihan menentukan nasibmu...</p>
                                 <h4 class="horror-subtitle text-lg text-amber-500/80 flex items-center gap-2">

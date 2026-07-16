@@ -32,15 +32,9 @@ class GameEngine extends Component
     {
         $this->validate([
             'userName' => 'required|min:3',
-            'userAge' => 'required|numeric|min:1',
-            'gender' => 'required|in:Laki-laki,Perempuan',
         ], [
             'userName.required' => 'Nama Pemain harus diisi.',
             'userName.min' => 'Nama Pemain minimal harus 3 karakter.',
-            'userAge.required' => 'Usia harus diisi.',
-            'userAge.numeric' => 'Usia harus berupa angka.',
-            'userAge.min' => 'Usia minimal harus 1 tahun.',
-            'gender.required' => 'Gender harus diisi.',
         ]);
         $this->step = 'select_genre';
     }
@@ -179,6 +173,7 @@ class GameEngine extends Component
         ]];
         $history->save();
         $this->step = 'gameplay';
+        $this->dispatch('gameplay-started');
     }
 
 
@@ -275,6 +270,7 @@ class GameEngine extends Component
 
         if ($this->currentNode['is_ending']) {
             $this->step = 'ending';
+            $this->dispatch('gameplay-ended');
         }
     }
 
@@ -284,7 +280,8 @@ class GameEngine extends Component
         $this->currentNode['is_ending'] = true;
         $this->currentNode['choices'] = [];
         $this->step = 'ending';
-        
+        $this->dispatch('gameplay-ended');
+
         $history = UserHistory::find($this->historyId);
         if ($history) {
             $storyPages = $history->full_story_json ?: [];
@@ -304,6 +301,7 @@ class GameEngine extends Component
         // Menyimpan game sementara bagi user yang login
         if (Auth::check()) {
             $this->step = 'biodata';
+            $this->dispatch('gameplay-ended');
             $this->reset(['historyId', 'currentNode', 'storyStep', 'selectedGenre', 'selectedLocation']);
         }
     }
@@ -330,6 +328,7 @@ class GameEngine extends Component
             $this->aiImageUrl    = $history->character_visual;
             $this->bgImageUrl    = $history->character_visual;
             $this->step          = 'gameplay';
+            $this->dispatch('gameplay-started');
         }
     }
 

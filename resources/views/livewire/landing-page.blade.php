@@ -196,8 +196,6 @@
             </div>
             <div class="flex items-center gap-4">
                 <span>Created by Team PPL</span>
-                <span>•</span>
-                <span class="status-dot" style="color: #c7a568;">● ONLINE</span>
             </div>
         </footer>
     </div>

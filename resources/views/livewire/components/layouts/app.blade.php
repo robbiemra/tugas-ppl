@@ -26,6 +26,12 @@
             body {
                 background-color: var(--shadow);
                 overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            body.gameplay-active {
+                overflow: hidden !important;
+                height: 100vh !important;
             }
 
             /* Flickering text animation */
@@ -149,9 +155,19 @@
     </head>
     <body class="antialiased">
         <div class="fog-overlay"></div>
-        <div class="relative z-10">
+        <div class="relative z-10 h-full">
             {{ $slot }}
         </div>
         @livewireScripts
+        <script>
+            document.addEventListener('livewire:init', () => {
+                Livewire.on('gameplay-started', () => {
+                    document.body.classList.add('gameplay-active');
+                });
+                Livewire.on('gameplay-ended', () => {
+                    document.body.classList.remove('gameplay-active');
+                });
+            });
+        </script>
     </body>
 </html>
